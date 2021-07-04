@@ -1,0 +1,110 @@
+.partners {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.quoteSection {
+    background-color: #f3f4f5;
+    text-align: center;
+}
+
+.legalBanking {
+    background-color: #f3f4f5;
+    text-align: center;
+    padding-bottom: 40px;
+}
+    .legalBanking h2 {
+        padding-top: 30px;
+    }
+
+    .legalBanking .cooley {
+        padding-left: 85px;
+        padding-top: 40px;
+        padding-right: 85px;
+    }
+
+    .legalBanking .svb {
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+
+    .legalBanking img {
+        width: 40%;
+        height: auto;
+    }
+
+    .legalBanking .info {
+        padding-top: 6vh;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-right: 7vw;
+        flex-flow: row-wrap;
+    }
+
+    .legalBanking .lbtext {
+        text-align: left;
+    }
+
+.partnerValue {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 30px;
+    background-color: #f3f4f5;
+}
+    .partnerValue h2 {
+        padding-top: 40px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .partnerValue h3 {
+        color: #67379A
+    }
+
+    .partnerValue .value {
+        text-align: left;
+        align-items: center;
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-row-gap: 20px;
+    }
+
+    .partnerValue .value p {
+        text-align: left;
+    }
+
+    .valueImage {
+        display: inline-block;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .valueImage img {
+        width: 90%;
+        height: 100%;
+        padding-right: 10px;
+    }
+
+    /*mark {
+        display: inline-block;
+        line-height: 0em;
+        margin-top: 10px;
+        padding-bottom: 0.5em;
+        background-color: #D1B3DB;
+    }*/
+
+.contactSection {
+    margin-top: 3vh;
+}
+    .contactSection h2 {
+        padding-top: 5vh;
+    }
+
+@media (max-width: 1034px) {
+    .partnerValue .value {
+        grid-template-columns: 1fr;
+    }
+}

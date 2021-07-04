@@ -1,0 +1,137 @@
+.footer {
+    width: 100%;
+    background-color: #222222;
+    margin: 0;
+    height: auto;
+    padding: 60px 0;
+    color: #ebebeb;
+    text-decoration: none;
+}
+
+    .footer h1 {
+        font-size: 20px;
+        margin: 0;
+        color: white;
+    }
+
+    .footer p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .footer .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 0.4fr 0.6fr;
+        grid-column-gap: 40px;
+        grid-row-gap: 30px;
+    }
+
+    .footer input {
+        background-color: #e3e3e3;
+        padding: 10px 10px;
+        border-radius: 3px;
+        width: 200px;
+        font-size: 15px;
+        border: none;
+    }
+
+    .footer .genericButton {
+        /* padding: 10px 15px;
+        margin: 0 5px; */
+    }
+
+    .footer span:nth-child(1) img {
+        width: 40px;
+        display: inline-block;
+    }
+
+    .footer span:nth-child(1) h1 {
+        display: inline-block;
+        font-size: 20px;
+        position: relative;
+        left: 12px;
+        bottom: 13px;
+    }
+
+    .footer span:nth-child(1) p {
+        line-height: 1.5;
+    }
+
+
+    .footer .links a {
+        display: block;
+        text-decoration: none;
+        color: #ebebeb;
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 17px;
+        opacity: 0.8;
+        transition: 0.1s all ease;
+    }
+
+    .footer .links a:hover {
+        opacity: 1;
+    }
+
+    .footer .links p {
+        margin-top: 0;
+    }
+
+    .disappear {
+        color: #222222;
+    }
+
+    .footer span:nth-child(4) a {
+        margin-bottom: 20px;
+        opacity: 0.8;
+        transition: 0.1s all ease;
+    }
+
+        .footer span:nth-child(4) a:hover {
+            opacity: 1;
+        }
+
+    .footer span:nth-child(4) img {
+        width: 20px;
+        margin-right: 8px;
+        position: relative;
+        top: 2px;
+    }
+
+
+
+    @media (max-width: 1034px) {
+        .footer .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column-gap: 40px;
+            grid-row-gap: 30px;
+        }
+
+        .links a {
+            margin-bottom: 0;
+        }
+
+        .disappear {
+            display: none;
+        }
+
+        .footer .links:last-child {
+            position: relative;
+            bottom: 30px;
+        }
+
+        .footer input {
+            display: block;
+            text-align: center;
+            padding: 10px 0px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .footer .genericButton {
+            display: block;
+            text-align: center;
+            margin: 10px 0 0 0;
+        }
+    }

@@ -1,0 +1,245 @@
+p, a {
+    font-family: "Lato";
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    max-width: 1000px;
+}
+
+    .portfolio ul {
+        list-style-type: none;
+        margin: 0 0 20px 0;
+        padding: 0;
+    }
+
+    .portfolio li {
+
+        padding: 10px 10px;
+        font-weight: 600;
+        margin: 5px 0;
+        border-radius: 5px;
+        color: #333;
+    }
+
+    .portfolio li:hover {
+        cursor: pointer;
+        background-color: #F1F1F1;
+    }
+
+
+.portfolio .content {
+    padding-left: 20px;
+}
+
+.portfolio .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 1000px;
+}
+
+    .companyPortfolio {
+        display: inline-block;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        color: #333333;
+        position: relative;
+        transition: all 0.3s ease;
+        text-align: left;
+        padding: 20px;
+    }
+
+        .companyPortfolio:hover {
+            transform: translateY(-5px);
+            cursor: pointer;
+            box-shadow: 0 13px 27px -5px rgba(50,50,93,.15), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+        }
+
+        .companyPortfolio img {
+            height: 30px;
+            width: auto;
+            display: inline-block;
+        }
+
+        .companyPortfolio h1 {
+            margin: 10px 0 0 0;
+        }
+
+        .companyPortfolio p {
+            font-family: 'Lato', sans-serif;
+            display: block;
+            font-size: 15px;
+            line-height: 1.5;
+            margin: 8px 0;
+        }
+
+        .companyPortfolio a {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 700;
+            color: #333333;
+            position: absolute;
+            bottom: 20px;
+            font-size: 15px;
+            margin: 0;
+            transition: all 0.2s ease;
+        }
+
+        .companyPortfolio a img {
+            width: 12px;
+            height: auto;
+            position: relative;
+            left: 10px;
+            bottom: 1px;
+            transition: all 0.2s ease;
+        }
+
+        .companyPortfolio a:hover {
+            color: rgb(73, 137, 223);
+        }
+
+        .companyPortfolio a:hover img {
+            width: 12px;
+            height: auto;
+            position: relative;
+            left: 15px;
+            bottom: 1px;
+        }
+
+        .companyPortfolio .companyTag {
+            display: inline-block;
+            color: white;
+            border-radius: 4px;
+            padding: 5px 10px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 5px;
+            margin-bottom: 3px;
+        }
+
+        .companyTag {
+            display: inline-block;
+            color: white;
+            border-radius: 4px;
+            padding: 5px 10px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 5px;
+            margin-bottom: 3px;
+        }
+
+    .dialog img {
+        height: 40px;
+        width: auto;
+        display: block;
+        margin: 10px 0;
+    }
+
+        .dialog h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+.pressArticle {
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 20px 0;
+    display: block;
+    transition: 0.2s all ease;
+    position: relative;
+    bottom: 0px
+}
+
+    .pressArticle:hover {
+        box-shadow: 0 13px 27px -5px rgba(50,50,93,.10), 0 8px 16px -8px rgba(0,0,0,.2), 0 -6px 16px -6px rgba(0,0,0,.025);
+        bottom: 2px;
+    }
+
+    .pressArticle img {
+        height: 25px;
+        width: auto;
+    }
+
+    .pressArticle a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .pressArticle h1 {
+        margin: 10px 0;
+        font-size: 16px;
+        color: #333;
+    }
+
+.batchSelect {
+    display: none;
+}
+
+.MuiDialogActions-root {
+    justify-content: flex-start !important;
+    padding: 0 0 20px 20px !important;
+}
+
+.linkSection p {
+    margin: 3px;
+    font-size: 13px;
+}
+
+.companyPhoto {
+    width: 60% !important;
+    height: auto !important;
+}
+
+.linkSection a {
+    background-color: #dbdbdb;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+    padding: 7px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Lato';
+    transition: 0.2s all ease;
+    margin-right: 5px;
+}
+
+    .linkSection a:hover {
+        background-color: #d0d0d0;
+    }
+        @media (max-width: 1034px) {
+            .portfolio .content-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+                max-width: 1000px;
+            }
+
+            .portfolio .content {
+                padding-left: 0;
+            }
+
+            .portfolio {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+                max-width: 1000px;
+            }
+
+            .batchSelect {
+                display: inline-block;
+                margin: 0 auto;
+                text-align: left;
+            }
+
+            .batchSideBar {
+                display: none;
+            }
+
+            .portfolioNav {
+                text-align: center;
+            }
+        }
