@@ -289,8 +289,9 @@ function Home() {
                 <div className="container">
                     <span>
                         <h1>Empowering the brightest founders in Berkeley</h1>
-                        <h2>Free Ventures is Cal’s leading pre-seed startup accelerator</h2>
-                        <Link to="/apply" className="apply">Recruiting Spring 2021 Startups</Link>
+                        <h2>Free Ventures is Cal’s leading pre-seed startup accelerator.
+                            We empower student founders by providing access to funding, mentorship, and resources to scale.</h2>
+                        <Link to="/apply" className="apply">Recruiting Fall 2021 Startups</Link>
                     </span>
                     <span>
                         <img src={freevgroup} alt="" />
