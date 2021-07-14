@@ -192,6 +192,19 @@ function Home() {
         },
     ];
 
+    let acquisitionsContent = [
+        {
+            logo: ycombinator,
+            name: 'YCombinator',
+            website: "http://www.ycombinator.com/"
+        },
+        {
+            logo: kpcb,
+            name: 'KPCB',
+            website: "http://www.kpcb.com/"
+        }
+    ];
+
     let partnersContent = [
         {
             logo: kpcb,
@@ -270,6 +283,10 @@ function Home() {
     let investors = investorsContent.map((investor) => {
         return (<a href={investor.website}><img src={investor.logo} alt={investor.name} /></a>);
     });
+    
+    let acquisitions = acquisitionsContent.map((company) => {
+        return (<a href={company.website}><img src={company.logo} alt={company.name} /></a>);
+    });
 
     let partners = partnersContent.map((partner) => {
         return (<a href={partner.website}><img src={partner.logo} alt={partner.name} /></a>);
@@ -329,6 +346,14 @@ function Home() {
                     </div>
                     <br />
                     <Link to="/partners" className="genericButton">Learn more about our partnerships</Link>
+                </div>
+            </div>
+            <div className="sponsors homeSection">
+                <div className="container">
+                    <h2>Recent Acquisitions by Leading Companies</h2>
+                    <div className="four-grid">
+                        {acquisitions}
+                    </div>
                 </div>
             </div>
             <svg className="grayWave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,64L60,64C120,64,240,64,360,80C480,96,600,128,720,165.3C840,203,960,245,1080,256C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
