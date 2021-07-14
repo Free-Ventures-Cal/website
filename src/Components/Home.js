@@ -323,7 +323,7 @@ function Home() {
             </div>
             <div className="sponsors homeSection">
                 <div className="container">
-                    <h2 className="pratik">Our companies are funded by leading investors</h2>
+                    <h2>Our companies are funded by leading investors</h2>
                     <div className="four-grid">
                         {investors}
                     </div>
@@ -344,7 +344,7 @@ function Home() {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" d="M0,128L60,138.7C120,149,240,171,360,176C480,181,600,171,720,149.3C840,128,960,96,1080,85.3C1200,75,1320,85,1380,90.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
             <div className="tiers homeSection">
                 <div className="container">
-                    <h2>What we offer</h2>
+                    <h2 className="pratik">What we offer</h2>
                     <div className="three-grid">
                         <article>
                             <span>

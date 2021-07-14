@@ -283,7 +283,7 @@ a {
 }
 
 .tiers {
-  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .tiers h2 {
@@ -442,7 +442,7 @@ a {
 
 .sponsors {
   text-align: center;
-  padding: 0px 0 40px 0;
+  padding: 40px 0 0px 0;
 }
 
 .four-grid {
