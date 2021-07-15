@@ -2,19 +2,11 @@ import React from 'react';
 
 import ContactForm from './ContactForm';
 import HomeCompany from './HomeCompany';
-import logo from './../assets/free-v-square.png';
 import { Link } from "react-router-dom";
 import mentors from './../assets/mentors.png';
-import pitch from './../assets/pitch.png';
-import curriculum from './../assets/curriculum.png';
-
 import paladin from './../assets/portfolio/paladin.png';
 import distributed from './../assets/distributed.png';
 import gainful from './../assets/gainful.png';
-
-import arrow from './../assets/arrow.png';
-import whitearrow from './../assets/arrow-white.png'
-
 import tc from './../assets/press/grayscale/tc.png';
 import huffpost from './../assets/press/grayscale/huffpost.png';
 import forbes from './../assets/press/grayscale/forbes.png';
@@ -41,26 +33,14 @@ import svb from './../assets/partners/svb.png';
 import ycombinator from './../assets/partners/ycombinator.png';
 import discord from './../assets/acquisitions/discord-3.png';
 import coinbase from './../assets/acquisitions/coinbase-2.png';
-import freevsequoia from './../assets/freevsequoia.png';
-import community from './../assets/program/group.png';
-import legal from './../assets/lega.png';
-import fundraising from './../assets/fundraising.png';
 import funds from './../assets/funds.png';
-import logofull from './../assets/logo-full.png';
-import logocircle from './../assets/logo-circle.png';
-
-
 import freevgroup from './../assets/program/freevgroup.jpg'
-
-
-import equity from './../assets/program/business.png';
 import workshops from './../assets/program/training.png';
 
 
 import './../styles/App.css';
 import './../styles/Home.css';
 
-import Carousel from 'react-images';
 
 function Home() {
 
@@ -285,7 +265,7 @@ function Home() {
     let investors = investorsContent.map((investor) => {
         return (<a href={investor.website}><img src={investor.logo} alt={investor.name} /></a>);
     });
-    
+
     let acquisitions = acquisitionsContent.map((company) => {
         return (<a href={company.website}><img src={company.logo} alt={company.name} /></a>);
     });
@@ -377,60 +357,35 @@ function Home() {
                             <span>
                                 <img src={funds} alt="" />
                             </span>
-
                             <span>
-                                <h3>Equity-free Funds</h3>
-                                <p>We provide equity free funds to reimburse costs associated with growing your company on campus.</p>
+                                <h3>Funding</h3>
+                                <p>We provide equity-free funds to reimburse costs associated
+                                    with growing your company on campus, and we help fundraise
+                                    from top investors in the valley during and after the batch.</p>
                             </span>
                         </article>
                         <article>
                             <span>
                                 <img src={mentors} alt="" />
                             </span>
-
                             <span>
                                 <h3>Mentorship</h3>
-                                <p>Each week, we bring in founders, investors, and industry experts to help guide our teams. </p>
+                                <p>Each week, we bring in founders, investors, and
+                                    industry experts to help guide our teams. We also
+                                    provide access to Berkeley’s growing entrepreneurship
+                                    community.</p>
                             </span>
-
                         </article>
                         <article>
                             <span>
                                 <img src={workshops} alt="" />
                             </span>
                             <span>
-                                <h3>Curriculum</h3>
-                                <p>We host workshops including sales, product, and design, to help founders learn quickly and scale.</p>
-                            </span>
-                        </article>
-                        <article>
-                            <span>
-                                <img src={community} alt="" />
-                            </span>
-
-                            <span>
-                                <h3>Community</h3>
-                                <p>Our campus network provides access to Berkeley’s growing entrepreneurship ecosystem.</p>
-                            </span>
-                        </article>
-                        <article>
-                            <span>
-                                <img src={legal} alt="" />
-                            </span>
-
-                            <span>
-                                <h3>Legal / Banking</h3>
-                                <p>We partner with top firms SVB and Cooley to provide founder-friendly legal and banking services. </p>
-                            </span>
-
-                        </article>
-                        <article>
-                            <span>
-                                <img src={fundraising} alt="" />
-                            </span>
-                            <span>
-                                <h3>Fundraising Guidance</h3>
-                                <p>We help our companies fundraise from top investors in the valley during and after the batch.</p>
+                                <h3>Resources</h3>
+                                <p>We host workshops to help founders learn quickly
+                                    and scale, and we partner with top firms SVB and
+                                    Cooley to provide founder-friendly legal and banking
+                                    services.</p>
                             </span>
                         </article>
                     </div>
