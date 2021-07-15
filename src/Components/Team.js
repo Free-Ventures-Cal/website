@@ -1,5 +1,6 @@
 import React from 'react';
 import Person from './Person.js';
+import Alumnus from './Alumnus.js';
 import './../styles/App.css';
 import './../styles/Team.css';
 import GenericTop from './GenericTop';
@@ -40,7 +41,7 @@ function Team() {
         button = <a href="https://forms.gle/D1CJuxfxytb3h54G9" target="_blank" className="genericButton">Internal team interest form</a>
     }
 
-    var peopleContent = [
+    const peopleContent = [
     {
         name: "Christina Guo",
         position: "Managing Director",
@@ -99,6 +100,45 @@ function Team() {
     },
 ]
 
+    const alumniContent = [
+        {
+            name: "First Last",
+            position: "position",
+            company: "company",
+            image: christina
+        },
+        {
+            name: "First Last",
+            position: "position",
+            company: "company",
+            image: adithya
+        },
+        {
+            name: "First Last",
+            position: "position",
+            company: "company",
+            image: christina
+        },
+        {
+            name: "First Last",
+            position: "position",
+            company: "company",
+            image: adithya
+        },
+        {
+            name: "First Last",
+            position: "position",
+            company: "company",
+            image: christina
+        },
+        {
+            name: "First Last",
+            position: "position",
+            company: "company",
+            image: adithya
+        },
+    ]
+
     let peopleComponents = peopleContent.map((person) => {
         return (<Person
                     name={person.name}
@@ -110,6 +150,16 @@ function Team() {
         );
     });
     
+    let alumniComponents = alumniContent.map((alumnus) => {
+        return (<Alumnus
+                    name={alumnus.name}
+                    position={alumnus.position}
+                    company={alumnus.company}
+                    image={alumnus.image}
+                />
+
+        );
+    });
 
     return (
         <section>
@@ -123,6 +173,10 @@ function Team() {
                 <div className="peopleGrid">
                     {peopleComponents}
                 </div>
+                <h2>Internal Alumni</h2>
+                <div className="peopleGrid">
+                    {alumniComponents}
+                </div>
                 <h2 style={{ textAlign: 'center', padding: '50px 0'}}>Our Advisors come from</h2>
                 <div className="five-grid">
                     <span><img src={house} /></span>
@@ -130,10 +184,6 @@ function Team() {
                     <span><img src={scet} /></span>
                     <span><img src={haas} /></span>
                     <span><img src={berkeleyengineering} /></span>
-
-
-
-
                 </div>
             </GenericPage>
         </section>

@@ -1,54 +1,54 @@
 .peopleGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
 }
 
 .person {
-    display: inline-block;
-    margin: 0;
-    text-align: center;
-    margin: 0 auto;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  margin: 0 auto;
 }
 
-    .person img {
-        width: 80%;
-        border-radius: 7px;
-    }
+.person img {
+  width: 80%;
+  border-radius: 7px;
+}
 
-    .person h2 {
-        font-size: 23px;
-        margin: 10px 0;
-    }
+.person h2 {
+  font-size: 23px;
+  margin: 10px 0;
+}
 
-    .person h3 {
-        text-transform: uppercase;
-        font-size: 14px;
-        letter-spacing: 3px;
-        font-weight: 600;
-        margin: 10px 0;
-    }
+.person h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin: 10px 0;
+}
 
-    .person .links {
-        display: block;
-    }
+.person .links {
+  display: block;
+}
 
-    .person .links img {
-        width: 17px;
-        opacity: 0.6;
-        transition: all 0.3s ease;
-        margin: 0 5px;
-        border-radius: 0px;
-    }
+.person .links img {
+  width: 17px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+  border-radius: 0px;
+}
 
-    .person .links img:hover {
-        opacity: 0.8;
-    }
+.person .links img:hover {
+  opacity: 0.8;
+}
 
-    @media (max-width: 1034px) {
-        .peopleGrid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-    }
+@media (max-width: 1034px) {
+  .peopleGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
