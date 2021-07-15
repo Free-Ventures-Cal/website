@@ -39,6 +39,8 @@ import spark from './../assets/partners/spark.png';
 import svangel from './../assets/partners/svangle.png';
 import svb from './../assets/partners/svb.png';
 import ycombinator from './../assets/partners/ycombinator.png';
+import discord from './../assets/acquisitions/discord-3.png';
+import coinbase from './../assets/acquisitions/coinbase-2.png';
 import freevsequoia from './../assets/freevsequoia.png';
 import community from './../assets/program/group.png';
 import legal from './../assets/lega.png';
@@ -194,14 +196,14 @@ function Home() {
 
     let acquisitionsContent = [
         {
-            logo: ycombinator,
-            name: 'YCombinator',
-            website: "http://www.ycombinator.com/"
+            logo: discord,
+            name: 'Discord',
+            website: "https://discord.com"
         },
         {
-            logo: kpcb,
-            name: 'KPCB',
-            website: "http://www.kpcb.com/"
+            logo: coinbase,
+            name: 'Coinbase',
+            website: "https://www.coinbase.com"
         }
     ];
 
@@ -351,7 +353,7 @@ function Home() {
             <div className="sponsors homeSection">
                 <div className="container">
                     <h2>Recent Acquisitions by Leading Companies</h2>
-                    <div className="four-grid">
+                    <div className="two-grid">
                         {acquisitions}
                     </div>
                 </div>
