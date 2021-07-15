@@ -46,6 +46,27 @@
   opacity: 0.8;
 }
 
+.alumni-cards-marquee {
+    display: flex;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+
+.alumnus-wrapper {
+    display: block;
+    background-color: white;
+    width: 24vw;
+    max-width: 330px;
+    min-width: 280px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.alumnus-card-header img {
+    height: 32px;
+    max-width: 64px;
+    margin-right: 16px;
+}
+
 @media (max-width: 1034px) {
   .peopleGrid {
     display: grid;

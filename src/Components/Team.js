@@ -174,7 +174,7 @@ function Team() {
                     {peopleComponents}
                 </div>
                 <h2>Internal Alumni</h2>
-                <div className="peopleGrid">
+                <div className="alumni-cards-marquee">
                     {alumniComponents}
                 </div>
                 <h2 style={{ textAlign: 'center', padding: '50px 0'}}>Our Advisors come from</h2>
