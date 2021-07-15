@@ -4,22 +4,14 @@ import './../styles/App.css';
 import './../styles/Team.css';
 import GenericTop from './GenericTop';
 import GenericPage from './GenericPage';
-import pranav from './../assets/team/pranav.png';
-import aashi from './../assets/team/aashi.png';
-import pratik from './../assets/team/pratik.png';
-import kathy from './../assets/team/kqkong.png';
-import adhiv from './../assets/team/adhiv.png';
-import nikita from './../assets/team/nikita.png';
-import shaantam from './../assets/team/shaantam.png';
 import adithya from './../assets/team/adithya.png';
 import christina from './../assets/team/christina.png';
 import alex from './../assets/team/alex.png';
-import joelene from './../assets/team/joelene.png';
-import saneel from './../assets/team/saneel.jpg';
-import avinash from './../assets/team/avinash.jpg';
-import lulu from './../assets/team/lulu.png';
 import andy from './../assets/team/andy2.png';
 import tiana from './../assets/team/tiana2.png';
+import maanav from './../assets/team/maanav.png';
+import varun from './../assets/team/varun.png';
+import aamir from './../assets/team/aamir.png';
 
 import { Link } from "react-router-dom";
 
@@ -57,15 +49,8 @@ function Team() {
         image: christina
     },
     {
-        name: "Shaantam Chawla",
-        position: "Director",
-        linkedinUrl: "https://www.linkedin.com/in/shaantam/",
-        mailTo: "mailto:shaantam@freeventures.org",
-        image: shaantam
-    },
-    {
         name: "Adithiya Paramasivam",
-        position: "Director",
+        position: "Managing Director",
         linkedinUrl: "https://www.linkedin.com/in/adithyaparam",
         mailTo: "mailto:adithya@freeventures.org",
         image: adithya
@@ -78,68 +63,40 @@ function Team() {
         image: alex
     },
     {
-        name: "Lulu Holland",
-        position: "Director",
-        linkedinUrl: "https://www.linkedin.com/in/luluholland/",
-        mailTo: "mailto:lulu@freeventures.org",
-        image: lulu
-    },
-    {
-        name: "Saneel Sreeni",
-        position: "Director",
-        linkedinUrl: "https://www.linkedin.com/in/saneel-sreeni/",
-        mailTo: "mailto:saneel@freeventures.org",
-        image: saneel
-    },
-    {
         name: "Tiana Wong",
-        position: "Associate",
+        position: "Director",
         linkedinUrl: "https://www.linkedin.com/in/csow/",
         mailTo: "mailto:tiana@freeventures.org",
         image: tiana
     },
     {
         name: "Andy Jiang",
-        position: "Associate",
+        position: "Director",
         linkedinUrl: "https://www.linkedin.com/in/andybojiang/",
         mailTo: "mailto:andy@freeventures.org",
         image: andy
     },
     {
-        name: "Kathy Kong",
-        position: "Senior Advisor",
-        linkedinUrl: "https://www.linkedin.com/in/kathyqkong/",
-        mailTo: "mailto:kathy@freeventures.org",
-        image: kathy
+        name: "Maanav Khaitan",
+        position: "Associate",
+        linkedinUrl: "",
+        mailTo: "mailto:",
+        image: maanav
     },
     {
-        name: "Aashi Jhawar",
-        position: "Senior Advisor",
-        linkedinUrl: "https://www.linkedin.com/in/aashikajhawar/",
-        mailTo: "mailto:aashi@freeventures.org",
-        image: aashi
+        name: "Varun Nair",
+        position: "Associate",
+        linkedinUrl: "",
+        mailTo: "mailto:",
+        image: varun
     },
     {
-        name: "Nikita Ashok",
-        position: "Senior Advisor, Former MD",
-        linkedinUrl: "https://www.linkedin.com/in/nikita-ashok/",
-        mailTo: "mailto:nikita@freeventures.org",
-        image: nikita
+        name: "Aamir Hudda",
+        position: "Associate",
+        linkedinUrl: "",
+        mailTo: "mailto:",
+        image: aamir
     },
-    {
-        name: "Adhiv Dhar",
-        position: "Senior Advisor, Former MD",
-        linkedinUrl: "https://linkedin.com/in/adhivd/",
-        mailTo: "mailto:adhiv@freeventures.org",
-        image: adhiv
-    },
-    // {
-    //     name: "Avinash Jain",
-    //     position: "Senior Advisor",
-    //     linkedinUrl: "https://www.linkedin.com/in/avinashj1/",
-    //     mailTo: "mailto:avinash@freeventures.org",
-    //     image: avinash
-    // },
 ]
 
     let peopleComponents = peopleContent.map((person) => {
