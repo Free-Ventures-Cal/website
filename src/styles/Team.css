@@ -70,6 +70,7 @@
   flex-direction: row;
   position: relative;
   scroll-behavior: auto;
+  animation: moveSlideshow 12s linear infinite;
 }
 
 .alumnus-card-wrapper {
@@ -133,3 +134,8 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+@keyframes moveSlideshow {
+    100% { 
+      transform: translateX(-66.6666%);  
+    }
+  }

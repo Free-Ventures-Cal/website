@@ -13,7 +13,7 @@ function Alumnus(props) {
         <div class="alumnus-card-wrapper">
             <div class="alumnus-card">
                 <div class="alumnus-card-header">
-                    <img src={props.image} alt="" />
+                    <img src={props.image} alt=""/>
                     <h2>{props.name}</h2>
                 </div>
                 <div class="alumnus-card-description">
