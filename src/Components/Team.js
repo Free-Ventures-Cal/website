@@ -291,6 +291,8 @@ function Team() {
     });
 
     const numAlumni = alumniComponents.length;
+    const firstThirdEndpoint = numAlumni / 3 + 1;
+    const secondThirdEndpoint = 2 * numAlumni / 3 + 1;
 
     return (
         <section>
@@ -315,26 +317,27 @@ function Team() {
                 <div class="alumni-marquee-wrapper">
                     <div className="alumni-cards-marquee">
                         <div class="alumni-cards-row">
-                            {alumniComponents.slice(0, numAlumni / 3)}
+                            {alumniComponents.slice(0, firstThirdEndpoint)}
                         </div>
                         <div class="alumni-cards-row">
-                            {alumniComponents.slice(numAlumni / 3, 2 * numAlumni / 3 + 1)}
+                            {alumniComponents.slice(0, 4)}
+                        </div>
+                    </div>
+                    <div className="alumni-cards-marquee right-moving">
+                        
+                        <div class="alumni-cards-row">
+                            {alumniComponents.slice(firstThirdEndpoint, secondThirdEndpoint)}
+                        </div>
+                        <div class="alumni-cards-row">
+                            {alumniComponents.slice(firstThirdEndpoint, firstThirdEndpoint + 5)}
                         </div>
                     </div>
                     <div className="alumni-cards-marquee">
                         <div class="alumni-cards-row">
-                            {alumniComponents.slice(numAlumni / 3, 2 * numAlumni / 3 + 1)}
+                            {alumniComponents.slice(secondThirdEndpoint, numAlumni)}
                         </div>
                         <div class="alumni-cards-row">
-                            {alumniComponents.slice(2 * numAlumni / 3 + 1, numAlumni)}
-                        </div>
-                    </div>
-                    <div className="alumni-cards-marquee">
-                        <div class="alumni-cards-row">
-                            {alumniComponents.slice(2 * numAlumni / 3 + 1, numAlumni)}
-                        </div>
-                        <div class="alumni-cards-row">
-                            {alumniComponents.slice(0, numAlumni / 3)}
+                            {alumniComponents.slice(secondThirdEndpoint, secondThirdEndpoint + 5)}
                         </div>
                     </div>
                 </div>

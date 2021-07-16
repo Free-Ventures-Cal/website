@@ -63,6 +63,15 @@
   margin: 0 0 20px 0;
   justify-content: center;
   scroll-behavior: auto;
+  animation: moveSlideshow 15s linear infinite;
+}
+
+.left-moving {
+  animation-direction: normal;
+}
+
+.right-moving {
+  animation-direction: reverse;
 }
 
 .alumni-cards-row {
@@ -70,7 +79,7 @@
   flex-direction: row;
   position: relative;
   scroll-behavior: auto;
-  animation: moveSlideshow 12s linear infinite;
+
 }
 
 .alumnus-card-wrapper {
@@ -135,7 +144,10 @@
   }
 }
 @keyframes moveSlideshow {
-    100% { 
-      transform: translateX(-66.6666%);  
-    }
+  0% {
+    transform: translate(110%, 0);
   }
+  100% {
+    transform: translate(-110%, 0);
+  }
+}
