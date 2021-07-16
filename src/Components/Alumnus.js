@@ -7,14 +7,14 @@ import emailIcon from './../assets/mail.png'
 function Alumnus(props) {
 
     return (
-        <div class="alumnus-wrapper">
+        <div class="alumnus-card-wrapper">
             <div class="alumnus-card">
                 <div class="alumnus-card-header">
                     <img src={props.image} alt="" />
                     <h2>{props.name}</h2>
                 </div>
                 <div class="alumnus-card-description">
-                    {props.position}@{props.company}
+                    <h3>{props.position}@{props.company}</h3>
                 </div>
             </div>
         </div>

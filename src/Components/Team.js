@@ -32,7 +32,7 @@ function Team() {
 
     let button;
 
-    if(internalRecruitment) {
+    if (internalRecruitment) {
         description += " We're currently recruiting for internal team! Click below to learn more.";
         button = <Link to="/apply" className="genericButton">Apply for internal</Link>
     }
@@ -42,63 +42,63 @@ function Team() {
     }
 
     const peopleContent = [
-    {
-        name: "Christina Guo",
-        position: "Managing Director",
-        linkedinUrl: "https://www.linkedin.com/in/cguo16",
-        mailTo: "mailto:christina@freeventures.org",
-        image: christina
-    },
-    {
-        name: "Adithiya Paramasivam",
-        position: "Managing Director",
-        linkedinUrl: "https://www.linkedin.com/in/adithyaparam",
-        mailTo: "mailto:adithya@freeventures.org",
-        image: adithya
-    },
-    {
-        name: "Alexander Manes",
-        position: "Director",
-        linkedinUrl: "https://www.linkedin.com/in/alexander-manes/",
-        mailTo: "mailto:alexander@freeventures.org",
-        image: alex
-    },
-    {
-        name: "Tiana Wong",
-        position: "Director",
-        linkedinUrl: "https://www.linkedin.com/in/csow/",
-        mailTo: "mailto:tiana@freeventures.org",
-        image: tiana
-    },
-    {
-        name: "Andy Jiang",
-        position: "Director",
-        linkedinUrl: "https://www.linkedin.com/in/andybojiang/",
-        mailTo: "mailto:andy@freeventures.org",
-        image: andy
-    },
-    {
-        name: "Maanav Khaitan",
-        position: "Associate",
-        linkedinUrl: "",
-        mailTo: "mailto:",
-        image: maanav
-    },
-    {
-        name: "Varun Nair",
-        position: "Associate",
-        linkedinUrl: "",
-        mailTo: "mailto:",
-        image: varun
-    },
-    {
-        name: "Aamir Hudda",
-        position: "Associate",
-        linkedinUrl: "",
-        mailTo: "mailto:",
-        image: aamir
-    },
-]
+        {
+            name: "Christina Guo",
+            position: "Managing Director",
+            linkedinUrl: "https://www.linkedin.com/in/cguo16",
+            mailTo: "mailto:christina@freeventures.org",
+            image: christina
+        },
+        {
+            name: "Adithiya Paramasivam",
+            position: "Managing Director",
+            linkedinUrl: "https://www.linkedin.com/in/adithyaparam",
+            mailTo: "mailto:adithya@freeventures.org",
+            image: adithya
+        },
+        {
+            name: "Alexander Manes",
+            position: "Director",
+            linkedinUrl: "https://www.linkedin.com/in/alexander-manes/",
+            mailTo: "mailto:alexander@freeventures.org",
+            image: alex
+        },
+        {
+            name: "Tiana Wong",
+            position: "Director",
+            linkedinUrl: "https://www.linkedin.com/in/csow/",
+            mailTo: "mailto:tiana@freeventures.org",
+            image: tiana
+        },
+        {
+            name: "Andy Jiang",
+            position: "Director",
+            linkedinUrl: "https://www.linkedin.com/in/andybojiang/",
+            mailTo: "mailto:andy@freeventures.org",
+            image: andy
+        },
+        {
+            name: "Maanav Khaitan",
+            position: "Associate",
+            linkedinUrl: "",
+            mailTo: "mailto:",
+            image: maanav
+        },
+        {
+            name: "Varun Nair",
+            position: "Associate",
+            linkedinUrl: "",
+            mailTo: "mailto:",
+            image: varun
+        },
+        {
+            name: "Aamir Hudda",
+            position: "Associate",
+            linkedinUrl: "",
+            mailTo: "mailto:",
+            image: aamir
+        },
+    ]
 
     const alumniContent = [
         {
@@ -141,22 +141,22 @@ function Team() {
 
     let peopleComponents = peopleContent.map((person) => {
         return (<Person
-                    name={person.name}
-                    position={person.position}
-                    linkedinUrl={person.linkedinUrl}
-                    mailTo={person.mailTo}
-                    image={person.image}
-                />
+            name={person.name}
+            position={person.position}
+            linkedinUrl={person.linkedinUrl}
+            mailTo={person.mailTo}
+            image={person.image}
+        />
         );
     });
-    
+
     let alumniComponents = alumniContent.map((alumnus) => {
         return (<Alumnus
-                    name={alumnus.name}
-                    position={alumnus.position}
-                    company={alumnus.company}
-                    image={alumnus.image}
-                />
+            name={alumnus.name}
+            position={alumnus.position}
+            company={alumnus.company}
+            image={alumnus.image}
+        />
 
         );
     });
@@ -167,17 +167,21 @@ function Team() {
                 header={header}
                 description={description}
             >
-            {button}
+                {button}
             </GenericTop>
-        <GenericPage>
+            <GenericPage>
                 <div className="peopleGrid">
                     {peopleComponents}
                 </div>
-                <h2>Internal Alumni</h2>
-                <div className="alumni-cards-marquee">
-                    {alumniComponents}
+                <div class="marquee-wrapper">
+                    <h2>Internal Alumni</h2>
+                    <div className="alumni-cards-marquee">
+                        <div class="alumni-cards-row">
+                            {alumniComponents}
+                        </div>
+                    </div>
                 </div>
-                <h2 style={{ textAlign: 'center', padding: '50px 0'}}>Our Advisors come from</h2>
+                <h2 style={{ textAlign: 'center', padding: '50px 0' }}>Our Advisors come from</h2>
                 <div className="five-grid">
                     <span><img src={house} /></span>
                     <span><img src={skydeck} /></span>
