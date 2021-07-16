@@ -446,11 +446,11 @@ a {
 }
 
 .two-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 30px;
-    padding: 50px 0;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 30px;
+  padding: 50px 0;
+}
 
 .four-grid {
   display: grid;
@@ -459,12 +459,14 @@ a {
   padding: 0px 0 40px 0;
 }
 
-.four-grid img, .two-grid img {
+.four-grid img,
+.two-grid img {
   margin: 0 auto;
   width: 70%;
 }
 
-.four-grid a,.two-grid a {
+.four-grid a,
+.two-grid a {
   align-self: center;
   text-align: center;
   transition: 0.2s all ease;
@@ -472,7 +474,8 @@ a {
   bottom: 0px;
 }
 
-.four-grid a:hover ,.two-grid a:hover {
+.four-grid a:hover,
+.two-grid a:hover {
   bottom: 4px;
 }
 
