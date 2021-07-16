@@ -173,8 +173,15 @@ function Team() {
                 <div className="peopleGrid">
                     {peopleComponents}
                 </div>
+                <section className="genericTop">
+                    <div className="container">
+                        <div className="purpleBorder"></div>
+                        <div class="topHeader">
+                            <h1>Internal Alumni</h1>
+                        </div>
+                    </div>
+                </section>
                 <div class="marquee-wrapper">
-                    <h2>Internal Alumni</h2>
                     <div className="alumni-cards-marquee">
                         <div class="alumni-cards-row">
                             {alumniComponents}

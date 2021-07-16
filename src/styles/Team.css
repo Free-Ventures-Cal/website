@@ -47,17 +47,18 @@
 }
 
 .marquee-wrapper {
-  background-color: gray;
+  background-color: #eee;
   position: relative;
   overflow-y: hidden;
   overflow-x: hidden;
+  margin-top: 20px;
   width: 100%;
 }
 .alumni-cards-marquee {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin: 20px 0px;
   justify-content: center;
   scroll-behavior: auto;
 }
@@ -82,7 +83,12 @@
   padding-left: 8px;
 }
 .alumnus-card {
+    box-sizing: border-box;
     background-color: white;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
     color: black;
     display: block;
     height: 100%;
