@@ -309,7 +309,7 @@ function Home() {
                     </div>
                     <div className="numbers">
                         <h3><span className="bigNumber">81</span> alumni companies</h3>
-                        <h3><span className="bigNumber">Over $85m</span> of follow-on capital</h3>
+                        <h3><span className="bigNumber">$85m+</span> of follow-on capital</h3>
                         <h3><span className="bigNumber">15</span> batches hosted</h3>
                     </div>
                 </div>
