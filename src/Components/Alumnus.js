@@ -6,6 +6,9 @@ import emailIcon from './../assets/mail.png'
 
 function Alumnus(props) {
 
+    let descriptionText = props.position || props.company ?
+        <h3>{props.position} @ {props.company}</h3> : "";
+
     return (
         <div class="alumnus-card-wrapper">
             <div class="alumnus-card">
@@ -14,7 +17,7 @@ function Alumnus(props) {
                     <h2>{props.name}</h2>
                 </div>
                 <div class="alumnus-card-description">
-                    <h3>{props.position} @ {props.company}</h3>
+                    {descriptionText}
                 </div>
             </div>
         </div>
