@@ -315,17 +315,26 @@ function Team() {
                 <div class="alumni-marquee-wrapper">
                     <div className="alumni-cards-marquee">
                         <div class="alumni-cards-row">
-                            {alumniComponents.slice(0, numAlumni/3)}
+                            {alumniComponents.slice(0, numAlumni / 3)}
+                        </div>
+                        <div class="alumni-cards-row">
+                            {alumniComponents.slice(numAlumni / 3, 2 * numAlumni / 3 + 1)}
                         </div>
                     </div>
                     <div className="alumni-cards-marquee">
                         <div class="alumni-cards-row">
-                            {alumniComponents.slice(numAlumni/3, 2 * numAlumni/3 + 1)}
+                            {alumniComponents.slice(numAlumni / 3, 2 * numAlumni / 3 + 1)}
+                        </div>
+                        <div class="alumni-cards-row">
+                            {alumniComponents.slice(2 * numAlumni / 3 + 1, numAlumni)}
                         </div>
                     </div>
                     <div className="alumni-cards-marquee">
                         <div class="alumni-cards-row">
-                            {alumniComponents.slice(2 * numAlumni/3 + 1, numAlumni)}
+                            {alumniComponents.slice(2 * numAlumni / 3 + 1, numAlumni)}
+                        </div>
+                        <div class="alumni-cards-row">
+                            {alumniComponents.slice(0, numAlumni / 3)}
                         </div>
                     </div>
                 </div>
