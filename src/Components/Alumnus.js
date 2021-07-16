@@ -14,7 +14,7 @@ function Alumnus(props) {
                     <h2>{props.name}</h2>
                 </div>
                 <div class="alumnus-card-description">
-                    <h3>{props.position}@{props.company}</h3>
+                    <h3>{props.position} @ {props.company}</h3>
                 </div>
             </div>
         </div>

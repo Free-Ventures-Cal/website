@@ -290,6 +290,8 @@ function Team() {
         );
     });
 
+    const numAlumni = alumniComponents.length;
+
     return (
         <section>
             <GenericTop
@@ -310,10 +312,20 @@ function Team() {
                         </div>
                     </div>
                 </section>
-                <div class="marquee-wrapper">
+                <div class="alumni-marquee-wrapper">
                     <div className="alumni-cards-marquee">
                         <div class="alumni-cards-row">
-                            {alumniComponents}
+                            {alumniComponents.slice(0, numAlumni/3)}
+                        </div>
+                    </div>
+                    <div className="alumni-cards-marquee">
+                        <div class="alumni-cards-row">
+                            {alumniComponents.slice(numAlumni/3, 2 * numAlumni/3 + 1)}
+                        </div>
+                    </div>
+                    <div className="alumni-cards-marquee">
+                        <div class="alumni-cards-row">
+                            {alumniComponents.slice(2 * numAlumni/3 + 1, numAlumni)}
                         </div>
                     </div>
                 </div>
