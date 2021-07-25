@@ -185,6 +185,11 @@ function Home() {
             logo: coinbase,
             name: 'Coinbase',
             website: "https://www.coinbase.com"
+        },
+        {
+            logo: opendoor,
+            name: 'Opendoor',
+            website: "https://www.opendoor.com"
         }
     ];
 
