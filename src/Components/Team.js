@@ -336,6 +336,8 @@ function Team() {
                 <div className="peopleGrid">
                     {peopleComponents}
                 </div>
+            </GenericPage>
+            <div className="gray">
                 <section className="genericTop">
                     <div className="container">
                         <div className="purpleBorder"></div>
@@ -344,11 +346,11 @@ function Team() {
                         </div>
                     </div>
                 </section>
-                </GenericPage>
                 <div>
                     {alumniMarquee}
                 </div>
-                <GenericPage>
+            </div>
+            <GenericPage>
                 <h2 style={{ textAlign: 'center', padding: '50px 0' }}>Our Advisors come from</h2>
                 <div className="five-grid">
                     <span><img src={house} /></span>

@@ -46,8 +46,11 @@
   opacity: 0.8;
 }
 
+.gray {
+  background-color: #eee;
+}
+
 .alumni-marquee-wrapper {
-  /* background-color: #eee; */
   position: relative;
   overflow-y: hidden;
   overflow-x: hidden;
