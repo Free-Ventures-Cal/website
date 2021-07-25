@@ -1,20 +1,19 @@
 import React from 'react';
-
 import ContactForm from './ContactForm';
 import HomeCompany from './HomeCompany';
 import { Link } from "react-router-dom";
-import mentors from './../assets/mentors.png';
-import paladin from './../assets/portfolio/paladin.png';
-import distributed from './../assets/distributed.png';
-import gainful from './../assets/gainful.png';
+import freevgroup from './../assets/program/freevgroup.jpg'
+import './../styles/App.css';
+import './../styles/Home.css';
+// Press
+import wired from './../assets/press/grayscale/wired.png';
 import tc from './../assets/press/grayscale/tc.png';
 import huffpost from './../assets/press/grayscale/huffpost.png';
 import forbes from './../assets/press/grayscale/forbes.png';
 import mic from './../assets/press/grayscale/mic.png';
 import medium from './../assets/press/grayscale/medium.png';
 import recode from './../assets/press/grayscale/recode.png';
-import wired from './../assets/press/grayscale/wired.png';
-
+// Partners
 import accel from './../assets/partners/accel.png';
 import aws from './../assets/partners/aws.png';
 import cooley from './../assets/partners/cooley.png';
@@ -31,20 +30,22 @@ import spark from './../assets/partners/spark.png';
 import svangel from './../assets/partners/svangle.png';
 import svb from './../assets/partners/svb.png';
 import ycombinator from './../assets/partners/ycombinator.png';
+// Acquisitions
 import discord from './../assets/acquisitions/discord-3.png';
 import coinbase from './../assets/acquisitions/coinbase-2.png';
+import opendoor from './../assets/acquisitions/opendoor.png';
+// Portfolio
+import paladin from './../assets/portfolio/paladin.png';
+import distributed from './../assets/distributed.png';
+import gainful from './../assets/gainful.png';
+// Icons
 import funds from './../assets/funds.png';
-import freevgroup from './../assets/program/freevgroup.jpg'
+import mentors from './../assets/mentors.png';
 import workshops from './../assets/program/training.png';
-
-
-import './../styles/App.css';
-import './../styles/Home.css';
-
 
 function Home() {
 
-    let companiesContent = [{
+    let portfolioContent = [{
         logo: paladin,
         companyName: "Paladin Drones",
         description: "Paladin Drones deploys drones to 911 calls to give first responders instant access to critical information.",
@@ -250,7 +251,7 @@ function Home() {
         },
     ];
 
-    let companies = companiesContent.map((company) => {
+    let portfolioCompanies = portfolioContent.map((company) => {
         return <HomeCompany
             logo={company.logo}
             companyName={company.companyName}
@@ -344,7 +345,7 @@ function Home() {
                 <div className="container">
                     <h2>Selected portfolio</h2>
                     <div className="three-grid">
-                        {companies}
+                        {portfolioCompanies}
                     </div>
                     <Link to="/portfolio" className="genericButton">See all our portfolio companies</Link>
                 </div>
