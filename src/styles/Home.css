@@ -342,8 +342,11 @@ a {
   z-index: -100;
 }
 
-.portfolioHome {
+.gray {
   background-color: #f3f4f5;
+}
+
+.portfolioHome {
   text-align: center;
 }
 

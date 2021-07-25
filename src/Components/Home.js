@@ -330,7 +330,9 @@ function Home() {
                     <Link to="/partners" className="genericButton">Learn more about our partnerships</Link>
                 </div>
             </div>
-            <div className="sponsors homeSection">
+            {/* start gray section */}
+            <svg className="grayWave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,64L60,64C120,64,240,64,360,80C480,96,600,128,720,165.3C840,203,960,245,1080,256C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            <div className="sponsors homeSection gray">
                 <div className="container">
                     <h2>Recent Acquisitions by Leading Companies</h2>
                     <div className="two-grid">
@@ -338,8 +340,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <svg className="grayWave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,64L60,64C120,64,240,64,360,80C480,96,600,128,720,165.3C840,203,960,245,1080,256C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-            <div className="portfolioHome homeSection">
+            <div className="portfolioHome homeSection gray">
                 <div className="container">
                     <h2>Selected portfolio</h2>
                     <div className="three-grid">
@@ -349,6 +350,7 @@ function Home() {
                 </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" d="M0,128L60,138.7C120,149,240,171,360,176C480,181,600,171,720,149.3C840,128,960,96,1080,85.3C1200,75,1320,85,1380,90.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+            {/* end gray section */}
             <div className="tiers homeSection">
                 <div className="container">
                     <h2 className="pratik">What we offer</h2>
