@@ -294,6 +294,36 @@ function Team() {
     const firstThirdEndpoint = numAlumni / 3 + 1;
     const secondThirdEndpoint = 2 * numAlumni / 3 + 1;
 
+    let alumniMarquee = (
+        <div class="alumni-marquee-wrapper">
+            <div className="alumni-cards-marquee">
+                <div class="alumni-cards-row">
+                    {alumniComponents.slice(0, firstThirdEndpoint)}
+                </div>
+                <div class="alumni-cards-row">
+                    {alumniComponents.slice(0, 4)}
+                </div>
+            </div>
+            <div className="alumni-cards-marquee right-moving">
+
+                <div class="alumni-cards-row">
+                    {alumniComponents.slice(firstThirdEndpoint, secondThirdEndpoint)}
+                </div>
+                <div class="alumni-cards-row">
+                    {alumniComponents.slice(firstThirdEndpoint, firstThirdEndpoint + 5)}
+                </div>
+            </div>
+            <div className="alumni-cards-marquee">
+                <div class="alumni-cards-row">
+                    {alumniComponents.slice(secondThirdEndpoint, numAlumni)}
+                </div>
+                <div class="alumni-cards-row">
+                    {alumniComponents.slice(secondThirdEndpoint, secondThirdEndpoint + 5)}
+                </div>
+            </div>
+        </div>
+    );
+
     return (
         <section>
             <GenericTop
@@ -314,32 +344,8 @@ function Team() {
                         </div>
                     </div>
                 </section>
-                <div class="alumni-marquee-wrapper">
-                    <div className="alumni-cards-marquee">
-                        <div class="alumni-cards-row">
-                            {alumniComponents.slice(0, firstThirdEndpoint)}
-                        </div>
-                        <div class="alumni-cards-row">
-                            {alumniComponents.slice(0, 4)}
-                        </div>
-                    </div>
-                    <div className="alumni-cards-marquee right-moving">
-                        
-                        <div class="alumni-cards-row">
-                            {alumniComponents.slice(firstThirdEndpoint, secondThirdEndpoint)}
-                        </div>
-                        <div class="alumni-cards-row">
-                            {alumniComponents.slice(firstThirdEndpoint, firstThirdEndpoint + 5)}
-                        </div>
-                    </div>
-                    <div className="alumni-cards-marquee">
-                        <div class="alumni-cards-row">
-                            {alumniComponents.slice(secondThirdEndpoint, numAlumni)}
-                        </div>
-                        <div class="alumni-cards-row">
-                            {alumniComponents.slice(secondThirdEndpoint, secondThirdEndpoint + 5)}
-                        </div>
-                    </div>
+                <div className="full-width-insert">
+                    {alumniMarquee}
                 </div>
                 <h2 style={{ textAlign: 'center', padding: '50px 0' }}>Our Advisors come from</h2>
                 <div className="five-grid">
