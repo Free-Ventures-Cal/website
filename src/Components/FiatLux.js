@@ -89,25 +89,27 @@ function FiatLux() {
                 <p>The Fiat Lux | Female Leaders initiative addresses the lack of gender diversity within tech and entrepreneurship by empowering amazing female students with resources and mentorship.</p>
 
                 <div id="main">
-                    <div className="no-overflow">
+                    <div className="no-overflow" id="speakers-wrapper">
                         <div>
                             <h2>Past Speakers</h2>
                             {speakersComponents}
-                            <span>
-                            <h2>Get Involved</h2>
-                            <h3>Attending</h3>
-                            <p>If you are a student interested in attending Fiat Lux, send an email to <a href="mailto:lulu@freeventures.org">lulu@freeventures.org</a>.</p>
-                            <h3>Speaking</h3>
-                            <p>If you are an industry professional looking to get involved as a speaker or company sponsor please fill out the form below.</p>
-                            </span>
+                        </div>
+                    </div>
+                    <div id="sidebar">
+                        <div className="circle">
+                            80+
+                        </div>
+                        <p>Attendees</p>
                     </div>
                 </div>
-                <div id="sidebar">
-                    <h2>80+</h2>
-                    <p>Attendees</p>
-                </div>
-                </div>
-            <ContactForm />
+                <span>
+                    <h2>Get Involved</h2>
+                    <h3>Attending</h3>
+                    <p>If you are a student interested in attending Fiat Lux, send an email to <a href="mailto:lulu@freeventures.org">lulu@freeventures.org</a>.</p>
+                    <h3>Speaking</h3>
+                    <p>If you are an industry professional looking to get involved as a speaker or company sponsor please fill out the form below.</p>
+                </span>
+                <ContactForm />
             </GenericPage>
         </section >
     );

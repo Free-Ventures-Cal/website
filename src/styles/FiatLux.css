@@ -30,25 +30,32 @@
 }
 
 #sidebar {
-  background-color: gray;
   /* Positioning on the page */
   position: -webkit-sticky;
   position: sticky;
   align-self: flex-start;
-  height: auto;
+  height: 100%;
   float: right;
-  width: 50vw;
-  top: 0px;
-  bottom: 0px;
+  width: 50%;
+  top: 35%;
+  bottom: 35%;
   /* Positioning child elements inside this div */
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-#sidebar h2 {
-  width: 100%;
+.circle {
+  width: 250px;
+  height: 250px;
   text-align: center;
+  line-height: 250px;
+  border-radius: 50%;
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  background: #000;
 }
 
 #main {
@@ -67,6 +74,10 @@
   padding-left: 8px;
 }
 
+#speakers-wrapper {
+  width: 50%;
+}
+
 .speaker-card {
   color: black;
   display: block;
@@ -83,25 +94,25 @@
 }
 
 .speaker-card-header img {
-  height: 100px;
+  height: 200px;
   margin-right: 16px;
   vertical-align: middle;
 }
 
 .speaker-card-description {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .speaker-card-description h2 {
-    display: inline;
+  display: inline;
   font-size: 18px;
   line-height: 19.2px;
 }
 
 .speaker-card-description h3 {
-    display: inline;
+  display: inline;
   font-size: 16px;
   font-weight: 300;
 }
