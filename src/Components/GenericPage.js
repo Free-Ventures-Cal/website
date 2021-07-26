@@ -7,7 +7,7 @@ function GenericPage(props) {
 
 
   return (
-    <section className="genericPage">
+    <section className="genericPage" id={props.id}>
         {props.children}
     </section>
   );
