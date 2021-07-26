@@ -399,7 +399,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="contactSection homeSection">
+            <div className="contactSection homeSection" id="contact">
                 <div className="container">
                     <h2>Looking to get involved?</h2>
                     <p>We believe a university ecosystem is the ideal place to start up, and Cal is one of the best. But there's still a huge need for a strengthened community on campus to bring students together to tackle meaningful challenges. Join us in our quest to build a better community.</p>
