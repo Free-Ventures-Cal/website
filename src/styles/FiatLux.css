@@ -63,22 +63,16 @@
   color: black;
   flex-grow: 0;
   flex-shrink: 0;
-  width: 280px;
   padding-right: 8px;
   padding-left: 8px;
 }
 
 .speaker-card {
-  box-sizing: border-box;
-  background-color: white;
-  border-color: #eee;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 4px;
   color: black;
   display: block;
   height: 100%;
   padding: 16px 18px;
+  margin: 20px auto;
 }
 
 .speaker-card-header {
@@ -89,23 +83,27 @@
 }
 
 .speaker-card-header img {
-  height: 60px;
-  line-height: 24px;
-  max-width: 64px;
+  height: 100px;
   margin-right: 16px;
   vertical-align: middle;
 }
 
-.speaker-card-header h2 {
-  font-size: 16px;
+.speaker-card-description {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.speaker-card-description h2 {
+    display: inline;
+  font-size: 18px;
   line-height: 19.2px;
 }
 
 .speaker-card-description h3 {
-  font-size: 12px;
-  font-size: 14px;
+    display: inline;
+  font-size: 16px;
   font-weight: 300;
-  margin: 10px 0;
 }
 
 @media (max-width: 1034px) {

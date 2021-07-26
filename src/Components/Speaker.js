@@ -2,6 +2,7 @@ import React from 'react';
 import './../styles/App.css';
 import './../styles/FiatLux.css';
 
+
 function Speaker(props) {
 
     let descriptionText = props.position || props.company ?
@@ -11,12 +12,13 @@ function Speaker(props) {
         <div class="speaker-card-wrapper">
             <div class="speaker-card">
                 <div class="speaker-card-header">
-                    <img src={props.image} alt=""/>
-                    <h2>{props.name}</h2>
+                    <img src={props.image} alt="" />
+                    <div class="speaker-card-description">
+                        <h2>{props.name}</h2>
+                        {descriptionText}
+                    </div>
                 </div>
-                <div class="speaker-card-description">
-                    {descriptionText}
-                </div>
+
             </div>
         </div>
     );
