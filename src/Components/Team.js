@@ -297,31 +297,29 @@ function Team() {
     // determines which Alumnus components should appear in the result.
     function assembleMarqueeRow(row) {
         const numAlumni = alumniComponents.length;
-        // The ending index of the first third.
         const end1 = numAlumni / 3;
-        // The ending index of the second third.
         const end2 = 2 * numAlumni / 3;
-
+        const EXTRA_1 = 4;
+        const EXTRA_2 = 8;
         if (row === 1) {
-            // Moves right to left: 
-            // prepend from the end and append from the start.
             const row = alumniComponents.slice(0, end1);
-            const before = row.slice(row.length - 4, row.length);
-            const after = row.slice(0, 4);
+            // return row;
+            const before = row.slice(row.length - EXTRA_1, row.length);
+            const after = row.slice(0, EXTRA_1);
             return before.concat(row).concat(after);
         }
         if (row === 2) {
-            // Left to right.
             const row = alumniComponents.slice(end1, end2);
-            const before = row.slice(0, 4);  
-            const after = row.slice(row.length - 4, row.length);
+            // return row;
+            const before = row.slice(0, EXTRA_2);  
+            const after = row.slice(row.length - EXTRA_2, row.length);
             return before.concat(row).concat(after);
         }
         if (row === 3) {
-            // Right to left.
             const row = alumniComponents.slice(end2, numAlumni);
-            const before = row.slice(row.length - 4, row.length);
-            const after = row.slice(0, 4);
+            // return row;
+            const before = row.slice(row.length - EXTRA_1, row.length);
+            const after = row.slice(0, EXTRA_1);
             return before.concat(row).concat(after);
         }
     }
