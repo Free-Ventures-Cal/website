@@ -21,7 +21,26 @@
   border-radius: 7px;
 }
 
+.no-overflow {
+    overflow: hidden;
+}
+
 #copy {
   padding-top: 0;
 }
 
+#attendees-aside {
+    background-color: gray;
+    position: -webkit-sticky;
+    position: sticky;
+    height: auto;
+    float: right;
+    width: 200px;
+    top: 0px;
+    bottom: 0px;
+  }
+
+#main {
+    display: flex;
+    flex-wrap: nowrap;
+}

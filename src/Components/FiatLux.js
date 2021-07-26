@@ -39,25 +39,29 @@ function FiatLux() {
 
             </div>
             <GenericPage id="copy">
-                <span className="pratikround2">
-                    <h2>Overview</h2>
-                    <p>Our team understands the importance of diversity throughout tech and entrepreneurship and recognizes the issues prevalence on campus. We aim to tackle this issue by working with our network of accomplished professionals to empower students as they are taking the first steps in their professional careers.</p>
-                    <p>The Fiat Lux | Female Leaders initiative addresses the lack of gender diversity within tech and entrepreneurship by empowering amazing female students with resources and mentorship.</p>
-                </span>
-                <div>
-                    Past Speakers
+                <div id="main">
+                    <div className="no-overflow">
+                        <span className="pratikround2">
+                            <h2>Overview</h2>
+                            <p>Our team understands the importance of diversity throughout tech and entrepreneurship and recognizes the issues prevalence on campus. We aim to tackle this issue by working with our network of accomplished professionals to empower students as they are taking the first steps in their professional careers.</p>
+                            <p>The Fiat Lux | Female Leaders initiative addresses the lack of gender diversity within tech and entrepreneurship by empowering amazing female students with resources and mentorship.</p>
+                            <div>
+                                Past Speakers
+                            </div>
+                            <span>
+                                <h2>Get Involved</h2>
+                                <h3>Attending</h3>
+                                <p>If you are a student interested in attending Fiat Lux, send an email to <a href="mailto:lulu@freeventures.org">lulu@freeventures.org</a>.</p>
+                                <h3>Speaking</h3>
+                                <p>If you are an industry professional looking to get involved as a speaker or company sponsor please fill out the form below.</p>
+                            </span>
+                        </span>
+                    </div>
+                    <aside id="attendees-aside">
+                        <h2>80+</h2>
+                        <p>Attendees</p>
+                    </aside>
                 </div>
-                <aside id="attendees-aside">
-                 <h2>80+</h2>
-                 <p>Attendees</p>
-                </aside>
-                <span>
-                    <h2>Get Involved</h2>
-                    <h3>Attending</h3>
-                    <p>If you are a student interested in attending Fiat Lux, send an email to <a href="mailto:lulu@freeventures.org">lulu@freeventures.org</a>.</p>
-                    <h3>Speaking</h3>
-                    <p>If you are an industry professional looking to get involved as a speaker or company sponsor please fill out the form below</p>
-                </span>
                 <ContactForm />
             </GenericPage>
         </section >
