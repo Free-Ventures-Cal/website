@@ -25,6 +25,15 @@ function FiatLux() {
                     <span>
                         <img src={fiatlux2} alt="Fiat Lux Image 2" />
                     </span>
+                    <span>
+                        <img src={fiatlux2} alt="Fiat Lux Image 3" />
+                    </span>
+                    <span>
+                        <img src={fiatlux2} alt="Fiat Lux Image 4" />
+                    </span>
+                    <span>
+                        <img src={fiatlux2} alt="Fiat Lux Image 5" />
+                    </span>
 
                 </div>
                 <span className="pratikround2">
