@@ -22,25 +22,40 @@
 }
 
 .no-overflow {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #copy {
   padding-top: 0;
 }
 
-#attendees-aside {
-    background-color: gray;
-    position: -webkit-sticky;
-    position: sticky;
-    height: auto;
-    float: right;
-    width: 200px;
-    top: 0px;
-    bottom: 0px;
-  }
+#sidebar {
+  background-color: gray;
+  /* Positioning on the page */
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: flex-start;
+  height: auto;
+  float: right;
+  width: 50vw;
+  top: 0px;
+  bottom: 0px;
+  /* Positioning child elements inside this div */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#sidebar h2 {
+    width: 100%;
+    text-align: center;
+}
 
 #main {
-    display: flex;
-    flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 1034px) {
 }
