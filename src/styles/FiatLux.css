@@ -47,14 +47,65 @@
 }
 
 #sidebar h2 {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 #main {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
+}
+
+.speaker-card-wrapper {
+  box-sizing: border-box;
+  display: block;
+  color: black;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 280px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.speaker-card {
+  box-sizing: border-box;
+  background-color: white;
+  border-color: #eee;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  color: black;
+  display: block;
+  height: 100%;
+  padding: 16px 18px;
+}
+
+.speaker-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  line-height: 24px;
+}
+
+.speaker-card-header img {
+  height: 60px;
+  line-height: 24px;
+  max-width: 64px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.speaker-card-header h2 {
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.speaker-card-description h3 {
+  font-size: 12px;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 10px 0;
 }
 
 @media (max-width: 1034px) {

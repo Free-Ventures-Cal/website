@@ -12,7 +12,52 @@ import fiatlux3 from './../assets/fiatlux/fiat-lux-3.jpeg';
 import fiatlux4 from './../assets/fiatlux/fiat-lux-4.JPG';
 import fiatlux5 from './../assets/fiatlux/fiat-lux-5.JPG';
 
+import placeholder from './../assets/pink-gradient.jpg';
+import Speaker from './Speaker';
+
 function FiatLux() {
+
+    const speakersContent = [
+        {
+            name: "Danielle D'Agostaro",
+            position: "Principal Partner",
+            company: "WV Ventures",
+            image: placeholder
+        },
+        {
+            name: "Jasmine Stoy",
+            position: "Project Manager",
+            company: "Facebook",
+            image: placeholder
+        },
+        {
+            name: "Jessica Ou",
+            position: "VC",
+            company: "NEA",
+            image: placeholder
+        },
+        {
+            name: "Gresshaa Mehta",
+            position: "Project Coordinator",
+            company: "Apple",
+            image: placeholder
+        },
+        {
+            name: "Amy Xia",
+            position: "Growth Marketer",
+            company: "Facebook",
+            image: placeholder
+        }
+    ];
+
+    let speakersComponents = speakersContent.map((speaker) => {
+        return (<Speaker
+            name={speaker.name}
+            position={speaker.position}
+            company={speaker.company}
+            image={speaker.image}
+        />);
+    });
 
     return (
         <section>
@@ -47,22 +92,22 @@ function FiatLux() {
                     <div className="no-overflow">
                         <div>
                             <h2>Past Speakers</h2>
-
+                            {speakersComponents}
                             <span>
-                                <h2>Get Involved</h2>
-                                <h3>Attending</h3>
-                                <p>If you are a student interested in attending Fiat Lux, send an email to <a href="mailto:lulu@freeventures.org">lulu@freeventures.org</a>.</p>
-                                <h3>Speaking</h3>
-                                <p>If you are an industry professional looking to get involved as a speaker or company sponsor please fill out the form below.</p>
+                            <h2>Get Involved</h2>
+                            <h3>Attending</h3>
+                            <p>If you are a student interested in attending Fiat Lux, send an email to <a href="mailto:lulu@freeventures.org">lulu@freeventures.org</a>.</p>
+                            <h3>Speaking</h3>
+                            <p>If you are an industry professional looking to get involved as a speaker or company sponsor please fill out the form below.</p>
                             </span>
-                        </div>
-                    </div>
-                    <div id="sidebar">
-                        <h2>80+</h2>
-                        <p>Attendees</p>
                     </div>
                 </div>
-                <ContactForm />
+                <div id="sidebar">
+                    <h2>80+</h2>
+                    <p>Attendees</p>
+                </div>
+                </div>
+            <ContactForm />
             </GenericPage>
         </section >
     );
