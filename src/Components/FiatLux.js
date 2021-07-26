@@ -85,8 +85,8 @@ function FiatLux() {
             </div>
             <GenericPage id="copy">
                 <h2>Overview</h2>
-                <p>Our team understands the importance of diversity throughout tech and entrepreneurship and recognizes the issues prevalence on campus. We aim to tackle this issue by working with our network of accomplished professionals to empower students as they are taking the first steps in their professional careers.</p>
-                <p>The Fiat Lux | Female Leaders initiative addresses the lack of gender diversity within tech and entrepreneurship by empowering amazing female students with resources and mentorship.</p>
+                <p>Our team understands the importance of diversity throughout tech and entrepreneurship and recognizes the issue’s prevalence on campus. We aim to tackle this by working with our network of accomplished professionals to empower students as they are taking the first steps in their professional careers.</p>
+                <p>The Fiat Lux | Female Leaders initiative addresses the lack of gender diversity within tech and entrepreneurship by empowering amazing female students with resources and mentorship. We set up firesides with operators, founders and VCs to share hard-fought personal lessons while creating a pipeline for talented individuals on campus to apply.</p>
 
                 <div id="main">
                     <div className="no-overflow" id="speakers-wrapper">

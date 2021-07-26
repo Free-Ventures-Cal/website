@@ -41,8 +41,12 @@
   bottom: 35%;
   /* Positioning child elements inside this div */
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#sidebar p {
+  font-size: 24px;
 }
 
 .circle {
