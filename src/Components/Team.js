@@ -290,39 +290,36 @@ function Team() {
         );
     });
 
-    const numAlumni = alumniComponents.length;
-    const firstThirdEndpoint = numAlumni / 3 + 1;
-    const secondThirdEndpoint = 2 * numAlumni / 3 + 1;
+    // Return an array of Alumnus components to use as one of three rows in the
+    // internal alumni section. The length of the result is one third the length
+    // of alumniComponents, plus a few extra before and after to allow the marquee
+    // to seem continous when it starts over again. The row argument (1 to 3) 
+    // determines which Alumnus components should appear in the result.
+    function assembleMarqueeRow(row) {
+        const numAlumni = alumniComponents.length;
+        const firstThirdEndpoint = numAlumni / 3;
+        const secondThirdEndpoint = 2 * numAlumni / 3;
 
-    let alumniMarquee = (
-        <div class="alumni-marquee-wrapper">
-            <div className="alumni-cards-marquee">
-                <div class="alumni-cards-row">
-                    {alumniComponents.slice(0, firstThirdEndpoint)}
-                </div>
-                <div class="alumni-cards-row">
-                    {alumniComponents.slice(0, 4)}
-                </div>
-            </div>
-            <div className="alumni-cards-marquee right-moving">
+        if (row === 1) {
+            const firstRow = alumniComponents.slice(0, firstThirdEndpoint + 1);
+            const firstRowPrepend = 0;
+            const firstRowAppend = 0;
+            return firstRow;
+        }
+        if (row === 2) {
+            const secondRow = alumniComponents.slice(firstThirdEndpoint + 1, secondThirdEndpoint + 1);
+            const secondRowPrepend = 0;  
+            const secondRowAppend = 0;
+            return secondRow;
+        }
+        if (row === 3) {
+            const thirdRow = alumniComponents.slice(secondThirdEndpoint + 1, numAlumni + 1);
+            const thirdRowPrepend = 0;
+            const thirdRowAppend = 0;
+            return thirdRow;
+        }
+    }
 
-                <div class="alumni-cards-row">
-                    {alumniComponents.slice(firstThirdEndpoint, secondThirdEndpoint)}
-                </div>
-                <div class="alumni-cards-row">
-                    {alumniComponents.slice(firstThirdEndpoint, firstThirdEndpoint + 5)}
-                </div>
-            </div>
-            <div className="alumni-cards-marquee">
-                <div class="alumni-cards-row">
-                    {alumniComponents.slice(secondThirdEndpoint, numAlumni)}
-                </div>
-                <div class="alumni-cards-row">
-                    {alumniComponents.slice(secondThirdEndpoint, secondThirdEndpoint + 5)}
-                </div>
-            </div>
-        </div>
-    );
 
     return (
         <section>
@@ -346,8 +343,22 @@ function Team() {
                         </div>
                     </div>
                 </section>
-                <div>
-                    {alumniMarquee}
+                <div class="alumni-marquee-wrapper">
+                    <div className="alumni-cards-marquee">
+                        <div class="alumni-cards-row">
+                            {assembleMarqueeRow(1)}
+                        </div>
+                    </div>
+                    <div className="alumni-cards-marquee right-moving">
+                        <div class="alumni-cards-row">
+                            {assembleMarqueeRow(2)}
+                        </div>
+                    </div>
+                    <div className="alumni-cards-marquee">
+                        <div class="alumni-cards-row">
+                            {assembleMarqueeRow(3)}
+                        </div>
+                    </div>
                 </div>
             </div>
             <GenericPage>
