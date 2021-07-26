@@ -91,9 +91,7 @@
   color: black;
   flex-grow: 0;
   flex-shrink: 0;
-  width: 24vw;
-  max-width: 330px;
-  min-width: 280px;
+  width: 280px;
   padding-right: 8px;
   padding-left: 8px;
 }

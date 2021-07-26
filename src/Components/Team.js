@@ -297,26 +297,32 @@ function Team() {
     // determines which Alumnus components should appear in the result.
     function assembleMarqueeRow(row) {
         const numAlumni = alumniComponents.length;
-        const firstThirdEndpoint = numAlumni / 3;
-        const secondThirdEndpoint = 2 * numAlumni / 3;
+        // The ending index of the first third.
+        const end1 = numAlumni / 3;
+        // The ending index of the second third.
+        const end2 = 2 * numAlumni / 3;
 
         if (row === 1) {
-            const firstRow = alumniComponents.slice(0, firstThirdEndpoint + 1);
-            const firstRowPrepend = 0;
-            const firstRowAppend = 0;
-            return firstRow;
+            // Moves right to left: 
+            // prepend from the end and append from the start.
+            const row = alumniComponents.slice(0, end1);
+            const before = row.slice(row.length - 4, row.length);
+            const after = row.slice(0, 4);
+            return before.concat(row).concat(after);
         }
         if (row === 2) {
-            const secondRow = alumniComponents.slice(firstThirdEndpoint + 1, secondThirdEndpoint + 1);
-            const secondRowPrepend = 0;  
-            const secondRowAppend = 0;
-            return secondRow;
+            // Left to right.
+            const row = alumniComponents.slice(end1, end2);
+            const before = row.slice(0, 4);  
+            const after = row.slice(row.length - 4, row.length);
+            return before.concat(row).concat(after);
         }
         if (row === 3) {
-            const thirdRow = alumniComponents.slice(secondThirdEndpoint + 1, numAlumni + 1);
-            const thirdRowPrepend = 0;
-            const thirdRowAppend = 0;
-            return thirdRow;
+            // Right to left.
+            const row = alumniComponents.slice(end2, numAlumni);
+            const before = row.slice(row.length - 4, row.length);
+            const after = row.slice(0, 4);
+            return before.concat(row).concat(after);
         }
     }
 
