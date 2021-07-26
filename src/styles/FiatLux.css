@@ -87,7 +87,7 @@
   display: block;
   height: 100%;
   padding: 16px 18px;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .speaker-card-header {
@@ -98,7 +98,7 @@
 }
 
 .speaker-card-header img {
-  height: 200px;
+  height: 100px;
   margin-right: 16px;
   vertical-align: middle;
 }
