@@ -105,22 +105,22 @@ function Team() {
         {
             name: "Maanav Khaitan",
             position: "Associate",
-            linkedinUrl: "",
-            mailTo: "mailto:",
+            linkedinUrl: "https://www.linkedin.com/in/maanav-khaitan/",
+            mailTo: "mailto:maanav@freeventures.org",
             image: maanav
         },
         {
             name: "Varun Nair",
             position: "Associate",
-            linkedinUrl: "",
-            mailTo: "mailto:",
+            linkedinUrl: "https://www.linkedin.com/in/varun-nair-berkeley/",
+            mailTo: "mailto:varun@freeventures.org",
             image: varun
         },
         {
             name: "Aamir Hudda",
             position: "Associate",
-            linkedinUrl: "",
-            mailTo: "mailto:",
+            linkedinUrl: "https://www.linkedin.com/in/aamirhudda/",
+            mailTo: "mailto:aamir@freeventures.org",
             image: aamir
         },
     ]
@@ -290,11 +290,11 @@ function Team() {
         );
     });
 
-    // Return an array of Alumnus components to use as one of three rows in the
-    // internal alumni section. The length of the result is one third the length
-    // of alumniComponents, plus a few extra before and after to allow the marquee
-    // to seem continous when it starts over again. The row argument (1 to 3) 
-    // determines which Alumnus components should appear in the result.
+    /* Return an array of Alumnus components to use as one of three rows in the
+    internal alumni section. The length of the result is one third the length
+    of alumniComponents, plus a few extra before and after to allow the marquee
+    to seem continous when it starts over again. The row argument (1 to 3) 
+    determines which Alumnus components should appear in the result. */
     function assembleMarqueeRow(row) {
         const numAlumni = alumniComponents.length;
         const end1 = numAlumni / 3;
