@@ -31,27 +31,16 @@
 
 #sidebar {
   /* Positioning on the page */
-  position: -webkit-sticky;
-  position: sticky;
-  align-self: flex-start;
-  height: 100%;
-  float: right;
-  width: 50%;
-  top: 35%;
-  bottom: 35%;
+  margin: 20px;
   /* Positioning child elements inside this div */
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
-#sidebar p {
-  font-size: 24px;
-}
-
 .circle {
-  width: 250px;
-  height: 250px;
+  width: 140px;
+  height: 140px;
   text-align: center;
   line-height: 250px;
   border-radius: 50%;
@@ -60,6 +49,12 @@
   color: #fff;
   text-align: center;
   background: #000;
+}
+.circle p {
+  font-size: 24px;
+  text-align: center;
+  padding: 54px 0;
+  margin: 0;
 }
 
 #main {
@@ -73,7 +68,6 @@
   display: block;
   color: black;
   flex-grow: 0;
-  flex-shrink: 0;
   padding-right: 8px;
   padding-left: 8px;
 }
@@ -98,7 +92,7 @@
 }
 
 .speaker-card-header img {
-  height: 100px;
+  height: 80px;
   margin-right: 16px;
   vertical-align: middle;
 }
@@ -119,6 +113,12 @@
   display: inline;
   font-size: 16px;
   font-weight: 300;
+}
+
+#overview {
+  display: flex;
+  flex-flow: row nowrap;
+
 }
 
 @media (max-width: 1034px) {
