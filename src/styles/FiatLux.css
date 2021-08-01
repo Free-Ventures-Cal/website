@@ -72,36 +72,35 @@
   display: block;
   color: black;
   flex-grow: 0;
-  padding-right: 8px;
-  padding-left: 8px;
+  margin: 10px 0px;
 }
 
 .speakers-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
 }
 
 .speakers-column {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+  padding: 5px 0px;
+  justify-content: flex-start;
+  width: 400px;
 }
 
 .speaker-card {
   color: black;
   display: block;
   height: 100%;
-  padding: 16px 18px;
-  margin: 10px auto;
+  padding: 5px;
 }
 
 .speaker-card-header {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
   line-height: 24px;
 }
 
@@ -144,5 +143,21 @@
     padding: 40px 0;
     margin: 0;
     justify-content: flex-start;
+  }
+
+  #overview {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .main-gallery img {
+    height: 250px;
+  }
+
+  .speakers-column {
+    margin: auto;
+  }
+  .speaker-card-wrapper {
+    margin: 5px 0px;
   }
 }

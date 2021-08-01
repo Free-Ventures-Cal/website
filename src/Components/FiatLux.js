@@ -130,14 +130,10 @@ function FiatLux() {
                 <div className="speakers">
                     <div className="speakers-row">
                         <div className='speakers-column'>
-                            <div>
                                 {firstColumnSpeakers}
-                            </div>
                         </div>
                         <div className='speakers-column'>
-                            <div>
                                 {secondColumnSpeakers}
-                            </div>
                         </div>
                     </div>
                 </div>
