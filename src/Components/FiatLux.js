@@ -5,6 +5,7 @@ import './../styles/FiatLux.css';
 import GenericTop from './GenericTop';
 import GenericPage from './GenericPage';
 import ContactForm from './ContactForm';
+import Speaker from './Speaker';
 
 import fiatlux1 from './../assets/fiatlux/fiat-lux-1.jpg';
 import fiatlux2 from './../assets/fiatlux/fiat-lux-2.jpg';
@@ -13,7 +14,14 @@ import fiatlux4 from './../assets/fiatlux/fiat-lux-4.JPG';
 import fiatlux5 from './../assets/fiatlux/fiat-lux-5.JPG';
 
 import placeholder from './../assets/pink-gradient.jpg';
-import Speaker from './Speaker';
+import danielle from './../assets/fiatlux/past_speakers/Danielle.jpeg';
+import jasmine from './../assets/fiatlux/past_speakers/Jasmine.jpeg';
+import jessica from './../assets/fiatlux/past_speakers/Jessica.jpeg';
+import gresshaa from './../assets/fiatlux/past_speakers/Gresshaa.jpeg';
+import amy from './../assets/fiatlux/past_speakers/Amy.jpeg';
+import esther from './../assets/fiatlux/past_speakers/Esther.jpeg';
+import gillian from './../assets/fiatlux/past_speakers/Gillian.jpeg';
+import archa from './../assets/fiatlux/past_speakers/Archa.jpeg';
 
 function FiatLux() {
 
@@ -22,49 +30,49 @@ function FiatLux() {
             name: "Danielle D'Agostaro",
             position: "Principal Partner",
             company: "WV Ventures",
-            image: placeholder
+            image: danielle
         },
         {
             name: "Jasmine Stoy",
             position: "Project Manager",
             company: "Facebook",
-            image: placeholder
+            image: jasmine
         },
         {
             name: "Jessica Ou",
             position: "VC",
             company: "NEA",
-            image: placeholder
+            image: jessica
         },
         {
             name: "Gresshaa Mehta",
             position: "Project Coordinator",
             company: "Apple",
-            image: placeholder
+            image: gresshaa
         },
         {
             name: "Amy Xia",
             position: "Growth Marketer",
             company: "Facebook",
-            image: placeholder
+            image: amy
         },
         {
             name: "Esther Crawford",
             position: "Project Manager",
             company: "Twitter",
-            image: placeholder
+            image: esther
         },
         {
             name: "Gillian O’Brien",
             position: "Chief of Staff",
             company: "Dover",
-            image: placeholder
+            image: gillian
         },
         {
             name: "Archa Jain",
             position: "Co-Founder",
             company: "Insight Browser",
-            image: placeholder
+            image: archa
         }
     ];
 
