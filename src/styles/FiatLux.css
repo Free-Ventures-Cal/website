@@ -1,19 +1,19 @@
-.fiatlux-images {
+.main-gallery {
   max-width: 1400px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   margin: auto;
   padding: 40px 20px;
 }
 
-.flex-item {
+.gallery-flex-item {
   box-sizing: border-box;
   margin: 0px 10px;
   padding: 0px;
 }
 
-.fiatlux-images img {
+.main-gallery img {
   box-sizing: border-box;
   object-fit: cover;
   height: 220px;
@@ -132,8 +132,15 @@
 #overview {
   display: flex;
   flex-flow: row nowrap;
-
 }
 
-@media (max-width: 1034px) {
+@media (max-width: 527px) {
+  .main-gallery {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .main-gallery img {
+    height: auto;
+    width: 80vw;
+  }
 }

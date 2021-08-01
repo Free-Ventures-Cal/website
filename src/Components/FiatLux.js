@@ -94,20 +94,20 @@ function FiatLux() {
                 header={'Fiat Lux'}
                 description={'The Fiat Lux by Free Ventures initiative is our response to an increasing lack of gender diversity within the tech & startup ecosystem on campus. We aim to directly address this issue by providing amazing female students on campus with resources and mentorship from industry professionals.'}
             />
-            <div className="fiatlux-images">
-                <div className="flex-item">
+            <div className="main-gallery">
+                <div className="gallery-flex-item">
                     <img src={fiatlux1} alt="Fiat Lux Event" />
                 </div>
-                <div className="flex-item">
+                <div className="gallery-flex-item">
                     <img src={fiatlux2} alt="Fiat Lux Event" />
                 </div>
-                <div className="flex-item">
+                <div className="gallery-flex-item">
                     <img src={fiatlux4} alt="Fiat Lux Event" />
                 </div>
-                <div className="flex-item">
+                <div className="gallery-flex-item">
                     <img src={fiatlux5} alt="Fiat Lux Event" />
                 </div>
-                <div className="flex-item">
+                <div className="gallery-flex-item">
                     <img src={fiatlux3} alt="Fiat Lux Event" />
                 </div>
 
