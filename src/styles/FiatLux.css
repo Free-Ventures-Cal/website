@@ -2,6 +2,7 @@
   max-width: 1400px;
   height: 220px;
   overflow-x: scroll;
+  overflow-y: hidden;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -137,5 +138,11 @@
   flex-flow: row nowrap;
 }
 
-@media (max-width: 527px) {
+@media (max-width: 1034px) {
+  .main-gallery {
+    width: 100vw;
+    padding: 40px 0;
+    margin: 0;
+    justify-content: flex-start;
+  }
 }
