@@ -1,9 +1,12 @@
 .main-gallery {
   max-width: 1400px;
+  height: 220px;
+  overflow-x: scroll;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   margin: auto;
+  align-items: center;
   padding: 40px 20px;
 }
 
@@ -135,12 +138,4 @@
 }
 
 @media (max-width: 527px) {
-  .main-gallery {
-    flex-flow: column nowrap;
-    align-items: center;
-  }
-  .main-gallery img {
-    height: auto;
-    width: 80vw;
-  }
 }
