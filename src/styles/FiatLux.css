@@ -57,7 +57,7 @@
   margin: 0;
 }
 
-#main {
+.speakers {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
@@ -72,8 +72,18 @@
   padding-left: 8px;
 }
 
-#speakers-wrapper {
-  width: 50%;
+.speakers-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.speakers-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 
 .speaker-card {

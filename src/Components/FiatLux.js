@@ -77,6 +77,9 @@ function FiatLux() {
         />);
     });
 
+    let firstColumnSpeakers = speakersComponents.slice(0, speakersComponents.length / 2)
+    let secondColumnSpeakers = speakersComponents.slice(speakersComponents.length / 2, speakersComponents.length)
+
     return (
         <section>
             <GenericTop
@@ -115,14 +118,20 @@ function FiatLux() {
                         <p>Attendees</p>
                     </div>
                 </div>
-                <div id="main">
-                    <div className="no-overflow" id="speakers-wrapper">
-                        <div>
-                            <h2>Past Speakers</h2>
-                            {speakersComponents}
+                <h2>Past Speakers</h2>
+                <div className="speakers">
+                    <div className="speakers-row">
+                        <div className='speakers-column'>
+                            <div>
+                                {firstColumnSpeakers}
+                            </div>
+                        </div>
+                        <div className='speakers-column'>
+                            <div>
+                                {secondColumnSpeakers}
+                            </div>
                         </div>
                     </div>
-
                 </div>
                 <span>
                     <h2>Get Involved</h2>
