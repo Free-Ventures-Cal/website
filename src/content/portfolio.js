@@ -88,46 +88,46 @@ import alchemy from './../assets/press/alchemy.jpeg';
 
 let portfolioContent = {
     batchList: [
-      {
-          batchName: "Fall 2020",
-          batchNumber: 15,
-          companies: [
-              {
-                  name: "KovaDx",
-                  description: "KovaDx uses 3D Quantitative Phase imaging to obtain data about cells, which is used in their proprietary deep learning models to build diagnostic tools for sickle cell disease, malaria and blood cancers. They seek to reach underserved communities and address inequities in health care for patients by providing fast, affordable, and accurate diagnosis and monitoring.",
-                  logo: kovadx,
-                  links: [
-                      {
-                          address: "https://www.kovadx.com/",
-                          title: "Website",
-                      }
-                  ],
+        {
+            batchName: "Fall 2020",
+            batchNumber: 15,
+            companies: [
+                {
+                    name: "KovaDx",
+                    description: "KovaDx uses 3D Quantitative Phase imaging to obtain data about cells, which is used in their proprietary deep learning models to build diagnostic tools for sickle cell disease, malaria and blood cancers. They seek to reach underserved communities and address inequities in health care for patients by providing fast, affordable, and accurate diagnosis and monitoring.",
+                    logo: kovadx,
+                    links: [
+                        {
+                            address: "https://www.kovadx.com/",
+                            title: "Website",
+                        }
+                    ],
 
-              },
-              {
-                  name: "DeWaste",
-                  description: "DeWaste provides analytics for food waste. Their product, DeWaste Excess, collects real-time data of food leftovers using computer vision. This data is then used to generate actionable insights which can be used by restaurant managers to reduce food waste by engineering the menu to adapt to customer preferences. Their other product is called DeWaste Kitchen, which reduces errors in food preparation to cut costs in the kitchen.",
-                  logo: dewaste,
-                  links: [
-                      {
-                          address: "https://de-waste.com/",
-                          title: "Website",
-                      }
-                  ],
-              },
-              {
-                  name: "Placeware",
-                  description: "Placeware equips brick and mortar businesses with automated monitoring of human interaction at their locations, which allows them to better achieve their business goals. Their technology can provide traffic analysis, an understanding of how visitors interact with the physical space, action insights on customer behavior, and trend analysis using heatmaps over weeks and months.",
-                  logo: placeware,
-                  links: [
-                      {
-                          address: "https://placeware.io/auth/register",
-                          title: "Website",
-                      }
-                  ],
-              },
-          ]
-      },
+                },
+                {
+                    name: "DeWaste",
+                    description: "DeWaste provides analytics for food waste. Their product, DeWaste Excess, collects real-time data of food leftovers using computer vision. This data is then used to generate actionable insights which can be used by restaurant managers to reduce food waste by engineering the menu to adapt to customer preferences. Their other product is called DeWaste Kitchen, which reduces errors in food preparation to cut costs in the kitchen.",
+                    logo: dewaste,
+                    links: [
+                        {
+                            address: "https://de-waste.com/",
+                            title: "Website",
+                        }
+                    ],
+                },
+                {
+                    name: "Placeware",
+                    description: "Placeware equips brick and mortar businesses with automated monitoring of human interaction at their locations, which allows them to better achieve their business goals. Their technology can provide traffic analysis, an understanding of how visitors interact with the physical space, action insights on customer behavior, and trend analysis using heatmaps over weeks and months.",
+                    logo: placeware,
+                    links: [
+                        {
+                            address: "https://placeware.io/auth/register",
+                            title: "Website",
+                        }
+                    ],
+                },
+            ]
+        },
         {
             batchName: "Spring 2020",
             batchNumber: 14,
@@ -672,7 +672,7 @@ let portfolioContent = {
                     links: [{
                         address: "https://www.huffpost.com/entry/wildfire-app-alerts-users_b_9287408",
                         title: "Huffington Post Article"
-                    },{
+                    }, {
                         address: "https://www.getwildfire.com/",
                         title: "App Website"
                     }],
@@ -723,7 +723,7 @@ let portfolioContent = {
                     links: [{
                         address: "https://www.crunchbase.com/organization/instant-esports#section-funding-rounds",
                         title: "Crunchbase"
-                    },{
+                    }, {
                         address: "https://medium.com/@blitzesports/the-blitz-team-joins-discord-e3b17578966b",
                         title: "Acquisition"
                     }],
@@ -744,7 +744,7 @@ let portfolioContent = {
                     links: [{
                         address: "https://therooster.co/",
                         title: "Website"
-                    },{
+                    }, {
                         address: "https://www.crunchbase.com/organization/roosters-inc",
                         title: "Crunchbase"
                     }],
