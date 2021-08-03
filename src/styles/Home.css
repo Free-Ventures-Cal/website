@@ -515,7 +515,8 @@ a {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  
+  padding-left: 100px;
+  margin-right: -100px;
 }
 
 .testimonials-heading h2 {
