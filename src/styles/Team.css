@@ -50,6 +50,10 @@
   background-color: #F3F4F5;
 }
 
+#internal-alumni{
+  padding-bottom: 32px;
+}
+
 .alumni-marquee-wrapper {
   position: relative;
   overflow-y: hidden;

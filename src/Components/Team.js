@@ -326,7 +326,7 @@ function Team() {
                     {peopleComponents}
                 </div>
             </GenericPage>
-            <div className="gray">
+            <div className="gray" id="internal-alumni">
                 <section className="genericTop">
                     <div className="container">
                         <div className="purpleBorder"></div>
