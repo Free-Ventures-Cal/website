@@ -556,7 +556,7 @@ a {
   color: black;
   flex-grow: 0;
   flex-shrink: 0;
-  width: 280px;
+  width: 300px;
   padding-right: 8px;
   padding-left: 8px;
   margin: 16px 0;
@@ -591,7 +591,7 @@ a {
 }
 
 .testimonial-card-description p {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
   margin: auto;
 }
