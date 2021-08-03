@@ -125,7 +125,7 @@ let batchFAQContent = [
                 header={'Join the FreeV Family'}
                 description={'Internal Team applications are now open! Please apply below.'}
             >
-                <a href={airtableLink} className="genericButton" target="_blank">Spring 2021 Internal Application</a>
+                <a href={airtableLink} className="genericButton" target="_blank">Fall 2021 Internal Application</a>
             </GenericTop>
             <GenericPage>
                 <div className={classes.root}>
@@ -229,60 +229,13 @@ let batchFAQContent = [
 
                         </ul> */}
 
-
-                    <h2>Spring 2021 Recruitment Timeline</h2>
-                    <div className="timeline">
-                            <article>
-                                <div>
-                                    <img src={application} alt="" />
-                                </div>
-                                <h2>11:59pm, March 12th</h2>
-                                <p>Applications close</p>
-                            </article>
-                            <span>
-                                <img src={arrow} />
-                            </span>
-                            <article>
-                                <div>
-                                    <img src={interview} alt="" />
-                                </div>
-                                <h2>March 30th - April 1st</h2>
-                                <p>1st Round Interviews</p>
-                            </article>
-                            <span>
-                                <img src={arrow} />
-                            </span>
-                            <article>
-                                <div>
-                                    <img src={rocket} alt="" />
-                                </div>
-                                <h2>April 5th - 11th</h2>
-                                <p>Coffee Chats + 2nd Round</p>
-                            </article>
-                        </div>
-                        <h2>What we look for</h2>
-                        <ul>
-                            <li><p>
-                              Currently enrolled student at UC Berkeley.
-                            </p></li>
-                            <li><p>
-                              Passionate about working with early stage startups.
-                            </p></li>
-                            <li><p>
-                              Brings a new perspective to our team
-                            </p></li>
-                            <li><p>
-                            Experienced leading teams and taking initiative
-                            </p></li>
-                            <li><p>
-                                Ready to commit 8-10 hours per week and free Mondays and Wednesdays 6-8pm.
-                            </p></li>
-                        </ul>
-
-                        <h2>Frequently asked questions</h2>
-                    <FAQHolder
-                        faq={internalFAQContent}
-                    />
+                    <p>If you’re interested in startups and don’t know where to start, you’ve come to the right place!</p>
+                    <p>Free Ventures is the absolute best way you can dive into the startups at Cal and beyond. As an internal team member, you will have unparalleled exposure to the entrepreneurship ecosystem. </p>
+                    <p>All internal team members serve as point people for our batch startups, meaning you’ll get to work one-on-one with incredible startup founders from your very first semester - helping them problem-solve, think of crazy solutions, deep dive into a unique problem space, and so much more. Our founders are everyone from Berkeley undergrads with a love of machine learning to PhD students with biomedical expertise, and you get to have a very real and tangible impact on their startup journeys. If everything goes to plan, they’ll be changing the world completely as they do this for years, and you were there from the beginning. </p>
+                    <p>Outside of being a point person, you’ll also be taking on a lot of operating roles since there’s a great deal of behind-the-scenes work that goes into running Free Ventures. Scout and interview potential batch companies, create an innovative marketing plan to increase diversity, develop an incubator track for earlier-stage companies in nascent spaces, organize mentor sessions and network with some incredible mentors while you’re at it, write a Medium article about Cal’s coolest startup pitch competitions - whatever you want to do, we’ll give you it and you can run with it. </p>
+                    
+                    <h2>What We Look For</h2>
+                    <p>If you’re a student currently enrolled at Berkeley, ready to devote 8-10 hours/week with 6-8 pm PST on Mon/Wed in-person, incredibly passionate about startups, and ready to take crazy initiative and work really hard, we’d love to talk to you. Experience is absolutely not needed and we don’t have a single major or profile in mind. If you’re in doubt, apply anyway - let’s chat.</p>
                     </TabPanel>
                   </div>
                 </div>
