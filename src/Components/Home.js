@@ -447,25 +447,31 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div>
-            <div class="testimonials-marquee-wrapper">
-                    <div className="testimonials-cards-marquee">
-                        <div class="testimonials-cards-col">
-                            {testimonials.slice(0, testimonials.length/3)}
+            {/* start gray section */}
+            <div className="testimonialsHome homeSection gray">
+                <h2>Testimonials</h2>
+                <div className="testimonials">
+                    <div class="testimonials-marquee-wrapper">
+                        <div className="testimonials-cards-marquee">
+                            <div class="testimonials-cards-col">
+                                {testimonials.slice(0, testimonials.length / 3)}
+                            </div>
                         </div>
-                    </div>
-                    <div className="testimonials-cards-marquee">
-                        <div class="testimonials-cards-col">
-                            {testimonials.slice(testimonials.length/3, 2*testimonials.length/3)}
+                        <div className="testimonials-cards-marquee">
+                            <div class="testimonials-cards-col">
+                                {testimonials.slice(2 * testimonials.length / 3, testimonials.length)}
+                            </div>
                         </div>
-                    </div>
-                    <div className="testimonials-cards-marquee">
-                        <div class="testimonials-cards-col">
-                            {testimonials.slice(2*testimonials.length/3, testimonials.length)}
+                        <div className="testimonials-cards-marquee">
+                            <div class="testimonials-cards-col">
+                                {testimonials.slice(testimonials.length / 3, 2 * testimonials.length / 3)}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" d="M0,128L60,138.7C120,149,240,171,360,176C480,181,600,171,720,149.3C840,128,960,96,1080,85.3C1200,75,1320,85,1380,90.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+            {/* end gray section */}
             <div className="contactSection homeSection" id="contact">
                 <div className="container">
                     <h2>Looking to get involved?</h2>

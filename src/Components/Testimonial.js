@@ -7,7 +7,7 @@ function Testimonial(props) {
         <div class="testimonial-card-wrapper">
             <div class="testimonial-card">
                 <div class="testimonial-card-header">
-                    <h2>{props.name}, {props.company}</h2>
+                    <h3>{props.name}, {props.company}</h3>
                 </div>
                 <div class="testimonial-card-description">
                     <p>{props.text}</p>
