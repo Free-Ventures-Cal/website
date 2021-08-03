@@ -557,6 +557,10 @@ a {
   width: 280px;
   padding-right: 8px;
   padding-left: 8px;
+  margin: 16px 0;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.15),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  transition: all 0.3s ease;
 }
 
 .testimonial-card {
@@ -567,12 +571,6 @@ a {
   flex-flow: row wrap;
   height: 100%;
   padding: 16px 18px;
-  margin: 16px 0;
-
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.15),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-  transition: all 0.3s ease;
-
   /* Border Style */
   border-color: #eee;
   border-style: solid;
