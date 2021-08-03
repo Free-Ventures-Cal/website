@@ -66,15 +66,6 @@
   margin: 0 0 20px 0;
   justify-content: center;
   scroll-behavior: auto;
-  animation: moveSlideshow 30s linear infinite;
-}
-
-.left-moving {
-  animation-direction: normal;
-}
-
-.right-moving {
-  animation-direction: reverse;
 }
 
 .alumni-cards-row {
@@ -82,7 +73,7 @@
   flex-direction: row;
   position: relative;
   scroll-behavior: auto;
-
+  overflow-x: scroll;
 }
 
 .alumnus-card-wrapper {
@@ -140,24 +131,5 @@
   .peopleGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  .alumni-cards-marquee {
-    animation-duration: 30s;
-  }
-}
-@keyframes moveSlideshow {
-  /* Both values should have the same absolute value,
-     equal to half the length of the alumni-cards-row
-     element (not counting the extra/repeated cards at
-     the start and end). 
-     
-     To find the length, use inspect
-     element in browser and make it so assembleMarqueeRow in
-     Team.js doesn't add the repeated cards. */
-  0% {
-    transform: translate(1120px, 0);
-  }
-  100% {
-    transform: translate(-1120px, 0);
   }
 }

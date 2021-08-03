@@ -292,35 +292,23 @@ function Team() {
 
     /* Return an array of Alumnus components to use as one of three rows in the
     internal alumni section. The length of the result is one third the length
-    of alumniComponents, plus a few extra before and after to allow the marquee
-    to seem continous when it starts over again. The row argument (1 to 3) 
-    determines which Alumnus components should appear in the result. */
+    of alumniComponents. The row argument (1 to 3) determines which Alumnus
+    components should appear in the result. */
     function assembleMarqueeRow(row) {
         const numAlumni = alumniComponents.length;
         const end1 = numAlumni / 3;
         const end2 = 2 * numAlumni / 3;
-        const EXTRA_1 = 4;
-        const EXTRA_2 = 8;
         if (row === 1) {
             const row = alumniComponents.slice(0, end1);
-            // return row;
-            const before = row.slice(row.length - EXTRA_1, row.length);
-            const after = row.slice(0, EXTRA_1);
-            return before.concat(row).concat(after);
+            return row;
         }
         if (row === 2) {
             const row = alumniComponents.slice(end1, end2);
-            // return row;
-            const before = row.slice(0, EXTRA_2);  
-            const after = row.slice(row.length - EXTRA_2, row.length);
-            return before.concat(row).concat(after);
+            return row;
         }
         if (row === 3) {
             const row = alumniComponents.slice(end2, numAlumni);
-            // return row;
-            const before = row.slice(row.length - EXTRA_1, row.length);
-            const after = row.slice(0, EXTRA_1);
-            return before.concat(row).concat(after);
+            return row;
         }
     }
 
@@ -353,7 +341,7 @@ function Team() {
                             {assembleMarqueeRow(1)}
                         </div>
                     </div>
-                    <div className="alumni-cards-marquee right-moving">
+                    <div className="alumni-cards-marquee">
                         <div class="alumni-cards-row">
                             {assembleMarqueeRow(2)}
                         </div>
