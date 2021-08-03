@@ -449,7 +449,9 @@ function Home() {
             </div>
             {/* start gray section */}
             <div className="testimonialsHome homeSection gray">
-                <h2>Testimonials</h2>
+                <div className="testimonials-heading">
+                    <h2>Testimonials</h2>
+                </div>
                 <div className="testimonials">
                     <div class="testimonials-marquee-wrapper">
                         <div className="testimonials-cards-marquee">

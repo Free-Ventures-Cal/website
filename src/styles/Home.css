@@ -506,26 +506,28 @@ a {
   margin-top: 100px;
   height: 80vh;
   overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  padding-top: 70px;
 }
 
-.testimonialsHome h2 {
+.testimonials-heading {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  
+}
+
+.testimonials-heading h2 {
   text-align: center;
-  float: left;
-  margin-left: 200px;
-}
 
-.testimonials {
-  float: right;
-  margin-right: 100px;
-  /* display: flex;
-  justify-content: center; */
 }
 
 .testimonials-marquee-wrapper {
   display: flex;
   align-items: center;
   flex-flow: row nowrap;
-  margin-right: 100px;
 }
 
 .testimonials-cards-marquee {
@@ -558,9 +560,7 @@ a {
   padding-right: 8px;
   padding-left: 8px;
   margin: 16px 0;
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.15),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-  transition: all 0.3s ease;
+  
 }
 
 .testimonial-card {
@@ -585,14 +585,14 @@ a {
   line-height: 24px;
 }
 
-.testimonial-card-header h2 {
-  font-size: 16px;
+.testimonial-card-header h3 {
+  color: #67379a;
+  font-weight: 600;
 }
 
 .testimonial-card-description p {
-  font-size: 12px;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 500;
   margin: auto;
 }
 
