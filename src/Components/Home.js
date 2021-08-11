@@ -6,6 +6,7 @@ import freevgroup from './../assets/program/freevgroup.jpg'
 import './../styles/App.css';
 import './../styles/Home.css';
 import Testimonial from './Testimonial';
+import { useState, useEffect } from 'react';
 // Press
 import wired from './../assets/press/grayscale/wired.png';
 import tc from './../assets/press/grayscale/tc.png';
@@ -335,6 +336,11 @@ function Home() {
     const images = [{ src: './slider1.png' }, { src: './slider2.JPG' },
     { src: './slider3.jpg' }, { src: './slider4.jpg' }, { src: './slider5.jpg' }];
 
+    const divRef = React.createRef();
+
+    useEffect(() => {
+        divRef.current.scrollTop = 100;
+      });
 
     return (
         <section>
@@ -465,7 +471,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="testimonials-cards-marquee">
-                            <div class="testimonials-cards-col">
+                            <div class="testimonials-cards-col" ref={divRef}>
                                 {testimonials.slice(2 * testimonials.length / 3, testimonials.length)}
                             </div>
                         </div>

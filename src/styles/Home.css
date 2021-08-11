@@ -520,7 +520,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  height: 70vh;
+  height: 65vh;
   margin-top: 30px;
 }
 
@@ -538,7 +538,7 @@ a {
   flex-direction: column;
   position: relative;
   scroll-behavior: auto;
-  height: 70vh;
+  height: 65vh;
   margin: 0 20px;
   overflow-y: scroll;
 }
