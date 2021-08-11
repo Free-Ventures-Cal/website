@@ -506,17 +506,9 @@ a {
   margin-top: 100px;
   overflow: hidden;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  padding-top: 70px;
-}
-
-.testimonials-heading {
-  display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
-  padding-left: 100px;
-  margin-right: -100px;
+  justify-content: center;
+  padding-top: 20px;
 }
 
 .testimonials-heading h2 {
@@ -526,7 +518,9 @@ a {
 .testimonials-marquee-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-flow: row nowrap;
+  margin-top: 30px;
 }
 
 .testimonials-cards-marquee {
@@ -543,6 +537,9 @@ a {
   flex-direction: column;
   position: relative;
   scroll-behavior: auto;
+  height: 70vh;
+  margin: 0 20px;
+  overflow-y: scroll;
 }
 
 .testimonial-card-wrapper {

@@ -449,7 +449,6 @@ function Home() {
             </div>
             {/* start gray section */}
             <div className="testimonialsHome homeSection gray">
-                <div className="testimonials-heading">
                 <section className="genericTop">
                     <div className="container">
                         <div className="purpleBorder"></div>
@@ -458,7 +457,6 @@ function Home() {
                         </div>
                     </div>
                 </section>
-                </div>
                 <div className="testimonials">
                     <div class="testimonials-marquee-wrapper">
                         <div className="testimonials-cards-marquee">
