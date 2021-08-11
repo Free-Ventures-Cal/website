@@ -70,11 +70,21 @@ function Program() {
                         <div className="program-grid">
                         <article>
                             <span>
+                                <img src={community} alt="" />
+                            </span>
+
+                            <span>
+                                <h3>Point Person Structure</h3>
+                                <p>Often cited as our biggest value-add by batch companies, each batch company will be assigned one or two internal team members who will be there for you throughout the entire batch and way beyond that. We’ll give honest feedback, idea jam on new solutions, hear your dilemmas out, and always try to set you on the right path. More importantly, we pride ourselves on bending over backwards to serve you. You’ll find us fielding 1 AM panic texts, cold-DMing people on LinkedIn to get you personalized mentor intros, building out an angel investor database for your space, showing up at your events early to set up chairs if you need us to - you get the idea. We accept small batches because this startup stuff is hard and you should have someone as invested as you are.</p>
+                            </span>
+                        </article>
+                        <article>
+                            <span>
                                 <img src={equity} alt="" />
                             </span>
                             <span>
                                 <h3>Equity-free Funds</h3>
-                                <p>We fund our teams to provide student startups with financial support for their project. We call them micro grants, made to alleviate students' financial concerns during the development of their startup with no strings attached.</p>
+                                <p>Because Berkeley is probably expensive enough, we provide student startups with financial support for their project without taking any equity - and this sets us apart from most accelerators. Thanks to the generosity of our <a href="/partners">sponsors</a>, accelerator teams get $1000 microgrants to bring their startup to the next level, no strings attached. If you’re interested in becoming a sponsor or donating (we’re a nonprofit!), please email our Sponsorship Associate <a href="mailto:aamir@freeventures.org">aamir@freeventures.org</a>.</p>
                             </span>
                         </article>
                         <article>
@@ -84,47 +94,18 @@ function Program() {
 
                             <span>
                                 <h3>Mentorship</h3>
-                                <p>We connect founders with a handful of thought-leaders (e.g. founders, investors, or executives) within each company's space to provide guidance and build a lasting relationship. Our Monday Mentor Sessions also provide feedback from 40+ individual mentors over the course of the batch. </p>
+                                <p>What are you doing on your Monday evenings? If you’re part of FreeV’s batch, you’ll get to have one-on-one time with four to five incredible mentors every single week in a round-robin session, and our network runs deep. They’ve sold companies to Coinbase, served as partners at leading VC firms, brought companies public, raised millions of venture capital, and so much more. Most importantly, they care a lot about FreeV companies. They always want to have a second conversation, go out of their way to make intros, and have even eventually written seed round checks.</p>
                             </span>
 
                         </article>
+                        
                         <article>
                             <span>
                                 <img src={workshops} alt="" />
                             </span>
                             <span>
                                 <h3>Curriculum</h3>
-                                <p>Our workshops are lead by industry or academic experts and they are designed to provide information that tracks the development of each team's progress and premptively answers any questions that may arise. Topics range broadly and include design, product managment, funding, and legal incorporation. </p>
-                            </span>
-                        </article>
-                        <article>
-                            <span>
-                                <img src={community} alt="" />
-                            </span>
-
-                            <span>
-                                <h3>Community</h3>
-                                <p>Free Ventures provides students access to a variety of contacts from industry, academia, and the student community. This network can be tapped to provide technical expertise, funding advice, legal services, amongst other wisdom and help. Get plugged in to the network you need to succeed.</p>
-                            </span>
-                        </article>
-                        <article>
-                            <span>
-                                <img src={legal} alt="" />
-                            </span>
-
-                            <span>
-                                <h3>Legal/Banking Information</h3>
-                                <p>We partner with SVB and Cooley to provide deals on legal and banking assistance, which can range from opening a corporate banking account, incorporating your company, as well as the complexity of dividing up equity between founders. We host multiple sessions with Cooley and SVB to provide you with the best resources at the right time and at founder friendly costs.  </p>
-                            </span>
-
-                        </article>
-                        <article>
-                            <span>
-                                <img src={fundraising} alt="" />
-                            </span>
-                            <span>
-                                <h3>Fundraising Guidance</h3>
-                                <p>At the end of each semester we organize VC trips with top firms for founders to pitch in front of notable investors. We also leverage our network of angel investors and pre-seed firms to connect our batch companies while they are in the process of fundraising. We help our founders refine their pitch to guarantee best results.  </p>
+                                <p>On Wednesdays, we host leading experts to run curriculum sessions about whatever that specific batch needs: specific topical areas such as design, product development, user interviews, sales, etc. We also bring in partners SVB and Cooley to give legal and banking assistance, which can range from opening a corporate banking account, incorporating your company, as well as the complexity of dividing up equity between founders.</p>
                             </span>
                         </article>
                         </div>
