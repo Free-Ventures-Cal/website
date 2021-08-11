@@ -160,6 +160,17 @@
   #overview {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  #sidebar {
+    width: 100vw;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+  .circle {
+    margin: 0 10px;
   }
 
   .main-gallery img {
