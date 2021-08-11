@@ -43,22 +43,34 @@
 }
 
 .circle {
-  width: 140px;
-  height: 140px;
-  text-align: center;
-  line-height: 250px;
+  width: 150px;
+  height: 150px;
+  line-height: 100px;
   border-radius: 50%;
-  font-size: 50px;
   font-weight: 600;
   color: #fff;
   text-align: center;
   background: #000;
+  margin: 10px 0;
 }
-.circle p {
-  font-size: 24px;
-  text-align: center;
-  padding: 54px 0;
+
+.circle .text {
+  padding: 43px;
   margin: 0;
+}
+
+.circle p.big {
+  font-size: 38px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.circle p.small {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  width: auto;
 }
 
 .speakers {

@@ -121,19 +121,27 @@ function FiatLux() {
                     </div>
                     <div id="sidebar">
                         <div className="circle">
-                            <p>80+</p>
+                            <div className="text">
+                                <p className="big">80+</p>
+                                <p className="small">Attendees</p>
+                            </div>
                         </div>
-                        <p>Attendees</p>
+                        <div className="circle">
+                            <div className="text">
+                                <p className="big">3</p>
+                                <p className="small">Years</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <h2>Past Speakers</h2>
                 <div className="speakers">
                     <div className="speakers-row">
                         <div className='speakers-column'>
-                                {firstColumnSpeakers}
+                            {firstColumnSpeakers}
                         </div>
                         <div className='speakers-column'>
-                                {secondColumnSpeakers}
+                            {secondColumnSpeakers}
                         </div>
                     </div>
                 </div>
