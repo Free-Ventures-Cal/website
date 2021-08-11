@@ -71,7 +71,7 @@ const classes = useStyles();
 
 // change .useState value for either 0 - batch recruitment, 1 - internal recruitment
 
-const [value, setValue] = React.useState(1);
+const [value, setValue] = React.useState(0);
 
 function handleChange(event, newValue) {
     setValue(newValue);
@@ -139,8 +139,8 @@ let batchFAQContent = [
                     {/* BATCH TAB */}
 
                     <TabPanel value={value} index={0}>
-                        <h2>Spring 2021 Applications for startups are now closed. Please apply for our Fall 2021 batch in the future.</h2>
-                        <a href={airtableLink} className="genericButtonGray" target="_blank">Spring 2021 Batch Application</a>
+                        <h2>Fall 2021 Applications for startups are now open!</h2>
+                        <a href={airtableLink} className="genericButtonGray" target="_blank">Fall 2021 Batch Application</a>
                         <a href="https://www.facebook.com/events/415880429743413" className="genericButtonGray" target="_blank">Infosession RSVP</a>
 
                         <ul>
@@ -158,7 +158,7 @@ let batchFAQContent = [
                         </ul>
 
                         <p>Here are some details about our recruiting timeline and frequently asked questions</p>
-                        <h2>Spring 2021 Timeline</h2>
+                        <h2>Fall 2021 Timeline</h2>
                         <div className="timeline">
                             <article>
                                 <div>
