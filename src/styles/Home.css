@@ -287,7 +287,7 @@ a {
 }
 
 .tiers {
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 .tiers h2 {
@@ -453,6 +453,10 @@ a {
   padding: 40px 0 0px 0;
 }
 
+#acquisitions {
+  padding-top: 0;
+}
+
 .two-grid {
   display: flex;
   flex-wrap: wrap;
@@ -508,11 +512,15 @@ a {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .testimonials-heading h2 {
   text-align: center;
+}
+
+.testimonials {
+  padding-top: 20px;
 }
 
 .testimonials-marquee-wrapper {
@@ -604,6 +612,10 @@ a {
 
   .testimonials-cards-marquee {
     margin: 0;
+  }
+
+  .tiers {
+    margin-top: 50px;
   }
 
   .splash .container {
