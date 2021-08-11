@@ -249,22 +249,32 @@ function Team() {
         },
         {
             name: "Nikita Ashok",
+            position: "Associate Software Engineer",
+            company: "Slack",
             image: nikita
         },
         {
             name: "Adhiv Dhar",
+            position: "APM",
+            company: "Twitter",
             image: adhiv
         },
         {
             name: "Shaantam Chawla",
+            position: "Master of Engineering",
+            company: "UC Berkeley",
             image: shaantam
         },
         {
             name: "Saneel Sreeni",
+            position: "Investor",
+            company: "Dragonfly Capital",
             image: saneel
         },
         {
             name: "LuLu Holland",
+            position: "Impact Investing Fellow",
+            company: "EVCA",
             image: lulu
         },
     ]
