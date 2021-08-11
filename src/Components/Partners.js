@@ -34,26 +34,6 @@ function Partners() {
 
     let partnersContent = [
         {
-            logo: kpcb,
-            name: 'KPCB',
-            website: "http://www.kpcb.com/"
-        },
-        {
-            logo: greylock,
-            name: 'Greylock Partners',
-            website: "http://www.greylock.com/"
-        },
-        {
-            logo: pear,
-            name: 'Pear VC',
-            website: "http://www.pear.vc/"
-        },
-        {
-            logo: accel,
-            name: 'Accel',
-            website: "https://www.accel.com/"
-        },
-        {
             logo: cooley,
             name: 'Cooley',
             website: "https://www.cooley.com"
@@ -72,21 +52,6 @@ function Partners() {
             logo: eightvc,
             name: '8VC',
             website: "https://8vc.com/"
-        },
-        {
-            logo: scet,
-            name: 'Stardja Center for Entreprenuership and Technology',
-            website: "https://scet.berkeley.edu/"
-        },
-        {
-            logo: fbstart,
-            name: 'FB Start',
-            website: "https://fbstart.com/"
-        },
-        {
-            logo: github,
-            name: 'Github',
-            website: "http://github.com"
         },
         {
             logo: aws,
