@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import './../styles/App.css';
 import './../styles/Team.css';
+import { useState, useEffect } from 'react';
 
 import Person from './Person.js'
 import GenericTop from './GenericTop';
@@ -312,6 +313,16 @@ function Team() {
         }
     }
 
+    const row1 = React.createRef();
+    const row2 = React.createRef();
+    const row3 = React.createRef();
+
+    useEffect(() => {
+        row1.current.scrollLeft = 250;
+        row2.current.scrollLeft = 200;
+        row3.current.scrollLeft = 350;
+      });
+
 
     return (
         <section>
@@ -337,17 +348,17 @@ function Team() {
                 </section>
                 <div class="alumni-marquee-wrapper">
                     <div className="alumni-cards-marquee">
-                        <div class="alumni-cards-row">
+                        <div class="alumni-cards-row" ref={row1}>
                             {assembleMarqueeRow(1)}
                         </div>
                     </div>
                     <div className="alumni-cards-marquee">
-                        <div class="alumni-cards-row">
+                        <div class="alumni-cards-row" ref={row2}>
                             {assembleMarqueeRow(2)}
                         </div>
                     </div>
                     <div className="alumni-cards-marquee">
-                        <div class="alumni-cards-row">
+                        <div class="alumni-cards-row" ref={row3}>
                             {assembleMarqueeRow(3)}
                         </div>
                     </div>
