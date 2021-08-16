@@ -45,27 +45,27 @@ class Portfolio extends React.Component {
     handleSideBarClick = (sideBarTabName) => {
         let companiesToRender = [];
 
-        if(sideBarTabName === "All startups") {
+        if (sideBarTabName === "All startups") {
             portfolioContent.batchList.map((batch) => {
                 companiesToRender = companiesToRender.concat(batch.companies);
             });
         }
-        else if(sideBarTabName === "Press") {
+        else if (sideBarTabName === "Press") {
         }
         else {
             portfolioContent.batchList.map((batch) => {
-                if(sideBarTabName === batch.batchName) {
+                if (sideBarTabName === batch.batchName) {
                     companiesToRender = batch.companies;
                 }
             });
         }
 
         this.setState({
-          companiesToRender,
-          sideBarTabName
-      }, () => {
-          console.log(this.state)
-      });
+            companiesToRender,
+            sideBarTabName
+        }, () => {
+            console.log(this.state)
+        });
     }
 
 
@@ -86,12 +86,12 @@ class Portfolio extends React.Component {
             }
 
             return (<li onClick={() => {
-                            this.handleSideBarClick(batch.batchName)
-                        }}
-                        style={activeLinkStyle}
-                        key={batch.batchName}
-                    >
-            {batch.batchName}
+                this.handleSideBarClick(batch.batchName)
+            }}
+                style={activeLinkStyle}
+                key={batch.batchName}
+            >
+                {batch.batchName}
             </li>);
         })
 
@@ -108,14 +108,14 @@ class Portfolio extends React.Component {
             handleSideBarClick={this.handleSideBarClick}
         />);
 
-        if(this.state.sideBarTabName === "All startups") {
+        if (this.state.sideBarTabName === "All startups") {
             allStartupsStyle = {
                 backgroundColor: '#F1F1F1',
                 color: '#67379A'
             };
         }
 
-        if(this.state.sideBarTabName === "Press") {
+        if (this.state.sideBarTabName === "Press") {
             pressStyle = {
                 backgroundColor: '#F1F1F1',
                 color: '#67379A'
@@ -130,36 +130,36 @@ class Portfolio extends React.Component {
             console.log("making it in here");
             let descSnippet = this.clipDescription(company.description);
             return (<PortfolioCompanyCard
-                        logo={company.logo}
-                        companyName={company.name}
-                        key={company.name}
-                        description={descSnippet}
-                        link={company.link}
-                        tags={company.tags}
-                        onClick={() => {
-                            this.setState({
-                                selectedCompany: company
-                            });
-                        }}
-                    />)
+                logo={company.logo}
+                companyName={company.name}
+                key={company.name}
+                description={descSnippet}
+                link={company.link}
+                tags={company.tags}
+                onClick={() => {
+                    this.setState({
+                        selectedCompany: company
+                    });
+                }}
+            />)
         });
 
         let renderPress;
 
-        if(this.state.sideBarTabName === "Press") {
+        if (this.state.sideBarTabName === "Press") {
             renderPress = portfolioContent.pressList.map((article) => {
                 return (<a href={article.address} target="_blank">
-                            <div className="pressArticle">
-                                <img src={article.image} alt="Logo" />
-                                <h1>{article.title}</h1>
-                            </div>
-                        </a>);
+                    <div className="pressArticle">
+                        <img src={article.image} alt="Logo" />
+                        <h1>{article.title}</h1>
+                    </div>
+                </a>);
             });
         }
 
         let expandedPanel;
 
-        if(this.state.selectedCompany) {
+        if (this.state.selectedCompany) {
             expandedPanel = (
                 <PortfolioCompanyCardExpanded
                     open={true}
@@ -179,8 +179,8 @@ class Portfolio extends React.Component {
                     <div className="container portfolio">
                         <div className="portfolioNav">
                             <ul className="generalSideBar">
-                                <li onClick={() => {this.handleSideBarClick("All startups") }} style={allStartupsStyle}>All startups</li>
-                                <li onClick={() => {this.handleSideBarClick("Press") }} style={pressStyle}>Press</li>
+                                <li onClick={() => { this.handleSideBarClick("All startups") }} style={allStartupsStyle}>All startups</li>
+                                <li onClick={() => { this.handleSideBarClick("Press") }} style={pressStyle}>Press</li>
                             </ul>
                             {simpleSelect}
                             <ul className="batchSideBar">
