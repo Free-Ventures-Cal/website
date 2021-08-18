@@ -58,58 +58,6 @@
   margin-right: 10%;
 }
 
-.trackRecord {
-  background-color: #f3f4f5;
-  text-align: center;
-  background-size: cover;
-  padding-top: 5vh;
-  padding-bottom: 9vh;
-}
-.trackRecord h2 {
-  text-align: center;
-  font-size: 30px;
-  padding-bottom: 20px;
-}
-
-.trackInfo {
-  display: inline-block;
-  width: 50%;
-  vertical-align: top;
-  text-align: left;
-}
-
-.trackImage {
-  display: inline-block;
-  width: 50%;
-  padding-left: -6px;
-}
-
-.trackImage img {
-  width: 95%;
-  padding-left: -10px;
-}
-
-.foundersPics {
-  float: left;
-}
-
-.foundersPics img {
-  width: 40%;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  height: auto;
-}
-
-.teamsVCPics {
-  padding-top: 15px;
-  justify-content: space-around;
-}
-
-.teamsVCPics img {
-  width: 45%;
-}
-
 .spotlightArticles {
   /*background-color: #f3f4f5;*/
   text-align: center;
@@ -215,6 +163,54 @@
 
 .container {
   max-width: 1000px;
+}
+
+/* Track Record Section */
+.trackRecord {
+  background-color: #f3f4f5;
+  text-align: center;
+  background-size: cover;
+  padding-top: 5vh;
+  padding-bottom: 9vh;
+}
+
+.trackRecord h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.track-info {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.trackImage img {
+  width: 95%;
+  padding-left: -10px;
+}
+
+.foundersPics {
+  float: left;
+}
+
+.foundersPics img {
+  width: 40%;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  height: auto;
+}
+
+.teamsVCPics {
+  padding-top: 15px;
+  justify-content: space-around;
+}
+
+.teamsVCPics img {
+  width: 45%;
 }
 
 .greylock {
