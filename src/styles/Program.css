@@ -166,9 +166,51 @@
 }
 
 /* Track Record Section */
+.track-record-top {
+  background: #67379a;
+  padding: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  align-items: center;
+}
+
+.track-record-top h3 {
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tr-button {
+  /* button styling */
+  width: 375px;
+  height: 67px;
+  left: 503px;
+  top: 478px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tr-button p {
+  /* text styling */
+  line-height: 67px;
+  display: inline-block;
+  height: 67px;
+  vertical-align: middle;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23.8636px;
+  text-align: center;
+  color: #000000;
+}
+
 .trackRecord {
   background-color: #f3f4f5;
-  text-align: center;
   background-size: cover;
   padding-top: 5vh;
   padding-bottom: 9vh;
@@ -181,27 +223,29 @@
 }
 
 .track-info {
-  display: inline-block;
-  width: 50%;
-  vertical-align: top;
+  width: 100%;
   text-align: left;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
-.trackImage img {
-  width: 95%;
-  padding-left: -10px;
+.track-record-bottom {
+  height: 424px;
+  width: 1258px;
+  overflow: hidden;
+  background: #ffffff;
 }
 
 .foundersPics {
-  float: left;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .foundersPics img {
-  width: 40%;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  height: auto;
+  width: 193px;
+  height: 66px;
 }
 
 .teamsVCPics {
