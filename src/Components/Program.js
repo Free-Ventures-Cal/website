@@ -50,11 +50,11 @@ function Program() {
 
     let spotarticles = articles.map((art) => {
         return <SpotLightArticle
-                image={art.image}
-                headline={art.headline}
-                date={art.date}
-                url={art.url}
-                />
+            image={art.image}
+            headline={art.headline}
+            date={art.date}
+            url={art.url}
+        />
     })
 
     return (
@@ -68,74 +68,75 @@ function Program() {
                     <div className="container">
                         <h2>What we provide</h2>
                         <div className="program-grid">
-                        <article>
-                            <span>
-                                <img src={community} alt="" />
-                            </span>
+                            <article>
+                                <span>
+                                    <img src={community} alt="" />
+                                </span>
 
-                            <span>
-                                <h3>Point Person Structure</h3>
-                                <p>Often cited as our biggest value-add by batch companies, each batch company will be assigned one or two internal team members who will be there for you throughout the entire batch and way beyond that. We’ll give honest feedback, idea jam on new solutions, hear your dilemmas out, and always try to set you on the right path. More importantly, we pride ourselves on bending over backwards to serve you. You’ll find us fielding 1 AM panic texts, cold-DMing people on LinkedIn to get you personalized mentor intros, building out an angel investor database for your space, showing up at your events early to set up chairs if you need us to - you get the idea. We accept small batches because this startup stuff is hard and you should have someone as invested as you are.</p>
-                            </span>
-                        </article>
-                        <article>
-                            <span>
-                                <img src={equity} alt="" />
-                            </span>
-                            <span>
-                                <h3>Equity-free Funds</h3>
-                                <p>Because Berkeley is probably expensive enough, we provide student startups with financial support for their project without taking any equity - and this sets us apart from most accelerators. Thanks to the generosity of our <a href="/partners">sponsors</a>, accelerator teams get $1000 microgrants to bring their startup to the next level, no strings attached. If you’re interested in becoming a sponsor or donating (we’re a nonprofit!), please email our Sponsorship Associate <a href="mailto:aamir@freeventures.org">aamir@freeventures.org</a>.</p>
-                            </span>
-                        </article>
-                        <article>
-                            <span>
-                                <img src={mentors} alt="" />
-                            </span>
+                                <span>
+                                    <h3>Point Person Structure</h3>
+                                    <p>Often cited as our biggest value-add by batch companies, each batch company will be assigned one or two internal team members who will be there for you throughout the entire batch and way beyond that. We’ll give honest feedback, idea jam on new solutions, hear your dilemmas out, and always try to set you on the right path. More importantly, we pride ourselves on bending over backwards to serve you. You’ll find us fielding 1 AM panic texts, cold-DMing people on LinkedIn to get you personalized mentor intros, building out an angel investor database for your space, showing up at your events early to set up chairs if you need us to - you get the idea. We accept small batches because this startup stuff is hard and you should have someone as invested as you are.</p>
+                                </span>
+                            </article>
+                            <article>
+                                <span>
+                                    <img src={equity} alt="" />
+                                </span>
+                                <span>
+                                    <h3>Equity-free Funds</h3>
+                                    <p>Because Berkeley is probably expensive enough, we provide student startups with financial support for their project without taking any equity - and this sets us apart from most accelerators. Thanks to the generosity of our <a href="/partners">sponsors</a>, accelerator teams get $1000 microgrants to bring their startup to the next level, no strings attached. If you’re interested in becoming a sponsor or donating (we’re a nonprofit!), please email our Sponsorship Associate <a href="mailto:aamir@freeventures.org">aamir@freeventures.org</a>.</p>
+                                </span>
+                            </article>
+                            <article>
+                                <span>
+                                    <img src={mentors} alt="" />
+                                </span>
 
-                            <span>
-                                <h3>Mentorship</h3>
-                                <p>What are you doing on your Monday evenings? If you’re part of FreeV’s batch, you’ll get to have one-on-one time with four to five incredible mentors every single week in a round-robin session, and our network runs deep. They’ve sold companies to Coinbase, served as partners at leading VC firms, brought companies public, raised millions of venture capital, and so much more. Most importantly, they care a lot about FreeV companies. They always want to have a second conversation, go out of their way to make intros, and have even eventually written seed round checks.</p>
-                            </span>
+                                <span>
+                                    <h3>Mentorship</h3>
+                                    <p>What are you doing on your Monday evenings? If you’re part of FreeV’s batch, you’ll get to have one-on-one time with four to five incredible mentors every single week in a round-robin session, and our network runs deep. They’ve sold companies to Coinbase, served as partners at leading VC firms, brought companies public, raised millions of venture capital, and so much more. Most importantly, they care a lot about FreeV companies. They always want to have a second conversation, go out of their way to make intros, and have even eventually written seed round checks.</p>
+                                </span>
 
-                        </article>
-                        
-                        <article>
-                            <span>
-                                <img src={workshops} alt="" />
-                            </span>
-                            <span>
-                                <h3>Curriculum</h3>
-                                <p>On Wednesdays, we host leading experts to run curriculum sessions about whatever that specific batch needs: specific topical areas such as design, product development, user interviews, sales, etc. We also bring in partners SVB and Cooley to give legal and banking assistance, which can range from opening a corporate banking account, incorporating your company, as well as the complexity of dividing up equity between founders.</p>
-                            </span>
-                        </article>
+                            </article>
+
+                            <article>
+                                <span>
+                                    <img src={workshops} alt="" />
+                                </span>
+                                <span>
+                                    <h3>Curriculum</h3>
+                                    <p>On Wednesdays, we host leading experts to run curriculum sessions about whatever that specific batch needs: specific topical areas such as design, product development, user interviews, sales, etc. We also bring in partners SVB and Cooley to give legal and banking assistance, which can range from opening a corporate banking account, incorporating your company, as well as the complexity of dividing up equity between founders.</p>
+                                </span>
+                            </article>
                         </div>
                     </div>
                 </div>
                 <div className="trackRecord">
                     <div className="container trackRecord">
                         <h2>Our Track Record</h2>
-                        <div className="trackInfo">
-                            <div className="trackFounders">
-                                <h1>FOUNDERS</h1>
+                        <div className="track-record-top">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <button>See all our companies</button>
+                        </div>
+                        <div className="track-record-bottom">
+                            <div className="tr-bottom-left">
+                                <h3>Founders</h3>
                                 <div className="foundersPics">
                                     <img src ={thiel}/>
                                     <img src ={forbes}/>
                                 </div>
                             </div>
-                            <div className="trackTeams">
-                                <h1>TEAMS</h1>
-                                <h3>over $55 million raised from:</h3>
+                            <svg/>
+                            <div className="tr-bottom-left">
+                                <h3>Teams</h3>
                                 <div className="teamsVCPics">
                                     <img src={yc}/>
                                     <img className= "greylock" src={greylock}/>
                                     <img src={kp}/>
                                     <img src={accel}/>
                                 </div>
-                                <Link to="/portfolio" className="genericButton">See all our companies</Link>
                             </div>
-                        </div>
-                        <div className="trackImage">
-                            <img src={freevgroup}/>
                         </div>
                     </div>
                 </div>
