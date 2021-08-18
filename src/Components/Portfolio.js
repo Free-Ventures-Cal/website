@@ -2,12 +2,11 @@ import React from 'react';
 import './../styles/App.css';
 import './../styles/Portfolio.css';
 import portfolioContent from './../content/portfolio.js';
-import portfolioTab from './PortfolioTab.js'
+import PortfolioTab from './PortfolioTab.js'
 
 import GenericTop from './GenericTop';
 import GenericPage from './GenericPage';
-import PortfolioCompanyCard from './PortfolioCompanyCard';
-import PortfolioCompanyCardExpanded from './PortfolioCompanyCardExpanded.js';
+
 import SimpleSelect from './Select.js';
 
 import tc from './../assets/press/tc.png';
@@ -21,54 +20,27 @@ import bb from './../assets/press/bb.jpg';
 import dailycal from './../assets/press/dailycal.jpg';
 import e27 from './../assets/press/e27.png';
 import alchemy from './../assets/press/alchemy.jpeg';
-import PortfolioTab from './PortfolioTab.js';
 
 class Portfolio extends React.Component {
 
     state = {
-        sideBarTabName: "All startups",
-        clickInstructionText: (<p>Click on a company to learn more</p>),
+        sideBarTabName: "",
         allStartupsStyle: null,
         pressStyle: null
     }
 
     componentDidMount() {
-        console.log("uhhh the component mounted with state" + this.state.sideBarTabName);
         this.setState({
-            sideBarTabName: "All startups"
+            sideBarTabName: ""
         });
         this.handleSideBarClick(this.state.sideBarTabName);
     }
 
     handleSideBarClick = (sideBarTabName) => {
-        this.selectGeneralTab();
-
         this.setState({
             sideBarTabName
-        }, () => {
-            console.log(this.state)
         });
     }
-
-    // Select either the all startups tab or the press tab
-    selectGeneralTab = () => {
-        if (this.state.sideBarTabName === "All startups") {
-            this.allStartupsStyle = {
-                backgroundColor: '#F1F1F1',
-                color: '#67379A'
-            };
-        }
-
-        if (this.state.sideBarTabName === "Press") {
-            this.pressStyle = {
-                backgroundColor: '#F1F1F1',
-                color: '#67379A'
-            };
-            this.clickInstructionText = "";
-        }
-    };
-
-
 
     render() {
 
@@ -84,6 +56,9 @@ class Portfolio extends React.Component {
                     color: '#67379A'
                 };
             }
+            else {
+                activeLinkStyle = {};
+            }
 
             return (<li onClick={() => {
                 this.handleSideBarClick(batch.batchName)
@@ -95,10 +70,11 @@ class Portfolio extends React.Component {
             </li>);
         })
 
-        console.log(selectOptions);
-
         // there's definitely a better way to do this
+        let allStartupsStyle, pressStyle;
+        let clickInstructionText = (<p>Click on a company to learn more</p>);
 
+        // simpleSelect is a dropdown used for the mobile view
         let simpleSelect = (<SimpleSelect
             options={selectOptions}
             placeholder={this.sideBarTabName}
@@ -106,8 +82,20 @@ class Portfolio extends React.Component {
             handleSideBarClick={this.handleSideBarClick}
         />);
 
-        this.selectGeneralTab();
+        if (this.state.sideBarTabName === "All startups") {
+            allStartupsStyle = {
+                backgroundColor: '#F1F1F1',
+                color: '#67379A'
+            };
+        }
 
+        if (this.state.sideBarTabName === "Press") {
+            pressStyle = {
+                backgroundColor: '#F1F1F1',
+                color: '#67379A'
+            };
+            clickInstructionText = "";
+        }
 
         return (
             <section>
@@ -119,8 +107,8 @@ class Portfolio extends React.Component {
                     <div className="container portfolio">
                         <div className="portfolioNav">
                             <ul className="generalSideBar">
-                                <li onClick={() => { this.handleSideBarClick("All startups") }} style={this.allStartupsStyle}>All startups</li>
-                                <li onClick={() => { this.handleSideBarClick("Press") }} style={this.pressStyle}>Press</li>
+                                <li onClick={() => { this.handleSideBarClick("All startups") }} style={allStartupsStyle}>All startups</li>
+                                <li onClick={() => { this.handleSideBarClick("Press") }} style={pressStyle}>Press</li>
                             </ul>
                             {simpleSelect}
                             <ul className="batchSideBar">

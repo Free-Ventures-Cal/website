@@ -28,44 +28,44 @@ const useStyles = makeStyles(theme => ({
 function SimpleSelect(props) {
   const classes = useStyles();
   const [values, setValues] = React.useState({
-    batch: 'Spring 2020', // this will be the default tab on load. SPELL CORRECTLY
+    batch: 'All startups', // this will be the default tab on load. SPELL CORRECTLY
   });
 
   function handleChange(event) {
     setValues(oldValues => ({
       ...oldValues,
       [event.target.name]: event.target.value,
-  }));
+    }));
 
   }
 
   useEffect(() => {
-      console.log("this has been run")
-      props.handleSideBarClick(values.batch);
+    console.log("this has been run")
+    props.handleSideBarClick(values.batch);
   }, [values])
 
   let menuItems = props.options.map((option) => {
-      return (<MenuItem value={option}>{option}</MenuItem>);
+    return (<MenuItem value={option}>{option}</MenuItem>);
   });
 
   console.log("values", values);
 
   return (
     <span className="batchSelect">
-        <form className={classes.root} autoComplete="off">
-          <FormControl className={classes.formControl}>
-            <InputLabel htmlFor="age-simple">Select a Batch</InputLabel>
-            <Select
-              value={values.batch}
-              onChange={handleChange}
-              inputProps={{
-                name: 'batch',
-              }}
-            >
-                {menuItems}
-            </Select>
-          </FormControl>
-        </form>
+      <form className={classes.root} autoComplete="off">
+        <FormControl className={classes.formControl}>
+          <InputLabel htmlFor="age-simple">Select a Batch</InputLabel>
+          <Select
+            value={values.batch}
+            onChange={handleChange}
+            inputProps={{
+              name: 'batch',
+            }}
+          >
+            {menuItems}
+          </Select>
+        </FormControl>
+      </form>
     </span>
   );
 }
