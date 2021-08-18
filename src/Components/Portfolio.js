@@ -74,7 +74,7 @@ class Portfolio extends React.Component {
         let allStartupsStyle, pressStyle;
         let clickInstructionText = (<p>Click on a company to learn more</p>);
 
-        // simpleSelect is a dropdown used for the mobile view
+        // simpleSelect only visible in the mobile view
         let simpleSelect = (<SimpleSelect
             options={selectOptions}
             placeholder={this.sideBarTabName}

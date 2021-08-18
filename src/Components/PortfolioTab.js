@@ -30,7 +30,6 @@ function PortfolioTab(props) {
     // Get Companies to Render
 
     if (props.sideBarTabName === "All startups") {
-        console.log("and i made it in to the handle sidebar??");
         portfolioContent.batchList.map((batch) => {
             companiesToRender = companiesToRender.concat(batch.companies);
         });
@@ -52,7 +51,6 @@ function PortfolioTab(props) {
     }
 
     let renderCompanies = (companiesToRender || []).map((company) => {
-        console.log("making it in here");
         let descSnippet = clipDescription(company.description);
         return (<PortfolioCompanyCard
             logo={company.logo}
@@ -67,7 +65,7 @@ function PortfolioTab(props) {
         />)
     });
 
-    let renderPress;
+    let renderPress, expandedPanel;
 
     if (props.sideBarTabName === "Press") {
         renderPress = portfolioContent.pressList.map((article) => {
@@ -79,8 +77,6 @@ function PortfolioTab(props) {
             </a>);
         });
     }
-
-    let expandedPanel;
 
     let clearSelectedCompany = () => {
         setSelectedCompany(null);
