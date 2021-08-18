@@ -2,6 +2,7 @@ import React from 'react';
 import './../styles/App.css';
 import './../styles/Portfolio.css';
 import portfolioContent from './../content/portfolio.js';
+import portfolioTab from './PortfolioTab.js'
 
 import GenericTop from './GenericTop';
 import GenericPage from './GenericPage';
@@ -20,12 +21,12 @@ import bb from './../assets/press/bb.jpg';
 import dailycal from './../assets/press/dailycal.jpg';
 import e27 from './../assets/press/e27.png';
 import alchemy from './../assets/press/alchemy.jpeg';
+import PortfolioTab from './PortfolioTab.js';
 
 class Portfolio extends React.Component {
 
     state = {
         sideBarTabName: "All startups",
-        companiesToRender: [],
         clickInstructionText: (<p>Click on a company to learn more</p>),
         allStartupsStyle: null,
         pressStyle: null
@@ -35,44 +36,14 @@ class Portfolio extends React.Component {
         console.log("uhhh the component mounted with state" + this.state.sideBarTabName);
         this.setState({
             sideBarTabName: "All startups"
-          });
+        });
         this.handleSideBarClick(this.state.sideBarTabName);
     }
 
-
-    clipDescription = (desc) => {
-        return desc.slice(0, desc.slice(100).indexOf(" ") + 100) + "...";
-    }
-
-    clearSelectedCompany = () => {
-        this.setState({
-            selectedCompany: null
-        });
-    }
-
     handleSideBarClick = (sideBarTabName) => {
-        let companiesToRender = [];
-
-        if (sideBarTabName === "All startups") {
-            console.log("and i made it in to the handle sidebar??");
-            portfolioContent.batchList.map((batch) => {
-                companiesToRender = companiesToRender.concat(batch.companies);
-            });
-            this.selectGeneralTab();
-        }
-        else if (sideBarTabName === "Press") {
-            this.selectGeneralTab();
-        }
-        else {
-            portfolioContent.batchList.map((batch) => {
-                if (sideBarTabName === batch.batchName) {
-                    companiesToRender = batch.companies;
-                }
-            });
-        }
+        this.selectGeneralTab();
 
         this.setState({
-            companiesToRender,
             sideBarTabName
         }, () => {
             console.log(this.state)
@@ -128,61 +99,15 @@ class Portfolio extends React.Component {
 
         // there's definitely a better way to do this
 
-        this.clickInstructionText = (<p>Click on a company to learn more</p>);
         let simpleSelect = (<SimpleSelect
             options={selectOptions}
             placeholder={this.sideBarTabName}
             updateSelectedTabName={this.updateSelectedTabName}
             handleSideBarClick={this.handleSideBarClick}
         />);
+
         this.selectGeneralTab();
-        
 
-
-
-
-        let renderCompanies = (this.state.companiesToRender || []).map((company) => {
-            console.log("making it in here");
-            let descSnippet = this.clipDescription(company.description);
-            return (<PortfolioCompanyCard
-                logo={company.logo}
-                companyName={company.name}
-                key={company.name}
-                description={descSnippet}
-                link={company.link}
-                tags={company.tags}
-                onClick={() => {
-                    this.setState({
-                        selectedCompany: company
-                    });
-                }}
-            />)
-        });
-
-        let renderPress;
-
-        if (this.state.sideBarTabName === "Press") {
-            renderPress = portfolioContent.pressList.map((article) => {
-                return (<a href={article.address} target="_blank">
-                    <div className="pressArticle">
-                        <img src={article.image} alt="Logo" />
-                        <h1>{article.title}</h1>
-                    </div>
-                </a>);
-            });
-        }
-
-        let expandedPanel;
-
-        if (this.state.selectedCompany) {
-            expandedPanel = (
-                <PortfolioCompanyCardExpanded
-                    open={true}
-                    company={this.state.selectedCompany}
-                    clearSelectedCompany={this.clearSelectedCompany}
-                />
-            );
-        }
 
         return (
             <section>
@@ -203,14 +128,9 @@ class Portfolio extends React.Component {
                             </ul>
 
                         </div>
-                        <div className="content">
-                            {this.clickInstructionText}
-                            {renderPress}
-                            <div className="content-grid">
-                                {renderCompanies}
-                            </div>
-                            {expandedPanel}
-                        </div>
+                        <PortfolioTab
+                            sideBarTabName={this.state.sideBarTabName}
+                        />
                     </div>
                 </GenericPage>
             </section>
