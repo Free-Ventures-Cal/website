@@ -965,7 +965,10 @@ let portfolioContent = {
         },
 
 
-    ]
+    ],
+    acquisitionNames: ["Distributed Systems", "Pantheon VR", "Blitz E-Sports"],
+    ycNames: ["Wildfire", "Paladin Drones", "onederful", "Simplata"],
+    largeFundraisingNames: ["Gainful", "Glints", "Foresight Mental Health"]
 }
 
 export default portfolioContent;

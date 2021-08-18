@@ -65,7 +65,52 @@ function PortfolioTab(props) {
         />)
     });
 
-    let renderPress, expandedPanel;
+    let renderAllStartups, renderPress, expandedPanel;
+
+    if (props.sideBarTabName === "All startups") {
+        // Separate into categories
+        let acquisitions = [];
+        let yc = [];
+        let largeFundraising = [];
+        let theRest = [];
+
+        renderCompanies.forEach((company) => {
+            if (portfolioContent.acquisitionNames.includes(company.props.companyName)) {
+                acquisitions.push(company);
+            }
+            else if (portfolioContent.ycNames.includes(company.props.companyName)) {
+                yc.push(company);
+            }
+            else if (portfolioContent.largeFundraisingNames.includes(company.props.companyName)) {
+                largeFundraising.push(company);
+            }
+            else {
+                theRest.push(company);
+            }
+        })
+
+        // Return the JSX
+        renderAllStartups = (
+            <div>
+                <h2>Acquisitions</h2>
+                <div className="content-grid">
+                    {acquisitions}
+                </div>
+                <h2>YC</h2>
+                <div className="content-grid">
+                    {yc}
+                </div>
+                <h2>Large Fundraising Rounds</h2>
+                <div className="content-grid">
+                    {largeFundraising}
+                </div>
+                <h2>All Startups</h2>
+                <div className="content-grid">
+                    {theRest}
+                </div>
+            </div>
+        );
+    }
 
     if (props.sideBarTabName === "Press") {
         renderPress = portfolioContent.pressList.map((article) => {
@@ -95,6 +140,7 @@ function PortfolioTab(props) {
     return (
         <div className="content">
             {clickInstructionText}
+            {renderAllStartups}
             {renderPress}
             <div className="content-grid">
                 {renderCompanies}
