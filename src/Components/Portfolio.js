@@ -24,13 +24,21 @@ import alchemy from './../assets/press/alchemy.jpeg';
 class Portfolio extends React.Component {
 
     state = {
-        sideBarTabName: '',
+        sideBarTabName: "All startups",
         companiesToRender: [],
+        clickInstructionText: (<p>Click on a company to learn more</p>),
+        allStartupsStyle: null,
+        pressStyle: null
     }
 
     componentDidMount() {
-        this.handleSideBarClick(this.props.sideBarTabName);
+        console.log("uhhh the component mounted with state" + this.state.sideBarTabName);
+        this.setState({
+            sideBarTabName: "All startups"
+          });
+        this.handleSideBarClick(this.state.sideBarTabName);
     }
+
 
     clipDescription = (desc) => {
         return desc.slice(0, desc.slice(100).indexOf(" ") + 100) + "...";
@@ -46,11 +54,14 @@ class Portfolio extends React.Component {
         let companiesToRender = [];
 
         if (sideBarTabName === "All startups") {
+            console.log("and i made it in to the handle sidebar??");
             portfolioContent.batchList.map((batch) => {
                 companiesToRender = companiesToRender.concat(batch.companies);
             });
+            this.selectGeneralTab();
         }
         else if (sideBarTabName === "Press") {
+            this.selectGeneralTab();
         }
         else {
             portfolioContent.batchList.map((batch) => {
@@ -67,6 +78,24 @@ class Portfolio extends React.Component {
             console.log(this.state)
         });
     }
+
+    // Select either the all startups tab or the press tab
+    selectGeneralTab = () => {
+        if (this.state.sideBarTabName === "All startups") {
+            this.allStartupsStyle = {
+                backgroundColor: '#F1F1F1',
+                color: '#67379A'
+            };
+        }
+
+        if (this.state.sideBarTabName === "Press") {
+            this.pressStyle = {
+                backgroundColor: '#F1F1F1',
+                color: '#67379A'
+            };
+            this.clickInstructionText = "";
+        }
+    };
 
 
 
@@ -99,29 +128,15 @@ class Portfolio extends React.Component {
 
         // there's definitely a better way to do this
 
-        let allStartupsStyle, pressStyle;
-        let clickInstructionText = (<p>Click on a company to learn more</p>);
+        this.clickInstructionText = (<p>Click on a company to learn more</p>);
         let simpleSelect = (<SimpleSelect
             options={selectOptions}
             placeholder={this.sideBarTabName}
             updateSelectedTabName={this.updateSelectedTabName}
             handleSideBarClick={this.handleSideBarClick}
         />);
-
-        if (this.state.sideBarTabName === "All startups") {
-            allStartupsStyle = {
-                backgroundColor: '#F1F1F1',
-                color: '#67379A'
-            };
-        }
-
-        if (this.state.sideBarTabName === "Press") {
-            pressStyle = {
-                backgroundColor: '#F1F1F1',
-                color: '#67379A'
-            };
-            clickInstructionText = "";
-        }
+        this.selectGeneralTab();
+        
 
 
 
@@ -179,8 +194,8 @@ class Portfolio extends React.Component {
                     <div className="container portfolio">
                         <div className="portfolioNav">
                             <ul className="generalSideBar">
-                                <li onClick={() => { this.handleSideBarClick("All startups") }} style={allStartupsStyle}>All startups</li>
-                                <li onClick={() => { this.handleSideBarClick("Press") }} style={pressStyle}>Press</li>
+                                <li onClick={() => { this.handleSideBarClick("All startups") }} style={this.allStartupsStyle}>All startups</li>
+                                <li onClick={() => { this.handleSideBarClick("Press") }} style={this.pressStyle}>Press</li>
                             </ul>
                             {simpleSelect}
                             <ul className="batchSideBar">
@@ -189,7 +204,7 @@ class Portfolio extends React.Component {
 
                         </div>
                         <div className="content">
-                            {clickInstructionText}
+                            {this.clickInstructionText}
                             {renderPress}
                             <div className="content-grid">
                                 {renderCompanies}
