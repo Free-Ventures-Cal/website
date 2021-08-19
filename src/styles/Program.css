@@ -165,7 +165,19 @@
   max-width: 1000px;
 }
 
+.no-overflow {
+  overflow: hidden;
+}
+
 /* Track Record Section */
+.trackRecord {
+  background-color: #f3f4f5;
+  background-size: cover;
+  padding-top: 5vh;
+  padding-bottom: 9vh;
+}
+
+
 .track-record-top {
   background: #67379a;
   padding: 50px;
@@ -209,13 +221,6 @@
   color: #000000;
 }
 
-.trackRecord {
-  background-color: #f3f4f5;
-  background-size: cover;
-  padding-top: 5vh;
-  padding-bottom: 9vh;
-}
-
 .trackRecord h2 {
   text-align: center;
   font-size: 30px;
@@ -232,15 +237,19 @@
 }
 
 .track-record-bottom {
-  height: 424px;
-  width: 1258px;
-  overflow: hidden;
+  display: flex;
+  position: relative;
+  width: 100%;
+  left: 60px;
+  right: -60px;
+  align-self: flex-end;
+  padding-right: 0;
   background: #ffffff;
 }
 
 .foundersPics {
-    display: flex;
-    flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .foundersPics img {
