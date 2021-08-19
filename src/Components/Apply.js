@@ -81,7 +81,7 @@ useEffect(() => {
     console.log(value);
 }, [value])
 
-let airtableLink = "https://airtable.com/shr7f5m0KGJ9SwoC7";
+let airtableLink = "https://docs.google.com/forms/d/e/1FAIpQLSeihpMeC5mqwXfJY2F-q1K7lTNq_Hv8zqOVTquaoB3wLq_aag/viewform";
 
 
 let batchFAQContent = [
@@ -125,7 +125,7 @@ let batchFAQContent = [
                 header={'Join the FreeV Family'}
                 description={'Internal Team applications are now open! Please apply below.'}
             >
-                <a href={airtableLink} className="genericButton" target="_blank">Fall 2021 Internal Application</a>
+                <a href={airtableLink} className="genericButton" target="_blank">Fall 2021 Interest Form</a>
             </GenericTop>
             <GenericPage>
                 <div className={classes.root}>
@@ -140,7 +140,7 @@ let batchFAQContent = [
 
                     <TabPanel value={value} index={0}>
                         <h2>Fall 2021 Applications for startups are now open!</h2>
-                        <a href={airtableLink} className="genericButtonGray" target="_blank">Fall 2021 Batch Application</a>
+                        <a href={airtableLink} className="genericButtonGray" target="_blank">Fall 2021 Interest Form</a>
                         <a href="https://www.facebook.com/events/415880429743413" className="genericButtonGray" target="_blank">Infosession RSVP</a>
 
                         <ul>
