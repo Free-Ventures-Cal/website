@@ -122,7 +122,7 @@ function Program() {
                         <div className="track-record-bottom tr-container">
                             <div className="tr-bottom-section">
                                 <h3>Founders</h3>
-                                <div className="foundersPics">
+                                <div className="founders-flex">
                                     <img src={thiel} />
                                     <img src={forbes} />
                                 </div>
@@ -130,11 +130,11 @@ function Program() {
                             <svg className="no-show-mobile" id="tr-line"/>
                             <div className="tr-bottom-section">
                                 <h3>Teams</h3>
-                                <div className="teamsVCPics">
+                                <div className="teams-flex">
                                     <img src={yc} />
-                                    <img className="greylock" src={greylock} />
-                                    <img src={kp} />
                                     <img src={accel} />
+                                    <img id="tr-img-greylock" src={greylock} />
+                                    <img id="tr-img-kp" src={kp} />
                                 </div>
                             </div>
                         </div>
