@@ -204,12 +204,13 @@
 
 .tr-button {
   /* button styling */
-  width: 375px;
-  height: 67px;
+  width: 325px;
+  height: 55px;
   left: 503px;
   top: 478px;
   background: #ffffff;
   border-radius: 10px;
+  border-width: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,14 +218,13 @@
 
 .tr-button p {
   /* text styling */
-  line-height: 67px;
+  line-height: 55px;
   display: inline-block;
-  height: 67px;
+  height: 55px;
   vertical-align: middle;
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
-  font-size: 23.8636px;
   text-align: center;
   color: #000000;
 }
