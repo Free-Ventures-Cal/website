@@ -191,9 +191,12 @@
   align-items: center;
 }
 
+.trackRecord h3 {
+  font-size: 30px;
+}
+
 .track-record-top h3 {
   font-weight: bold;
-  font-size: 35px;
   text-align: center;
   color: #ffffff;
 }
@@ -234,8 +237,6 @@
 .track-info {
   width: 100%;
   text-align: left;
-  font-size: 25px;
-  line-height: 30px;
   font-weight: 400;
   color: #ffffff;
 }
@@ -256,10 +257,6 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-}
-
-.tr-bottom-section h3 {
-  font-size: 35px;
 }
 
 .tr-bottom-section img {
