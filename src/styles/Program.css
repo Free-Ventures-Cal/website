@@ -177,11 +177,13 @@
   padding-bottom: 9vh;
 }
 
+.tr-container {
+  padding: 50px;
+  display: flex;
+}
 
 .track-record-top {
   background: #67379a;
-  padding: 50px;
-  display: flex;
   flex-flow: column nowrap;
   overflow: hidden;
   align-items: center;
@@ -237,14 +239,27 @@
 }
 
 .track-record-bottom {
-  display: flex;
   position: relative;
+  align-items: center;
   width: 100%;
   left: 60px;
   right: -60px;
-  align-self: flex-end;
   padding-right: 0;
   background: #ffffff;
+}
+
+.tr-bottom-section {
+  margin: 10px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+#tr-line {
+  width: 0px;
+  height: 213.5px;
+  border: 2px solid #000000;
 }
 
 .foundersPics {
@@ -274,5 +289,9 @@
 @media (max-width: 1034px) {
   .program-grid {
     grid-template-columns: 1fr;
+  }
+
+  .no-show-mobile {
+    display: none;
   }
 }

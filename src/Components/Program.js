@@ -113,30 +113,28 @@ function Program() {
                 </div>
                 <div className="trackRecord">
                     <div className="container">
-                        <div id="track-record-container">
-                            <h2>Our Track Record</h2>
-                            <div className="track-record-top">
-                                <h3>Lorem Ipsum</h3>
-                                <p className="track-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button className="tr-button"><p>See all our companies</p></button>
-                            </div>
-                            <div className="track-record-bottom">
-                                <div className="tr-bottom-left">
-                                    <h3>Founders</h3>
-                                    <div className="foundersPics">
-                                        <img src={thiel} />
-                                        <img src={forbes} />
-                                    </div>
+                        <h2>Our Track Record</h2>
+                        <div className="track-record-top tr-container">
+                            <h3>Lorem Ipsum</h3>
+                            <p className="track-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <button className="tr-button"><p>See all our companies</p></button>
+                        </div>
+                        <div className="track-record-bottom tr-container">
+                            <div className="tr-bottom-section">
+                                <h3>Founders</h3>
+                                <div className="foundersPics">
+                                    <img src={thiel} />
+                                    <img src={forbes} />
                                 </div>
-                                <svg />
-                                <div className="tr-bottom-left">
-                                    <h3>Teams</h3>
-                                    <div className="teamsVCPics">
-                                        <img src={yc} />
-                                        <img className="greylock" src={greylock} />
-                                        <img src={kp} />
-                                        <img src={accel} />
-                                    </div>
+                            </div>
+                            <svg className="no-show-mobile" id="tr-line"/>
+                            <div className="tr-bottom-section">
+                                <h3>Teams</h3>
+                                <div className="teamsVCPics">
+                                    <img src={yc} />
+                                    <img className="greylock" src={greylock} />
+                                    <img src={kp} />
+                                    <img src={accel} />
                                 </div>
                             </div>
                         </div>
