@@ -303,4 +303,16 @@
   .no-show-mobile {
     display: none;
   }
+
+  .track-record-bottom {
+    left: auto;
+    right: auto;
+    padding-right: auto;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .track-record-bottom {
+    overflow-x: hidden;
+  }
 }
