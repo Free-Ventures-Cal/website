@@ -185,10 +185,12 @@
 }
 
 .track-record-top {
+  position: relative;
   background: #67379a;
   flex-flow: column nowrap;
   overflow: hidden;
   align-items: center;
+  z-index: 5;
 }
 
 .trackRecord h3 {
@@ -247,8 +249,11 @@
   align-items: flex-start;
   left: 60px;
   right: -60px;
+  top: -60px;
+  padding-top: 100px;
   padding-right: 0;
   background: #ffffff;
+  z-index: 0;
 }
 
 .tr-bottom-section {
