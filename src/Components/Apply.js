@@ -81,7 +81,7 @@ useEffect(() => {
     console.log(value);
 }, [value])
 
-let airtableLink = "https://docs.google.com/forms/d/e/1FAIpQLSeihpMeC5mqwXfJY2F-q1K7lTNq_Hv8zqOVTquaoB3wLq_aag/viewform";
+let airtableLink = "https://airtable.com/shrlPznExt1PAdSER";
 
 
 let batchFAQContent = [
@@ -123,9 +123,9 @@ let batchFAQContent = [
         <section>
             <GenericTop
                 header={'Join the FreeV Family'}
-                description={'Internal Team applications are now open! Please apply below.'}
+                description={'Batch Team applications are now open! Please apply below.'}
             >
-                <a href={airtableLink} className="genericButton" target="_blank">Fall 2021 Interest Form</a>
+                <a href={airtableLink} className="genericButton" target="_blank">Apply for Fall 2021 Batch</a>
             </GenericTop>
             <GenericPage>
                 <div className={classes.root}>
@@ -140,23 +140,8 @@ let batchFAQContent = [
 
                     <TabPanel value={value} index={0}>
                         <h2>Fall 2021 Applications for startups are now open!</h2>
-                        <a href={airtableLink} className="genericButtonGray" target="_blank">Fall 2021 Interest Form</a>
-                        <a href="https://www.facebook.com/events/415880429743413" className="genericButtonGray" target="_blank">Infosession RSVP</a>
-
-                        <ul>
-                            {/* <li>
-                                <p>
-                                    <strong>Coffee chats: </strong>sign up for a informational coffee chat to learn more about our program and ask any questions you have. Coffee chats are non-evaluative and not necessary to be admitted to the program.
-                                </p>
-                            </li> */}
-                            <li>
-                                <p>
-                                    <strong>Infosession: </strong> Come to our infosession on Tuesday, February 2nd from 6-7:30pm. Check the FB event linked above to RSVP!
-                                </p>
-                            </li>
-
-                        </ul>
-
+                        <a href={airtableLink} className="genericButtonGray" target="_blank">Apply for Fall 2021 Batch</a>
+                        
                         <p>Here are some details about our recruiting timeline and frequently asked questions</p>
                         <h2>Fall 2021 Timeline</h2>
                         <div className="timeline">
@@ -164,8 +149,8 @@ let batchFAQContent = [
                                 <div>
                                     <img src={application} alt="" />
                                 </div>
-                                <h2>February 5th, 11:59pm</h2>
-                                <p>Applications close</p>
+                                <h2>August 25</h2>
+                                <p>Application Released</p>
                             </article>
                             <span>
                                 <img src={arrow} />
@@ -174,7 +159,27 @@ let batchFAQContent = [
                                 <div>
                                     <img src={interview} alt="" />
                                 </div>
-                                <h2>February 10th-12th</h2>
+                                <h2>September 10</h2>
+                                <p>Infosession</p>
+                            </article>
+                            <span>
+                                <img src={arrow} />
+                            </span>
+                            <article>
+                                <div>
+                                    <img src={application} alt="" />
+                                </div>
+                                <h2>September 17</h2>
+                                <p>Application Due</p>
+                            </article>
+                            <span>
+                                <img src={arrow} />
+                            </span>
+                            <article>
+                                <div>
+                                    <img src={interview} alt="" />
+                                </div>
+                                <h2>September 22-24</h2>
                                 <p>Interviews</p>
                             </article>
                             <span>
@@ -184,8 +189,8 @@ let batchFAQContent = [
                                 <div>
                                     <img src={rocket} alt="" />
                                 </div>
-                                <h2>February 22nd</h2>
-                                <p>Spring 2021 Batch Starts</p>
+                                <h2>September 29</h2>
+                                <p>Batch Kickoff</p>
                             </article>
                         </div>
                         <h2>What we look for</h2>
