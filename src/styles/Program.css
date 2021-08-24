@@ -43,9 +43,15 @@
 
 .program-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 60px;
   padding: 50px 0;
+}
+
+#program-top {
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+  grid-row-gap: 0px;
 }
 
 .tiers-program .program-grid {

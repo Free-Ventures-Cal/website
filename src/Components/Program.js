@@ -67,8 +67,8 @@ function Program() {
                 <div className="tiers-program">
                     <div className="container">
                         <h2>What we provide</h2>
-                        <div className="program-grid">
-                            <article>
+                        <div>
+                            <article id="program-top">
                                 <span>
                                     <img src={community} alt="" />
                                 </span>
@@ -78,6 +78,8 @@ function Program() {
                                     <p>Often cited as our biggest value-add by batch companies, each batch company will be assigned one or two internal team members who will be there for you throughout the entire batch and way beyond that. We’ll give honest feedback, idea jam on new solutions, hear your dilemmas out, and always try to set you on the right path. More importantly, we pride ourselves on bending over backwards to serve you. You’ll find us fielding 1 AM panic texts, cold-DMing people on LinkedIn to get you personalized mentor intros, building out an angel investor database for your space, showing up at your events early to set up chairs if you need us to - you get the idea. We accept small batches because this startup stuff is hard and you should have someone as invested as you are.</p>
                                 </span>
                             </article>
+                        </div>
+                        <div className="program-grid">
                             <article>
                                 <span>
                                     <img src={equity} alt="" />
@@ -127,7 +129,7 @@ function Program() {
                                     <img src={forbes} />
                                 </div>
                             </div>
-                            <svg className="no-show-mobile" id="tr-line"/>
+                            <svg className="no-show-mobile" id="tr-line" />
                             <div className="tr-bottom-section">
                                 <h3>Teams</h3>
                                 <div className="teams-flex">
