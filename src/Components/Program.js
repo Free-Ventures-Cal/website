@@ -84,7 +84,7 @@ function Program() {
                                 </span>
                                 <span>
                                     <h3>Equity-free Funds</h3>
-                                    <p>Because Berkeley is probably expensive enough, we provide student startups with financial support for their project without taking any equity - and this sets us apart from most accelerators. Thanks to the generosity of our <a href="/partners">sponsors</a>, accelerator teams get $1000 microgrants to bring their startup to the next level, no strings attached. If you’re interested in becoming a sponsor or donating (we’re a nonprofit!), please email our Sponsorship Associate <a href="mailto:aamir@freeventures.org">aamir@freeventures.org</a>.</p>
+                                    <p>Because Berkeley is probably expensive enough, we provide student startups with financial support for their project without taking any equity - and this sets us apart from most accelerators. Thanks to the generosity of our <a href="/partners">sponsors</a>, accelerator teams get $1000 microgrants to bring their startup to the next level, no strings attached. If you’re interested in becoming a sponsor or donating (we’re a nonprofit!), please email <a href="mailto:aamir@freeventures.org">aamir@freeventures.org</a>.</p>
                                 </span>
                             </article>
                             <article>
@@ -94,7 +94,7 @@ function Program() {
 
                                 <span>
                                     <h3>Mentorship</h3>
-                                    <p>What are you doing on your Monday evenings? If you’re part of FreeV’s batch, you’ll get to have one-on-one time with four to five incredible mentors every single week in a round-robin session, and our network runs deep. They’ve sold companies to Coinbase, served as partners at leading VC firms, brought companies public, raised millions of venture capital, and so much more. Most importantly, they care a lot about FreeV companies. They always want to have a second conversation, go out of their way to make intros, and have even eventually written seed round checks.</p>
+                                    <p>What are you doing on your Monday evenings? If you’re part of FreeV’s batch, you’ll get to have one-on-one time with four to five incredible mentors every single week in a round-robin session, and our network runs deep. They’ve sold companies to Coinbase, served as partners at leading VC firms, brought companies public, raised millions of venture capital, and so much more. Most importantly, they care a lot about FreeV companies.</p>
                                 </span>
 
                             </article>
@@ -115,7 +115,7 @@ function Program() {
                     <div className="container">
                         <h2>Our Track Record</h2>
                         <div className="track-record-top tr-container">
-                            <h3>Lorem Ipsum</h3>
+                            <h3>Unwavering Support</h3>
                             <p className="track-info">Since 2013, Free Ventures has been Cal's leading pre-seed accelerator, combining the power of our mentor network, sponsor-led curriculum, and unique personalized point person structure to elevate student startups at Cal to the next level. Despite only accepting 4-5 startups a semester, we've helped teams raise over $85 million in venture capital, watched them get acquired by leading companies, and sent numerous startups to YC every year.</p>
                             <a href="/portfolio" className="tr-button button"><p>See all our companies</p></a>
                         </div>
