@@ -341,4 +341,18 @@
     justify-content: center;
     align-items: center;
   }
+
+  .tr-bottom-section img {
+    max-height: 70px;
+    margin: 15px 0;
+  }
+  
+  #tr-img-greylock {
+    max-height: 30px;
+  }
+  
+  #tr-img-kp {
+    margin-top: 30px;
+    max-height: 30px;
+  }
 }
