@@ -6,7 +6,7 @@ import freevgroup from './../assets/program/freevgroup.jpg'
 import './../styles/App.css';
 import './../styles/Home.css';
 import Testimonial from './Testimonial';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 // Press
 import wired from './../assets/press/grayscale/wired.png';
 import tc from './../assets/press/grayscale/tc.png';
@@ -17,20 +17,12 @@ import medium from './../assets/press/grayscale/medium.png';
 import recode from './../assets/press/grayscale/recode.png';
 // Partners
 import accel from './../assets/partners/accel.png';
-import aws from './../assets/partners/aws.png';
-import cooley from './../assets/partners/cooley.png';
-import fbstart from './../assets/partners/fbstart.png';
-import gc from './../assets/partners/gc.png';
-import github from './../assets/partners/github.png';
 import greylock from './../assets/partners/greylock.jpg';
-import house from './../assets/partners/house.png';
 import kpcb from './../assets/partners/kpcb.png';
 import lightspeed from './../assets/partners/lightspeed.png';
 import pear from './../assets/partners/pear.png';
-import scet from './../assets/partners/scet.png';
 import spark from './../assets/partners/spark.png';
 import svangel from './../assets/partners/svangle.png';
-import svb from './../assets/partners/svb.png';
 import ycombinator from './../assets/partners/ycombinator.png';
 // Acquisitions
 import discord from './../assets/acquisitions/discord-3.png';
@@ -106,30 +98,37 @@ function Home() {
         {
             address: "https://www.wired.com/story/the-college-kids-doing-what-twitter-wont/",
             image: wired,
+            alt: "Wired"
         },
         {
             address: "https://techcrunch.com/2015/06/29/yc-backed-instant-esports-is-espn-for-competitive-gaming/",
             image: tc,
+            alt: "TechCrunch"
         },
         {
             address: "http://www.huffingtonpost.com/rawan-abushaban/wildfire-app-alerts-users_b_9287408.html",
             image: huffpost,
+            alt: "Huffington Post"
         },
         {
             address: "https://www.forbes.com/pictures/lmh45edlmk/30-under-30-education/#12b818c11c3d",
             image: forbes,
+            alt: "Forbes"
         },
         {
             address: "https://www.mic.com/articles/112886/a-pair-of-entrepreneurs-want-to-make-sure-every-woman-gets-the-pleasure-she-deserves#.oWYar7k3v",
             image: mic,
+            alt: "Mic"
         },
         {
             address: "https://medium.com/@robhat/identifying-propaganda-bots-on-twitter-5240e7cb81a9",
             image: medium,
+            alt: "Medium"
         },
         {
             address: "https://www.vox.com/2015/5/7/11562380/searching-for-the-next-stanford-silicon-valley-turns-its-eyes-to",
             image: recode,
+            alt: "Recode"
         },
 
     ]
@@ -195,69 +194,6 @@ function Home() {
         }
     ];
 
-    let partnersContent = [
-        {
-            logo: kpcb,
-            name: 'KPCB',
-            website: "http://www.kpcb.com/"
-        },
-        {
-            logo: greylock,
-            name: 'Greylock Partners',
-            website: "http://www.greylock.com/"
-        },
-        {
-            logo: pear,
-            name: 'Pear VC',
-            website: "http://www.pear.vc/"
-        },
-        {
-            logo: accel,
-            name: 'Accel',
-            website: "https://www.accel.com/"
-        },
-        {
-            logo: cooley,
-            name: 'Cooley',
-            website: "https://www.cooley.com"
-        },
-        {
-            logo: house,
-            name: 'The House Fund',
-            website: "http://thehouse.fund/"
-        },
-        {
-            logo: svb,
-            name: 'Silicon Valley Bank',
-            website: "https://www.svb.com/"
-        },
-        {
-            logo: gc,
-            name: 'General Catalyst',
-            website: "https://www.generalcatalyst.com/"
-        },
-        {
-            logo: scet,
-            name: 'Stardja Center for Entreprenuership and Technology',
-            website: "https://scet.berkeley.edu/"
-        },
-        {
-            logo: fbstart,
-            name: 'FB Start',
-            website: "https://fbstart.com/"
-        },
-        {
-            logo: github,
-            name: 'Github',
-            website: "http://github.com"
-        },
-        {
-            logo: aws,
-            name: 'AWS Activate',
-            website: "https://aws.amazon.com/activate/"
-        },
-    ];
-
     const testimonialsContent = [
         {
             name: "Kai",
@@ -316,12 +252,8 @@ function Home() {
         return (<a href={company.website}><img src={company.logo} alt={company.name} /></a>);
     });
 
-    let partners = partnersContent.map((partner) => {
-        return (<a href={partner.website}><img src={partner.logo} alt={partner.name} /></a>);
-    });
-
     let press = pressContent.map((link) => {
-        return <li><a href={link.address} target="_blank"><img src={link.image} /></a></li>;
+        return <li><a href={link.address} target="_blank" rel="noopener noreferrer"><img src={link.image} alt={link.alt} /></a></li>;
     });
 
     let testimonials = testimonialsContent.map((testimonial) => {
@@ -333,14 +265,11 @@ function Home() {
         );
     });
 
-    const images = [{ src: './slider1.png' }, { src: './slider2.JPG' },
-    { src: './slider3.jpg' }, { src: './slider4.jpg' }, { src: './slider5.jpg' }];
-
     const divRef = React.createRef();
 
     useEffect(() => {
         divRef.current.scrollTop = 100;
-      });
+    });
 
     return (
         <section>
