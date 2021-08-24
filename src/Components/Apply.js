@@ -167,12 +167,13 @@ function Apply(props) {
                         <TabPanel value={value} index={0}>
                             <h2>Fall 2021 Applications for startups are now open!</h2>
                             <a href={airtableLink} className="genericButtonGray" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Batch</a>
-
                             <p>Here are some details about our recruiting timeline and frequently asked questions</p>
+
                             <h2>Fall 2021 Timeline</h2>
                             <div className="timeline">
                                 {timelineWithArrows}
                             </div>
+
                             <h2>What we look for</h2>
                             <ul>
                                 <li><p>
@@ -192,6 +193,7 @@ function Apply(props) {
                                     We are industry and stage agnostic.
                                 </p></li>
                             </ul>
+                            
                             <h2>Frequently asked questions</h2>
                             <FAQHolder
                                 faq={batchFAQContent}
