@@ -1,10 +1,10 @@
 .timeline {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   text-align: center;
   align-content: center;
   align-items: flex-start;
-  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .timeline article {
@@ -12,10 +12,6 @@
   justify-content: center;
   padding: 20px;
 }
-/*
-    .timeline article:first-child {
-        padding-left: 0 !important;
-    } */
 
 .timeline article div {
   background-color: #67379a;
@@ -58,3 +54,11 @@
     display: none;
   }
 }
+
+@media (max-width: 561px) {
+    .timeline {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+  }
