@@ -67,7 +67,7 @@ function Program() {
                 <div className="tiers-program">
                     <div className="container">
                         <h2>What we provide</h2>
-                        <div>
+                        <div className="program-grid-mobile">
                             <article id="program-top">
                                 <span>
                                     <img src={community} alt="" />

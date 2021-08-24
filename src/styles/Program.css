@@ -17,6 +17,7 @@
 .tiers-program article img {
   height: 50px;
   width: auto;
+  margin: 5px;
 }
 
 .tiers-program article span:first-child {
@@ -316,6 +317,14 @@ a.button {
 @media (max-width: 1034px) {
   .program-grid {
     grid-template-columns: 1fr;
+  }
+
+  .program-grid-mobile{
+    
+  }
+
+  #program-top {
+    grid-template-columns: 1fr 5fr;
   }
 
   .no-show-mobile {
