@@ -17,6 +17,74 @@ import arrow from './../assets/arrow.png';
 
 function Apply(props) {
 
+    // Content
+
+    let airtableLink = "https://airtable.com/shrlPznExt1PAdSER";
+
+
+    let batchFAQContent = [
+        {
+            question: "What’s the time commitment during the batch?",
+            answer: "5 hours per week for program sessions. We require founders to be present at all sessions 6-8pm PST every Monday and Wednesday.",
+        },
+        {
+            question: "How long is the batch?",
+            answer: "10-12 weeks",
+        },
+        {
+            question: "What resources do alumni companies receive?",
+            answer: "We provide help with fundraising, hiring, introductions to people in our network, advise, etc. to our alumni companies. Alumni companies still get access to the benefits provided by our sponsors and partners.",
+        },
+    ];
+
+    let timelineContent = [
+        {
+            date: "August 25",
+            description: "Application Released",
+            image: application
+        },
+        {
+            date: "September 10",
+            description: "Infosession",
+            image: interview
+        },
+        {
+            date: "September 17",
+            description: "Application Due",
+            image: application
+        },
+        {
+            date: "September 22-24",
+            description: "Interviews",
+            image: interview
+        },
+        {
+            date: "September 29",
+            description: "Batch Kickoff",
+            image: rocket
+        },
+    ];
+
+    let timelineWithArrows = timelineContent.map((event, i) => {
+        const isLastOne = (timelineContent.length === i + 1);
+        const result = (
+            <article>
+                <div>
+                    <img src={event.image} alt="" />
+                </div>
+                <h2>{event.date}</h2>
+                <p>{event.description}</p>
+            </article>
+        );
+        return isLastOne ? result : [result, (
+            <span>
+                <img src={arrow} alt="" />
+            </span>
+        )];
+    });
+
+    // Tab Functionality
+
     const AntTabs = withStyles({
         root: {
             borderBottom: '1px solid #e8e8e8',
@@ -78,24 +146,6 @@ function Apply(props) {
         console.log(value);
     }, [value]);
 
-    let airtableLink = "https://airtable.com/shrlPznExt1PAdSER";
-
-
-    let batchFAQContent = [
-        {
-            question: "What’s the time commitment during the batch?",
-            answer: "5 hours per week for program sessions. We require founders to be present at all sessions 6-8pm PST every Monday and Wednesday.",
-        },
-        {
-            question: "How long is the batch?",
-            answer: "10-12 weeks",
-        },
-        {
-            question: "What resources do alumni companies receive?",
-            answer: "We provide help with fundraising, hiring, introductions to people in our network, advise, etc. to our alumni companies. Alumni companies still get access to the benefits provided by our sponsors and partners.",
-        },
-    ];
-
     return (
         <section>
             <GenericTop
@@ -108,7 +158,6 @@ function Apply(props) {
                 <div className={classes.root}>
                     <div className={classes.tabStyle}>
                         <AntTabs value={value} onChange={handleChange} aria-label="ant example">
-
                             <AntTab label="Batch Recruitment" />
                             <AntTab label="Internal Recruitment" />
                         </AntTabs>
@@ -122,53 +171,7 @@ function Apply(props) {
                             <p>Here are some details about our recruiting timeline and frequently asked questions</p>
                             <h2>Fall 2021 Timeline</h2>
                             <div className="timeline">
-                                <article>
-                                    <div>
-                                        <img src={application} alt="" />
-                                    </div>
-                                    <h2>August 25</h2>
-                                    <p>Application Released</p>
-                                </article>
-                                <span>
-                                    <img src={arrow} alt="" />
-                                </span>
-                                <article>
-                                    <div>
-                                        <img src={interview} alt="" />
-                                    </div>
-                                    <h2>September 10</h2>
-                                    <p>Infosession</p>
-                                </article>
-                                <span>
-                                    <img src={arrow} alt="" />
-                                </span>
-                                <article>
-                                    <div>
-                                        <img src={application} alt="" />
-                                    </div>
-                                    <h2>September 17</h2>
-                                    <p>Application Due</p>
-                                </article>
-                                <span>
-                                    <img src={arrow} alt="" />
-                                </span>
-                                <article>
-                                    <div>
-                                        <img src={interview} alt="" />
-                                    </div>
-                                    <h2>September 22-24</h2>
-                                    <p>Interviews</p>
-                                </article>
-                                <span>
-                                    <img src={arrow} alt="" />
-                                </span>
-                                <article>
-                                    <div>
-                                        <img src={rocket} alt="" />
-                                    </div>
-                                    <h2>September 29</h2>
-                                    <p>Batch Kickoff</p>
-                                </article>
+                                {timelineWithArrows}
                             </div>
                             <h2>What we look for</h2>
                             <ul>
@@ -200,17 +203,6 @@ function Apply(props) {
                         {/* INTERNAL TAB */}
 
                         <TabPanel value={value} index={1}>
-                            {/* <a href={airtableLink} className="genericButtonGray" target="_blank">Fall 2020 Internal Application</a>
-                    <a href="https://www.facebook.com/events/871131273419831/" className="genericButtonGray" target="_blank">Infosession RSVP</a>
-                    <ul>
-                            <li>
-                                <p>
-                                    <strong>Infosession: </strong> Come to our virtual infosession on Tuesday, October 20th from 6-7pm PST to learn more about what internal team members do and what we look for in applicants. We'll post the Zoom link on our Facebook event linked above.
-                                </p>
-                            </li>
-
-                        </ul> */}
-
                             <p>If you’re interested in startups and don’t know where to start, you’ve come to the right place!</p>
                             <p>Free Ventures is the absolute best way you can dive into the startups at Cal and beyond. As an internal team member, you will have unparalleled exposure to the entrepreneurship ecosystem. </p>
                             <p>All internal team members serve as point people for our batch startups, meaning you’ll get to work one-on-one with incredible startup founders from your very first semester - helping them problem-solve, think of crazy solutions, deep dive into a unique problem space, and so much more. Our founders are everyone from Berkeley undergrads with a love of machine learning to PhD students with biomedical expertise, and you get to have a very real and tangible impact on their startup journeys. If everything goes to plan, they’ll be changing the world completely as they do this for years, and you were there from the beginning. </p>
