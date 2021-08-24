@@ -384,14 +384,16 @@ function Home() {
             </div>
             {/* start gray section */}
             <div className="testimonialsHome homeSection gray">
-                <section className="genericTop">
-                    <div className="container">
-                        <div className="purpleBorder"></div>
-                        <div class="topHeader">
-                            <h1>Testimonials</h1>
+                <div className="testimonials-heading">
+                    <section className="genericTop">
+                        <div className="container">
+                            <div className="purpleBorder"></div>
+                            <div class="topHeader">
+                                <h1>Testimonials</h1>
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
                 <div className="testimonials">
                     <div class="testimonials-marquee-wrapper">
                         <div className="testimonials-cards-marquee">
