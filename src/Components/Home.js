@@ -265,12 +265,6 @@ function Home() {
         );
     });
 
-    const divRef = React.createRef();
-
-    useEffect(() => {
-        divRef.current.scrollTop = 100;
-    });
-
     return (
         <section>
             <div className="splash">
@@ -384,31 +378,34 @@ function Home() {
             </div>
             {/* start gray section */}
             <div className="testimonialsHome homeSection gray">
-                <div className="testimonials-heading">
-                    <section className="genericTop">
-                        <div className="container">
-                            <div className="purpleBorder"></div>
-                            <div class="topHeader">
-                                <h1>Testimonials</h1>
-                            </div>
+                <div className="testimonials-container">
+                    <div className="testimonials-flex">
+                        <div className="testimonials-intro">
+                            <section className="genericTop">
+                                <div className="container">
+                                    <div className="purpleBorder"></div>
+                                    <div class="topHeader">
+                                        <h1>Testimonials</h1>
+                                        <p>Don't just take it from us. Here's what our incredible founders have to say:</p>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
-                    </section>
-                </div>
-                <div className="testimonials">
-                    <div class="testimonials-marquee-wrapper">
-                        <div className="testimonials-cards-marquee">
-                            <div class="testimonials-cards-col">
-                                {testimonials.slice(0, testimonials.length / 3)}
+                        <div className="testimonials">
+                            <div>
+                                <div>
+                                    {testimonials.slice(0, testimonials.length / 3)}
+                                </div>
                             </div>
-                        </div>
-                        <div className="testimonials-cards-marquee">
-                            <div class="testimonials-cards-col" ref={divRef}>
-                                {testimonials.slice(2 * testimonials.length / 3, testimonials.length)}
+                            <div>
+                                <div>
+                                    {testimonials.slice(2 * testimonials.length / 3, testimonials.length)}
+                                </div>
                             </div>
-                        </div>
-                        <div className="testimonials-cards-marquee">
-                            <div class="testimonials-cards-col">
-                                {testimonials.slice(testimonials.length / 3, 2 * testimonials.length / 3)}
+                            <div>
+                                <div>
+                                    {testimonials.slice(testimonials.length / 3, 2 * testimonials.length / 3)}
+                                </div>
                             </div>
                         </div>
                     </div>
