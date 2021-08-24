@@ -116,7 +116,7 @@ function Program() {
                         <h2>Our Track Record</h2>
                         <div className="track-record-top tr-container">
                             <h3>Lorem Ipsum</h3>
-                            <p className="track-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p className="track-info">Since 2013, Free Ventures has been Cal's leading pre-seed accelerator, combining the power of our mentor network, sponsor-led curriculum, and unique personalized point person structure to elevate student startups at Cal to the next level. Despite only accepting 4-5 startups a semester, we've helped teams raise over $85 million in venture capital, watched them get acquired by leading companies, and sent numerous startups to YC every year.</p>
                             <a href="/portfolio" className="tr-button button"><p>See all our companies</p></a>
                         </div>
                         <div className="track-record-bottom tr-container">
