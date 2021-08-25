@@ -249,7 +249,15 @@ function Home() {
     });
 
     let acquisitions = acquisitionsContent.map((company) => {
-        return (<a href={company.website}><img src={company.logo} alt={company.name} /></a>);
+        return (
+            <a href={company.website}>
+                <img
+                    src={company.logo}
+                    id={"aq-img-" + company.name.toLowerCase()}
+                    className="aq-img"
+                    alt={company.name} />
+            </a>
+        );
     });
 
     let press = pressContent.map((link) => {
@@ -323,7 +331,7 @@ function Home() {
             <div className="sponsors homeSection gray" id="acquisitions">
                 <div className="container">
                     <h2>Recent Acquisitions by Leading Companies</h2>
-                    <div className="two-grid">
+                    <div className="aq-flex">
                         {acquisitions}
                     </div>
                 </div>

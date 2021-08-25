@@ -506,6 +506,34 @@ a {
   padding-top: 0 !important;
 }
 
+/* ACQUISITIONS */
+div.aq-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.aq-flex a {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+img.aq-img {
+  height: 60px;
+  width: auto;
+}
+
+img#aq-img-coinbase {
+  padding-bottom: 10px;
+}
+
+img#aq-img-discord {
+  height: 75px;
+}
+
 /* TESTIMONIALS LAYOUT */
 .testimonialsHome {
   padding-top: 70px;
@@ -746,6 +774,18 @@ figure.testimonial-card figcaption {
 
   .four-grid img {
     width: 85%;
+  }
+
+  /* ACQUISITIION IMAGES */
+  div.aq-flex {
+    flex-wrap: wrap;
+  }
+
+  .aq-flex a {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 50px;
   }
 
   /* MOBILE TESTIMONIALS LAYOUT */
