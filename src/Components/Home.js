@@ -391,18 +391,18 @@ function Home() {
                             </section>
                         </div>
                         <div className="testimonials">
-                            <div>
-                                <div>
+                            <div className="mobile-testimonials-col">
+                                <div className="mobile-testimonials-col">
                                     {testimonials.slice(0, testimonials.length / 3)}
                                 </div>
                             </div>
-                            <div>
-                                <div>
+                            <div className="mobile-testimonials-col">
+                                <div className="mobile-testimonials-col">
                                     {testimonials.slice(2 * testimonials.length / 3, testimonials.length)}
                                 </div>
                             </div>
-                            <div>
-                                <div>
+                            <div className="mobile-testimonials-col">
+                                <div className="mobile-testimonials-col">
                                     {testimonials.slice(testimonials.length / 3, 2 * testimonials.length / 3)}
                                 </div>
                             </div>
