@@ -200,19 +200,24 @@ function Home() {
             text: "Free Ventures has been 10-100x better than other accelerators I’ve been a part of because of direct support, connections to inventors, and pitch work."
         },
         {
+            name: "Mokshith",
+            company: "Placeware",
+            text: "We literally started at ground zero with startups... The point person structure makes them stand out because of the focus on helping founders."
+        },
+        {
             name: "Pedro",
             company: "Sportsvue",
-            text: "#1 thing that people who are serious about startups say is why would I spend two hours here instead of working on my startup? I would say this is worth the time and I think that’s the best thing someone can say to convince someone."
+            text: "[Some might ask] why I would spend two hours here instead of working on my startup ...this is worth the time and that’s the best thing I can say..."
         },
         {
             name: "Noah",
             company: "Oki",
-            text: "It’s an amazing program. Oki was just an idea when we entered, and we managed to build a product with the support of point people who are constantly checking and pushing us to move forward."
+            text: "Oki was just an idea, and we managed to build a product with the support of point people who are constantly checking and pushing us to move forward."
         },
         {
             name: "Jared",
             company: "Polyture",
-            text: "Coming into FreeV, Polyture was just a project and it wasn’t clear who I was targeting; it wasn’t until the batch that I understood the core competencies of the platform and what he should spend his time."
+            text: "Polyture was just a project... it wasn’t until the batch that I understood the core competencies of the platform and what he should spend his time."
         },
         {
             name: "Rishma",
@@ -222,12 +227,7 @@ function Home() {
         {
             name: "Ibrahim",
             company: "Blackbook",
-            text: "Being a part of the program has been a real privilege; it was awesome to connect with mentors since it helped us think critically about company and the curriculum introduced us to startup terminology and ideation, financing, hiring."
-        },
-        {
-            name: "Mokshith",
-            company: "Placeware",
-            text: "This was the first time we started anything and we literally started at ground zero with startups; Free Ventures was super useful and the point person structure makes them stand out because of the focus on helping founders."
+            text: "[Connecting with mentors] helped us think critically about [our] company, and the curriculum introduced us to startup terminology and ideation, financing, hiring."
         }
     ]
 
