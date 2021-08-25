@@ -59,7 +59,8 @@ a {
 }
 
 .companyPortfolio img {
-  height: 30px;
+  max-width: 150px;
+  max-height: 30px;
   width: auto;
   display: inline-block;
 }
