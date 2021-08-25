@@ -771,14 +771,13 @@ figure.testimonial-card figcaption {
   .testimonials {
     display: flex;
     flex-flow: column nowrap;
-    width: 100%;
+    width: 269px;
     height: 60vh;
     overflow-y: scroll;
   }
 
-  /* MOBILE TESTIMONIAL CARDS */
-  .testimonial-card-wrapper {
-
+  .testimonial-card-wrapper:last-child {
+    margin-bottom: 10px;
   }
 }
 
