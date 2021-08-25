@@ -122,7 +122,7 @@ function FiatLux() {
                     <div id="sidebar">
                         <div className="circle">
                             <div className="text">
-                                <p className="big">80+</p>
+                                <p className="big" id="eighty-plus">80+</p>
                                 <p className="small">Attendees</p>
                             </div>
                         </div>

@@ -50,11 +50,14 @@
   font-weight: 600;
   color: #fff;
   text-align: center;
-  background: #000;
+  background: #67379a;
   margin: 10px 0;
 }
 
 .circle .text {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   padding: 43px;
   margin: 0;
 }
@@ -64,6 +67,11 @@
   font-weight: 600;
   text-align: center;
   margin: 0;
+}
+
+p#eighty-plus {
+  position: relative;
+  right: -7px;
 }
 
 .circle p.small {
