@@ -560,6 +560,11 @@ a {
   row-gap: 16px;
 }
 
+.testimonials-cards-col {
+  height: 870px;
+  overflow-y: scroll;
+}
+
 /* TESTIMONIAL CARDS */
 
 .testimonial-card-wrapper {
@@ -776,6 +781,12 @@ figure.testimonial-card figcaption {
     overflow-y: scroll;
   }
 
+  .testimonials-cards-col {
+    height: auto;
+    overflow-y: hidden;
+  }
+
+  /* Compensate for flex box adding additional spacing between divs */
   .testimonial-card-wrapper:last-child {
     margin-bottom: 10px;
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import ContactForm from './ContactForm';
 import HomeCompany from './HomeCompany';
 import { Link } from "react-router-dom";
@@ -264,6 +265,11 @@ function Home() {
         );
     });
 
+    const testimonialsMiddleCol = React.createRef();
+    useEffect(() => {
+        testimonialsMiddleCol.current.scrollTop = 100;
+      });
+
     return (
         <section>
             <div className="splash">
@@ -392,17 +398,17 @@ function Home() {
                         </div>
                         <div className="testimonials">
                             <div>
-                                <div>
+                                <div className="testimonials-cards-col">
                                     {testimonials.slice(0, testimonials.length / 3)}
                                 </div>
                             </div>
                             <div>
-                                <div>
+                                <div className="testimonials-cards-col" ref={testimonialsMiddleCol}>
                                     {testimonials.slice(2 * testimonials.length / 3, testimonials.length)}
                                 </div>
                             </div>
                             <div>
-                                <div>
+                                <div className="testimonials-cards-col">
                                     {testimonials.slice(testimonials.length / 3, 2 * testimonials.length / 3)}
                                 </div>
                             </div>
