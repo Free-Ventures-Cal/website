@@ -37,6 +37,10 @@ import biosense from './../assets/portfolio/biosense.png';
 import turing from './../assets/portfolio/turing.png';
 import flipout from './../assets/portfolio/flipout.png';
 import beyondvision from './../assets/portfolio/beyondvision.png';
+import blackbook from './../assets/portfolio/batches/spring_21/blackbook.png';
+import loggicat from './../assets/portfolio/batches/spring_21/loggicat.png';
+import shopt from './../assets/portfolio/batches/spring_21/shopt.png';
+import sportvue from './../assets/portfolio/batches/spring_21/sportvue.png';
 
 // photos
 import demilune1 from './../assets/portfolio/demilune1.jpeg';
@@ -88,6 +92,83 @@ import alchemy from './../assets/press/alchemy.jpeg';
 
 let portfolioContent = {
     batchList: [
+        {
+            batchName: "Spring 2021",
+            batchNumber: 16,
+            companies: [
+                {
+                    name: "The Sipher Company",
+                    description: "A customer behavior platform that allows businesses to optimize their sales, marketing, and management strategies by tying customer interactions to product satisfaction. By using a series of algorithms and cutting-edge data processing techniques, we allow enterprises to frequently check-in on their customer's interactions allowing them to personalize business-customer relationships as well as reduce turnover.",
+                    track: "accelerator",
+                    links: [
+                        {
+                            address: "https://www.thesiphercompany.com/",
+                            title: "Website",
+                        }
+                    ],
+
+                },
+                {
+                    name: "BlossomVR",
+                    description: "BlossomVR is a biofeedback virtual reality (VR) application that gamifies personalized relaxation practices to help reduce anxiety and stress - the epidemic of the 21st century. Using virtual reality and biofeedback, we provide an immersive experience that is personalized for each user. Our habit-forming storyline also helps users commit to the mindfulness practices that work best for them.",
+                    track: "accelerator",
+                    links: [
+                        {
+                            address: "https://blossomvr.com/",
+                            title: "Website",
+                        }
+                    ],
+                },
+                {
+                    name: "Loggicat",
+                    description: "Loggicat provides a comprehensive solution to the data spill problem, which is storing sensitive data in logs, code repositories, generated files and any other locations. Loggicat is the first company to create a seamless, uncompromising data security solution that is devops-first.",
+                    track: "accelerator",
+                    logo: loggicat,
+                    links: [
+                        {
+                            address: "https://www.loggicat.com/",
+                            title: "Website",
+                        }
+                    ],
+                },
+                {
+                    name: "Sportvue",
+                    description: "Ice hockey players look down subconsciously during practices and games, causing them to get into collisions and miss split-second opportunities to pass and shoot the puck. SportVue has built a unique training aid that helps players develop a habit of playing heads up by giving an audio and/or visual cue when a player looks down.",
+                    track: "accelerator",
+                    logo: sportvue,
+                    links: [
+                        {
+                            address: "https://sportvue.co/",
+                            title: "Website",
+                        }
+                    ],
+                },
+                {
+                    name: "Shopt",
+                    description: "A local resale marketplace that relies on smart lockers to handle the transactions, eliminating the inconveniences and unreliability of current resale options.",
+                    track: "incubator",
+                    logo: shopt,
+                    links: [
+                        {
+                            address: "https://www.shoptnow.com/",
+                            title: "Website",
+                        }
+                    ],
+                },
+                {
+                    name: "Blackbook",
+                    description: "An education development platform designed to empower Black students with tools that enable peer-to-peer connection, academic enrichment, and professional success.",
+                    track: "incubator",
+                    logo: blackbook,
+                    links: [
+                        {
+                            address: "https://www.blackbooku.com/",
+                            title: "Website",
+                        }
+                    ],
+                }
+            ]
+        },
         {
             batchName: "Fall 2020",
             batchNumber: 15,

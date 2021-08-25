@@ -116,6 +116,7 @@ class Portfolio extends React.Component {
                             </ul>
 
                         </div>
+                        {/* The actual tabs are different components. */}
                         <PortfolioTab
                             sideBarTabName={this.state.sideBarTabName}
                         />
