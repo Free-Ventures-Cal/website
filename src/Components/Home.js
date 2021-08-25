@@ -268,7 +268,7 @@ function Home() {
     const testimonialsMiddleCol = React.createRef();
     useEffect(() => {
         testimonialsMiddleCol.current.scrollTop = 100;
-      });
+    });
 
     return (
         <section>
@@ -291,7 +291,7 @@ function Home() {
                 <div className="container overviewLayout">
                     <div className="mini-header">
                         <h2>The Free Ventures Accelerator</h2>
-                        <p>Free Ventures is a semester long program that runs both in the fall and spring academic semesters. We connect founders to experienced mentors who can help think strategically about how to grow their businesses and provide a host of personalized resources to help startups scale into the future.</p>
+                        <p>Since 2013, Free Ventures has been Cal's leading pre-seed accelerator, combining the power of our mentor network, sponsor-led curriculum, and unique personalized point person structure to elevate student startups at Cal to the next level. We are a semester-long program, running a batch in both the spring and fall.</p>
                         <Link to="/program" className="genericButton">Learn more about the program </Link>
 
                     </div>
@@ -351,7 +351,7 @@ function Home() {
                                 <h3>Funding</h3>
                                 <p>We provide equity-free funds to reimburse costs associated
                                     with growing your company on campus, and we help fundraise
-                                    from top investors in the valley during and after the batch.</p>
+                                    from top investors during and after the batch.</p>
                             </span>
                         </article>
                         <article>
@@ -362,8 +362,8 @@ function Home() {
                                 <h3>Mentorship</h3>
                                 <p>Each week, we bring in founders, investors, and
                                     industry experts to help guide our teams. We also
-                                    provide access to Berkeley’s growing entrepreneurship
-                                    community.</p>
+                                    provide access to key stakeholders in Cal's
+                                    startup ecosystem.</p>
                             </span>
                         </article>
                         <article>
