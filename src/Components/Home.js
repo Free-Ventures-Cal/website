@@ -215,9 +215,9 @@ function Home() {
             text: "Coming into FreeV, Polyture was just a project and it wasn’t clear who I was targeting; it wasn’t until the batch that I understood the core competencies of the platform and what he should spend his time."
         },
         {
-            name: "Adam",
-            company: "MUSA",
-            text: "They kept the team motivated and gave us opportunities to network - connections to mentors are all relevant and it seems like they want to help."
+            name: "Rishma",
+            company: "BlossomVR",
+            text: "It was super helpful and interesting to get opinions of ppl not familiar with VR in mentor sessions, which had a great mix of good mix of VC, marketing, and tech."
         },
         {
             name: "Ibrahim",
