@@ -559,6 +559,8 @@ a {
   row-gap: 16px;
 }
 
+/* TESTIMONIAL CARDS */
+
 .testimonial-card-wrapper {
   box-sizing: border-box;
   display: block;
@@ -566,37 +568,65 @@ a {
   margin-bottom: 20px;
 }
 
-.testimonial-card {
+figure.testimonial-card {
   box-sizing: border-box;
   background-color: white;
   color: black;
-  display: flex;
-  flex-flow: row wrap;
   height: 100%;
   padding: 16px 18px;
+
+  /* Flex Settings */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+
   /* Border Style */
   border-color: #eee;
   border-style: solid;
   border-width: 1px;
   border-radius: 7px;
+
+  /* Override default figure style */
+  margin-block-start: auto;
+  margin-block-end: auto;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
 }
 
-.testimonial-card-header {
-  display: flex;
-  align-items: center;
+/* TESTIMONIALS CARD COMPANY NAME */
+
+p.testimonial-card-company {
   margin: 0;
 }
 
-.testimonial-card-header b {
-  color: #67379a;
-  font-weight: 600;
-  margin: 0;
+/* TESTIMONIALS CARD BLOCKQUOTE */
+
+blockquote.testimonial-card-description::before {
+  content: open-quote;
+}
+blockquote.testimonial-card-description::after {
+  content: close-quote;
+}
+blockquote.testimonial-card-description {
+  quotes: "“" "”" "‘" "’";
 }
 
-.testimonial-card-description p {
+blockquote.testimonial-card-description {
   font-size: 14px;
   font-weight: 500;
   line-height: 200%;
+
+  /* Override default blockquote style */
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+}
+
+/* TESTIMONIALS CARD PERSON NAME */
+
+figure.testimonial-card figcaption {
+  align-self: flex-end;
 }
 
 @media (max-width: 1034px) {

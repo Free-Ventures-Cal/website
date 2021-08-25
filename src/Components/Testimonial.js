@@ -5,14 +5,13 @@ import './../styles/Team.css';
 function Testimonial(props) {
     return (
         <div class="testimonial-card-wrapper">
-            <div class="testimonial-card">
-                <div class="testimonial-card-header">
-                    <b>{props.name}, {props.company}</b>
-                </div>
-                <div class="testimonial-card-description">
-                    <p>{props.text}</p>
-                </div>
-            </div>
+            <figure class="testimonial-card">
+                <p className="testimonial-card-company">{props.company}</p>
+                <blockquote class="testimonial-card-description">
+                    {props.text}
+                </blockquote>
+                <figcaption>–<cite>{props.name}</cite></figcaption>
+            </figure>
         </div>
     );
 }

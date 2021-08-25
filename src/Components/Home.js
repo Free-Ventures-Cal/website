@@ -6,7 +6,6 @@ import freevgroup from './../assets/program/freevgroup.jpg'
 import './../styles/App.css';
 import './../styles/Home.css';
 import Testimonial from './Testimonial';
-import { useEffect } from 'react';
 // Press
 import wired from './../assets/press/grayscale/wired.png';
 import tc from './../assets/press/grayscale/tc.png';
