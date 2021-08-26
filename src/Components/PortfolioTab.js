@@ -68,6 +68,23 @@ function PortfolioTab(props) {
     let renderAllStartups, renderPress, expandedPanel;
 
     if (props.sideBarTabName === "All startups") {
+        // helper function
+        const hasTag = (companyCardComponent, targetTags) => {
+            if (!companyCardComponent.props.tags) {
+                return false;
+            }
+            let companyTags = companyCardComponent.props.tags;
+
+            let found = false;
+            for (let i = 0; i < targetTags.length; i++) {
+                if (companyTags.indexOf(targetTags[i]) > -1) {
+                    found = true;
+                    break;
+                }
+            }
+            return found;
+        }
+
         // Separate into categories
         let acquisitions = [];
         let yc = [];
@@ -75,14 +92,15 @@ function PortfolioTab(props) {
         let theRest = [];
 
         renderCompanies.forEach((company) => {
-            if (portfolioContent.acquisitionNames.includes(company.props.companyName)) {
+            if (hasTag(company, portfolioContent.tags["acquisitions"])) {
                 acquisitions.push(company);
             }
-            else if (portfolioContent.ycNames.includes(company.props.companyName)) {
+            if (hasTag(company, portfolioContent.tags["yc"])) {
                 yc.push(company);
             }
-            else if (portfolioContent.largeFundraisingNames.includes(company.props.companyName)) {
+            if (portfolioContent.largeFundraisingNames.includes(company.props.companyName)) {
                 largeFundraising.push(company);
+                return;
             }
             else {
                 theRest.push(company);

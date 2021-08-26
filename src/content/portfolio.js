@@ -89,8 +89,42 @@ import alchemy from './../assets/press/alchemy.jpeg';
 //
 //
 
+const acquisitionTag = {
+    content: "Acquired",
+    backgroundColor: "#424242"
+};
 
-let portfolioContent = {
+const ycW2020Tag = {
+    content: "YC W2020",
+    backgroundColor: "#EC8641"
+};
+
+const ycW2018Tag = {
+    content: "YC W2018",
+    backgroundColor: "#EC8641"
+};
+
+const ycS2018Tag = {
+    content: "YC S2018",
+    backgroundColor: "#EC8641"
+};
+
+const ycS2017Tag = {
+    content: "YC S2017",
+    backgroundColor: "#EC8641"
+};
+
+const kickstarterTag = {
+    content: "Kickstarter",
+    backgroundColor: "#04ce78"
+};
+
+const portfolioContent = {
+    tags: {
+        acquisitions: [acquisitionTag],
+        yc: [ycW2020Tag, ycW2018Tag, ycS2018Tag, ycS2017Tag],
+        kickstarter: [kickstarterTag]
+    },
     batchList: [
         {
             batchName: "Spring 2021",
@@ -361,12 +395,7 @@ let portfolioContent = {
                             title: "Website",
                         }
                     ],
-                    tags: [
-                        {
-                            content: "YC W2020",
-                            backgroundColor: "#EC8641"
-                        }
-                    ],
+                    tags: [ycW2020Tag],
                     logo: simplata,
                     description: "Simplata is developing a new way to share and connect data. We offer an end-to-end data storage, management and visualization solution. Clients can upload whatever datasets they choose and visualize them with ease. Our graph visualization software turns data into visual, interactive graphs — revealing the hidden connections at the heart of any analysis.",
                 },
@@ -426,12 +455,7 @@ let portfolioContent = {
                             title: "Kickstarter",
                         }
                     ],
-                    tags: [
-                        {
-                            content: "Kickstarter",
-                            backgroundColor: "#04ce78"
-                        },
-                    ],
+                    tags: [kickstarterTag],
                     logo: coba,
                     description: "A solid coffee alternative made from whole coffee beans that empowers busy people to do more. While traditional coffee utilizes only 20% of the coffee bean, their bar utilizes the whole bean and contains the caffeine content of 1 cup of coffee.",
                 },
@@ -463,12 +487,7 @@ let portfolioContent = {
                         address: "https://thestartu.com/everyone-is-unique-why-shouldnt-your-protein-powder-be-too/",
                         title: "StartU Article"
                     }],
-                    tags: [
-                        {
-                            content: "YC W2018",
-                            backgroundColor: "#EC8641"
-                        }
-                    ],
+                    tags: [ycW2018Tag],
                     description: "Personalized protein powder, delivered monthly. Recently completed YC Winter ‘18 Batch and hit $40k monthly sales in February on 2.7k total customers, and in the process of raising a target $2M seed round. Learn more at gogainful.com",
                 },
                 {
@@ -527,12 +546,7 @@ let portfolioContent = {
                         address: "https://www.crunchbase.com/organization/onederful",
                         title: "Crunchbase"
                     }],
-                    tags: [
-                        {
-                            content: "YC W2018",
-                            backgroundColor: "#EC8641"
-                        }
-                    ],
+                    tags: [ycW2018Tag],
                     logo: onederful,
                 },
                 {
@@ -576,12 +590,7 @@ let portfolioContent = {
                     description: "Paladin Drones is creating autonomous drone solutions for public safety, at a price even volunteer departments can afford. Their product decreases response time by at least two minutes by providing crucial situational awareness to first responders before they arrive on scene. Their solutions have landed them a spot as a finalist for Berkeley Big Ideas, and helped them win the Penn Innovation Grant.",
                     link: "https://paladindrones.io",
                     logo: paladin,
-                    tags: [
-                        {
-                            content: "YC S2018",
-                            backgroundColor: "#EC8641"
-                        }
-                    ],
+                    tags: [ycS2018Tag],
                     links: [{
                         address: "https://techcrunch.com/2019/05/28/paladin-drones-picks-up-1-3m-to-give-first-responders-a-live-feed-of-emergencies/",
                         title: "Crunchbase"
@@ -622,16 +631,7 @@ let portfolioContent = {
                     name: "Pantheon VR",
                     description: "Pantheon is a VR application that makes 3D modeling and animation immersive and effortless. We seek to create a tool that drives people to create beautiful 3D content, the same way Instagram made photographers, Medium made writers, and Youtube made filmmakers. We’ve created a simple set of tools that you use while immersed in VR, that let you to easily build, animate, and share your digital world. We took a process that takes weeks to learn and brought it down to minutes. Pantheon allows anyone to quickly and easily create 3D content, and share it with others. ",
                     logo: pantheon,
-                    tags: [
-                        {
-                            content: "Acquired",
-                            backgroundColor: "#424242"
-                        },
-                        {
-                            content: "YC S2017",
-                            backgroundColor: "#EC8641"
-                        }
-                    ],
+                    tags: [acquisitionTag, ycS2017Tag],
                     links: [{
                         address: "https://www.crunchbase.com/organization/pantheon-3",
                         title: "Crunchbase"
@@ -641,12 +641,7 @@ let portfolioContent = {
                 {
                     name: "Iota Labs",
                     description: "Introducing Dot, the physical push notification that tells your phone where you are so that it understands your behaviors and patterns in the places that make up your life (bedroom, living room, garage, backyard, work, car, etc). Dot serves a dual purpose: it provides ultra-precise location data to your smartphone, and allows users to create extensible, interactive interfaces anywhere. This combination creates an invaluable asset when dealing with data — context.",
-                    tags: [
-                        {
-                            content: "Kickstarter",
-                            backgroundColor: "#04ce78"
-                        },
-                    ],
+                    tags: [kickstarterTag],
                     links: [{
                         address: "https://www.kickstarter.com/projects/1867163750/dot-the-physical-push-notification",
                         title: "Kickstarter"
@@ -692,12 +687,7 @@ let portfolioContent = {
                     name: "Distributed Systems",
                     description: "Pavlov is a simple interface to build and manage enterprise machine intelligence applications. Pavlov's current technology brings enterprise support and tooling to critical data processing technologies, enabling teams to quickly build, deploy, and scale machine learning pipelines out-of-the-box. Pavlov is currently focused on addressing fraud related use cases, making sense of textual and rich media content at scale via Pavlov Spot, their first product offering. ",
                     logo: distributed,
-                    tags: [
-                        {
-                            content: "Acquired",
-                            backgroundColor: "#424242"
-                        }
-                    ],
+                    tags: [acquisitionTag],
                     links: [{
                         address: "https://techcrunch.com/2018/08/15/login-with-coinbase/",
                         title: "Acquisition"
@@ -757,12 +747,7 @@ let portfolioContent = {
                         address: "https://www.getwildfire.com/",
                         title: "App Website"
                     }],
-                    tags: [
-                        {
-                            content: "YC S2017",
-                            backgroundColor: "#EC8641"
-                        }
-                    ],
+                    tags: [ycS2017Tag],
 
                 },
                 {
@@ -808,12 +793,7 @@ let portfolioContent = {
                         address: "https://medium.com/@blitzesports/the-blitz-team-joins-discord-e3b17578966b",
                         title: "Acquisition"
                     }],
-                    tags: [
-                        {
-                            content: "Acquired",
-                            backgroundColor: "#424242"
-                        }
-                    ],
+                    tags: [acquisitionTag],
                     photos: [{
                         src: blitz1
                     }]
@@ -1047,8 +1027,7 @@ let portfolioContent = {
 
 
     ],
-    acquisitionNames: ["Distributed Systems", "Pantheon VR", "Blitz E-Sports"],
-    ycNames: ["Wildfire", "Paladin Drones", "onederful", "Simplata"],
+    // large fundraising doesn't have a tag so we define that group here.
     largeFundraisingNames: ["Gainful", "Glints", "Foresight Mental Health"]
 }
 
