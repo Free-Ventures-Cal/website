@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import './../styles/App.css';
 import './../styles/Team.css';
 import { useState, useEffect } from 'react';
+import useScrollHandler from '../hooks/useScrollHandler';
 
 import Person from './Person.js'
 import GenericTop from './GenericTop';
@@ -16,7 +17,6 @@ import maanav from './../assets/team/maanav.png';
 import varun from './../assets/team/varun.png';
 import aamir from './../assets/team/aamir.png';
 
-import Alumnus from './Alumnus.js';
 import aashi from './../assets/team/alumni/aashi_jawar.png';
 import abhay from './../assets/team/alumni/abhay_malik.jpeg';
 import adhiv from './../assets/team/alumni/adhiv_dhar.png';
@@ -48,6 +48,7 @@ import haas from './../assets/partners/haas.jpg';
 import berkeleyengineering from './../assets/partners/berkeleyengineering.png';
 import scet from './../assets/partners/scet.png';
 import skydeck from './../assets/partners/skydeck.png';
+import AlumniCardsMarquee from './AlumniCardsMarquee';
 
 
 function Team() {
@@ -290,50 +291,6 @@ function Team() {
         );
     });
 
-    let alumniComponents = alumniContent.map((alumnus) => {
-        return (<Alumnus
-            name={alumnus.name}
-            position={alumnus.position}
-            company={alumnus.company}
-            image={alumnus.image}
-        />
-
-        );
-    });
-
-    /* Return an array of Alumnus components to use as one of three rows in the
-    internal alumni section. The length of the result is one third the length
-    of alumniComponents. The row argument (1 to 3) determines which Alumnus
-    components should appear in the result. */
-    function assembleMarqueeRow(row) {
-        const numAlumni = alumniComponents.length;
-        const end1 = numAlumni / 3;
-        const end2 = 2 * numAlumni / 3;
-        if (row === 1) {
-            const row = alumniComponents.slice(0, end1);
-            return row;
-        }
-        if (row === 2) {
-            const row = alumniComponents.slice(end1, end2);
-            return row;
-        }
-        if (row === 3) {
-            const row = alumniComponents.slice(end2, numAlumni);
-            return row;
-        }
-    }
-
-    const row1 = React.createRef();
-    const row2 = React.createRef();
-    const row3 = React.createRef();
-
-    useEffect(() => {
-        row1.current.scrollLeft = 250;
-        row2.current.scrollLeft = 200;
-        row3.current.scrollLeft = 350;
-      });
-
-
     return (
         <section>
             <GenericTop
@@ -357,21 +314,22 @@ function Team() {
                     </div>
                 </section>
                 <div class="alumni-marquee-wrapper">
-                    <div className="alumni-cards-marquee">
-                        <div class="alumni-cards-row" ref={row1}>
-                            {assembleMarqueeRow(1)}
-                        </div>
-                    </div>
-                    <div className="alumni-cards-marquee">
-                        <div class="alumni-cards-row" ref={row2}>
-                            {assembleMarqueeRow(2)}
-                        </div>
-                    </div>
-                    <div className="alumni-cards-marquee">
-                        <div class="alumni-cards-row" ref={row3}>
-                            {assembleMarqueeRow(3)}
-                        </div>
-                    </div>
+                    <p>{useScrollHandler()}</p>
+                    <AlumniCardsMarquee
+                        row={1}
+                        content={alumniContent}
+                        scrollPosition={useScrollHandler()}
+                    />
+                    <AlumniCardsMarquee
+                        row={2}
+                        content={alumniContent}
+                        scrollPosition={useScrollHandler()}
+                    />
+                    <AlumniCardsMarquee
+                        row={3}
+                        content={alumniContent}
+                        scrollPosition={useScrollHandler()}
+                    />
                 </div>
             </div>
             <GenericPage>
