@@ -291,6 +291,14 @@ function Team() {
         );
     });
 
+    // Magic constant for converting the window scroll position into
+    // the alumni scroll position.
+    const SCROLL_CONVERT = 730;
+
+    // Magic constant to make the alumni scroll bars start at slightly
+    // different lengths.
+    const SCROLL_PLUS_MINUS = 1000;
+
     return (
         <section>
             <GenericTop
@@ -314,21 +322,22 @@ function Team() {
                     </div>
                 </section>
                 <div class="alumni-marquee-wrapper">
-                    <p>{useScrollHandler()}</p>
+                    {/* Use this to debug: */}
+                    {/* <p>{useScrollHandler()}</p> */}
                     <AlumniCardsMarquee
                         row={1}
                         content={alumniContent}
-                        scrollPosition={useScrollHandler()}
+                        scrollPosition={useScrollHandler() + SCROLL_CONVERT}
                     />
                     <AlumniCardsMarquee
                         row={2}
                         content={alumniContent}
-                        scrollPosition={useScrollHandler()}
+                        scrollPosition={useScrollHandler() + SCROLL_CONVERT - SCROLL_PLUS_MINUS}
                     />
                     <AlumniCardsMarquee
                         row={3}
                         content={alumniContent}
-                        scrollPosition={useScrollHandler()}
+                        scrollPosition={useScrollHandler() + SCROLL_CONVERT + SCROLL_PLUS_MINUS}
                     />
                 </div>
             </div>
