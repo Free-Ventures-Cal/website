@@ -76,7 +76,7 @@ function Team() {
             image: christina
         },
         {
-            name: "Adithiya Paramasivam",
+            name: "Adithya Paramasivam",
             position: "Managing Director",
             linkedinUrl: "https://www.linkedin.com/in/adithyaparam",
             mailTo: "mailto:adithya@freeventures.org",
