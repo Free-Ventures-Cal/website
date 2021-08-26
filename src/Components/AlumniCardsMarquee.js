@@ -8,6 +8,8 @@ import Alumnus from './Alumnus.js';
 
 function AlumniCardsMarquee(props) {
 
+    const scroll_direction = props.row % 2 == 0;
+
     /* Build each individual card. To optimize this, make it so that
      we only build the cards we're gonna need for this row. */
     let alumniComponents = props.content.map((alumnus) => {
@@ -43,7 +45,14 @@ function AlumniCardsMarquee(props) {
     const slider = React.createRef();
 
     useEffect(() => {
-        slider.current.scrollLeft = props.scrollPosition/10;
+        const maxScrollLeft = 3500;
+        if (!scroll_direction) {
+            slider.current.scrollLeft = props.scrollPosition/10;
+        }
+        else {
+            slider.current.scrollLeft = maxScrollLeft/10 - props.scrollPosition/10;
+        }
+        
     });
 
     return (
