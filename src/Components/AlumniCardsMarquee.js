@@ -44,6 +44,9 @@ function AlumniCardsMarquee(props) {
 
     const slider = React.createRef();
 
+    // There's probably a better way to do this by using
+    // Framer Motion library and Parallax Effect instead
+    // of manually manipulating the scrollbar then hiding it.
     useEffect(() => {
         const maxScrollLeft = 3500;
         if (!scroll_direction) {
