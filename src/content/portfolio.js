@@ -624,8 +624,8 @@ let portfolioContent = {
                     logo: pantheon,
                     tags: [
                         {
-                            content: "FreeV SP16",
-                            backgroundColor: "#67379A"
+                            content: "Acquired",
+                            backgroundColor: "#424242"
                         },
                         {
                             content: "YC S2017",
