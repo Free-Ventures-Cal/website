@@ -153,6 +153,9 @@ function Apply(props) {
                 description={'Batch Team applications are now open! Please apply below.'}
             >
                 <a href={airtableLink} className="genericButton" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Batch</a>
+                &nbsp;
+                &nbsp;
+                <a href="https://forms.gle/47YUmy5eXgaotm169" className="genericButton" target="_blank" rel="noopener noreferrer">Internal Team Interest Form</a>
             </GenericTop>
             <GenericPage>
                 <div className={classes.root}>
