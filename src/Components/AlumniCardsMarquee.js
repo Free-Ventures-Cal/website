@@ -42,23 +42,19 @@ function AlumniCardsMarquee(props) {
     /* Set the scroll position manually based on props.
     There's probably a better way to do this by using CSS translateX.
     Maybe use Framer Motion library and Parallax Effect...? */
-    
     const MARQUEE_RANGE = [200, 300]; // find by trial and error
     const slider = React.createRef();
-    
     useEffect(() => {
         /* If marquee is not visible don't bother scrolling. */
         const y = props.scrollPosition;
         const marqueeNotVisible = !(y >= props.windowScrollLimits[0] && y <= props.windowScrollLimits[1]);
         if (marqueeNotVisible) { return; }
-
         /* Convert vertical scroll position to row scroll position. */
         const x = (function () {
-            const r = (MARQUEE_RANGE[1] - MARQUEE_RANGE[0]) / 
-                      (props.windowScrollLimits[1] - props.windowScrollLimits[0]);
+            const r = (MARQUEE_RANGE[1] - MARQUEE_RANGE[0]) /
+                (props.windowScrollLimits[1] - props.windowScrollLimits[0]);
             return (y - props.windowScrollLimits[0]) * r + MARQUEE_RANGE[0];
         })();
-
         /* Odd and even rows move differently. */
         const OFFSET = 50;
         const scroll_direction = props.row % 2 == 0;
