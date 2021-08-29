@@ -31,7 +31,12 @@ import opendoor from './../assets/acquisitions/opendoor.png';
 // Portfolio
 import paladin from './../assets/portfolio/paladin.png';
 import distributed from './../assets/distributed.png';
+import wildfire from './../assets/portfolio/wildfire2.png';
 import gainful from './../assets/gainful.png';
+import blitz from './../assets/portfolio/blitz.png';
+import glints from './../assets/portfolio/glints.png';
+import simplata from './../assets/portfolio/simplata.png';
+import onederful from './../assets/portfolio/onederful.png';
 // Icons
 import funds from './../assets/funds.png';
 import mentors from './../assets/mentors.png';
@@ -42,8 +47,6 @@ function Home() {
     let portfolioContent = [{
         logo: paladin,
         companyName: "Paladin Drones",
-        description: "Paladin Drones deploys drones to 911 calls to give first responders instant access to critical information.",
-        raised: "$1.3m raised",
         link: "https://techcrunch.com/2019/05/28/paladin-drones-picks-up-1-3m-to-give-first-responders-a-live-feed-of-emergencies/",
         linkTitle: "Read more on TechCrunch",
         tags: [
@@ -60,10 +63,8 @@ function Home() {
     {
         logo: distributed,
         companyName: "Distributed Systems",
-        description: "Distributed Systems builds a decentralized identity platform. Acquired by Coinbase.",
-        raised: "$1.7m raised",
         link: "https://techcrunch.com/2018/08/15/login-with-coinbase/",
-        linkTitle: "Learn about the acquisition",
+        linkTitle: "Acquired by Coinbase",
         tags: [
             {
                 content: "FreeV SP16",
@@ -76,12 +77,30 @@ function Home() {
         ]
     },
     {
+        logo: wildfire,
+        companyName: "Wildfire",
+        link: "https://www.getwildfire.com/our-story",
+        linkTitle: "Acquired by Opendoor",
+        tags: [
+            {
+                content: "FreeV FA15",
+                backgroundColor: "#67379A"
+            },
+            {
+                content: "YC S2017",
+                backgroundColor: "#EC8641"
+            },
+            {
+                content: "Acquired",
+                backgroundColor: "#424242"
+            }
+        ]
+    },
+    {
         logo: gainful,
         companyName: "Gainful",
-        description: "Personalized protein powder, delivered directly to your doorstep.",
-        raised: "$120k raised",
-        link: "https://www.gainful.com",
-        linkTitle: "Check out their website",
+        link: "https://techcrunch.com/2021/01/13/gainful-series-a/",
+        linkTitle: "Learn about their Series A",
         tags: [
             {
                 content: "FreeV SP18",
@@ -92,7 +111,68 @@ function Home() {
                 backgroundColor: "#EC8641"
             }
         ]
-    }];
+    },
+    {
+        logo: blitz,
+        companyName: "Blitz E-Sports",
+        link: "https://medium.com/@blitzesports/the-blitz-team-joins-discord-e3b17578966b",
+        linkTitle: "Acquired by Discord",
+        tags: [
+            {
+                content: "FreeV SP15",
+                backgroundColor: "#67379A"
+            },
+            {
+                content: "Acquired",
+                backgroundColor: "#424242"
+            }
+        ]
+    },
+    {
+        logo: glints,
+        companyName: "Glints",
+        link: "https://e27.co/singaporean-startup-glints-has-raised-us2million-series-a-to-help-you-find-a-job-20160905/",
+        linkTitle: "Learn about their Series A",
+        tags: [
+            {
+                content: "FreeV FA14",
+                backgroundColor: "#67379A"
+            }
+        ]
+    },
+    {
+        logo: simplata,
+        companyName: "Simplata",
+        link: "https://www.simplata.io/",
+        linkTitle: "Check out their website",
+        tags: [
+            {
+                content: "FreeV SP19",
+                backgroundColor: "#67379A"
+            },
+            {
+                content: "YC W2020",
+                backgroundColor: "#EC8641"
+            }
+        ]
+    },
+    {
+        logo: onederful,
+        companyName: "Onederful",
+        link: "https://www.onederful.co/",
+        linkTitle: "Check out their website",
+        tags: [
+            {
+                content: "FreeV FA17",
+                backgroundColor: "#67379A"
+            },
+            {
+                content: "YC W2018",
+                backgroundColor: "#EC8641"
+            }
+        ]
+    }
+    ];
 
     let pressContent = [
         {
