@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import './../styles/App.css';
 import './../styles/Team.css';
-import { useState, useEffect } from 'react';
 import useScrollHandler from '../hooks/useScrollHandler';
 
 import Person from './Person.js'
@@ -326,17 +325,17 @@ function Team() {
                     {/* <p>{useScrollHandler()}</p> */}
                     <AlumniCardsMarquee
                         row={1}
-                        content={alumniContent}
+                        fullContent={alumniContent}
                         scrollPosition={useScrollHandler() + SCROLL_CONVERT}
                     />
                     <AlumniCardsMarquee
                         row={2}
-                        content={alumniContent}
+                        fullContent={alumniContent}
                         scrollPosition={useScrollHandler() + SCROLL_CONVERT - SCROLL_PLUS_MINUS}
                     />
                     <AlumniCardsMarquee
                         row={3}
-                        content={alumniContent}
+                        fullContent={alumniContent}
                         scrollPosition={useScrollHandler() + SCROLL_CONVERT + SCROLL_PLUS_MINUS}
                     />
                 </div>
