@@ -208,6 +208,8 @@ function Apply(props) {
                         {/* INTERNAL TAB */}
 
                         <TabPanel value={value} index={1}>
+                            <br/>
+                            <a href="https://forms.gle/47YUmy5eXgaotm169" className="genericButtonGray" target="_blank" rel="noopener noreferrer">Internal Team Interest Form</a>
                             <p>If you’re interested in startups and don’t know where to start, you’ve come to the right place!</p>
                             <p>Free Ventures is the absolute best way you can dive into the startups at Cal and beyond. As an internal team member, you will have unparalleled exposure to the entrepreneurship ecosystem. </p>
                             <p>All internal team members serve as point people for our batch startups, meaning you’ll get to work one-on-one with incredible startup founders from your very first semester - helping them problem-solve, think of crazy solutions, deep dive into a unique problem space, and so much more. Our founders are everyone from Berkeley undergrads with a love of machine learning to PhD students with biomedical expertise, and you get to have a very real and tangible impact on their startup journeys. If everything goes to plan, they’ll be changing the world completely as they do this for years, and you were there from the beginning. </p>
