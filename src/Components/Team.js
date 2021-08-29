@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import './../styles/App.css';
 import './../styles/Team.css';
@@ -52,9 +53,10 @@ import AlumniCardsMarquee from './AlumniCardsMarquee';
 
 function Team() {
 
-    var header = "Meet the Team";
-    var internalRecruitment = false;
-    var description = "We're a small group of undergraduates who care about the Berkeley startup ecosystem. Interested in joining our team?";
+    let header = "Meet the Team";
+    let internalRecruitment = false;
+    let description = "We're a small group of undergraduates who care about the Berkeley startup ecosystem. Interested in joining our team?";
+    const [shuffledAlumniContent, setShuffledAlumniContent] = useState([]);
 
     let button;
 
@@ -290,6 +292,31 @@ function Team() {
         );
     });
 
+    const deepCopyFunction = (inObject) => {
+        let outObject, value, key;
+        if (typeof inObject !== "object" || inObject === null) {
+            return inObject; // Return the value if inObject is not an object
+        }
+        // Create an array or object to hold the values
+        outObject = Array.isArray(inObject) ? [] : {};
+        for (key in inObject) {
+            value = inObject[key];
+            // Recursively (deep) copy for nested objects, including arrays
+            outObject[key] = deepCopyFunction(value);
+        }
+        return outObject;
+    }
+
+    useEffect(() => {
+        const shuffled = deepCopyFunction(alumniContent);
+        // Shuffle the internal alumni content.
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        setShuffledAlumniContent(shuffled);
+    }, []);
+
     // The minimum and maximum window scroll where the marquee rows are visible.
     const SCROLL_LIMITS = [579, 2000];
 
@@ -320,19 +347,19 @@ function Team() {
                     {/* <p>{useScrollHandler()}</p> */}
                     <AlumniCardsMarquee
                         row={1}
-                        fullContent={alumniContent}
+                        fullContent={shuffledAlumniContent}
                         scrollPosition={useScrollHandler()}
                         windowScrollLimits={SCROLL_LIMITS}
                     />
                     <AlumniCardsMarquee
                         row={2}
-                        fullContent={alumniContent}
+                        fullContent={shuffledAlumniContent}
                         scrollPosition={useScrollHandler()}
                         windowScrollLimits={SCROLL_LIMITS}
                     />
                     <AlumniCardsMarquee
                         row={3}
-                        fullContent={alumniContent}
+                        fullContent={shuffledAlumniContent}
                         scrollPosition={useScrollHandler()}
                         windowScrollLimits={SCROLL_LIMITS}
                     />
