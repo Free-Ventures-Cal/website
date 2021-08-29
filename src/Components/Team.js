@@ -290,13 +290,8 @@ function Team() {
         );
     });
 
-    // Magic constant for converting the window scroll position into
-    // the alumni scroll position.
-    const SCROLL_CONVERT = 730;
-
-    // Magic constant to make the alumni scroll bars start at slightly
-    // different lengths.
-    const SCROLL_PLUS_MINUS = 1000;
+    // The minimum and maximum window scroll where the marquee rows are visible.
+    const SCROLL_LIMITS = [579, 2000];
 
     return (
         <section>
@@ -326,17 +321,20 @@ function Team() {
                     <AlumniCardsMarquee
                         row={1}
                         fullContent={alumniContent}
-                        scrollPosition={useScrollHandler() + SCROLL_CONVERT}
+                        scrollPosition={useScrollHandler()}
+                        windowScrollLimits={SCROLL_LIMITS}
                     />
                     <AlumniCardsMarquee
                         row={2}
                         fullContent={alumniContent}
-                        scrollPosition={useScrollHandler() + SCROLL_CONVERT - SCROLL_PLUS_MINUS}
+                        scrollPosition={useScrollHandler()}
+                        windowScrollLimits={SCROLL_LIMITS}
                     />
                     <AlumniCardsMarquee
                         row={3}
                         fullContent={alumniContent}
-                        scrollPosition={useScrollHandler() + SCROLL_CONVERT + SCROLL_PLUS_MINUS}
+                        scrollPosition={useScrollHandler()}
+                        windowScrollLimits={SCROLL_LIMITS}
                     />
                 </div>
             </div>

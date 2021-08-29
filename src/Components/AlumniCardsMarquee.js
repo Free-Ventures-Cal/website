@@ -6,6 +6,7 @@ import Alumnus from './Alumnus.js';
 
 function AlumniCardsMarquee(props) {
 
+    /* Get only the content we need for this row. */
     const slice = (arr, row) => {
         const numAlumni = arr.length;
         const end1 = numAlumni / 3;
@@ -24,10 +25,9 @@ function AlumniCardsMarquee(props) {
             return row;
         }
     };
-
-    /* Get only the content we need for this row. */
     let rowContent = slice(props.fullContent, props.row);
 
+    /* Build the cards in this row. */
     let marqueeRow = rowContent.map((alumnus) => {
         return (<Alumnus
             name={alumnus.name}
@@ -39,22 +39,31 @@ function AlumniCardsMarquee(props) {
         );
     });
 
-    const slider = React.createRef();
-    const scroll_direction = props.row % 2 == 0;
-
     /* Set the scroll position manually based on props.
     There's probably a better way to do this by using CSS translateX.
-    Maybe use Framer Motion library and Parallax Effect...
-    */
+    Maybe use Framer Motion library and Parallax Effect...? */
+    
+    const MARQUEE_RANGE = [200, 300]; // find by trial and error
+    const slider = React.createRef();
+    
     useEffect(() => {
-        const maxScrollLeft = 3500;
-        if (!scroll_direction) {
-            slider.current.scrollLeft = props.scrollPosition / 10;
-        }
-        else {
-            slider.current.scrollLeft = maxScrollLeft / 10 - props.scrollPosition / 10;
-        }
+        /* If marquee is not visible don't bother scrolling. */
+        const y = props.scrollPosition;
+        const marqueeNotVisible = !(y >= props.windowScrollLimits[0] && y <= props.windowScrollLimits[1]);
+        if (marqueeNotVisible) { return; }
 
+        /* Convert vertical scroll position to row scroll position. */
+        const x = (function () {
+            const r = (MARQUEE_RANGE[1] - MARQUEE_RANGE[0]) / 
+                      (props.windowScrollLimits[1] - props.windowScrollLimits[0]);
+            return (y - props.windowScrollLimits[0]) * r + MARQUEE_RANGE[0];
+        })();
+
+        /* Odd and even rows move differently. */
+        const OFFSET = 50;
+        const scroll_direction = props.row % 2 == 0;
+        if (!scroll_direction) { slider.current.scrollLeft = x - OFFSET; }
+        else { slider.current.scrollLeft = MARQUEE_RANGE[1] - x + OFFSET; }
     });
 
     return (
