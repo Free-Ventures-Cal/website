@@ -218,7 +218,7 @@ function Home() {
         {
             name: "Jared",
             company: "Polyture",
-            text: "Polyture was just a project... it wasn’t until the batch that I understood the core competencies of the platform and what he should spend his time."
+            text: "Polyture was just a project... it wasn’t until the batch that I understood the core competencies of the platform and what he should spend his time on."
         },
         {
             name: "Rishma",

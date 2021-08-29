@@ -43,11 +43,11 @@ function Apply(props) {
             description: "Application Released",
             image: application
         },
-        {
-            date: "September 10",
-            description: "Infosession",
-            image: interview
-        },
+        // {
+        //     date: "September 10",
+        //     description: "Infosession",
+        //     image: interview
+        // },
         {
             date: "September 17",
             description: "Application Due",
