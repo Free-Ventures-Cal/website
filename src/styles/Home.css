@@ -450,7 +450,7 @@ img#aq-img-coinbase {
 }
 
 img#aq-img-discord {
-  height: 75px;
+  max-height: 75px;
 }
 
 /* SELECTED PORTFOLIO */
@@ -824,6 +824,54 @@ figure.testimonial-card figcaption {
     flex-flow: column nowrap;
     justify-content: center;
     margin: 50px;
+  }
+
+  #aq-img-discord {
+    width: 275px;
+  }
+
+  /* MOBILE SELECTED PORTFOLIO LAYOUT  */
+  .portfolioHome {
+    padding-bottom: 50px;
+  }
+   .sel-port-container {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .sel-port-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  #sel-port-title {
+    margin-bottom: 20px;
+  }
+
+  .selected-portfolio {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 60vh;
+    width: 90vw;
+    margin: 0 auto;
+    overflow-y: scroll;
+  }
+
+  .sel-port-row {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .company {
+    width: 269px;
+  }
+
+  #sel-port-bttn {
+    width: auto;
+    margin-top: 25px;
   }
 
   /* MOBILE TESTIMONIALS LAYOUT */

@@ -419,7 +419,7 @@ function Home() {
             <div className="portfolioHome homeSection gray">
                 <div className="sel-port-container">
                     <div className="sel-port-flex">
-                        <h2>Selected portfolio</h2>
+                        <h2 id="sel-port-title">Selected portfolio</h2>
                         <div className="selected-portfolio">
                             <div class="sel-port-row">
                                 {portfolioCompanies.slice(0, portfolioCompanies.length / 2)}
