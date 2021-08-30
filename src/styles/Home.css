@@ -855,7 +855,7 @@ figure.testimonial-card figcaption {
     display: flex;
     flex-flow: column nowrap;
     height: 60vh;
-    width: 90vw;
+    width: 300px;
     margin: 0 auto;
     overflow-y: scroll;
   }
