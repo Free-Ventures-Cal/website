@@ -16,8 +16,11 @@ class HomeCompany extends React.Component {
         return (
             <div className="company">
                 <a href={this.props.link} target="_blank" rel="noopener noreferrer">{this.props.linkTitle}
-                    <img src={arrow} alt="" /></a>
-                <img src={this.props.logo} alt="logo" />
+                    <img src={arrow} alt="" />
+                </a>
+                <div className="img-50px">
+                    <img src={this.props.logo} alt="logo" />
+                </div>
                 <h1>{this.props.companyName}</h1>
                 <p>{this.props.description}</p>
                 {tags}

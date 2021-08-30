@@ -367,87 +367,6 @@ a {
   height: 100%;
 }
 
-.company {
-  display: inline-block;
-  border-radius: 5px;
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.15),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-  background-color: white;
-  color: #333333;
-  padding: 30px 30px 60px 30px;
-  position: relative;
-  transition: all 0.3s ease;
-  text-align: left;
-}
-
-.company:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.3),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-
-.company img {
-  height: 50px;
-  width: auto;
-  display: inline-block;
-}
-
-.company h1 {
-}
-
-.company p {
-  font-family: "Lato", sans-serif;
-  display: block;
-}
-
-/* .company a {
-        width: 100%;
-        height: 100%;
-    } */
-
-.company a {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 700;
-  color: #333333;
-  position: absolute;
-  bottom: 20px;
-  font-size: 15px;
-  margin: 0;
-  transition: all 0.2s ease;
-}
-
-.company a img {
-  width: 12px;
-  height: auto;
-  position: relative;
-  left: 10px;
-  bottom: 1px;
-  transition: all 0.2s ease;
-}
-
-.company a:hover {
-  color: rgb(73, 137, 223);
-}
-
-.company a:hover img {
-  width: 12px;
-  height: auto;
-  position: relative;
-  left: 15px;
-  bottom: 1px;
-}
-
-.company .companyTag {
-  display: inline-block;
-  color: white;
-  border-radius: 4px;
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: 700;
-  margin-right: 5px;
-}
-
 .sponsors {
   text-align: center;
   padding: 40px 0 0px 0;
@@ -532,6 +451,125 @@ img#aq-img-coinbase {
 
 img#aq-img-discord {
   height: 75px;
+}
+
+/* SELECTED PORTFOLIO */
+.sel-port-container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: hidden;
+}
+
+.sel-port-flex {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.selected-portfolio {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.sel-port-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.company {
+  /* positioning */
+  display: block;
+  box-sizing: border-box;
+  width: 290px;
+  position: relative;
+  padding: 30px 30px 60px 30px;
+  margin: 10px;
+  flex-shrink: 0;
+  /* box styling */
+  border-radius: 5px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.15),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  transition: all 0.3s ease;
+  /* text */
+  background-color: white;
+  color: #333333;
+  text-align: left;
+}
+
+.company:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.3),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.company .img-50px {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.company img {
+  max-width: 130px;
+  max-height: 50px;
+  width: auto;
+  display: inline-block;
+}
+
+.company p {
+  font-family: "Lato", sans-serif;
+  display: block;
+}
+
+.company a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #333333;
+  position: absolute;
+  bottom: 20px;
+  font-size: 15px;
+  margin: 0;
+  transition: all 0.2s ease;
+}
+
+.company a img {
+  width: 12px;
+  height: auto;
+  position: relative;
+  left: 10px;
+  bottom: 1px;
+  transition: all 0.2s ease;
+}
+
+.company a:hover {
+  color: rgb(73, 137, 223);
+}
+
+.company a:hover img {
+  width: 12px;
+  height: auto;
+  position: relative;
+  left: 15px;
+  bottom: 1px;
+}
+
+.company .companyTag {
+  display: inline-block;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+#sel-port-bttn {
+  display: block;
+  width: 288px;
 }
 
 /* TESTIMONIALS LAYOUT */
