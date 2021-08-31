@@ -57,7 +57,7 @@ function Partners() {
             <div>
                 <div className="partners">
                     <div className="container">
-                        <div className="four-grid">
+                        <div className="partners-flex">
                             {partners}
                         </div>
                     </div>

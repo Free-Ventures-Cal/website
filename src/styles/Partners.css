@@ -88,6 +88,24 @@
   padding-right: 10px;
 }
 
+.partners-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.partners-flex a {
+
+  margin: 0 37px 20px 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-flex img {
+  width: 175px;
+}
+
 /*mark {
         display: inline-block;
         line-height: 0em;
