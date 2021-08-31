@@ -458,7 +458,7 @@ img#aq-img-discord {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 auto;
   overflow: hidden;
 }
 
@@ -466,6 +466,7 @@ img#aq-img-discord {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .selected-portfolio {
@@ -705,6 +706,17 @@ figure.testimonial-card figcaption {
   margin: 18px 0 0 0;
   font-weight: inherit;
   color: #67379a;
+}
+
+@media (max-width: 1280px) {
+  .sel-port-container {
+    max-width: 100vw;
+    padding: 0;
+  }
+
+  .company {
+    width: 240px;
+  }
 }
 
 @media (max-width: 1034px) {
