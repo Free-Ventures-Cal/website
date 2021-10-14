@@ -19,7 +19,7 @@ function Apply(props) {
 
     // Content
 
-    let airtableLink = "https://airtable.com/shrlPznExt1PAdSER";
+    let airtableLink = "https://airtable.com/shrXM7D33quotGcoj";
 
 
     let batchFAQContent = [
@@ -39,30 +39,30 @@ function Apply(props) {
 
     let timelineContent = [
         {
-            date: "August 25",
+            date: "October 14",
             description: "Application Released",
             image: application
         },
-        // {
-        //     date: "September 10",
-        //     description: "Infosession",
-        //     image: interview
-        // },
         {
-            date: "September 17",
+            date: "October 20",
+            description: "Infosession",
+            image: interview
+        },
+        {
+            date: "October 30",
             description: "Application Due",
             image: application
         },
         {
-            date: "September 22-24",
-            description: "Interviews",
+            date: "November 1-14",
+            description: "First & Second Round Interviews",
             image: interview
         },
-        {
-            date: "September 29",
-            description: "Batch Kickoff",
-            image: rocket
-        },
+        // {
+        //     date: "November 8-14",
+        //     description: "Final Round Interviews",
+        //     image: rocket
+        // },
     ];
 
     let timelineWithArrows = timelineContent.map((event, i) => {
@@ -136,7 +136,7 @@ function Apply(props) {
 
     // change .useState value for either 0 - batch recruitment, 1 - internal recruitment
 
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = React.useState(1);
 
     function handleChange(event, newValue) {
         setValue(newValue);
@@ -150,12 +150,12 @@ function Apply(props) {
         <section>
             <GenericTop
                 header={'Join the FreeV Family'}
-                description={'Batch Team applications are now open! Please apply below.'}
+                description={'Internal Team applications are now open! Please apply below.'}
             >
-                <a href={airtableLink} className="genericButton" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Batch</a>
+                <a hre  f={airtableLink} className="genericButton" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Internal Team</a>
                 &nbsp;
                 &nbsp;
-                <a href="https://forms.gle/47YUmy5eXgaotm169" className="genericButton" target="_blank" rel="noopener noreferrer">Internal Team Interest Form</a>
+                <a href="https://forms.gle/47YUmy5eXgaotm169" className="genericButton" target="_blank" rel="noopener noreferrer">Batch Recruitment Interest Form</a>
             </GenericTop>
             <GenericPage>
                 <div className={classes.root}>
@@ -168,14 +168,8 @@ function Apply(props) {
                         {/* BATCH TAB */}
 
                         <TabPanel value={value} index={0}>
-                            <h2>Fall 2021 Applications for startups are now open!</h2>
-                            <a href={airtableLink} className="genericButtonGray" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Batch</a>
-                            <p>Here are some details about our recruiting timeline and frequently asked questions</p>
-
-                            <h2>Fall 2021 Timeline</h2>
-                            <div className="timeline">
-                                {timelineWithArrows}
-                            </div>
+                            <br/>
+                            <a href="https://forms.gle/47YUmy5eXgaotm169" className="genericButtonGray" target="_blank" rel="noopener noreferrer">Batch Recruitment Interest Form</a>
 
                             <h2>What we look for</h2>
                             <ul>
@@ -208,8 +202,14 @@ function Apply(props) {
                         {/* INTERNAL TAB */}
 
                         <TabPanel value={value} index={1}>
-                            <br/>
-                            <a href="https://forms.gle/47YUmy5eXgaotm169" className="genericButtonGray" target="_blank" rel="noopener noreferrer">Internal Team Interest Form</a>
+                            <h2>Fall 2021 Applications are now open!</h2>
+                            <a href={airtableLink} className="genericButtonGray" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Internal</a>
+                            <p>Here are some details about our recruiting timeline and frequently asked questions</p>
+
+                            <h2>Fall 2021 Timeline</h2>
+                            <div className="timeline">
+                                {timelineWithArrows}
+                            </div>
                             <p>If you’re interested in startups and don’t know where to start, you’ve come to the right place!</p>
                             <p>Free Ventures is the absolute best way you can dive into the startups at Cal and beyond. As an internal team member, you will have unparalleled exposure to the entrepreneurship ecosystem. </p>
                             <p>All internal team members serve as point people for our batch startups, meaning you’ll get to work one-on-one with incredible startup founders from your very first semester - helping them problem-solve, think of crazy solutions, deep dive into a unique problem space, and so much more. Our founders are everyone from Berkeley undergrads with a love of machine learning to PhD students with biomedical expertise, and you get to have a very real and tangible impact on their startup journeys. If everything goes to plan, they’ll be changing the world completely as they do this for years, and you were there from the beginning. </p>
