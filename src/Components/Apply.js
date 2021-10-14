@@ -152,7 +152,7 @@ function Apply(props) {
                 header={'Join the FreeV Family'}
                 description={'Internal Team applications are now open! Please apply below.'}
             >
-                <a hre  f={airtableLink} className="genericButton" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Internal Team</a>
+                <a href={airtableLink} className="genericButton" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Internal Team</a>
                 &nbsp;
                 &nbsp;
                 <a href="https://forms.gle/47YUmy5eXgaotm169" className="genericButton" target="_blank" rel="noopener noreferrer">Batch Recruitment Interest Form</a>
