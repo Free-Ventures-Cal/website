@@ -49,7 +49,7 @@ function Apply(props) {
             image: interview
         },
         {
-            date: "October 30",
+            date: "October 29",
             description: "Application Due",
             image: application
         },
