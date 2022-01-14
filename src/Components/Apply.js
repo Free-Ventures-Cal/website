@@ -136,7 +136,7 @@ function Apply(props) {
 
     // change .useState value for either 0 - batch recruitment, 1 - internal recruitment
 
-    const [value, setValue] = React.useState(1);
+    const [value, setValue] = React.useState(0);
 
     function handleChange(event, newValue) {
         setValue(newValue);
@@ -150,12 +150,12 @@ function Apply(props) {
         <section>
             <GenericTop
                 header={'Join the FreeV Family'}
-                description={'Internal Team applications are now open! Please apply below.'}
+                description={'We will be recruiting for batch startups in January, and internal team in March!'}
             >
-                <a href={airtableLink} className="genericButton" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Internal Team</a>
+                {/* <a href={airtableLink} className="genericButton" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Internal Team</a>
                 &nbsp;
-                &nbsp;
-                <a href="https://forms.gle/47YUmy5eXgaotm169" className="genericButton" target="_blank" rel="noopener noreferrer">Batch Recruitment Interest Form</a>
+                &nbsp; */}
+                <a href="https://forms.gle/qXaXkYZDQbQL7ou88" className="genericButton" target="_blank" rel="noopener noreferrer">Fill out interest form</a>
             </GenericTop>
             <GenericPage>
                 <div className={classes.root}>
@@ -169,7 +169,10 @@ function Apply(props) {
 
                         <TabPanel value={value} index={0}>
                             <br/>
-                            <a href="https://forms.gle/47YUmy5eXgaotm169" className="genericButtonGray" target="_blank" rel="noopener noreferrer">Batch Recruitment Interest Form</a>
+                            We'll be releasing the batch app by the end of January; in the meantime, fill out the form below to be the first to know when it goes up!
+                            <br/>
+                            <br/>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlFW-xvwp_-J9jj2yWzGQlDOOn5ccEx6H6oud7OpZSpvVXsA/viewform?usp=pp_url&entry.204253720=Batch+Recruitment+(Join+as+a+startup+for+the+program)" className="genericButtonGray" target="_blank" rel="noopener noreferrer">Batch Recruitment Interest Form</a>
 
                             <h2>What we look for</h2>
                             <ul>
@@ -202,14 +205,20 @@ function Apply(props) {
                         {/* INTERNAL TAB */}
 
                         <TabPanel value={value} index={1}>
-                            <h2>Fall 2021 Applications are now open!</h2>
+                            <br/>
+                            Internal team applications will be going up in March; in the meantime, fill out the form below to be the first to know when it goes up!
+                            <br/>
+                            <br/>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlFW-xvwp_-J9jj2yWzGQlDOOn5ccEx6H6oud7OpZSpvVXsA/viewform?usp=pp_url&entry.204253720=Internal+Team+(Help+run+the+program)" className="genericButtonGray" target="_blank" rel="noopener noreferrer">Internal Recruitment Interest Form</a>
+
+                            {/* <h2>Fall 2021 Applications are now open!</h2>
                             <a href={airtableLink} className="genericButtonGray" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Internal</a>
                             <p>Here are some details about our recruiting timeline and frequently asked questions</p>
 
                             <h2>Fall 2021 Timeline</h2>
                             <div className="timeline">
                                 {timelineWithArrows}
-                            </div>
+                            </div> */}
                             <p>If you’re interested in startups and don’t know where to start, you’ve come to the right place!</p>
                             <p>Free Ventures is the absolute best way you can dive into the startups at Cal and beyond. As an internal team member, you will have unparalleled exposure to the entrepreneurship ecosystem. </p>
                             <p>All internal team members serve as point people for our batch startups, meaning you’ll get to work one-on-one with incredible startup founders from your very first semester - helping them problem-solve, think of crazy solutions, deep dive into a unique problem space, and so much more. Our founders are everyone from Berkeley undergrads with a love of machine learning to PhD students with biomedical expertise, and you get to have a very real and tangible impact on their startup journeys. If everything goes to plan, they’ll be changing the world completely as they do this for years, and you were there from the beginning. </p>

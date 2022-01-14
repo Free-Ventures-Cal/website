@@ -80,7 +80,7 @@ function Program() {
                             </article>
                         </div>
                         <div className="program-grid">
-                            <article>
+                            {/* <article>
                                 <span>
                                     <img src={equity} alt="" />
                                 </span>
@@ -88,7 +88,7 @@ function Program() {
                                     <h3>Equity-free Funds</h3>
                                     <p>Because Berkeley is probably expensive enough, we provide student startups with financial support for their project without taking any equity - and this sets us apart from most accelerators. Thanks to the generosity of our <a href="/partners">sponsors</a>, accelerator teams get $1000 microgrants to bring their startup to the next level, no strings attached. If you’re interested in becoming a sponsor or donating (we’re a nonprofit!), please email <a href="mailto:aamir@freeventures.org">aamir@freeventures.org</a>.</p>
                                 </span>
-                            </article>
+                            </article> */}
                             <article>
                                 <span>
                                     <img src={mentors} alt="" />

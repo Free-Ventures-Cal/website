@@ -44,7 +44,7 @@
 
 .program-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 60px;
   padding: 50px 0;
 }
@@ -118,7 +118,7 @@
 }
 
 .spotlight p {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   display: block;
 }
 
@@ -319,8 +319,7 @@ a.button {
     grid-template-columns: 1fr;
   }
 
-  .program-grid-mobile{
-    
+  .program-grid-mobile {
   }
 
   #program-top {
@@ -370,11 +369,11 @@ a.button {
     max-height: 70px;
     margin: 15px 0;
   }
-  
+
   #tr-img-greylock {
     max-height: 30px;
   }
-  
+
   #tr-img-kp {
     margin-top: 30px;
     max-height: 30px;

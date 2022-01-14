@@ -54,7 +54,7 @@ import AlumniCardsMarquee from './AlumniCardsMarquee';
 function Team() {
 
     var header = "Meet the Team";
-    var internalRecruitment = true;
+    var internalRecruitment = false;
     var description = "We're a small group of undergraduates who care about the Berkeley startup ecosystem. Interested in joining our team?";
 
     let button;
@@ -65,7 +65,7 @@ function Team() {
     }
     else {
         description += " Click below to fill out our interest form! We'll email you once we begin recruitment in October.";
-        button = <a href="https://forms.gle/47YUmy5eXgaotm169" target="_blank" className="genericButton">Internal Team Interest Form</a>
+        button = <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlFW-xvwp_-J9jj2yWzGQlDOOn5ccEx6H6oud7OpZSpvVXsA/viewform?usp=pp_url&entry.204253720=Internal+Team+(Help+run+the+program)" target="_blank" className="genericButton">Internal Team Interest Form</a>
     }
 
     const peopleContent = [
