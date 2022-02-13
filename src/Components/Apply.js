@@ -19,7 +19,7 @@ function Apply(props) {
 
     // Content
 
-    let airtableLink = "https://airtable.com/shrXM7D33quotGcoj";
+    let airtableLink = "https://airtable.com/shrjiOCvKaZkr8gaD";
 
 
     let batchFAQContent = [
@@ -39,23 +39,23 @@ function Apply(props) {
 
     let timelineContent = [
         {
-            date: "October 14",
+            date: "February 11",
             description: "Application Released",
             image: application
         },
         {
-            date: "October 20",
+            date: "February 23",
             description: "Infosession",
             image: interview
         },
         {
-            date: "October 29",
+            date: "February 25",
             description: "Application Due",
             image: application
         },
         {
-            date: "November 1-14",
-            description: "First & Second Round Interviews",
+            date: "Feb 28 - March 3",
+            description: "Interviews",
             image: interview
         },
         // {
@@ -150,11 +150,11 @@ function Apply(props) {
         <section>
             <GenericTop
                 header={'Join the FreeV Family'}
-                description={'We will be recruiting for batch startups in January, and internal team in March!'}
+                description={'We are now recruiting for the Spring 2022 batch! We\'ll be recruiting for the internal team in March.'}
             >
-                {/* <a href={airtableLink} className="genericButton" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Internal Team</a>
+                <a href={airtableLink} className="genericButton" target="_blank" rel="noopener noreferrer">Apply for Fall 2021 Internal Team</a>
                 &nbsp;
-                &nbsp; */}
+                &nbsp;
                 <a href="https://forms.gle/qXaXkYZDQbQL7ou88" className="genericButton" target="_blank" rel="noopener noreferrer">Fill out interest form</a>
             </GenericTop>
             <GenericPage>
@@ -168,11 +168,14 @@ function Apply(props) {
                         {/* BATCH TAB */}
 
                         <TabPanel value={value} index={0}>
-                            <br/>
-                            We'll be releasing the batch app by the end of January; in the meantime, fill out the form below to be the first to know when it goes up!
-                            <br/>
-                            <br/>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlFW-xvwp_-J9jj2yWzGQlDOOn5ccEx6H6oud7OpZSpvVXsA/viewform?usp=pp_url&entry.204253720=Batch+Recruitment+(Join+as+a+startup+for+the+program)" className="genericButtonGray" target="_blank" rel="noopener noreferrer">Batch Recruitment Interest Form</a>
+                            <h2>Spring 2022 Applications are now open!</h2>
+                            <a href={airtableLink} className="genericButtonGray" target="_blank" rel="noopener noreferrer">Apply for Spring 2022 Batch</a>
+                            <p>Here are some details about our recruiting timeline and frequently asked questions</p>
+
+                            <h2>Fall 2021 Timeline</h2>
+                            <div className="timeline">
+                                {timelineWithArrows}
+                            </div>
 
                             <h2>What we look for</h2>
                             <ul>

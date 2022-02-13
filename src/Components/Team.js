@@ -14,8 +14,10 @@ import alex from './../assets/team/alex.png';
 import andy from './../assets/team/andy2.png';
 import tiana from './../assets/team/tiana2.png';
 import maanav from './../assets/team/maanav.png';
-import varun from './../assets/team/varun.png';
+import varun from './../assets/team/varun.jpeg';
 import aamir from './../assets/team/aamir.png';
+import megha from './../assets/team/megha.JPG';
+import grace from './../assets/team/grace.jpg';
 
 import aashi from './../assets/team/alumni/aashi_jawar.png';
 import abhay from './../assets/team/alumni/abhay_malik.jpeg';
@@ -37,7 +39,7 @@ import lulu from './../assets/team/alumni/lulu_holland.png';
 import nikita from './../assets/team/alumni/nikita_ashok.png';
 import omkar from './../assets/team/alumni/omkar_salpekar.jpeg';
 import pranav from './../assets/team/alumni/pranav_gulati.png';
-import pratik from './../assets/team/alumni/pratik_bhat.jpeg';
+import pratik from './../assets/team/alumni/pratik_bhat.jpg';
 import sam from './../assets/team/alumni/sam_kirschner.jpeg';
 import saneel from './../assets/team/alumni/saneel_sreeni.jpg';
 import sean from './../assets/team/alumni/sean_linehan.jpeg';
@@ -64,18 +66,11 @@ function Team() {
         button = <Link to="/apply" className="genericButton">Apply to internal team</Link>
     }
     else {
-        description += " Click below to fill out our interest form! We'll email you once we begin recruitment in October.";
+        description += " Click below to fill out our interest form! We'll email you once we begin recruitment in March.";
         button = <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlFW-xvwp_-J9jj2yWzGQlDOOn5ccEx6H6oud7OpZSpvVXsA/viewform?usp=pp_url&entry.204253720=Internal+Team+(Help+run+the+program)" target="_blank" className="genericButton">Internal Team Interest Form</a>
     }
 
     const peopleContent = [
-        {
-            name: "Christina Guo",
-            position: "Managing Director",
-            linkedinUrl: "https://www.linkedin.com/in/cguo16",
-            mailTo: "mailto:christina@freeventures.org",
-            image: christina
-        },
         {
             name: "Adithya Paramasivam",
             position: "Managing Director",
@@ -84,56 +79,64 @@ function Team() {
             image: adithya
         },
         {
-            name: "Alexander Manes",
-            position: "Director",
-            linkedinUrl: "https://www.linkedin.com/in/alexander-manes/",
-            mailTo: "mailto:alexander@freeventures.org",
-            image: alex
-        },
-        {
             name: "Tiana Wong",
-            position: "Director",
+            position: "Managing Director",
             linkedinUrl: "https://www.linkedin.com/in/csow/",
             mailTo: "mailto:tiana@freeventures.org",
             image: tiana
         },
         {
-            name: "Andy Jiang",
-            position: "Director",
-            linkedinUrl: "https://www.linkedin.com/in/andybojiang/",
-            mailTo: "mailto:andy@freeventures.org",
-            image: andy
-        },
-        {
             name: "Maanav Khaitan",
-            position: "Associate",
+            position: "Director",
             linkedinUrl: "https://www.linkedin.com/in/maanav-khaitan/",
             mailTo: "mailto:maanav@freeventures.org",
             image: maanav
         },
         {
             name: "Varun Nair",
-            position: "Associate",
+            position: "Director",
             linkedinUrl: "https://www.linkedin.com/in/varun-nair-berkeley/",
             mailTo: "mailto:varun@freeventures.org",
             image: varun
         },
         {
             name: "Aamir Hudda",
-            position: "Associate",
+            position: "Director",
             linkedinUrl: "https://www.linkedin.com/in/aamirhudda/",
             mailTo: "mailto:aamir@freeventures.org",
             image: aamir
         },
+        {
+            name: "Grace Lu",
+            position: "Associate",
+            linkedinUrl: "https://www.linkedin.com/in/grace-lu/",
+            mailTo: "mailto:grace@freeventures.org",
+            image: grace
+        },
+        {
+            name: "Megha Jain",
+            position: "Associate",
+            linkedinUrl: "https://www.linkedin.com/in/meghamjain/",
+            mailTo: "mailto:megha@freeventures.org",
+            image: megha
+        },
+        {
+            name: "Alexander Manes",
+            position: "Senior Advisor",
+            linkedinUrl: "https://www.linkedin.com/in/alexander-manes/",
+            mailTo: "mailto:alexander@freeventures.org",
+            image: alex
+        },
+        {
+            name: "Christina Guo",
+            position: "Senior Advisor",
+            linkedinUrl: "https://www.linkedin.com/in/cguo16",
+            mailTo: "mailto:christina@freeventures.org",
+            image: christina
+        },
     ]
 
     const alumniContent = [
-        {
-            name: "Pratik Bhat",
-            position: "Product Manager",
-            company: "Walmart Labs",
-            image: pratik
-        },
         {
             name: "Pranav Gulati",
             position: "Associate Product Manager",
@@ -147,8 +150,14 @@ function Team() {
             image: omkar
         },
         {
+            name: "Pratik Bhat",
+            position: "Product Manager",
+            company: "Drata",
+            image: pratik
+        },
+        {
             name: "Kathy Kong",
-            position: "Product Manager Intern",
+            position: "Product Manager",
             company: "Zoom",
             image: kathy
         },
