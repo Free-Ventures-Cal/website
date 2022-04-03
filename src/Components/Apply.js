@@ -19,7 +19,7 @@ function Apply(props) {
 
     // Content
 
-    let airtableLink = "https://airtable.com/shrlPznExt1PAdSER";
+    let airtableLink = "https://airtable.com/shrBLmEzy4zigmJxG";
 
 
     let batchFAQContent = [
