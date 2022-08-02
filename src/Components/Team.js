@@ -17,6 +17,9 @@ import varun from "./../assets/team/varun.jpeg";
 import aamir from "./../assets/team/aamir.png";
 import megha from "./../assets/team/megha.JPG";
 import anjan from "./../assets/team/anjan.jpg";
+import pavit from "./../assets/team/pavit.jpg";
+import safwan from "./../assets/team/safwan.png";
+import hriday from "./../assets/team/hriday.jpeg";
 
 import andy from "./../assets/team/andy2.png";
 import grace from "./../assets/team/grace.jpg";
@@ -118,21 +121,21 @@ function Team() {
       position: "Associate",
       linkedinUrl: "https://www.linkedin.com/in/hridonculous/",
       mailTo: "mailto:hriday@freeventures.org",
-      image: anjan,
+      image: hriday,
     },
     {
       name: "Safwan Masood",
       position: "Associate",
       linkedinUrl: "https://www.linkedin.com/in/safwanmasood/",
       mailTo: "mailto:safwan@freeventures.org",
-      image: anjan,
+      image: safwan,
     },
     {
       name: "Pavit Singh",
       position: "Associate",
       linkedinUrl: "https://www.linkedin.com/in/pavit-singh-a311481ab/",
       mailTo: "mailto:pavit@freeventures.org",
-      image: anjan,
+      image: pavit,
     },
     // {
     //   name: "Grace Lu",
