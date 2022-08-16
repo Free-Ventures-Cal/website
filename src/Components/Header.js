@@ -69,6 +69,9 @@ class Header extends React.Component {
                 </NavLink>
               </li>
               <li>
+                <a href="/fair/sponsorship.pdf">fair</a>
+              </li>
+              <li>
                 <NavLink to="/apply" activeClassName="activeLinkStyle">
                   apply
                 </NavLink>
@@ -125,6 +128,9 @@ class Header extends React.Component {
               >
                 fellowship
               </NavLink>
+              <li>
+                <a href="/fair/sponsorship.pdf">fair</a>
+              </li>
               <NavLink
                 to="/apply"
                 activeClassName="activeLinkStyle"
