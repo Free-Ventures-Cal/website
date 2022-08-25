@@ -39,23 +39,23 @@ function Apply(props) {
 
   let timelineContent = [
     {
-      date: "April 2",
+      date: "August 24",
       description: "Application Released",
       image: application,
     },
     {
-      date: "April 8",
+      date: "September 16",
       description: "Application Due",
       image: interview,
     },
     {
-      date: "April 11 - 15",
-      description: "First Round Interviews",
+      date: "September 22 - 24",
+      description: "Interviews",
       image: application,
     },
     {
-      date: "April 18 - 22",
-      description: "Final Interviews",
+      date: "September 28",
+      description: "Batch Kickoff",
       image: interview,
     },
     // {
@@ -150,20 +150,12 @@ function Apply(props) {
       <GenericTop
         header={"Join the FreeV Family"}
         description={
-          "We are now recruiting for the Spring 2022 batch! We'll be recruiting for the internal team in March."
+          "We'll soon be recruiting for the Fall 2022 batch! We'll be recruiting for the internal team later in the semester."
         }
       >
-        <a
-          href={airtableLink}
-          className="genericButton"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Apply for Spring 2022 Internal
-        </a>
         &nbsp; &nbsp;
         <a
-          href="https://forms.gle/qXaXkYZDQbQL7ou88"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSf3yWalM4X7p3yzy-_zRjLx3tNul1Tla9b3i8mwaQl_BlA9LQ/viewform?usp=sf_link"
           className="genericButton"
           target="_blank"
           rel="noopener noreferrer"
@@ -188,16 +180,8 @@ function Apply(props) {
             <TabPanel value={value} index={0}>
               <br />
 
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdlFW-xvwp_-J9jj2yWzGQlDOOn5ccEx6H6oud7OpZSpvVXsA/viewform"
-                className="genericButtonGray"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Batch Recruitment Interest Form
-              </a>
-              {/* <h2>Spring 2022 Applications are now open!</h2>
-                            <a href={airtableLink} className="genericButtonGray" target="_blank" rel="noopener noreferrer">Apply for Spring 2022 Internal</a>
+              {/* <h2>Fall 2022 Applications are now open!</h2>
+                            <a href={airtableLink} className="genericButtonGray" target="_blank" rel="noopener noreferrer">Apply for Fall 2022 Internal</a>
                             <p>Here are some details about our recruiting timeline and frequently asked questions</p>
 
                             <h2>Fall 2021 Timeline</h2>
@@ -205,6 +189,8 @@ function Apply(props) {
                                 {timelineWithArrows}
                             </div> */}
 
+              <h2>Fall 2022 Timeline</h2>
+              <div className="timeline">{timelineWithArrows}</div>
               <h2>What we look for</h2>
               <ul>
                 <li>
@@ -247,22 +233,22 @@ function Apply(props) {
             <TabPanel value={value} index={1}>
               <br />
 
-              <h2>Spring 2022 Applications are now open!</h2>
+              {/* <h2>Fall 2022 Applications are now open!</h2>
               <a
                 href={airtableLink}
                 className="genericButtonGray"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Apply for Spring 2022 Internal
-              </a>
-              <p>
+                Apply for Fall 2022 Internal
+              </a> */}
+              {/* <p>
                 Here are some details about our recruiting timeline and
                 frequently asked questions
-              </p>
-
-              <h2>Spring 2022 Timeline</h2>
-              <div className="timeline">{timelineWithArrows}</div>
+              </p> */}
+              {/* 
+              <h2>Fall 2022 Timeline</h2>
+              <div className="timeline">{timelineWithArrows}</div> */}
               <p>
                 If you’re interested in startups and don’t know where to start,
                 you’ve come to the right place!
