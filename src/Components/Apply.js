@@ -18,7 +18,7 @@ import arrow from "./../assets/arrow.png";
 function Apply(props) {
   // Content
 
-  let airtableLink = "https://airtable.com/shrBLmEzy4zigmJxG";
+  let airtableLink = "https://airtable.com/shrYYtSrMmYZ0tZvW";
 
   let batchFAQContent = [
     {
@@ -150,9 +150,17 @@ function Apply(props) {
       <GenericTop
         header={"Join the FreeV Family"}
         description={
-          "We'll soon be recruiting for the Fall 2022 batch! We'll be recruiting for the internal team later in the semester."
+          "Applications have been released for the Fall 2022 Batch! We'll be recruiting for the internal team later in the semester."
         }
       >
+        <a
+          href={airtableLink}
+          className="genericButtonGray"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Apply for Fall 2022 Batch
+        </a>
         &nbsp; &nbsp;
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSf3yWalM4X7p3yzy-_zRjLx3tNul1Tla9b3i8mwaQl_BlA9LQ/viewform?usp=sf_link"
@@ -180,14 +188,11 @@ function Apply(props) {
             <TabPanel value={value} index={0}>
               <br />
 
-              {/* <h2>Fall 2022 Applications are now open!</h2>
-                            <a href={airtableLink} className="genericButtonGray" target="_blank" rel="noopener noreferrer">Apply for Fall 2022 Internal</a>
-                            <p>Here are some details about our recruiting timeline and frequently asked questions</p>
-
-                            <h2>Fall 2021 Timeline</h2>
-                            <div className="timeline">
-                                {timelineWithArrows}
-                            </div> */}
+              <h2>Fall 2022 Applications are now open!</h2>
+              <p>
+                Here are some details about our recruiting timeline and
+                frequently asked questions
+              </p>
 
               <h2>Fall 2022 Timeline</h2>
               <div className="timeline">{timelineWithArrows}</div>

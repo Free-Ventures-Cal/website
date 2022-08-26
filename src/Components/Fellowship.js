@@ -192,9 +192,16 @@ function Fellowship() {
           <h2>Apply Now</h2>
           <p>
             We have a simple application process – it’s just a resume drop and a
-            short response! Fill out the form{" "}
-            <a href="https://airtable.com/shrTZaerxspoAjE5S">here</a>.
+            short response!
           </p>
+          <a
+            href="https://airtable.com/shrTZaerxspoAjE5S"
+            className="genericButton"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apply for Fall 2022 Fellowship
+          </a>
           <h3>Fall 2022 Timeline</h3>
           <div className="timeline">{timelineWithArrows}</div>
           <p>
