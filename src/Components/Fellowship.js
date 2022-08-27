@@ -72,7 +72,7 @@ function Fellowship() {
       <GenericTop
         header={"Fellowship"}
         description={
-          "A comprehensive and engaging program designed specifically for undergraduate students from historically underrepresented backgrounds within the technology & entrepreneurship spaces. Our aim is to provide these students with direct exposure to the world-class startup ecosystem here at UC Berkeley & beyond."
+          "A comprehensive program designed specifically for undergraduate students who want a friendly and engaging introduction to Entrepreneurship & Venture Capital. Our aim is to provide these students with direct exposure to the world-class startup ecosystem here at UC Berkeley & beyond."
         }
       />
       <div className="main-gallery">
@@ -100,14 +100,17 @@ function Fellowship() {
               For nearly a decade now, our team has been dedicated to our
               mission of empowering student founders. An important part of that
               mission is also to enable students to become founders as well. We
-              understand the importance of diversity within the entrepreneurship
-              space and recognize the lack thereof.
+              understand the importance of creating an inclusive and equitable
+              entrepreneurship community that invites students of all
+              backgrounds & interests.
             </p>
             <p>
               The 6-week long fellowship provides an up-close insight into the
               robust UC Berkeley startup ecosystem and aims to serve as a
-              launchpad for entrepreneurial endeavors for students who hail from
-              backgrounds that have been traditionally left out of the space.
+              launchpad for entrepreneurial endeavors. Fellows will engage
+              directly with startup founders, shadow point-person advising
+              sessions, participate in an exclusive weekly curriculum, and take
+              a deep dive into a startup topic of their choosing!
             </p>
             <p>
               Fellows will engage directly with startup founders, shadow
@@ -180,10 +183,7 @@ function Fellowship() {
             <p>
               <ul>
                 <li>Must be a current UC Berkeley undergraduate student.</li>
-                <li>
-                  Must identify with a historically underrepresented community /
-                  background.
-                </li>
+                <li>Must be able to commit at least 5-7 hours per week</li>
               </ul>
             </p>
           </div>
