@@ -135,7 +135,7 @@ function Apply(props) {
 
   // change .useState value for either 0 - batch recruitment, 1 - internal recruitment
 
-  const [value, setValue] = React.useState(1);
+  const [value, setValue] = React.useState(0);
 
   function handleChange(event, newValue) {
     setValue(newValue);

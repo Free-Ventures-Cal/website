@@ -112,12 +112,6 @@ function Fellowship() {
               sessions, participate in an exclusive weekly curriculum, and take
               a deep dive into a startup topic of their choosing!
             </p>
-            <p>
-              Fellows will engage directly with startup founders, shadow
-              point-person advising sessions, participate in an exclusive
-              curriculum, and take a deep dive into a startup topic of their
-              choosing!
-            </p>
           </div>
           <div id="sidebar">
             <div className="circle">
