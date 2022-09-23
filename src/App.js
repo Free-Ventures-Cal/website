@@ -15,6 +15,7 @@ import GA from "./Components/GoogleAnalytics";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "./styles/App.css";
+import FairInfo from "./Components/FairInfo.js";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/contact" component={ContactFormPage} />
           <Route exact path="/apply" component={Apply} />
           <Route exact path="/fellowship" component={Fellowship} />
+          <Route exact path="/fairinfo" component={FairInfo} />
           <Route
             exact
             path="/portfolio"
