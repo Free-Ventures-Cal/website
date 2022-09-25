@@ -139,7 +139,7 @@ function FairInfo() {
           <h2>Sign Up</h2>
           <p>It takes just a minute to sign up!</p>
           <a
-            href="https://airtable.com/shrTZaerxspoAjE5S"
+            href="https://airtable.com/shrMGnpTSiUIv1Ush"
             className="genericButton"
             target="_blank"
             rel="noopener noreferrer"
@@ -148,8 +148,9 @@ function FairInfo() {
           </a>
 
           <p>
-            Please email us at:{" "}
-            <a href="mailto:anjan@freeventures.org">anjan@freeventures.org</a>.
+            If you have any questions, please email us at:{" "}
+            <a href="mailto:anjan@freeventures.org">anjan@freeventures.org</a>,
+            or fill out the form below.
           </p>
         </span>
         <ContactForm />
