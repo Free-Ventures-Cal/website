@@ -146,7 +146,7 @@ function Team() {
     // },
     {
       name: "Adithya Paramasivam",
-      position: "Senior Advisor",
+      position: "Ex-Managing Director, Senior Advisor",
       linkedinUrl: "https://www.linkedin.com/in/adithyaparam",
       mailTo: "mailto:adithya@freeventures.org",
       image: adithya,
@@ -158,13 +158,13 @@ function Team() {
       mailTo: "mailto:maanav@freeventures.org",
       image: maanav,
     },
-    {
-      name: "Megha Jain",
-      position: "Senior Advisor",
-      linkedinUrl: "https://www.linkedin.com/in/meghamjain/",
-      mailTo: "mailto:megha@freeventures.org",
-      image: megha,
-    },
+    // {
+    //   name: "Megha Jain",
+    //   position: "Senior Advisor",
+    //   linkedinUrl: "https://www.linkedin.com/in/meghamjain/",
+    //   mailTo: "mailto:megha@freeventures.org",
+    //   image: megha,
+    // },
   ];
 
   const alumniContent = [

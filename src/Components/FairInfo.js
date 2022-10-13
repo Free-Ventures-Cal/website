@@ -130,7 +130,6 @@ function FairInfo() {
                   Recruiter presentations & dedicated infosessions from top
                   sponsors
                 </li>
-                <li>Free food</li>
               </ul>
             </p>
           </div>
