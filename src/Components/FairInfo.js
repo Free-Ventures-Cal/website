@@ -72,7 +72,7 @@ function FairInfo() {
       <GenericTop
         header={"Free Ventures Startup Fair"}
         description={
-          "A startup-focused recruitment fair to connect top UC Berkeley and Bay Area talent with early-stage startups (Series A and Seed) who are looking to grow their team. Our aim is to expand upon the world-clas startup ecosystem at UC Berkeley, and part of doing that is facilitating introductions between Berkeley students & incredible startup opportunities."
+          "A startup-focused recruitment fair to connect top UC Berkeley and Bay Area talent with early-stage startups (Series A and Seed) who are looking to grow their team. Our aim is to expand upon the world-class startup ecosystem at UC Berkeley, and part of doing that is facilitating introductions between Berkeley students & incredible startup opportunities."
         }
       />
       {/* <div className="main-gallery">
