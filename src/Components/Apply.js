@@ -18,7 +18,7 @@ import arrow from "./../assets/arrow.png";
 function Apply(props) {
   // Content
 
-  let airtableLink = "https://airtable.com/shrYYtSrMmYZ0tZvW";
+  let airtableLink = "https://airtable.com/shrGUYRmkZ5r2zK8g";
 
   let batchFAQContent = [
     {
@@ -39,30 +39,30 @@ function Apply(props) {
 
   let timelineContent = [
     {
-      date: "August 24",
+      date: "October 16",
       description: "Application Released",
       image: application,
     },
     {
-      date: "September 16",
+      date: "October 28",
       description: "Application Due",
       image: interview,
     },
     {
-      date: "September 22 - 24",
-      description: "Interviews",
+      date: "November 1-4",
+      description: "First Round Interviews",
       image: application,
     },
     {
-      date: "September 28",
-      description: "Batch Kickoff",
+      date: "November 7-12",
+      description: "Coffee Chats + Final Round Interviews",
       image: interview,
     },
-    // {
-    //     date: "November 8-14",
-    //     description: "Final Round Interviews",
-    //     image: rocket
-    // },
+    {
+      date: "November 13",
+      description: "Final Decisions",
+      image: rocket,
+    },
   ];
 
   let timelineWithArrows = timelineContent.map((event, i) => {
@@ -150,7 +150,7 @@ function Apply(props) {
       <GenericTop
         header={"Join the FreeV Family"}
         description={
-          "Applications have been released for the Fall 2022 Batch! We'll be recruiting for the internal team later in the semester."
+          "Applications have been released for the Fall 2022 Internal Team! We'll be recruiting for the batch next semester."
         }
       >
         <a
@@ -159,7 +159,7 @@ function Apply(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Apply for Fall 2022 Batch
+          Apply for Fall 2022 Internal
         </a>
         &nbsp; &nbsp;
         <a
@@ -179,13 +179,14 @@ function Apply(props) {
               onChange={handleChange}
               aria-label="ant example"
             >
-              <AntTab label="Batch Recruitment" />
               <AntTab label="Internal Recruitment" />
+
+              <AntTab label="Batch Recruitment" />
             </AntTabs>
 
             {/* BATCH TAB */}
 
-            <TabPanel value={value} index={0}>
+            <TabPanel value={value} index={1}>
               <br />
 
               <h2>Fall 2022 Applications are now open!</h2>
@@ -235,10 +236,10 @@ function Apply(props) {
 
             {/* INTERNAL TAB */}
 
-            <TabPanel value={value} index={1}>
+            <TabPanel value={value} index={0}>
               <br />
 
-              {/* <h2>Fall 2022 Applications are now open!</h2>
+              <h2>Fall 2022 Applications are closed!</h2>
               <a
                 href={airtableLink}
                 className="genericButtonGray"
@@ -246,14 +247,14 @@ function Apply(props) {
                 rel="noopener noreferrer"
               >
                 Apply for Fall 2022 Internal
-              </a> */}
-              {/* <p>
+              </a>
+              <p>
                 Here are some details about our recruiting timeline and
                 frequently asked questions
-              </p> */}
-              {/* 
+              </p>
+
               <h2>Fall 2022 Timeline</h2>
-              <div className="timeline">{timelineWithArrows}</div> */}
+              <div className="timeline">{timelineWithArrows}</div>
               <p>
                 If you’re interested in startups and don’t know where to start,
                 you’ve come to the right place!
