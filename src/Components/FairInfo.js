@@ -145,7 +145,9 @@ function FairInfo() {
           >
             Sign Up Here
           </a>
-          <h2>Fair Guide</h2>
+          <h2>
+            <a href="https://tinyurl.com/freevfair22">Fair Guide</a>
+          </h2>
           <iframe
             width="1000px"
             height="1000px"
