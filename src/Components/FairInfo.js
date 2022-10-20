@@ -145,7 +145,12 @@ function FairInfo() {
           >
             Sign Up Here
           </a>
-
+          <h2>Fair Guide</h2>
+          <iframe
+            width="1000px"
+            height="1000px"
+            src="https://docs.google.com/document/d/1PMphoHWWwHEhXGrbjZZThtcWMN7il6Dj5tdACv6-0rE/edit#"
+          />
           <p>
             If you have any questions, please email us at:{" "}
             <a href="mailto:anjan@freeventures.org">anjan@freeventures.org</a>,
