@@ -239,7 +239,7 @@ function Apply(props) {
             <TabPanel value={value} index={0}>
               <br />
 
-              <h2>Fall 2022 Applications are closed!</h2>
+              <h2>Fall 2022 Applications are open!</h2>
               <a
                 href={airtableLink}
                 className="genericButtonGray"
@@ -293,7 +293,7 @@ function Apply(props) {
               <h2>What We Look For</h2>
               <p>
                 If you’re a student currently enrolled at Berkeley, ready to
-                devote 8-10 hours/week with 6-8 pm PST on Mon/Wed in-person,
+                devote 8-10 hours/week with 7-9 pm PST on Mon/Thurs in-person,
                 incredibly passionate about startups, and ready to take crazy
                 initiative and work really hard, we’d love to talk to you.
                 Experience is absolutely not needed and we don’t have a single
