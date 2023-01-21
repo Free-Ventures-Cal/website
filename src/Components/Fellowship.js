@@ -30,17 +30,17 @@ import archa from "./../assets/fiatlux/past_speakers/Archa.jpeg";
 function Fellowship() {
   let timelineContent = [
     {
-      date: "August 15th @ 12 AM PST",
+      date: "TBD",
       description: "Application Released",
       image: application,
     },
     {
-      date: "September 8th @ 11:59 PM PST",
+      date: "TBD",
       description: "Application Due",
       image: application,
     },
     {
-      date: "Saturday, September 10th",
+      date: "TBD",
       description: "Interviews",
       image: interview,
     },
@@ -194,9 +194,9 @@ function Fellowship() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply for Fall 2022 Fellowship
+            Apply for Spring 2023 Fellowship
           </a>
-          <h3>Fall 2022 Timeline</h3>
+          <h3>Spring 2023 Timeline</h3>
           <div className="timeline">{timelineWithArrows}</div>
           <p>
             Please direct questions to our form below, or email:{" "}

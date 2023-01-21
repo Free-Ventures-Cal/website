@@ -18,7 +18,7 @@ import arrow from "./../assets/arrow.png";
 function Apply(props) {
   // Content
 
-  let airtableLink = "https://airtable.com/shrGUYRmkZ5r2zK8g";
+  let airtableLink = "https://airtable.com/shr686qq2DFardCNZ";
 
   let batchFAQContent = [
     {
@@ -39,27 +39,27 @@ function Apply(props) {
 
   let timelineContent = [
     {
-      date: "October 16",
+      date: "January 23",
       description: "Application Released",
       image: application,
     },
     {
-      date: "October 29, 11:59 PM",
-      description: "Application Due",
+      date: "TBD",
+      description: "Infosession / Mixer",
       image: interview,
     },
     {
-      date: "November 1-4",
-      description: "First Round Interviews",
+      date: "February 10",
+      description: "Application Due",
       image: application,
     },
     {
-      date: "November 7-12",
-      description: "Coffee Chats + Final Round Interviews",
+      date: "February 15-17",
+      description: "Interviews",
       image: interview,
     },
     {
-      date: "November 13",
+      date: "February 19",
       description: "Final Decisions",
       image: rocket,
     },
@@ -150,7 +150,7 @@ function Apply(props) {
       <GenericTop
         header={"Join the FreeV Family"}
         description={
-          "Applications have been released for the Fall 2022 Internal Team! We'll be recruiting for the batch next semester."
+          "Applications have been released for the Spring 2023 FreeV Batch! We'll be recruiting for the internal team later in the semester."
         }
       >
         <a
@@ -159,11 +159,11 @@ function Apply(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Apply for Fall 2022 Internal
+          Apply for Spring 2023 Batch
         </a>
         &nbsp; &nbsp;
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSf3yWalM4X7p3yzy-_zRjLx3tNul1Tla9b3i8mwaQl_BlA9LQ/viewform?usp=sf_link"
+          href="https://airtable.com/shr2JwPjM7cEaEI42"
           className="genericButton"
           target="_blank"
           rel="noopener noreferrer"
@@ -179,23 +179,24 @@ function Apply(props) {
               onChange={handleChange}
               aria-label="ant example"
             >
+                            <AntTab label="Batch Recruitment" />
+
               <AntTab label="Internal Recruitment" />
 
-              <AntTab label="Batch Recruitment" />
             </AntTabs>
 
             {/* BATCH TAB */}
 
-            <TabPanel value={value} index={1}>
+            <TabPanel value={value} index={0}>
               <br />
 
-              <h2>Fall 2022 Applications are now open!</h2>
+              <h2>Spring 2023 Applications are now open!</h2>
               <p>
                 Here are some details about our recruiting timeline and
                 frequently asked questions
               </p>
 
-              <h2>Fall 2022 Timeline</h2>
+              <h2>Spring 2023 Timeline</h2>
               <div className="timeline">{timelineWithArrows}</div>
               <h2>What we look for</h2>
               <ul>
@@ -236,26 +237,29 @@ function Apply(props) {
 
             {/* INTERNAL TAB */}
 
-            <TabPanel value={value} index={0}>
+            <TabPanel value={value} index={1}>
               <br />
 
-              <h2>Fall 2022 Applications are open!</h2>
-              <a
+              <h2>Applications are closed!</h2>
+              {/* <a
                 href={airtableLink}
                 className="genericButtonGray"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Apply for Fall 2022 Internal
-              </a>
+                Apply for Spring 2023 Internal
+              </a> */}
               <p>
+                Applications are currently closed for our internal team. Check back later (~March/April) in the Spring 2023 semester for our application link!
+              </p>
+              {/* <p>
                 Here are some details about our recruiting timeline and
                 frequently asked questions
-              </p>
-
-              <h2>Fall 2022 Timeline</h2>
-              <div className="timeline">{timelineWithArrows}</div>
-              <p>
+              </p> */}
+{/* 
+              <h2>Spring 2023 Timeline</h2>
+              <div className="timeline">{timelineWithArrows}</div> */}
+              {/* <p>
                 If you’re interested in startups and don’t know where to start,
                 you’ve come to the right place!
               </p>
@@ -299,7 +303,7 @@ function Apply(props) {
                 Experience is absolutely not needed and we don’t have a single
                 major or profile in mind. If you’re in doubt, apply anyway -
                 let’s chat.
-              </p>
+              </p> */}
             </TabPanel>
           </div>
         </div>

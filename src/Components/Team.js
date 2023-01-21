@@ -20,6 +20,9 @@ import anjan from "./../assets/team/anjan.jpg";
 import pavit from "./../assets/team/pavit.jpg";
 import safwan from "./../assets/team/safwan.png";
 import hriday from "./../assets/team/hriday.jpeg";
+import amy from "./../assets/team/amy.jpeg";
+import rohan from "./../assets/team/rohan.jpg";
+import kelly from "./../assets/team/kelly.jpg";
 
 import andy from "./../assets/team/andy2.png";
 import grace from "./../assets/team/grace.jpg";
@@ -78,7 +81,7 @@ function Team() {
       " Click below to fill out our interest form! We'll email you once we begin recruitment in March.";
     button = (
       <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdlFW-xvwp_-J9jj2yWzGQlDOOn5ccEx6H6oud7OpZSpvVXsA/viewform?usp=pp_url&entry.204253720=Internal+Team+(Help+run+the+program)"
+        href="https://airtable.com/shr2JwPjM7cEaEI42"
         target="_blank"
         className="genericButton"
       >
@@ -89,13 +92,6 @@ function Team() {
 
   const peopleContent = [
     {
-      name: "Tiana Wong",
-      position: "Managing Director",
-      linkedinUrl: "https://www.linkedin.com/in/csow/",
-      mailTo: "mailto:tiana@freeventures.org",
-      image: tiana,
-    },
-    {
       name: "Varun Nair",
       position: "Managing Director",
       linkedinUrl: "https://www.linkedin.com/in/varun-nair-berkeley/",
@@ -104,52 +100,66 @@ function Team() {
     },
     {
       name: "Aamir Hudda",
-      position: "Director",
+      position: "Managing Director",
       linkedinUrl: "https://www.linkedin.com/in/aamirhudda/",
       mailTo: "mailto:aamir@freeventures.org",
       image: aamir,
     },
     {
-      name: "Anjan Bharadwaj",
-      position: "Associate",
-      linkedinUrl: "https://www.linkedin.com/in/anjanbharadwaj/",
-      mailTo: "mailto:anjan@freeventures.org",
-      image: anjan,
-    },
-    {
       name: "Hriday Sheth",
-      position: "Associate",
+      position: "Director",
       linkedinUrl: "https://www.linkedin.com/in/hridonculous/",
       mailTo: "mailto:hriday@freeventures.org",
       image: hriday,
     },
     {
       name: "Safwan Masood",
-      position: "Associate",
+      position: "Director",
       linkedinUrl: "https://www.linkedin.com/in/safwanmasood/",
       mailTo: "mailto:safwan@freeventures.org",
       image: safwan,
     },
     {
       name: "Pavit Singh",
-      position: "Associate",
+      position: "Director",
       linkedinUrl: "https://www.linkedin.com/in/pavit-singh-a311481ab/",
       mailTo: "mailto:pavit@freeventures.org",
       image: pavit,
     },
-    // {
-    //   name: "Grace Lu",
-    //   position: "Associate",
-    //   linkedinUrl: "https://www.linkedin.com/in/grace-lu/",
-    //   mailTo: "mailto:grace@freeventures.org",
-    //   image: grace,
-    // },
+        {
+      name: "Kelly Hong",
+      position: "Associate",
+      linkedinUrl: "https://www.linkedin.com/in/kellyshong",
+      mailTo: "mailto:kelly@freeventures.org",
+      image: kelly,
+    },
+                {
+      name: "Amy Zhuang",
+      position: "Associate",
+      linkedinUrl: "https://www.linkedin.com/in/amy-zhuang/",
+      mailTo: "mailto:amy@freeventures.org",
+      image: amy,
+    },
+            {
+      name: "Rohan Taneja",
+      position: "Associate",
+      linkedinUrl: "https://www.linkedin.com/in/rohan-taneja/",
+      mailTo: "mailto:rohan@freeventures.org",
+      image: rohan,
+    },
     {
       name: "Adithya Paramasivam",
       position: "Ex-Managing Director, Senior Advisor",
       linkedinUrl: "https://www.linkedin.com/in/adithyaparam",
       mailTo: "mailto:adithya@freeventures.org",
       image: adithya,
+    },
+        {
+      name: "Tiana Wong",
+      position: "Ex-Managing Director, Senior Advisor",
+      linkedinUrl: "https://www.linkedin.com/in/csow/",
+      mailTo: "mailto:tiana@freeventures.org",
+      image: tiana,
     },
     {
       name: "Maanav Khaitan",
@@ -158,13 +168,13 @@ function Team() {
       mailTo: "mailto:maanav@freeventures.org",
       image: maanav,
     },
-    // {
-    //   name: "Megha Jain",
-    //   position: "Senior Advisor",
-    //   linkedinUrl: "https://www.linkedin.com/in/meghamjain/",
-    //   mailTo: "mailto:megha@freeventures.org",
-    //   image: megha,
-    // },
+      {
+      name: "Anjan Bharadwaj",
+      position: "Senior Advisor",
+      linkedinUrl: "https://www.linkedin.com/in/anjanbharadwaj/",
+      mailTo: "mailto:anjan@freeventures.org",
+      image: anjan,
+    },
   ];
 
   const alumniContent = [

@@ -314,7 +314,7 @@ function Home() {
               mentorship, and resources to scale.
             </h2>
             <Link to="/apply" className="apply">
-              Recruiting Fall 2022 Startups
+              Recruiting Spring 2023 Startups
             </Link>
           </span>
           <span>
