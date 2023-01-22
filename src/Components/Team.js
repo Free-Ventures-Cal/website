@@ -19,7 +19,7 @@ import megha from "./../assets/team/megha.JPG";
 import anjan from "./../assets/team/anjan.jpg";
 import pavit from "./../assets/team/pavit.jpg";
 import safwan from "./../assets/team/safwan.png";
-import hriday from "./../assets/team/hriday.jpeg";
+import hriday from "./../assets/team/hriday.jpg";
 import amy from "./../assets/team/amy.jpeg";
 import rohan from "./../assets/team/rohan.jpg";
 import kelly from "./../assets/team/kelly.jpg";
