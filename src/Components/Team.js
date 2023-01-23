@@ -23,6 +23,7 @@ import hriday from "./../assets/team/hriday.jpg";
 import amy from "./../assets/team/amy.jpeg";
 import rohan from "./../assets/team/rohan.jpg";
 import kelly from "./../assets/team/kelly.jpg";
+import ishaan from "./../assets/team/ishaan.jpg";
 
 import andy from "./../assets/team/andy2.png";
 import grace from "./../assets/team/grace.jpg";
@@ -126,26 +127,33 @@ function Team() {
       mailTo: "mailto:pavit@freeventures.org",
       image: pavit,
     },
-        {
+    {
       name: "Kelly Hong",
       position: "Associate",
       linkedinUrl: "https://www.linkedin.com/in/kellyshong",
       mailTo: "mailto:kelly@freeventures.org",
       image: kelly,
     },
-                {
+    {
+      name: "Rohan Taneja",
+      position: "Associate",
+      linkedinUrl: "https://www.linkedin.com/in/rohan-taneja/",
+      mailTo: "mailto:rohan@freeventures.org",
+      image: rohan,
+    },
+    {
       name: "Amy Zhuang",
       position: "Associate",
       linkedinUrl: "https://www.linkedin.com/in/amy-zhuang/",
       mailTo: "mailto:amy@freeventures.org",
       image: amy,
     },
-            {
-      name: "Rohan Taneja",
+    {
+      name: "Ishaan Shah",
       position: "Associate",
-      linkedinUrl: "https://www.linkedin.com/in/rohan-taneja/",
-      mailTo: "mailto:rohan@freeventures.org",
-      image: rohan,
+      linkedinUrl: "https://www.linkedin.com/in/ishaan-shah109",
+      mailTo: "mailto:ishaan@freeventures.org",
+      image: ishaan,
     },
     {
       name: "Adithya Paramasivam",
@@ -168,7 +176,7 @@ function Team() {
       mailTo: "mailto:maanav@freeventures.org",
       image: maanav,
     },
-      {
+    {
       name: "Anjan Bharadwaj",
       position: "Senior Advisor",
       linkedinUrl: "https://www.linkedin.com/in/anjanbharadwaj/",
