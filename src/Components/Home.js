@@ -316,6 +316,10 @@ function Home() {
             <Link to="/apply" className="apply">
               Recruiting Spring 2023 Startups
             </Link>
+            <br></br>
+            <a href="https://airtable.com/shr2JwPjM7cEaEI42" className="apply">
+              Spring 2023 Interest Form
+            </a>
           </span>
           <span>
             <img src={freevgroup} alt="" />
