@@ -30,17 +30,17 @@ import archa from "./../assets/fiatlux/past_speakers/Archa.jpeg";
 function Fellowship() {
   let timelineContent = [
     {
-      date: "TBD",
+      date: "February 1",
       description: "Application Released",
       image: application,
     },
     {
-      date: "TBD",
+      date: "February 16",
       description: "Application Due",
       image: application,
     },
     {
-      date: "TBD",
+      date: "February 18",
       description: "Interviews",
       image: interview,
     },
@@ -189,7 +189,7 @@ function Fellowship() {
             short response!
           </p>
           <a
-            href="https://airtable.com/shrTZaerxspoAjE5S"
+            href="https://airtable.com/shrkN2sqrGM64Ylqg"
             className="genericButton"
             target="_blank"
             rel="noopener noreferrer"
