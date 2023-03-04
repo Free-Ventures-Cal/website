@@ -127,6 +127,72 @@ const portfolioContent = {
   },
   batchList: [
     {
+      batchName: "Spring 2023",
+      batchNumber: 20,
+      companies: [
+        {
+          name: "Rocetta",
+          description:
+            "A user experience-focused platform that accelerates cloud development and provides an intuitive dashboard for developers of all skill levels.",
+          track: "accelerator",
+          links: [
+            {
+              address: "https://rocetta.com",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Decoditive",
+          description:
+            "A next-generation Al-based marketing platform that predicts in 20 seconds the data you get in 4 weeks with Google Analytics.",
+          track: "accelerator",
+          links: [ 
+            {
+              address: "https://www.decoditive.com",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Mindly",
+          description:
+            "A visual database platform that connects millions of healthcare providers with patients to accurately monitor neurological conditions.",
+          track: "accelerator",
+          links: [
+            {
+              address: "https://mindly-dev.web.app/login",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Cartesan",
+          description:
+            "An app that enables restaurants to create 3D models of food from pictures and lets you use 3D menus from your phone.",
+          track: "accelerator",
+          links: [
+            {
+              address: "https://www.cartesan.app",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "EduBeyond",
+          description:
+            "Novel Al-based learning software that eliminates educational disparities by aiding underprivileged communities worldwide.",
+          track: "accelerator",
+          links: [
+            {
+              address: "https://www.edubeyond.org",
+              title: "Website",
+            },
+          ],
+        },
+      ],
+    },
+    {
       batchName: "Fall 2022",
       batchNumber: 19,
       companies: [
