@@ -101,7 +101,7 @@ function Team() {
     },
     {
       name: "Aamir Hudda",
-      position: "Managing Director",
+      position: "Senior Advisor",
       linkedinUrl: "https://www.linkedin.com/in/aamirhudda/",
       mailTo: "mailto:aamir@freeventures.org",
       image: aamir,
