@@ -28,7 +28,12 @@ function App() {
           <Route exact path="/team" component={Team} />
           <Route exact path="/partners" component={Partners} />
           <Route exact path="/contact" component={ContactFormPage} />
-          <Route exact path="/apply" component={Apply} />
+          {/* <Route exact path="/apply" component={Apply} /> */}
+          <Route path='/apply' component={() => {
+            window.location.href = 'https://airtable.com/shrGDA9SEDiHso7Z7';
+            return <Home />;
+            }}
+          />
           <Route exact path="/fellowship" component={Fellowship} />
           <Route exact path="/fairinfo" component={FairInfo} />
           <Route
