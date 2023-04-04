@@ -19,7 +19,6 @@ import pear from './../assets/partners/pear.png';
 import scet from './../assets/partners/scet.png';
 import spark from './../assets/partners/spark.png';
 import svangel from './../assets/partners/svangle.png';
-import svb from './../assets/partners/svb.png';
 import ycombinator from './../assets/partners/ycombinator.png';
 import eightvc from './../assets/partners/8vc.png';
 
@@ -42,11 +41,6 @@ function Partners() {
             logo: house,
             name: 'The House Fund',
             website: "http://thehouse.fund/"
-        },
-        {
-            logo: svb,
-            name: 'Silicon Valley Bank',
-            website: "https://www.svb.com/"
         },
         {
             logo: eightvc,
