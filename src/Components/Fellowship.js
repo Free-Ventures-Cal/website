@@ -30,17 +30,17 @@ import archa from "./../assets/fiatlux/past_speakers/Archa.jpeg";
 function Fellowship() {
   let timelineContent = [
     {
-      date: "February 1",
+      date: "August 28",
       description: "Application Released",
       image: application,
     },
     {
-      date: "February 16",
+      date: "September 7",
       description: "Application Due",
       image: application,
     },
     {
-      date: "February 18",
+      date: "September 9",
       description: "Interviews",
       image: interview,
     },
@@ -189,14 +189,14 @@ function Fellowship() {
             short response!
           </p>
           <a
-            href="https://airtable.com/shrkN2sqrGM64Ylqg"
+            href="https://forms.gle/jQrDAHUPVTd8Eaw58"
             className="genericButton"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply for Spring 2023 Fellowship
+            Apply for Fall 2023 Fellowship
           </a>
-          <h3>Spring 2023 Timeline</h3>
+          <h3>Fall 2023 Timeline</h3>
           <div className="timeline">{timelineWithArrows}</div>
           <p>
             Please direct questions to our form below, or email:{" "}
