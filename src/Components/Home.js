@@ -314,7 +314,7 @@ function Home() {
               mentorship, and resources to scale.
             </h2>
             <Link to="/apply" className="apply">
-              Recruiting Spring 2023 Startups
+              Recruiting Fall 2023 Startups
             </Link>
             <br></br>
             {/* <a href="https://airtable.com/shr2JwPjM7cEaEI42" className="apply">

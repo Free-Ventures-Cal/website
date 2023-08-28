@@ -30,8 +30,8 @@ function App() {
           <Route exact path="/contact" component={ContactFormPage} />
           {/* <Route exact path="/apply" component={Apply} /> */}
           <Route path='/apply' component={() => {
-            window.location.href = 'https://airtable.com/shrGDA9SEDiHso7Z7';
-            return <Home />;
+            window.open('https://forms.gle/eMsW27MbMx3ofkud7', '_blank');
+            return <Home />
             }}
           />
           <Route exact path="/fellowship" component={Fellowship} />
