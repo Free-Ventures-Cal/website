@@ -320,7 +320,7 @@ function Home() {
             {/* <a href="https://airtable.com/shr2JwPjM7cEaEI42" className="apply">
               Spring 2023 Interest Form
             </a> */}
-            <a href="https://airtable.com/shrGDA9SEDiHso7Z7" className="apply">
+            <a href="https://forms.gle/3pdAaDVqbiyQSXp27" className="apply">
               Fall 2023 Internal Team Interest Form
             </a>
           </span>
