@@ -2,32 +2,27 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./../styles/App.css";
 import "./../styles/Team.css";
-import { useState, useEffect } from "react";
 import useScrollHandler from "../hooks/useScrollHandler";
 
 import Person from "./Person.js";
 import GenericTop from "./GenericTop";
 import GenericPage from "./GenericPage";
-import adithya from "./../assets/team/adithya.png";
 import christina from "./../assets/team/christina.png";
 import alex from "./../assets/team/alex.png";
-import tiana from "./../assets/team/tiana2.png";
-import maanav from "./../assets/team/maanav.png";
-import varun from "./../assets/team/varun.jpeg";
-import aamir from "./../assets/team/aamir.png";
-import megha from "./../assets/team/megha.JPG";
-import anjan from "./../assets/team/anjan.jpg";
-import pavit from "./../assets/team/pavit.jpg";
-import safwan from "./../assets/team/safwan.png";
-import hriday from "./../assets/team/hriday.jpg";
-import amy from "./../assets/team/amy.jpeg";
+import varun from "./../assets/team/varun.png";
+import amy from "./../assets/team/amy.png";
+import anjan from "./../assets/team/anjan.png";
+import hiya from "./../assets/team/hiya.png";
+import hriday from "./../assets/team/hriday.png";
+import ishaan from "./../assets/team/ishaan.png";
+import kelly from "./../assets/team/kelly.png";
+import nandu from "./../assets/team/nandu.png";
+import pavit from "./../assets/team/pavit.png";
 import rohan from "./../assets/team/rohan.jpg";
-import kelly from "./../assets/team/kelly.jpg";
-import ishaan from "./../assets/team/ishaan.jpg";
-
-import andy from "./../assets/team/andy2.png";
-import grace from "./../assets/team/grace.jpg";
-
+import safwan from "./../assets/team/safwan.png";
+import samiha from "./../assets/team/samiha.png";
+import shlok from "./../assets/team/shlok.png";
+import aamir from "./../assets/team/aamir.png";
 import aashi from "./../assets/team/alumni/aashi_jawar.png";
 import abhay from "./../assets/team/alumni/abhay_malik.jpeg";
 import adhiv from "./../assets/team/alumni/adhiv_dhar.png";
@@ -93,29 +88,8 @@ function Team() {
 
   const peopleContent = [
     {
-      name: "Varun Nair",
-      position: "Managing Director",
-      linkedinUrl: "https://www.linkedin.com/in/varun-nair-berkeley/",
-      mailTo: "mailto:varun@freeventures.org",
-      image: varun,
-    },
-    {
-      name: "Aamir Hudda",
-      position: "Senior Advisor",
-      linkedinUrl: "https://www.linkedin.com/in/aamirhudda/",
-      mailTo: "mailto:aamir@freeventures.org",
-      image: aamir,
-    },
-    {
-      name: "Hriday Sheth",
-      position: "Director",
-      linkedinUrl: "https://www.linkedin.com/in/hridonculous/",
-      mailTo: "mailto:hriday@freeventures.org",
-      image: hriday,
-    },
-    {
       name: "Safwan Masood",
-      position: "Director",
+      position: "Managing Director",
       linkedinUrl: "https://www.linkedin.com/in/safwanmasood/",
       mailTo: "mailto:safwan@freeventures.org",
       image: safwan,
@@ -123,9 +97,37 @@ function Team() {
     {
       name: "Pavit Singh",
       position: "Director",
-      linkedinUrl: "https://www.linkedin.com/in/pavit-singh-a311481ab/",
+      linkedinUrl: "https://www.linkedin.com/in/singhpavit/",
       mailTo: "mailto:pavit@freeventures.org",
       image: pavit,
+    },
+    {
+      name: "Kelly Hong",
+      position: "Director",
+      linkedinUrl: "https://www.linkedin.com/in/kellyshong/",
+      mailTo: "mailto:kelly@freeventures.org",
+      image: kelly,
+    },
+    {
+      name: "Ishaan Shah",
+      position: "Director",
+      linkedinUrl: "https://www.linkedin.com/in/ishaan-shah109/",
+      mailTo: "mailto:ishaan@freeventures.org",
+      image: ishaan,
+    },
+    {
+      name: "Rohan Taneja",
+      position: "Senior Associate",
+      linkedinUrl: "https://www.linkedin.com/in/rohan-taneja/",
+      mailTo: "mailto:rohan@freeventures.org",
+      image: rohan,
+    },
+    {
+      name: "Amy Zhuang",
+      position: "Senior Associate",
+      linkedinUrl: "https://www.linkedin.com/in/amy-zhuang/",
+      mailTo: "mailto:amy@freeventures.org",
+      image: amy,
     },
     {
       name: "Kelly Hong",
@@ -135,46 +137,53 @@ function Team() {
       image: kelly,
     },
     {
-      name: "Rohan Taneja",
+      name: "Samiha Singh",
       position: "Associate",
-      linkedinUrl: "https://www.linkedin.com/in/rohan-taneja/",
-      mailTo: "mailto:rohan@freeventures.org",
-      image: rohan,
+      linkedinUrl: "https://www.linkedin.com/in/samiha-singh/",
+      mailTo: "mailto:samiha@freeventures.org",
+      image: samiha,
     },
     {
-      name: "Amy Zhuang",
+      name: "Nandu Narayanan",
       position: "Associate",
-      linkedinUrl: "https://www.linkedin.com/in/amy-zhuang/",
-      mailTo: "mailto:amy@freeventures.org",
-      image: amy,
+      linkedinUrl: "https://www.linkedin.com/in/shrinandan-narayanan/",
+      mailTo: "mailto:nandu@freeventures.org",
+      image: nandu,
     },
     {
-      name: "Ishaan Shah",
+      name: "Hiya Shah",
       position: "Associate",
-      linkedinUrl: "https://www.linkedin.com/in/ishaan-shah109",
-      mailTo: "mailto:ishaan@freeventures.org",
-      image: ishaan,
+      linkedinUrl: "https://www.linkedin.com/in/hiyashah/",
+      mailTo: "mailto:hiya@freeventures.org",
+      image: hiya,
     },
     {
-      name: "Adithya Paramasivam",
-      position: "Ex-Managing Director, Senior Advisor",
-      linkedinUrl: "https://www.linkedin.com/in/adithyaparam",
-      mailTo: "mailto:adithya@freeventures.org",
-      image: adithya,
+      name: "Shlok Singh",
+      position: "Associate",
+      linkedinUrl: "https://www.linkedin.com/in/shloksingh1/",
+      mailTo: "mailto:shlok@freeventures.org",
+      image: shlok,
     },
         {
-      name: "Tiana Wong",
-      position: "Ex-Managing Director, Senior Advisor",
-      linkedinUrl: "https://www.linkedin.com/in/csow/",
-      mailTo: "mailto:tiana@freeventures.org",
-      image: tiana,
+      name: "Varun Nair",
+      position: "Senior Advisor, Ex-Managing Director",
+      linkedinUrl: "https://www.linkedin.com/in/varun-nair-berkeley/",
+      mailTo: "mailto:varun@freeventures.org",
+      image: varun,
     },
     {
-      name: "Maanav Khaitan",
+      name: "Aamir Hudda",
+      position: "Senior Advisor, Ex-Managing Director",
+      linkedinUrl: "https://www.linkedin.com/in/aamirhudda/",
+      mailTo: "mailto:aamir@freeventures.org",
+      image: aamir,
+    },
+    {
+      name: "Hriday Sheth",
       position: "Senior Advisor",
-      linkedinUrl: "https://www.linkedin.com/in/maanav-khaitan/",
-      mailTo: "mailto:maanav@freeventures.org",
-      image: maanav,
+      linkedinUrl: "https://www.linkedin.com/in/hridonculous/",
+      mailTo: "mailto:hriday@freeventures.org",
+      image: hriday,
     },
     {
       name: "Anjan Bharadwaj",
