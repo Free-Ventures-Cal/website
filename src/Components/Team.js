@@ -79,6 +79,7 @@ function Team() {
       <a
         href="https://airtable.com/shr2JwPjM7cEaEI42"
         target="_blank"
+        rel="noopener noreferrer"
         className="genericButton"
       >
         Internal Team Interest Form

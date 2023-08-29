@@ -321,7 +321,7 @@ function Home() {
               Spring 2023 Interest Form
             </a> */}
             <a href="https://airtable.com/shrGDA9SEDiHso7Z7" className="apply">
-              Apply to the Spring 2023 Internal Team
+              Fall 2023 Internal Team Interest Form
             </a>
           </span>
           <span>

@@ -1,6 +1,4 @@
 import React from "react";
-import logo from "./../assets/freev-white.png";
-import logogray from "./../assets/freev-gray.png";
 import fb from "./../assets/facebook.png";
 import medium from "./../assets/medium.png";
 import twitter from "./../assets/twitter.png";
@@ -37,6 +35,7 @@ function Footer() {
             href="https://freeventures.substack.com/"
             className="genericButton"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Subscribe
           </a>
@@ -54,15 +53,15 @@ function Footer() {
         </span>
         <span className="links">
           <p>Connect with us</p>
-          <a href="https://www.facebook.com/FreeVentures/" target="_blank">
+          <a href="https://www.facebook.com/FreeVentures/" target="_blank" rel="noopener noreferrer">
             <img src={fb} alt="" />
             Facebook
           </a>
-          <a href="https://twitter.com/FreeVentures" target="_blank">
+          <a href="https://twitter.com/FreeVentures" target="_blank" rel="noopener noreferrer">
             <img src={twitter} alt="" />
             Twitter
           </a>
-          <a href="https://medium.com/@FreeVentures" target="_blank">
+          <a href="https://medium.com/@FreeVentures" target="_blank" rel="noopener noreferrer">
             <img src={medium} alt="" />
             Medium
           </a>

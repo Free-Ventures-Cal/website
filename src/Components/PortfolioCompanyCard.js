@@ -1,6 +1,4 @@
 import React from 'react';
-import arrow from './../assets/arrow.png';
-import arrowsvg from './../assets/arrow-svg.svg';
 
 import './../styles/Portfolio.css';
 

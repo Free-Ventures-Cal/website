@@ -12,10 +12,10 @@ function Person(props) {
             <h2>{props.name}</h2>
             <h3>{props.position}</h3>
             <div className="links">
-                <a href={props.linkedinUrl} target="_blank">
+                <a href={props.linkedinUrl} target="_blank" rel="noopener noreferrer">
                     <img src={linkedinLogo} alt="LinkedIn"/>
                 </a>
-                <a href={props.mailTo} target="_blank">
+                <a href={props.mailTo} target="_blank" rel="noopener noreferrer">
                     <img src={emailIcon} alt="Email" />
                 </a>
             </div>

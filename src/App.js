@@ -5,7 +5,6 @@ import Team from "./Components/Team.js";
 import Partners from "./Components/Partners.js";
 import Footer from "./Components/Footer.js";
 import ContactFormPage from "./Components/ContactFormPage.js";
-import Apply from "./Components/Apply.js";
 import Fellowship from "./Components/Fellowship";
 import Portfolio from "./Components/Portfolio.js";
 import Program from "./Components/Program.js";

@@ -1,13 +1,10 @@
 import React from 'react';
 import GenericTop from './GenericTop';
-import GenericPage from './GenericPage';
-import { Link } from "react-router-dom";
 import SpotLightArticle from './SpotlightArticle';
 
 import './../styles/App.css';
 import './../styles/Program.css';
 
-import freevgroup from './../assets/program/freevgroup.jpg'
 import thiel from './../assets/program/thiel.png';
 import forbes from './../assets/program/forbes.png';
 import yc from './../assets/program/yc.png';
@@ -15,12 +12,9 @@ import greylock from './../assets/program/greylock.png';
 import accel from './../assets/program/accel.png';
 import kp from './../assets/program/kp.png';
 
-import equity from './../assets/program/business.png';
 import mentors from './../assets/program/mentorship.png';
 import workshops from './../assets/program/training.png';
 import community from './../assets/program/group.png';
-import legal from './../assets/program/banking.png';
-import fundraising from './../assets/program/fundraise.png';
 
 import method from './../assets/program/method.jpeg';
 import intro from './../assets/program/method.png';

@@ -3,26 +3,12 @@ import ContactForm from './ContactForm';
 import './../styles/App.css';
 import './../styles/Partners.css';
 import GenericTop from './GenericTop';
-import GenericPage from './GenericPage';
 
-import accel from './../assets/partners/accel.png';
 import aws from './../assets/partners/aws.png';
 import cooley from './../assets/partners/cooley.png';
-import fbstart from './../assets/partners/fbstart.png';
-import gc from './../assets/partners/gc.png';
-import github from './../assets/partners/github.png';
-import greylock from './../assets/partners/greylock.jpg';
 import house from './../assets/partners/house.png';
-import kpcb from './../assets/partners/kpcb.png';
-import lightspeed from './../assets/partners/lightspeed.png';
-import pear from './../assets/partners/pear.png';
-import scet from './../assets/partners/scet.png';
-import spark from './../assets/partners/spark.png';
-import svangel from './../assets/partners/svangle.png';
-import ycombinator from './../assets/partners/ycombinator.png';
 import eightvc from './../assets/partners/8vc.png';
 
-import placeholder from './../assets/partners/placeholder.png';
 import value1 from './../assets/partners/value1.jpeg';
 import value2 from './../assets/partners/value2.jpeg';
 import value3 from './../assets/partners/value3.jpg';

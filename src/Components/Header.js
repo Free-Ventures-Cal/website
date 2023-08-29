@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./../assets/free-v-square.png";
 import { NavLink, Link } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 import logofull from "./../assets/logo-full.png";

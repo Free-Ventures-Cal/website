@@ -1,6 +1,5 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
@@ -68,7 +67,7 @@ function CustomizedDialogs(props) {
 
     if(props.company.links) {
         let links = props.company.links.map((link) => {
-            return (<a href={link.address} target="_blank">{link.title}</a>);
+            return (<a href={link.address} target="_blank" rel="noopener noreferrer">{link.title}</a>);
         })
 
         linkSection = (

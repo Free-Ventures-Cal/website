@@ -1,9 +1,7 @@
 import React from 'react';
 import './../styles/App.css';
 import './../styles/Team.css';
-import linkedinLogo from './../assets/linkedin.png'
-import emailIcon from './../assets/mail.png'
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import Alumnus from './Alumnus.js';
 
 function AlumniCardsMarquee(props) {

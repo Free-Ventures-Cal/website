@@ -3,8 +3,6 @@ import ContactForm from './ContactForm';
 import './../styles/App.css';
 import GenericTop from './GenericTop';
 import GenericPage from './GenericPage';
-const sgMail = require('@sendgrid/mail');
-var request = require("request");
 
 
 function Partners() {

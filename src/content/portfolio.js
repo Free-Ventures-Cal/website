@@ -74,7 +74,6 @@ import tc from "./../assets/press/tc.png";
 import huffpost from "./../assets/press/huffpost.png";
 import forbes from "./../assets/press/forbes.png";
 import mic from "./../assets/press/mic.png";
-import medium from "./../assets/press/medium.png";
 import recode from "./../assets/press/recode.png";
 import wired from "./../assets/press/wired.png";
 import bb from "./../assets/press/bb.jpg";
