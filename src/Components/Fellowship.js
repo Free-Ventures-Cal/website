@@ -151,6 +151,17 @@ function Fellowship() {
               </p>
             </div>
           </div>
+          <div className="speakers-column" id="coretasks">
+            <div>
+              <h2>Capstone Project</h2>
+              <p>
+                The culmination of the fellowship program is a hands-on project that will allow fellows to apply their learnings to a real-world problem space.
+              </p>
+              <p>
+                Fellows will be paired with a batch company, identify a problem they are facing, and devise a solution that the founders should implement. At the end of the program, fellows will present their recommendations in a formal presentation format to the entire Free Ventures internal team. 
+              </p>
+            </div>
+          </div>
           <div className="speakers-column" id="perks">
             <div>
               <h2>Perks & Benefits</h2>
@@ -200,7 +211,8 @@ function Fellowship() {
           <div className="timeline">{timelineWithArrows}</div>
           <p>
             Please direct questions to our form below, or email:{" "}
-            <a href="mailto:safwan@freeventures.org">safwan@freeventures.org</a>
+            <a href="mailto:kelly@freeventures.org">kelly@freeventures.org</a> and {" "}
+            <a href="mailto:hiya@freeventures.org">hiya@freeventures.org</a> 
             .
           </p>
         </span>
