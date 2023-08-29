@@ -74,7 +74,7 @@ function Team() {
     );
   } else {
     description +=
-      " Click below to fill out our interest form! We'll email you once we begin recruitment in March.";
+      " Click below to fill out our interest form! We'll email you once we begin recruitment in October.";
     button = (
       <a
         href="https://forms.gle/3pdAaDVqbiyQSXp27"
@@ -129,13 +129,6 @@ function Team() {
       linkedinUrl: "https://www.linkedin.com/in/amy-zhuang/",
       mailTo: "mailto:amy@freeventures.org",
       image: amy,
-    },
-    {
-      name: "Kelly Hong",
-      position: "Associate",
-      linkedinUrl: "https://www.linkedin.com/in/kellyshong",
-      mailTo: "mailto:kelly@freeventures.org",
-      image: kelly,
     },
     {
       name: "Samiha Singh",
