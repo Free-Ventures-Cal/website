@@ -77,7 +77,7 @@ function Team() {
       " Click below to fill out our interest form! We'll email you once we begin recruitment in March.";
     button = (
       <a
-        href="https://airtable.com/shr2JwPjM7cEaEI42"
+        href="https://forms.gle/3pdAaDVqbiyQSXp27"
         target="_blank"
         rel="noopener noreferrer"
         className="genericButton"
