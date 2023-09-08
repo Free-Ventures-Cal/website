@@ -31,7 +31,7 @@ function App() {
           {/* <Route exact path="/apply" component={Apply} /> */}
           <Route path='/apply' component={() => {
             window.open('https://forms.gle/eMsW27MbMx3ofkud7', '_blank');
-            return <Home />
+            return <Home /> 
             }}
           />
           <Route exact path="/fellowship" component={Fellowship} />
