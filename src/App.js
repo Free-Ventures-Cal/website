@@ -30,7 +30,7 @@ function App() {
           <Route exact path="/contact" component={ContactFormPage} />
           {/* <Route exact path="/apply" component={Apply} /> */}
           <Route path='/apply' component={() => {
-            window.open('https://forms.gle/eMsW27MbMx3ofkud7', '_blank');
+            window.open('https://docs.google.com/forms/d/e/1FAIpQLSe7AIGH455u3za7ervydNXbyFJXCtaK_adh9D1AbVhoLxH8Hg/viewform', '_blank');
             return <Home /> 
             }}
           />
