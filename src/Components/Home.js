@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import ContactForm from "./ContactForm";
 import HomeCompany from "./HomeCompany";
 import { Link } from "react-router-dom";
-import freevgroup from "./../assets/program/freevgroup.jpg";
+import freevgroup from "./../assets/program/freevgroup.png";
 import "./../styles/App.css";
 import "./../styles/Home.css";
 import Testimonial from "./Testimonial";
