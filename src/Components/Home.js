@@ -309,9 +309,9 @@ function Home() {
           <span>
             <h1>Berkeley’s Zero-Equity Startup Accelerator</h1>
             <h2>
-              Free Ventures is Cal’s leading pre-seed startup accelerator. We
-              empower student founders by providing access to funding,
-              mentorship, and resources to scale.
+              Free Ventures is a pre-seed startup accelerator designed to help 
+              Cal student founders build & scale their daring ideas. 
+              The best part: we take <span style={{ textDecoration: "underline" }}>no equity</span>.
             </h2>
             <Link to="/apply" className="apply">
               Recruiting Fall 2023 Startups
