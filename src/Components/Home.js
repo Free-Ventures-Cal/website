@@ -314,15 +314,15 @@ function Home() {
               The best part: we take <span style={{ textDecoration: "underline" }}>no equity</span>.
             </h2>
             <Link to="/apply" className="apply">
-              Recruiting Fall 2023 Startups
+              Internal Team Application
             </Link>
             <br></br>
             {/* <a href="https://airtable.com/shr2JwPjM7cEaEI42" className="apply">
               Spring 2023 Interest Form
             </a> */}
-            <a href="https://forms.gle/3pdAaDVqbiyQSXp27" target="_blank" rel="noopener noreferrer" className="apply">
+            {/* <a href="https://forms.gle/3pdAaDVqbiyQSXp27" target="_blank" rel="noopener noreferrer" className="apply">
               Fall 2023 Internal Team Interest Form
-            </a>
+            </a> */}
           </span>
           <span>
             <img src={freevgroup} alt="" />
