@@ -307,7 +307,7 @@ function Home() {
       <div className="splash">
         <div className="container">
           <span>
-            <h1>Empowering the brightest founders in Berkeley</h1>
+            <h1>Berkeley’s Zero-Equity Startup Accelerator</h1>
             <h2>
               Free Ventures is Cal’s leading pre-seed startup accelerator. We
               empower student founders by providing access to funding,
