@@ -4,10 +4,9 @@ import './../styles/App.css';
 import './../styles/Partners.css';
 import GenericTop from './GenericTop';
 
-import aws from './../assets/partners/aws.png';
+import aws from './../assets/sponsors/aws.png';
 import cooley from './../assets/partners/cooley.png';
 import house from './../assets/partners/house.png';
-import eightvc from './../assets/partners/8vc.png';
 
 import value1 from './../assets/partners/value1.jpeg';
 import value2 from './../assets/partners/value2.jpeg';
@@ -29,19 +28,14 @@ function Partners() {
             website: "http://thehouse.fund/"
         },
         {
-            logo: eightvc,
-            name: '8VC',
-            website: "https://8vc.com/"
-        },
-        {
             logo: aws,
-            name: 'AWS Activate',
+            name: 'AWS',
             website: "https://aws.amazon.com/activate/"
         },
     ];
 
     let partners = partnersContent.map((partner) => {
-        return (<a href={partner.website}><img src={partner.logo} alt={partner.name} /></a>);
+        return (<a href={partner.website}><img src={partner.logo} alt={partner.name} style={{ width: "60%" }} /></a>);
     });
 
     return (
