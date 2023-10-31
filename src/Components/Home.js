@@ -7,6 +7,10 @@ import freevgroup from "./../assets/program/freevgroup.png";
 import "./../styles/App.css";
 import "./../styles/Home.css";
 import Testimonial from "./Testimonial";
+// Sponsors
+import aws from "./../assets/sponsors/aws.png";
+import cooley from "./../assets/sponsors/cooley.png";
+import thehousefund from "./../assets/sponsors/thehousefund.png";
 // Press
 import wired from "./../assets/press/grayscale/wired.png";
 import tc from "./../assets/press/grayscale/tc.png";
@@ -316,7 +320,11 @@ function Home() {
             <Link to="/apply" className="apply">
               Internal Team Application
             </Link>
-            <br></br>
+            <div className="sponsors">
+              <img src={aws} className="sponsorLogo" />
+              <img src={cooley} className="sponsorLogo" style={{ margin: "20px" }} />
+              <img src={thehousefund} className="sponsorLogo" />
+            </div>
             {/* <a href="https://airtable.com/shr2JwPjM7cEaEI42" className="apply">
               Spring 2023 Interest Form
             </a> */}
@@ -325,7 +333,7 @@ function Home() {
             </a> */}
           </span>
           <span>
-            <img src={freevgroup} alt="" />
+            <img className="splashImage" src={freevgroup} alt="" />
           </span>
         </div>
       </div>

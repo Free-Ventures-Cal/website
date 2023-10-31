@@ -79,13 +79,13 @@ a {
   text-align: right;
 }
 
-.splash .container span:last-child img {
+.splash .container span:last-child .splashImage {
   width: 100%;
   float: right;
   display: inline-block;
 }
 
-.splash .container img {
+.splash .container .splashImage {
   border-bottom-left-radius: 10px;
   box-shadow: 6px 6px 3px rgba(221, 221, 221);
 }
@@ -187,7 +187,7 @@ a {
 
 .blueWaveTop {
   position: relative;
-  top: 50px;
+  top: 5px;
   z-index: -1;
 }
 
@@ -449,8 +449,13 @@ a {
 }
 
 .sponsors {
-  text-align: center;
+  /* text-align: center; */
   padding: 40px 0 0px 0;
+}
+
+.sponsorLogo {
+  width: 80px;
+  object-fit: "scale-down"
 }
 
 #acquisitions {
@@ -497,9 +502,9 @@ a {
   bottom: 4px;
 }
 
-.sponsors .genericButton {
-  margin-bottom: 30px;
-}
+/* .sponsors .genericButton { */
+  /* margin-bottom: 30px; */
+/* } */
 
 .pratik {
   margin-top: 0 !important;
@@ -680,6 +685,10 @@ figure.testimonial-card figcaption {
     text-align: center !important;
   }
 
+  /* .splash .container .sponsors { */
+    /* display: block; */
+  /* } */
+
   .splash .container span:first-child {
     text-align: center;
   }
@@ -688,7 +697,7 @@ figure.testimonial-card figcaption {
     text-align: center;
   }
 
-  .splash .container span:last-child img {
+  .splash .container span:last-child .splashImage {
     margin: 0 auto;
   }
 
