@@ -11,6 +11,8 @@ import Testimonial from "./Testimonial";
 import aws from "./../assets/sponsors/aws.png";
 import cooley from "./../assets/sponsors/cooley.png";
 import thehousefund from "./../assets/sponsors/thehousefund.png";
+import healthtechcolab from "./../assets/sponsors/healthtechcolab.png"
+import bigideas from "./../assets/sponsors/bigideas.png"
 // Press
 import wired from "./../assets/press/grayscale/wired.png";
 import tc from "./../assets/press/grayscale/tc.png";
@@ -323,6 +325,8 @@ function Home() {
             <div className="sponsors">
               <img src={aws} className="sponsorLogo" />
               <img src={cooley} className="sponsorLogo" style={{ margin: "20px" }} />
+              <img src={bigideas} className="sponsorLogo" style={{ marginBottom: "25px", marginTop: "25px" }} />
+              <img src={healthtechcolab} className="sponsorLogo" style={{ margin: "20px", marginBottom: "25px", marginTop: "25px" }} />
               <img src={thehousefund} className="sponsorLogo" />
             </div>
             {/* <a href="https://airtable.com/shr2JwPjM7cEaEI42" className="apply">
