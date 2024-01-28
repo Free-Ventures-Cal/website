@@ -1,28 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useScrollHandler from "../hooks/useScrollHandler";
 import "./../styles/App.css";
 import "./../styles/Team.css";
-import useScrollHandler from "../hooks/useScrollHandler";
 
-import Person from "./Person.js";
-import GenericTop from "./GenericTop";
-import GenericPage from "./GenericPage";
-import christina from "./../assets/team/christina.png";
-import alex from "./../assets/team/alex.png";
-import varun from "./../assets/team/varun.png";
-import amy from "./../assets/team/amy.png";
-import anjan from "./../assets/team/anjan.png";
-import hiya from "./../assets/team/hiya.png";
-import hriday from "./../assets/team/hriday.png";
-import ishaan from "./../assets/team/ishaan.png";
-import kelly from "./../assets/team/kelly.png";
-import nandu from "./../assets/team/nandu.png";
-import pavit from "./../assets/team/pavit.png";
-import rohan from "./../assets/team/rohan.jpg";
-import safwan from "./../assets/team/safwan.png";
-import samiha from "./../assets/team/samiha.png";
-import shlok from "./../assets/team/shlok.png";
 import aamir from "./../assets/team/aamir.png";
+import alex from "./../assets/team/alex.png";
+import alson from "./../assets/team/alson_chan.jpg";
 import aashi from "./../assets/team/alumni/aashi_jawar.png";
 import abhay from "./../assets/team/alumni/abhay_malik.jpeg";
 import adhiv from "./../assets/team/alumni/adhiv_dhar.png";
@@ -48,10 +32,29 @@ import sam from "./../assets/team/alumni/sam_kirschner.jpeg";
 import saneel from "./../assets/team/alumni/saneel_sreeni.jpg";
 import sean from "./../assets/team/alumni/sean_linehan.jpeg";
 import shaantam from "./../assets/team/alumni/shaantam_chawla.png";
+import amy from "./../assets/team/amy.png";
+import christina from "./../assets/team/christina.png";
+import hiya from "./../assets/team/hiya.png";
+import hriday from "./../assets/team/hriday.png";
+import ishaan from "./../assets/team/ishaan.png";
+import kelly from "./../assets/team/kelly.png";
+import mahika from "./../assets/team/mahika_valluri.jpg";
+import nandu from "./../assets/team/nandu.png";
+import pavit from "./../assets/team/pavit.png";
+import radha from "./../assets/team/radha_singh.jpg";
+import rohan from "./../assets/team/rohan.jpg";
+import safwan from "./../assets/team/safwan.png";
+import samiha from "./../assets/team/samiha.png";
+import sanjay from "./../assets/team/sanjay_adhikesaven.jpeg";
+import shlok from "./../assets/team/shlok.png";
+import varun from "./../assets/team/varun.png";
+import GenericPage from "./GenericPage";
+import GenericTop from "./GenericTop";
+import Person from "./Person.js";
 
-import house from "./../assets/partners/house.png";
-import haas from "./../assets/partners/haas.jpg";
 import berkeleyengineering from "./../assets/partners/berkeleyengineering.png";
+import haas from "./../assets/partners/haas.jpg";
+import house from "./../assets/partners/house.png";
 import scet from "./../assets/partners/scet.png";
 import skydeck from "./../assets/partners/skydeck.png";
 import AlumniCardsMarquee from "./AlumniCardsMarquee";
@@ -89,18 +92,18 @@ function Team() {
 
   const peopleContent = [
     {
-      name: "Safwan Masood",
-      position: "Managing Director",
-      linkedinUrl: "https://www.linkedin.com/in/safwanmasood/",
-      mailTo: "mailto:safwan@freeventures.org",
-      image: safwan,
-    },
-    {
       name: "Pavit Singh",
-      position: "Director",
+      position: "Managing Director",
       linkedinUrl: "https://www.linkedin.com/in/singhpavit/",
       mailTo: "mailto:pavit@freeventures.org",
       image: pavit,
+    },
+    {
+      name: "Ishaan Shah",
+      position: "Managing Director",
+      linkedinUrl: "https://www.linkedin.com/in/ishaan-shah109/",
+      mailTo: "mailto:ishaan@freeventures.org",
+      image: ishaan,
     },
     {
       name: "Kelly Hong",
@@ -110,11 +113,25 @@ function Team() {
       image: kelly,
     },
     {
-      name: "Ishaan Shah",
+      name: "Hriday Sheth",
       position: "Director",
-      linkedinUrl: "https://www.linkedin.com/in/ishaan-shah109/",
-      mailTo: "mailto:ishaan@freeventures.org",
-      image: ishaan,
+      linkedinUrl: "https://www.linkedin.com/in/hridonculous/",
+      mailTo: "mailto:hriday@freeventures.org",
+      image: hriday,
+    },
+    {
+      name: "Samiha Singh",
+      position: "Director",
+      linkedinUrl: "https://www.linkedin.com/in/samiha-singh/",
+      mailTo: "mailto:samiha@freeventures.org",
+      image: samiha,
+    },
+    {
+      name: "Hiya Shah",
+      position: "Director",
+      linkedinUrl: "https://www.linkedin.com/in/hiyashah/",
+      mailTo: "mailto:hiya@freeventures.org",
+      image: hiya,
     },
     {
       name: "Rohan Taneja",
@@ -124,39 +141,46 @@ function Team() {
       image: rohan,
     },
     {
-      name: "Amy Zhuang",
-      position: "Senior Associate",
-      linkedinUrl: "https://www.linkedin.com/in/amy-zhuang/",
-      mailTo: "mailto:amy@freeventures.org",
-      image: amy,
-    },
-    {
-      name: "Samiha Singh",
-      position: "Associate",
-      linkedinUrl: "https://www.linkedin.com/in/samiha-singh/",
-      mailTo: "mailto:samiha@freeventures.org",
-      image: samiha,
-    },
-    {
       name: "Nandu Narayanan",
-      position: "Associate",
+      position: "Senior Associate",
       linkedinUrl: "https://www.linkedin.com/in/shrinandan-narayanan/",
       mailTo: "mailto:nandu@freeventures.org",
       image: nandu,
     },
     {
-      name: "Hiya Shah",
+      name: "Alson Chan",
       position: "Associate",
-      linkedinUrl: "https://www.linkedin.com/in/hiyashah/",
-      mailTo: "mailto:hiya@freeventures.org",
-      image: hiya,
+      linkedinUrl: "https://www.linkedin.com/in/alson-chan/",
+      mailTo: "mailto:alson@freeventures.org",
+      image: alson,
     },
     {
-      name: "Shlok Singh",
+      name: "Mahika Valluri",
       position: "Associate",
-      linkedinUrl: "https://www.linkedin.com/in/shloksingh1/",
-      mailTo: "mailto:shlok@freeventures.org",
-      image: shlok,
+      linkedinUrl: "https://www.linkedin.com/in/mahika-valluri/",
+      mailTo: "mailto:mahika@freeventures.org",
+      image: mahika,
+    },
+    {
+      name: "Radha Singh",
+      position: "Associate",
+      linkedinUrl: "https://www.linkedin.com/in/radha-singh-4527151b1/",
+      mailTo: "mailto:radha@freeventures.org",
+      image: radha,
+    },
+    {
+      name: "Sanjay Adhikesaven",
+      position: "Associate",
+      linkedinUrl: "https://www.linkedin.com/in/sanjayadhikesaven/",
+      mailTo: "mailto:sanjay@freeventures.org",
+      image: sanjay,
+    },
+    {
+      name: "Safwan Masood",
+      position: "Senior Advisor, Ex-Managing Director",
+      linkedinUrl: "https://www.linkedin.com/in/safwanmasood/",
+      mailTo: "mailto:safwan@freeventures.org",
+      image: safwan,
     },
         {
       name: "Varun Nair",
@@ -173,18 +197,18 @@ function Team() {
       image: aamir,
     },
     {
-      name: "Hriday Sheth",
+      name: "Amy Zhuang",
       position: "Senior Advisor",
-      linkedinUrl: "https://www.linkedin.com/in/hridonculous/",
-      mailTo: "mailto:hriday@freeventures.org",
-      image: hriday,
+      linkedinUrl: "https://www.linkedin.com/in/amy-zhuang/",
+      mailTo: "mailto:amy@freeventures.org",
+      image: amy,
     },
     {
-      name: "Anjan Bharadwaj",
+      name: "Shlok Singh",
       position: "Senior Advisor",
-      linkedinUrl: "https://www.linkedin.com/in/anjanbharadwaj/",
-      mailTo: "mailto:anjan@freeventures.org",
-      image: anjan,
+      linkedinUrl: "https://www.linkedin.com/in/shloksingh1/",
+      mailTo: "mailto:shlok@freeventures.org",
+      image: shlok,
     },
   ];
 
