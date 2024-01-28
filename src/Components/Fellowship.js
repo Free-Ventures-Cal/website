@@ -2,10 +2,9 @@ import React from "react";
 import "./../styles/App.css";
 import "./../styles/Fellowship.css";
 
-import GenericTop from "./GenericTop";
-import GenericPage from "./GenericPage";
 import ContactForm from "./ContactForm";
-import Speaker from "./Speaker";
+import GenericPage from "./GenericPage";
+import GenericTop from "./GenericTop";
 
 import fellowship1 from "./../assets/fellowship/fellowship-1.jpg";
 import fellowship2 from "./../assets/fellowship/fellowship-2.jpg";
@@ -14,33 +13,24 @@ import fellowship4 from "./../assets/fellowship/fellowship-4.jpg";
 import fellowship5 from "./../assets/fellowship/fellowship-5.jpg";
 
 import application from "./../assets/application.png";
-import interview from "./../assets/interview.png";
 import arrow from "./../assets/arrow.png";
+import interview from "./../assets/interview.png";
 
-import placeholder from "./../assets/pink-gradient.jpg";
-import danielle from "./../assets/fiatlux/past_speakers/Danielle.jpeg";
-import jasmine from "./../assets/fiatlux/past_speakers/Jasmine.jpeg";
-import jessica from "./../assets/fiatlux/past_speakers/Jessica.jpeg";
-import gresshaa from "./../assets/fiatlux/past_speakers/Gresshaa.jpeg";
-import amy from "./../assets/fiatlux/past_speakers/Amy.jpeg";
-import esther from "./../assets/fiatlux/past_speakers/Esther.jpeg";
-import gillian from "./../assets/fiatlux/past_speakers/Gillian.jpeg";
-import archa from "./../assets/fiatlux/past_speakers/Archa.jpeg";
 
 function Fellowship() {
   let timelineContent = [
     {
-      date: "August 28",
+      date: "January 29",
       description: "Application Released",
       image: application,
     },
     {
-      date: "September 7",
+      date: "February 9",
       description: "Application Due",
       image: application,
     },
     {
-      date: "September 9",
+      date: "February 11",
       description: "Interviews",
       image: interview,
     },
