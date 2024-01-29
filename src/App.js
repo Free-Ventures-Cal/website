@@ -1,21 +1,20 @@
 import React from "react";
+import ContactFormPage from "./Components/ContactFormPage.js";
+import Fellowship from "./Components/Fellowship";
+import Footer from "./Components/Footer.js";
+import GA from "./Components/GoogleAnalytics";
 import Header from "./Components/Header.js";
 import Home from "./Components/Home.js";
-import Team from "./Components/Team.js";
 import Partners from "./Components/Partners.js";
-import Footer from "./Components/Footer.js";
-import ContactFormPage from "./Components/ContactFormPage.js";
-import Apply from "./Components/Apply.js";
-import Fellowship from "./Components/Fellowship";
 import Portfolio from "./Components/Portfolio.js";
 import Program from "./Components/Program.js";
 import ScrollToTop from "./Components/ScrollToTop.js";
-import GA from "./Components/GoogleAnalytics";
+import Team from "./Components/Team.js";
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 
-import "./styles/App.css";
 import FairInfo from "./Components/FairInfo.js";
+import "./styles/App.css";
 
 function App() {
   return (
@@ -30,7 +29,7 @@ function App() {
           <Route exact path="/contact" component={ContactFormPage} />
           {/* <Route exact path="/apply" component={Apply} /> */}
           <Route path='/apply' component={() => {
-            window.open('https://docs.google.com/forms/d/e/1FAIpQLSe7AIGH455u3za7ervydNXbyFJXCtaK_adh9D1AbVhoLxH8Hg/viewform', '_blank');
+            window.open('https://docs.google.com/forms/d/e/1FAIpQLSdO3UX2vAEPr3UGtxmxQBA_3rvrjqRXuZ-gPI6IMYOod3SHrQ/viewform?usp=sf_link', '_blank');
             return <Home /> 
             }}
           />

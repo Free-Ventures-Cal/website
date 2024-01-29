@@ -1,26 +1,25 @@
-import React from "react";
-import { useEffect } from "react";
-import ContactForm from "./ContactForm";
-import HomeCompany from "./HomeCompany";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import freevgroup from "./../assets/program/freevgroup.png";
 import "./../styles/App.css";
 import "./../styles/Home.css";
+import ContactForm from "./ContactForm";
+import HomeCompany from "./HomeCompany";
 import Testimonial from "./Testimonial";
 // Sponsors
 import aws from "./../assets/sponsors/aws.png";
+import bigideas from "./../assets/sponsors/bigideas.png";
 import cooley from "./../assets/sponsors/cooley.png";
+import healthtechcolab from "./../assets/sponsors/healthtechcolab.png";
 import thehousefund from "./../assets/sponsors/thehousefund.png";
-import healthtechcolab from "./../assets/sponsors/healthtechcolab.png"
-import bigideas from "./../assets/sponsors/bigideas.png"
 // Press
-import wired from "./../assets/press/grayscale/wired.png";
-import tc from "./../assets/press/grayscale/tc.png";
-import huffpost from "./../assets/press/grayscale/huffpost.png";
 import forbes from "./../assets/press/grayscale/forbes.png";
-import mic from "./../assets/press/grayscale/mic.png";
+import huffpost from "./../assets/press/grayscale/huffpost.png";
 import medium from "./../assets/press/grayscale/medium.png";
+import mic from "./../assets/press/grayscale/mic.png";
 import recode from "./../assets/press/grayscale/recode.png";
+import tc from "./../assets/press/grayscale/tc.png";
+import wired from "./../assets/press/grayscale/wired.png";
 // Partners
 import accel from "./../assets/partners/accel.png";
 import greylock from "./../assets/partners/greylock.jpg";
@@ -31,13 +30,13 @@ import spark from "./../assets/partners/spark.png";
 import svangel from "./../assets/partners/svangle.png";
 import ycombinator from "./../assets/partners/ycombinator.png";
 // Acquisitions
-import discord from "./../assets/acquisitions/discord-3.png";
 import coinbase from "./../assets/acquisitions/coinbase-2.png";
+import discord from "./../assets/acquisitions/discord-3.png";
 import opendoor from "./../assets/acquisitions/opendoor.png";
 // Portfolio
-import paladin from "./../assets/portfolio/paladin.png";
 import distributed from "./../assets/distributed.png";
 import gainful from "./../assets/gainful.png";
+import paladin from "./../assets/portfolio/paladin.png";
 // Icons
 import funds from "./../assets/funds.png";
 import mentors from "./../assets/mentors.png";
@@ -320,7 +319,7 @@ function Home() {
               The best part: we take <span style={{ textDecoration: "underline" }}>no equity</span>.
             </h2>
             <Link to="/apply" className="apply">
-              Internal Team Application
+              Batch Application
             </Link>
             <div className="sponsors">
               <img src={aws} className="sponsorLogo" />
