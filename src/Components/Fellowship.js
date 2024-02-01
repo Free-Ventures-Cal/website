@@ -190,14 +190,14 @@ function Fellowship() {
             short response!
           </p>
           <a
-            href="https://forms.gle/jQrDAHUPVTd8Eaw58"
+            href="https://docs.google.com/forms/d/1U-SxVkvLFyJ6WsthPGC1sjtt54R04_fkxwOdGxqLr0g/edit"
             className="genericButton"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply for Fall 2023 Fellowship
+            Apply for Spring 2024 Fellowship
           </a>
-          <h3>Fall 2023 Timeline</h3>
+          <h3>Spring 2024 Timeline</h3>
           <div className="timeline">{timelineWithArrows}</div>
           <p>
             Please direct questions to our form below, or email:{" "}
