@@ -201,8 +201,9 @@ function Fellowship() {
           <div className="timeline">{timelineWithArrows}</div>
           <p>
             Please direct questions to our form below, or email:{" "}
-            <a href="mailto:kelly@freeventures.org">kelly@freeventures.org</a> and {" "}
-            <a href="mailto:hiya@freeventures.org">hiya@freeventures.org</a> 
+            <a href="mailto:kelly@freeventures.org">kelly@freeventures.org</a>, {" "}
+            <a href="mailto:hiya@freeventures.org">hiya@freeventures.org</a>, or {" "}
+            <a href="mailto:samiha@freeventures.org">samiha@freeventures.org</a>
             .
           </p>
         </span>
