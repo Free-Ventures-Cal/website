@@ -1,5 +1,6 @@
 import React from "react";
 import "./../styles/App.css";
+import "./../styles/Apply.css";
 import "./../styles/Fellowship.css";
 
 import ContactForm from "./ContactForm";
