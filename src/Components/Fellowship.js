@@ -31,7 +31,7 @@ function Fellowship() {
       image: application,
     },
     {
-      date: "TBD",
+      date: "February 17",
       description: "Interviews",
       image: interview,
     },
