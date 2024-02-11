@@ -26,12 +26,12 @@ function Fellowship() {
       image: application,
     },
     {
-      date: "February 9",
+      date: "February 11",
       description: "Application Due",
       image: application,
     },
     {
-      date: "February 11",
+      date: "TBD",
       description: "Interviews",
       image: interview,
     },
