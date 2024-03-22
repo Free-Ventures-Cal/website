@@ -3,6 +3,7 @@ import './../styles/App.css';
 import './../styles/Team.css';
 import linkedinLogo from './../assets/linkedin.png'
 import emailIcon from './../assets/mail.png'
+import calendlyIcon from './../assets/calendly.png'
 
 function Person(props) {
 
@@ -18,6 +19,11 @@ function Person(props) {
                 <a href={props.mailTo} target="_blank" rel="noopener noreferrer">
                     <img src={emailIcon} alt="Email" />
                 </a>
+                {props.calendlyUrl !== "" && (
+                    <a href={props.calendlyUrl} target="_blank" rel="noopener noreferrer">
+                        <img src={calendlyIcon} alt="Calendly" />
+                    </a>
+                )}
             </div>
 
         </div>
