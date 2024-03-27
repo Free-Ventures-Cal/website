@@ -95,7 +95,7 @@ function Team() {
       name: "Pavit Singh",
       position: "Managing Director",
       linkedinUrl: "https://www.linkedin.com/in/singhpavit/",
-      calendlyUrl: "https://calendar.notion.so/meet/pavit-iosy61c72/njdd4eya",
+      calendlyUrl: "https://calendly.com/pavitsingh/coffee-chat-with-pavit",
       mailTo: "mailto:pavit@freeventures.org",
       image: pavit,
     },
