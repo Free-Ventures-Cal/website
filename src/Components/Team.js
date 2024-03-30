@@ -60,10 +60,11 @@ import skydeck from "./../assets/partners/skydeck.png";
 import AlumniCardsMarquee from "./AlumniCardsMarquee";
 
 function Team() {
-  var header = "Meet the Team";
+  // var header = "Meet the Team";
+  var header = "Coffee Chats Now Open!";
   var internalRecruitment = false;
   var description =
-    "We're a small group of undergraduates who care about the Berkeley startup ecosystem. Interested in joining our team?";
+    "Interested in learning more? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Fill out the interest form for more updates about Spring 2024 internal team recruiting.";
 
   let button;
 
@@ -76,8 +77,8 @@ function Team() {
       </Link>
     );
   } else {
-    description +=
-      " Click below to fill out our interest form! We'll email you once we begin recruitment in October.";
+    // description +=
+    //   " Click below to fill out our interest form! We'll email you once we begin recruitment in October.";
     button = (
       <a
         href="https://forms.gle/3pdAaDVqbiyQSXp27"
