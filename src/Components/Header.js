@@ -67,9 +67,9 @@ class Header extends React.Component {
                   fellowship
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <a href="/fairinfo">fair</a>
-              </li>
+              </li> */}
               <li>
                 <NavLink to="/apply" activeClassName="activeLinkStyle">
                   apply
