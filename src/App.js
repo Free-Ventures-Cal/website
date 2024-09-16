@@ -29,7 +29,7 @@ function App() {
           <Route exact path="/contact" component={ContactFormPage} />
           {/* <Route exact path="/apply" component={Apply} /> */}
           <Route path='/apply' component={() => {
-            window.location.replace('https://forms.gle/MfXFGBdEEx3Kg14a9');
+            window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSfJ8xWX_eEPLHs63V6TCVS8cOWmQADcZjvJpAs656gfr6J2hg/viewform');
             }}
           />
           <Route exact path="/fellowship" component={Fellowship} />
