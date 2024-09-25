@@ -20,19 +20,19 @@ import interview from "./../assets/interview.png";
 
 function Fellowship() {
   let timelineContent = [
+    // {
+    //   date: "January 29",
+    //   description: "Application Released",
+    //   image: application,
+    // },
     {
-      date: "January 29",
-      description: "Application Released",
+      date: "September 26 @ Blum Hall, 6-8pm",
+      description: "Free Ventures Mixer",
       image: application,
     },
     {
-      date: "February 11",
-      description: "Application Due",
-      image: application,
-    },
-    {
-      date: "February 17",
-      description: "Interviews",
+      date: "September 27 @ 11:59pm",
+      description: "Application Deadline",
       image: interview,
     },
   ];
@@ -191,20 +191,20 @@ function Fellowship() {
             short response!
           </p>
           <a
-            href="https://docs.google.com/forms/d/1U-SxVkvLFyJ6WsthPGC1sjtt54R04_fkxwOdGxqLr0g/edit"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdsvdSfIrGU1o-lkNkPQuY5yDtJ39vPY2GTfv01_U4VnMylfQ/viewform"
             className="genericButton"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply for Spring 2024 Fellowship
+            Apply for Fall 2024 Fellowship
           </a>
-          <h3>Spring 2024 Timeline</h3>
+          <h3>Fall 2024 Timeline</h3>
           <div className="timeline">{timelineWithArrows}</div>
           <p>
             Please direct questions to our form below, or email:{" "}
-            <a href="mailto:kelly@freeventures.org">kelly@freeventures.org</a>, {" "}
-            <a href="mailto:hiya@freeventures.org">hiya@freeventures.org</a>, or {" "}
-            <a href="mailto:samiha@freeventures.org">samiha@freeventures.org</a>
+            <a href="mailto:mahika@freeventures.org">mahika@freeventures.org</a>, {" "}
+            <a href="mailto:radha@freeventures.org">radha@freeventures.org</a>, or {" "}
+            <a href="mailto:wesley@freeventures.org">wesley@freeventures.org</a>
             .
           </p>
         </span>
