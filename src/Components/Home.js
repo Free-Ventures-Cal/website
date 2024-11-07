@@ -319,7 +319,7 @@ function Home() {
               The best part: we take <span style={{ textDecoration: "underline" }}>no equity</span>.
             </h2>
             <Link to="/apply" className="apply">
-              Batch Application
+              Internal Application
             </Link>
             <div className="sponsors">
               <img src={aws} className="sponsorLogo" />
