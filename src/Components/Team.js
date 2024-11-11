@@ -68,7 +68,7 @@ function Team() {
   var header = "Coffee Chats Now Open!";
   var internalRecruitment = false;
   var description =
-    "Interested in learning more? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Fill out the interest form for more updates about Spring 2024 internal team recruiting.";
+    "Interested in learning more? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Fill out the interest form for more updates about Fall 2024 internal team recruiting.";
 
   let button;
 
@@ -119,14 +119,6 @@ function Team() {
       calendlyUrl: "",
       mailTo: "mailto:nandu@freeventures.org",
       image: nandu,
-    },
-    {
-      name: "Hiya Shah",
-      position: "Director of Special Initiatives",
-      linkedinUrl: "https://www.linkedin.com/in/hiyashah/",
-      calendlyUrl: "https://calendly.com/hiya-shah/free-ventures-director-coffee-chat",
-      mailTo: "mailto:hiya@freeventures.org",
-      image: hiya,
     },
     {
       name: "Alson Chan",
@@ -223,6 +215,14 @@ function Team() {
       calendlyUrl: "",
       mailTo: "mailto:amy@freeventures.org",
       image: amy,
+    },
+    {
+      name: "Hiya Shah",
+      position: "Senior Advisor",
+      linkedinUrl: "https://www.linkedin.com/in/hiyashah/",
+      calendlyUrl: "https://calendly.com/hiya-shah/free-ventures-director-coffee-chat",
+      mailTo: "mailto:hiya@freeventures.org",
+      image: hiya,
     },
   ];
 
