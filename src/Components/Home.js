@@ -369,7 +369,7 @@ function Home() {
           </div>
           <div className="numbers">
             <h3>
-              <span className="bigNumber">90</span> alumni companies
+              <span className="bigNumber">100+</span> alumni companies
             </h3>
             <h3>
               <span className="bigNumber">$170m+</span> of follow-on capital
