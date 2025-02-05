@@ -68,7 +68,7 @@ function Team() {
   var header = "Coffee Chats Now Open!";
   var internalRecruitment = false;
   var description =
-    "Interested in learning more? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Fill out the interest form for more updates about Fall 2024 internal team recruiting.";
+    "Interested in learning more? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Fill out the interest form for more updates about Spring 2025 internal team recruiting.";
 
   let button;
 
@@ -85,7 +85,7 @@ function Team() {
     //   " Click below to fill out our interest form! We'll email you once we begin recruitment in October.";
     button = (
       <a
-        href="https://forms.gle/3pdAaDVqbiyQSXp27"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfjA0gbRt4i9oz-W-J51k_o7GOLuAoAJ1jeEqh2dxr_xDJFoQ/viewform"
         target="_blank"
         rel="noopener noreferrer"
         className="genericButton"
