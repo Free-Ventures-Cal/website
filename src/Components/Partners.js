@@ -7,6 +7,7 @@ import GenericTop from './GenericTop';
 import aws from './../assets/sponsors/aws.png';
 import cooley from './../assets/partners/cooley.png';
 import house from './../assets/partners/house.png';
+import svb from './../assets/sponsors/svb.png';
 
 import value1 from './../assets/partners/value1.jpeg';
 import value2 from './../assets/partners/value2.jpeg';
@@ -31,6 +32,11 @@ function Partners() {
             logo: aws,
             name: 'AWS',
             website: "https://aws.amazon.com/activate/"
+        },
+        {
+            logo: svb,
+            name: 'SVB',
+            website: 'https://www.svb.com/'
         },
     ];
 
