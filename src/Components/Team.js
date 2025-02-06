@@ -57,7 +57,7 @@ import ashni from "./../assets/team/ashni.jpeg";
 import gatik from "./../assets/team/gatik.png";
 import nidhi from "./../assets/team/nidhi.jpeg";
 import om from "./../assets/team/om.jpeg";
-// import swara from "./../assets/team/swara.jpeg";
+import swara from "./../assets/team/swara.jpeg";
 import GenericPage from "./GenericPage";
 import GenericTop from "./GenericTop";
 import Person from "./Person.js";
@@ -188,7 +188,7 @@ function Team() {
       linkedinUrl: "",
       calendlyUrl: "https://calendly.com/swara-agarwal-sca/free-venture-coffee-chats",
       mailTo: "mailto:swara@freeventures.org",
-      image: om,
+      image: swara,
     },
     {
       name: "Pavit Singh",
