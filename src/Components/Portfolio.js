@@ -92,7 +92,7 @@ class Portfolio extends React.Component {
         <GenericTop
           header={"Portfolio"}
           description={
-            "Our founders have gone on to become Forbes 30 Under 30, build companies that are changing the world, and continue to develop the college startup scene by creating The House. We have helped our 92 alumni teams raise over $170 million from top firms such as Y Combinator, Greylock, KPCB, and Accel."
+            "Our founders have gone on to become Forbes 30 Under 30, build companies that are changing the world, and continue to develop the college startup scene by creating The House. We have helped our 100+ alumni teams raise over $200M from top firms such as Y Combinator, Greylock, KPCB, and Accel."
           }
         />
         <GenericPage>
