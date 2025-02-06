@@ -26,12 +26,12 @@ function Fellowship() {
     //   image: application,
     // },
     {
-      date: "September 26 @ Blum Hall, 6-8pm",
+      date: "February 13 @ Blum Hall, 8-10pm",
       description: "Free Ventures Mixer",
       image: application,
     },
     {
-      date: "September 27 @ 11:59pm",
+      date: "February 17, 11:59pm",
       description: "Application Deadline",
       image: interview,
     },
@@ -191,20 +191,19 @@ function Fellowship() {
             short response!
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdsvdSfIrGU1o-lkNkPQuY5yDtJ39vPY2GTfv01_U4VnMylfQ/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe4AcJFII99z8IKgKCT1LdB8d5W5nAHIbl2BmOukMSVviJzXA/viewform"
             className="genericButton"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply for Fall 2024 Fellowship
+            Apply for Spring 2025 Fellowship
           </a>
-          <h3>Fall 2024 Timeline</h3>
+          <h3>Spring 2025 Timeline</h3>
           <div className="timeline">{timelineWithArrows}</div>
           <p>
-            Please direct questions to our form below, or email:{" "}
-            <a href="mailto:mahika@freeventures.org">mahika@freeventures.org</a>, {" "}
-            <a href="mailto:radha@freeventures.org">radha@freeventures.org</a>, or {" "}
-            <a href="mailto:wesley@freeventures.org">wesley@freeventures.org</a>
+            Please direct questions to our form below, or email{" "}
+            <a href="mailto:mahika@freeventures.org">mahika@freeventures.org</a> {" or "}
+            <a href="mailto:om@freeventures.org">om@freeventures.org</a>
             .
           </p>
         </span>
