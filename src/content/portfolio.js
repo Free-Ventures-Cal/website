@@ -41,6 +41,14 @@ import blackbook from "./../assets/portfolio/batches/spring_21/blackbook.png";
 import loggicat from "./../assets/portfolio/batches/spring_21/loggicat.png";
 import shopt from "./../assets/portfolio/batches/spring_21/shopt.png";
 import sportvue from "./../assets/portfolio/batches/spring_21/sportvue.png";
+import caravan from "./../assets/portfolio/batches/fall_24/caravan.png";
+import gekodb from "./../assets/portfolio/batches/fall_24/gekodb.png";
+import morphic from "./../assets/portfolio/batches/fall_24/morphic.png";
+import sparkd from "./../assets/portfolio/batches/fall_24/sparkd.png";
+import dura from "./../assets/portfolio/batches/spring_24/dura.png";
+import hollia from "./../assets/portfolio/batches/spring_24/hollia.png";
+import nomadic from "./../assets/portfolio/batches/spring_24/nomadic.png";
+import trace from "./../assets/portfolio/batches/spring_24/trace.png";
 
 // photos
 import demilune1 from "./../assets/portfolio/demilune1.jpeg";
@@ -125,6 +133,98 @@ const portfolioContent = {
     kickstarter: [kickstarterTag],
   },
   batchList: [
+    {
+      batchName: "Fall 2024",
+      batchNumber: 22,
+      companies: [
+        {
+          name: "Caravan",
+          description:
+            "A GPU-bound network of compute sourced from general consumers and university research labs to make executing ML workloads cheaper, faster, and more secure through dynamic allocation of GPUs at runtime.",
+          track: "accelerator",
+          logo: caravan,
+          links: [
+            {
+              address: "https://thecaravan.cloud",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "GekoDB",
+          description:
+            "An open-source graph database management platform that leverages novel node2vec models for vector search, converting unstructured and structured data into knowledge graphs for AI applications.",
+          track: "accelerator",
+          logo: gekodb,
+        },
+        {
+          name: "Morphic",
+          description:
+            "An AI assistant that generates SwiftUI code.",
+          track: "accelerator",
+          logo: morphic,
+          links: [
+            {
+              address: "https://www.morphic-app.com/",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Sparkd, Inc.",
+          description:
+            "Developing public infrastructure to integrate EV charging in parking meters.",
+          track: "accelerator",
+          logo: sparkd,
+        },
+      ],
+    },
+    {
+      batchName: "Spring 2024",
+      batchNumber: 21,
+      companies: [
+        {
+          name: "Dura",
+          description:
+            "A mobile app that collects concussion data, provides patient resources, and uses machine learning for personalized recovery recommendations.",
+          track: "accelerator",
+          logo: dura,
+        },
+        {
+          name: "Hollia",
+          description:
+            "An all-in-one analytics solution that helps companies understand their physical customers through a network of connected boxes, AI, and an intuitive dashboard.",
+          track: "accelerator",
+          logo: hollia,
+          links: [
+            {
+              address: "https://hollia.fr/",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Nomadic Drones",
+          description:
+            "A Risk Management as a Service that uses autonomous drones and ML for remote inspections, identifying vulnerabilities with actionable insights to improve safety and efficiency. ",
+          track: "accelerator",
+          logo: nomadic,
+          links: [
+            {
+              address: "https://www.nomadicdrone.com/",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Trace AI",
+          description:
+            "A generative AI platform that helps companies find and fill government contracts.",
+          track: "accelerator",
+          logo: trace,
+        },
+      ],
+    },
     {
       batchName: "Spring 2023",
       batchNumber: 20,
