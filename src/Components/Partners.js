@@ -8,6 +8,8 @@ import aws from './../assets/sponsors/aws.png';
 import cooley from './../assets/partners/cooley.png';
 import house from './../assets/partners/house.png';
 import svb from './../assets/sponsors/svb.png';
+import perplexity from './../assets/partners/perplexity.png';
+import harmonic from './../assets/partners/harmonic.png';
 
 import value1 from './../assets/partners/value1.jpeg';
 import value2 from './../assets/partners/value2.jpeg';
@@ -38,6 +40,16 @@ function Partners() {
             name: 'SVB',
             website: 'https://www.svb.com/'
         },
+        {
+            logo: perplexity,
+            name: 'Perplexity',
+            website: 'https://www.perplexity.ai/'
+        },
+        {
+            logo: harmonic,
+            name: 'Harmonic',
+            website: 'https://www.harmonic.ai/'
+        }
     ];
 
     let partners = partnersContent.map((partner) => {
