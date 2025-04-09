@@ -449,13 +449,18 @@ a {
 }
 
 .sponsors {
-  /* text-align: center; */
   padding: 40px 0 0px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
 }
 
 .sponsorLogo {
   width: 70px;
-  object-fit: "scale-down"
+  height: auto;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 #acquisitions {
@@ -675,6 +680,10 @@ figure.testimonial-card figcaption {
 }
 
 @media (max-width: 1034px) {
+  .sponsors {
+    justify-content: center;
+  }
+
   .tiers {
     margin-top: 50px;
   }

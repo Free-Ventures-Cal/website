@@ -12,6 +12,8 @@ import bigideas from "./../assets/sponsors/bigideas.png";
 import cooley from "./../assets/sponsors/cooley.png";
 import healthtechcolab from "./../assets/sponsors/healthtechcolab.png";
 import thehousefund from "./../assets/sponsors/thehousefund.png";
+import perplexity from "./../assets/partners/perplexity.png";
+import harmonic from "./../assets/partners/harmonic.png";
 import svb from "./../assets/sponsors/svb.png";
 // Press
 import forbes from "./../assets/press/grayscale/forbes.png";
@@ -324,11 +326,13 @@ function Home() {
             </Link>
             <div className="sponsors">
               <img src={aws} className="sponsorLogo" />
-              <img src={cooley} className="sponsorLogo" style={{ margin: "20px" }} />
-              <img src={bigideas} className="sponsorLogo" style={{ marginBottom: "25px", marginTop: "25px" }} />
-              <img src={healthtechcolab} className="sponsorLogo" style={{ margin: "20px", marginBottom: "25px", marginTop: "25px" }} />
-              <img src={svb} className="sponsorLogo" style={{ marginBottom: "25px", marginTop: "25px" }} />
-              <img src={thehousefund} className="sponsorLogo" style={{ marginLeft: "15px" }} />
+              <img src={cooley} className="sponsorLogo" />
+              <img src={bigideas} className="sponsorLogo" />
+              <img src={healthtechcolab} className="sponsorLogo" />
+              <img src={svb} className="sponsorLogo" />
+              <img src={thehousefund} className="sponsorLogo" />
+              <img src={perplexity} className="sponsorLogo" />
+              <img src={harmonic} className="sponsorLogo" />
               
             </div>
             {/* <a href="https://airtable.com/shr2JwPjM7cEaEI42" className="apply">
