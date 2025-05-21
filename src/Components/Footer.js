@@ -1,7 +1,8 @@
 import React from "react";
+import instagram from "./../assets/instagram.png";
+import twitter from "./../assets/twitter.png";
 import fb from "./../assets/facebook.png";
 import medium from "./../assets/medium.png";
-import twitter from "./../assets/twitter.png";
 import logocircle from "./../assets/logo-circle.png";
 
 import { Link } from "react-router-dom";
@@ -52,13 +53,17 @@ function Footer() {
         </span>
         <span className="links">
           <p>Connect with us</p>
-          <a href="https://www.facebook.com/FreeVentures/" target="_blank" rel="noopener noreferrer">
-            <img src={fb} alt="" />
-            Facebook
+          <a href="https://www.instagram.com/free_ventures/" target="_blank" rel="noopener noreferrer">
+            <img src={instagram} alt="" />
+            Instagram
           </a>
           <a href="https://twitter.com/FreeVentures" target="_blank" rel="noopener noreferrer">
             <img src={twitter} alt="" />
             Twitter
+          </a>
+          <a href="https://www.facebook.com/FreeVentures/" target="_blank" rel="noopener noreferrer">
+            <img src={fb} alt="" />
+            Facebook
           </a>
           <a href="https://medium.com/@FreeVentures" target="_blank" rel="noopener noreferrer">
             <img src={medium} alt="" />
