@@ -26,8 +26,10 @@ function AlumniCardsMarquee(props) {
     /* Build a row of alumni cards. */
     function assembleMarqueeRow(row) {
         const numAlumni = alumniComponents.length;
-        const end1 = numAlumni / 3;
-        const end2 = 2 * numAlumni / 3;
+        const end1 = numAlumni / 5;
+        const end2 = 2 * numAlumni / 5;
+        const end3 = 3 * numAlumni / 5;
+        const end4 = 4 * numAlumni / 5;
         if (row === 1) {
             const row = alumniComponents.slice(0, end1);
             return row;
@@ -37,7 +39,15 @@ function AlumniCardsMarquee(props) {
             return row;
         }
         if (row === 3) {
-            const row = alumniComponents.slice(end2, numAlumni);
+            const row = alumniComponents.slice(end2, end3);
+            return row;
+        }
+        if (row === 4) {
+            const row = alumniComponents.slice(end3, end4);
+            return row;
+        }
+        if (row === 5) {
+            const row = alumniComponents.slice(end4, numAlumni);
             return row;
         }
     }

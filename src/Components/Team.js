@@ -444,6 +444,88 @@ function Team() {
       company: "The House Fund",
       image: lulu,
     },
+    {
+      name: "Safwan Masood",
+      position: "Analyst",
+      company: "Blackstone",
+      image: safwan,
+    },
+    {
+      name: "Varun Nair",
+      position: "Growth Engineer",
+      company: "Conversion",
+      image: varun
+    },
+    {
+      name: "Aamir Hudda",
+      position: "Co-Founder & CEO",
+      company: "Attain (YC W22)",
+      image: aamir
+    },
+    
+    {
+      name: "Samiha Singh",
+      position: "Business Analyst",
+      company: "McKinsey & Co.",
+      image: samiha
+    },
+    
+    {
+      name: "Shlok Singh",
+      position: "Growth",
+      company: "Doorstep AI",
+      image: shlok
+    },
+    {
+      name: "Radha Singh",
+      position: "Private Equity Analyst",
+      company: "GI Partners",
+      image: radha
+    },
+    {
+      name: "Mahika Valluri",
+      position: "Executive Operations",
+      company: "Mercor",
+      image: mahika
+    },
+    {
+      name: "Hriday Sheth",
+      position: "Software Engineer",
+      company: "Zip",
+      image: hriday
+    },
+    ,
+    {
+      name: "Ishaan Shah",
+      position: "Associate",
+      company: "Bain & Co.",
+      image: ishaan
+    },
+    {
+      name: "Pavit Singh",
+      position: "Strategic Projects",
+      company: "Scale AI",
+      image: pavit
+    },
+    {
+      name: "Alson Chan",
+      position: "Product Manager",
+      company: "Datadog",
+      image: alson
+    },
+    {
+      name: "Rohan Taneja",
+      position: "Software Engineer",
+      company: "Vercel",
+      image: rohan
+    },
+    {
+      name: "Amy Zhuang",
+      position: "Student Venture Partner",
+      company: "Picus Capital",
+      image: amy
+    }
+
   ];
 
   let peopleComponents = peopleContent.map((person) => {
@@ -504,6 +586,20 @@ function Team() {
             content={alumniContent}
             scrollPosition={
               useScrollHandler() + SCROLL_CONVERT + SCROLL_PLUS_MINUS
+            }
+          />
+          <AlumniCardsMarquee
+            row={4}
+            content={alumniContent}
+            scrollPosition={
+              useScrollHandler() + SCROLL_CONVERT - (2 * SCROLL_PLUS_MINUS)
+            }
+          />
+          <AlumniCardsMarquee
+            row={5}
+            content={alumniContent}
+            scrollPosition={
+              useScrollHandler() + SCROLL_CONVERT - (3 * SCROLL_PLUS_MINUS)
             }
           />
         </div>
