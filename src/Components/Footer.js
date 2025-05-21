@@ -47,7 +47,6 @@ function Footer() {
           <Link to="/portfolio">Portfolio</Link>
           <Link to="/partners">Partners</Link>
           <Link to="/fellowship">Fellowship</Link>
-          <a href="/fair/sponsorship.pdf">Fair</a>
           <Link to="/apply">Apply</Link>
           <Link to="/contact">Contact</Link>
         </span>
