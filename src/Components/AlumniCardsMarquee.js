@@ -26,10 +26,10 @@ function AlumniCardsMarquee(props) {
     /* Build a row of alumni cards. */
     function assembleMarqueeRow(row) {
         const numAlumni = alumniComponents.length;
-        const end1 = numAlumni / 5;
-        const end2 = 2 * numAlumni / 5;
-        const end3 = 3 * numAlumni / 5;
-        const end4 = 4 * numAlumni / 5;
+        const end1 = Math.ceil(numAlumni / 5);
+        const end2 = Math.ceil(2 * numAlumni / 5);
+        const end3 = Math.ceil(3 * numAlumni / 5);
+        const end4 = Math.ceil(4 * numAlumni / 5);
         if (row === 1) {
             const row = alumniComponents.slice(0, end1);
             return row;
@@ -59,7 +59,7 @@ function AlumniCardsMarquee(props) {
     // scrollbar then hiding it.
     // Maybe use Framer Motion library and Parallax Effect...
     useEffect(() => {
-        const maxScrollLeft = 3500;
+        const maxScrollLeft = 4000;
         if (!scroll_direction) {
             slider.current.scrollLeft = props.scrollPosition/10;
         }

@@ -15,6 +15,8 @@ import alson from "./../assets/team/alson_chan.jpg";
 import aashi from "./../assets/team/alumni/aashi_jawar.png";
 import abhay from "./../assets/team/alumni/abhay_malik.jpeg";
 import adhiv from "./../assets/team/alumni/adhiv_dhar.png";
+import adithya from "./../assets/team/alumni/adithya_paramasivam.jpeg";
+import anjan from "./../assets/team/alumni/anjan_bharadwaj.jpeg";
 import alice from "./../assets/team/alumni/alice_deng.jpeg";
 import amrit from "./../assets/team/alumni/amrit_ayalur.jpeg";
 import blake from "./../assets/team/alumni/blake_lafayette.jpeg";
@@ -29,6 +31,7 @@ import kathy from "./../assets/team/alumni/kathy_kong.png";
 import keyan from "./../assets/team/alumni/keyan_sarrafzadeh.jpeg";
 import kirtan from "./../assets/team/alumni/kirtan_upadhyaya.jpeg";
 import lulu from "./../assets/team/alumni/lulu_holland.png";
+import maanav from "./../assets/team/alumni/maanav_khaitan.jpeg";
 import nikita from "./../assets/team/alumni/nikita_ashok.png";
 import omkar from "./../assets/team/alumni/omkar_salpekar.jpeg";
 import pranav from "./../assets/team/alumni/pranav_gulati.png";
@@ -59,6 +62,7 @@ import gatik from "./../assets/team/gatik.png";
 import nidhi from "./../assets/team/nidhi.jpeg";
 import om from "./../assets/team/om.jpeg";
 import swara from "./../assets/team/swara.jpeg";
+
 import GenericPage from "./GenericPage";
 import GenericTop from "./GenericTop";
 import Person from "./Person.js";
@@ -445,6 +449,24 @@ function Team() {
       image: lulu,
     },
     {
+      name: "Maanav Khaitan",
+      position: "Building",
+      company: "Infinity",
+      image: maanav,
+    },
+    {
+      name: "Anjan Bharadwaj",
+      position: "Member of Technical Staff",
+      company: "OpenAI",
+      image: anjan,
+    },
+    {
+      name: "Adithya Paramasivam",
+      position: "ML Scientist",
+      company: "Nabla Bio",
+      image: adithya,
+    },
+    {
       name: "Safwan Masood",
       position: "Analyst",
       company: "Blackstone",
@@ -494,7 +516,6 @@ function Team() {
       company: "Zip",
       image: hriday
     },
-    ,
     {
       name: "Ishaan Shah",
       position: "Associate",
