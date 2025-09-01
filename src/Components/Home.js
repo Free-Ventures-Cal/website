@@ -321,9 +321,14 @@ function Home() {
               Cal student founders build & scale their daring ideas. 
               The best part: we take <span style={{ textDecoration: "underline" }}>no equity</span>.
             </h2>
-            <Link to="/apply" className="apply">
-              Internal Application
-            </Link>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe5RiiyWIkl_jG3EAqkcVUxQMZcxBjhJkcFFEsz-wuH19-8qQ/viewform"
+              className="apply"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Batch Application
+            </a>
             <div className="sponsors">
               <img src={aws} className="sponsorLogo" />
               <img src={cooley} className="sponsorLogo" />
