@@ -64,7 +64,7 @@ import om from "./../assets/team/om.jpeg";
 import swara from "./../assets/team/swara.jpeg";
 import alexhan from "./../assets/team/alex_han.jpeg";
 import amelia from "./../assets/team/amelia.jpeg";
-import rohantoc from "./../assets/team/rohantoc.jpeg";
+import rohantoc from "./../assets/team/rohan_toc.jpeg";
 import shivansh from "./../assets/team/shivansh.jpeg";
 import shreyash from "./../assets/team/shreyash.jpeg";
 
