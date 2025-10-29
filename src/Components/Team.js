@@ -64,7 +64,7 @@ import om from "./../assets/team/om.jpeg";
 import swara from "./../assets/team/swara.jpeg";
 import alexhan from "./../assets/team/alex_han.jpeg";
 import amelia from "./../assets/team/amelia.jpeg";
-import rohantoc from "./../assets/team/rohantoc.jpeg";
+import rohan_toc from "./../assets/team/rohan_toc.jpeg";
 import shivansh from "./../assets/team/shivansh.jpeg";
 import shreyash from "./../assets/team/shreyash.jpeg";
 
@@ -161,14 +161,6 @@ function Team() {
       image: aathma,
     },
     {
-      name: "Ashni Sheth",
-      position: "Senior Associate",
-      linkedinUrl: "https://www.linkedin.com/in/ashnisheth/",
-      calendlyUrl: "https://calendly.com/ashni_sheth/nib-coffee-chats",
-      mailTo: "mailto:ashni@freeventures.org",
-      image: ashni,
-    },
-    {
       name: "Om Gole",
       position: "Senior Associate",
       linkedinUrl: "https://www.linkedin.com/in/omgole/",
@@ -204,9 +196,9 @@ function Team() {
       name: "Rohan Toc",
       position: "Associate",
       linkedinUrl: "https://www.linkedin.com/in/rohan-toc/",
-      calendlyUrl: "",
+      calendlyUrl: "https://calendly.com/rohan_toc-berkeley/free-ventures-coffee-chats",
       mailTo: "mailto:rohant@freeventures.org",
-      image: rohantoc,
+      image: rohan_toc,
     },
     {
       name: "Shivansh Soni",
@@ -264,6 +256,14 @@ function Team() {
       mailTo: "mailto:hiya@freeventures.org",
       image: hiya,
     },
+    {
+      name: "Ashni Sheth",
+      position: "Senior Advisor",
+      linkedinUrl: "https://www.linkedin.com/in/ashnisheth/",
+      calendlyUrl: "https://calendly.com/ashni_sheth/nib-coffee-chats",
+      mailTo: "mailto:ashni@freeventures.org",
+      image: ashni,
+    }
   ];
 
   const alumniContent = [
@@ -487,7 +487,7 @@ function Team() {
     },
     {
       name: "Mahika Valluri",
-      position: "Executive Operations",
+      position: "Chief of Staff - Engineering",
       company: "Mercor",
       image: mahika
     },
@@ -511,8 +511,8 @@ function Team() {
     },
     {
       name: "Alson Chan",
-      position: "Product Manager",
-      company: "Datadog",
+      position: "Investment Banker",
+      company: "Bank of America",
       image: alson
     },
     {

@@ -49,6 +49,11 @@ import dura from "./../assets/portfolio/batches/spring_24/dura.png";
 import hollia from "./../assets/portfolio/batches/spring_24/hollia.png";
 import nomadic from "./../assets/portfolio/batches/spring_24/nomadic.png";
 import trace from "./../assets/portfolio/batches/spring_24/trace.png";
+import claratear from "./../assets/portfolio/batches/spring_25/claratear.png";
+import fashionweek from "./../assets/portfolio/batches/spring_25/fashionweek.png";
+import posana from "./../assets/portfolio/batches/spring_25/posana.avif";
+import stagingsphere from "./../assets/portfolio/batches/spring_25/stagingsphere.png";
+import studykit from "./../assets/portfolio/batches/spring_25/studykit.svg";
 
 // photos
 import demilune1 from "./../assets/portfolio/demilune1.jpeg";
@@ -133,6 +138,73 @@ const portfolioContent = {
     kickstarter: [kickstarterTag],
   },
   batchList: [
+    {
+      batchName: "Spring 2025",
+      batchNumber: 23,
+      companies: [
+        {
+          name: "ClaraTear",
+          description:
+            "ClaraTear is revolutionizing disease diagnostics using tear biomarkers and AI to deliver rapid, 15-minute non-invasive cardiovascular tests. Faster results, early detection, and better patient care: all made possible by a portable and scalable device. Next-gen healthcare is here.",
+          track: "accelerator",
+          logo: claratear,
+          links: [
+            {
+              address: "https://drive.google.com/file/d/1b4HFCCYw0AXS6PozRO9E074rtgTUvAZD/view?usp=sharing",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Fashion Week",
+          description: "Fashion Week is the go-to platform for emerging designer brands, streamlining consumer discovery and boosting conversion rates. We bypass social media's unpredictable algorithms to drive higher brand acquisition and sales.",
+          track: "accelerator",
+          logo: fashionweek,
+          links: [
+            {
+              address: "https://www.artemismarketplace.net/",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Posana",
+          description: "Our goal is simple: to provide clean, flavorful protein for America.",
+          track: "accelerator",
+          logo: posana,
+          links: [
+            {
+              address: "https://eatposana.com/",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Staging Sphere",
+          description: "AI Powered Real Estate Staging. Instantly generate high-quality staged photos—ready in minutes, not days at a 5x lower price. Our competitive advantage? Web scraping—AI scrapes unstaged listings, identifying untapped potential! Staging that sells. Leads that convert.",
+          track: "accelerator",
+          logo: stagingsphere,
+          links: [
+            {
+              address: "Stagingsphere.com",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "StudyKit",
+          description: "StudyKit is an AI-powered studying app that makes it easy for students to stay on track with their education. We transform user-uploaded content from notes, textbooks, and lectures into daily, bite-sized lessons that make studying approachable.",
+          track: "accelerator",
+          logo: studykit,
+          links: [
+            {
+              address: "https://studykit.app/",
+              title: "Website",
+            },
+          ],
+        }
+      ],
+    },
     {
       batchName: "Fall 2024",
       batchNumber: 22,
