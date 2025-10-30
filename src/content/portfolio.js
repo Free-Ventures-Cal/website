@@ -54,6 +54,10 @@ import fashionweek from "./../assets/portfolio/batches/spring_25/fashionweek.png
 import posana from "./../assets/portfolio/batches/spring_25/posana.avif";
 import stagingsphere from "./../assets/portfolio/batches/spring_25/stagingsphere.png";
 import studykit from "./../assets/portfolio/batches/spring_25/studykit.svg";
+import entropica from "./../assets/portfolio/batches/fall_25/entropica.png";
+import hexara from "./../assets/portfolio/batches/fall_25/hexara.png";
+import glauconovalabs from "./../assets/portfolio/batches/fall_25/glauconovalabs.png";
+import solace from "./../assets/portfolio/batches/fall_25/solace.jpg";
 
 // photos
 import demilune1 from "./../assets/portfolio/demilune1.jpeg";
@@ -138,6 +142,61 @@ const portfolioContent = {
     kickstarter: [kickstarterTag],
   },
   batchList: [
+    {
+      batchName: "Fall 2025",
+      batchNumber: 24,
+      companies: [
+        {
+          name: "Entropica",
+          description:
+            "Carbon capture is too expensive. Our ML platform, trained from various company datasets, optimizes heat, the biggest cost bottleneck in carbon capture, in pre-existing pipelines while accepting different sizes of data. Expect measurable % gains, which save millions.",
+          track: "accelerator",
+          logo: entropica,
+          links: [
+            {
+              address: "https://drive.google.com/file/d/1Bp8TqanQYrxQoW31AZ34eUwr_yBJ32gT/view?usp=sharing",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Hexara",
+          description: "Simulations choke on broken meshes. Its development is painful, manual, slow. We’re automating geometry-driven processes, transforming raw thoughts and designs into simulation-ready structures instantly. From CFD to FEA to Blender, we kill the bottleneck and let ideas flow faster",
+          track: "accelerator",
+          logo: hexara,
+          links: [
+            {
+              address: "https://drive.google.com/file/d/17JCkevujtZgcW0ZLEFkpnqYjwmtwGzUU/view?usp=sharing",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Glauconova Labs",
+          description: "We are reinventing glaucoma care with ultrasound-infused eyeglasses that monitor eye pressure (IOP) continuously at 92% accuracy, 80% cheaper than the market. Enabling remote physician oversight and timely therapy, we aim to avert the leading cause of irreversible blindness.",
+          track: "accelerator",
+          logo: glauconovalabs,
+          links: [
+            {
+              address: "https://drive.google.com/file/d/17JCkevujtZgcW0ZLEFkpnqYjwmtwGzUU/view?usp=sharing",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Solace",
+          description: "Solace is an emotionally intelligent AI companion designed to be there when you need someone to listen, when advice feels generic, and when friends just hit you with ‘damn that sucks.’",
+          track: "accelerator",
+          logo: solace,
+          links: [
+            {
+              address: "https://solacelaunch.com/",
+              title: "Website",
+            },
+          ],
+        },
+      ],
+    },
     {
       batchName: "Spring 2025",
       batchNumber: 23,
