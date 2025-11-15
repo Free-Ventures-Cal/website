@@ -101,12 +101,12 @@ function Team() {
     //   " Click below to fill out our interest form! We'll email you once we begin recruitment in October.";
     button = (
       <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfjA0gbRt4i9oz-W-J51k_o7GOLuAoAJ1jeEqh2dxr_xDJFoQ/viewform"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeZsHAkNTVGD9B-Ue6kPwLuRNeZVcsm_uUhnyCNAF3f5_UPOA/viewform"
         target="_blank"
         rel="noopener noreferrer"
         className="genericButton"
       >
-        Internal Team Interest Form
+        Internal Application
       </a>
     );
   }
