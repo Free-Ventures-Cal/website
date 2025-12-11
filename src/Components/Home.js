@@ -330,7 +330,7 @@ function Home() {
               Internal Application
             </a>
             <div className="sponsors">
-              <img src={aws} className="sponsorLogo" />
+              {/* <img src={aws} className="sponsorLogo" /> */}
               <img src={cooley} className="sponsorLogo" />
               <img src={bigideas} className="sponsorLogo" />
               <img src={healthtechcolab} className="sponsorLogo" />
