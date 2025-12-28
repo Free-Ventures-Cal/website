@@ -272,14 +272,6 @@ function Team() {
       image: gatik,
     },
     {
-      name: "Wesley Perronne",
-      position: "Senior Advisor, Ex-Director",
-      linkedinUrl: "https://www.linkedin.com/in/wesley-perronne/",
-      calendlyUrl: "https://calendly.com/wesley-perronne-berkeley/free-ventures-1",
-      mailTo: "mailto:wesley@freeventures.org",
-      image: wesley,
-    },
-    {
       name: "Kelly Hong",
       position: "Senior Advisor, Ex-Director",
       linkedinUrl: "https://www.linkedin.com/in/kellyshong/",
@@ -294,6 +286,14 @@ function Team() {
       calendlyUrl: "https://calendar.app.google/roDFGAEXrqiLs1187",
       mailTo: "mailto:nandu@freeventures.org",
       image: nandu,
+    },
+    {
+      name: "Wesley Perronne",
+      position: "Senior Advisor, Ex-Director",
+      linkedinUrl: "https://www.linkedin.com/in/wesley-perronne/",
+      calendlyUrl: "https://calendly.com/wesley-perronne-berkeley/free-ventures-1",
+      mailTo: "mailto:wesley@freeventures.org",
+      image: wesley,
     },
     {
       name: "Hiya Shah",
@@ -570,8 +570,8 @@ function Team() {
     },
     {
       name: "Amy Zhuang",
-      position: "Student Venture Partner",
-      company: "Picus Capital",
+      position: "Private Equity",
+      company: "Ardian",
       image: amy
     }
 
