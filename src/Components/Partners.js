@@ -10,6 +10,8 @@ import house from './../assets/partners/house.png';
 import svb from './../assets/sponsors/svb.png';
 import perplexity from './../assets/partners/perplexity.png';
 import harmonic from './../assets/partners/harmonic.png';
+import zip from './../assets/partners/zip.webp';
+import citadel from './../assets/partners/citadel.png';
 
 import value1 from './../assets/partners/value1.jpeg';
 import value2 from './../assets/partners/value2.jpeg';
@@ -49,6 +51,16 @@ function Partners() {
             logo: harmonic,
             name: 'Harmonic',
             website: 'https://www.harmonic.ai/'
+        },
+        {
+            logo: zip,
+            name: 'Zip',
+            website: 'https://www.ziphq.com/'
+        },
+        {
+            logo: citadel,
+            name: 'Citadel',
+            website: 'https://www.citadel.com/'
         }
     ];
 
