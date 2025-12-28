@@ -41,6 +41,10 @@ import blackbook from "./../assets/portfolio/batches/spring_21/blackbook.png";
 import loggicat from "./../assets/portfolio/batches/spring_21/loggicat.png";
 import shopt from "./../assets/portfolio/batches/spring_21/shopt.png";
 import sportvue from "./../assets/portfolio/batches/spring_21/sportvue.png";
+import chargenest from "./../assets/portfolio/batches/fall_23/chargenest.jpg";
+import fluyo from "./../assets/portfolio/batches/fall_23/fluyo.png";
+import materri from "./../assets/portfolio/batches/fall_23/materri.jpeg";
+import watneyrobotics from "./../assets/portfolio/batches/fall_23/watneyrobotics.jpg";
 import caravan from "./../assets/portfolio/batches/fall_24/caravan.png";
 import gekodb from "./../assets/portfolio/batches/fall_24/gekodb.png";
 import morphic from "./../assets/portfolio/batches/fall_24/morphic.png";
@@ -144,7 +148,7 @@ const portfolioContent = {
   batchList: [
     {
       batchName: "Fall 2025",
-      batchNumber: 24,
+      batchNumber: 25,
       companies: [
         {
           name: "Entropica",
@@ -199,7 +203,7 @@ const portfolioContent = {
     },
     {
       batchName: "Spring 2025",
-      batchNumber: 23,
+      batchNumber: 24,
       companies: [
         {
           name: "ClaraTear",
@@ -266,7 +270,7 @@ const portfolioContent = {
     },
     {
       batchName: "Fall 2024",
-      batchNumber: 22,
+      batchNumber: 23,
       companies: [
         {
           name: "Caravan",
@@ -312,7 +316,7 @@ const portfolioContent = {
     },
     {
       batchName: "Spring 2024",
-      batchNumber: 21,
+      batchNumber: 22,
       companies: [
         {
           name: "Dura",
@@ -355,6 +359,60 @@ const portfolioContent = {
           logo: trace,
         },
       ],
+    },
+    {
+      batchName: "Fall 2023",
+      batchNumber: 21,
+      companies: [
+        {
+          name: "ChargeNest",
+          description: "ChargeNest is an EV charge management software that offer nighttime reservations for underutilized public EV chargers for people without home charging solutions, such as those in multifamily buildings",
+          track: "accelerator",
+          logo: chargenest,
+          links: [
+            {
+              address: "https://chargenest.co", 
+              title: "Website"
+            }
+          ]
+        },
+        {
+          name: "FLUYO",
+          description: "FLUYO empowers women's intimate health with an innovative self-monitoring tool, providing real-time insights to help detect anomalies in vaginal discharge and gain peace of mind",
+          track: "accelerator",
+          logo: fluyo,  
+          links: [
+            {
+              address: "https://fluyo.tilda.ws/",
+              title: "Website"
+            }
+          ]
+        },
+        {
+          name: "Matteri",
+          description: "Materri is a materials intelligence platform that streamlines the sourcing process for footwear development teams with advanced material recommendations based on design preferences",
+          track: "accelerator",
+          logo: "materri",
+          links: [
+            {
+              address: "https://www.materri.com/",
+              title: "Website"
+            }
+          ]
+        },
+        {
+          name: "Watney Robotics",
+          description: "Watney Robotics builds end-to-end automated vertical farms and proprietary robotic systems using deep learning models that enable cultivation of high complexity, high margin crops where traditional automation techniques fail",
+          track: "accelerator",
+          logo: watneyrobotics,
+          links: [
+            {
+              address: "https://watneyrobotics.com/",
+              title: "Website"
+            }
+          ]
+        },  
+      ]
     },
     {
       batchName: "Spring 2023",
