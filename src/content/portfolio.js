@@ -392,7 +392,7 @@ const portfolioContent = {
           name: "Matteri",
           description: "Materri is a materials intelligence platform that streamlines the sourcing process for footwear development teams with advanced material recommendations based on design preferences",
           track: "accelerator",
-          logo: "materri",
+          logo: materri,
           links: [
             {
               address: "https://www.materri.com/",
