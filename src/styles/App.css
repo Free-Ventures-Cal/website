@@ -63,6 +63,8 @@ button:focus {
 
 .header .logo {
   display: inline-block;
+  margin-right: 20px;
+  max-width: 250px;
 }
 
 .nav {
@@ -79,7 +81,7 @@ button:focus {
 .nav li {
   display: inline;
   font-size: 20px;
-  margin: 0 15px;
+  margin: 0 12px;
 }
 
 .nav a {

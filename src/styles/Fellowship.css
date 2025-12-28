@@ -197,3 +197,14 @@ p#eighty-plus {
     margin: 5px 0px;
   }
 }
+
+.dropdown-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.dropdown-content.open {
+  max-height: 3000px;
+  transition: max-height 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}

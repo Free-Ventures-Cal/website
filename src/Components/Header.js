@@ -67,6 +67,11 @@ class Header extends React.Component {
                   fellowship
                 </NavLink>
               </li>
+              <li>
+                <NavLink to="/scholarship" activeClassName="activeLinkStyle">
+                  scholarship
+                </NavLink>
+              </li>
               {/* <li>
                 <a href="/fairinfo">fair</a>
               </li> */}
@@ -126,6 +131,13 @@ class Header extends React.Component {
                 onClick={() => this.closeMenu()}
               >
                 fellowship
+              </NavLink>
+              <NavLink
+                to="/scholarship"
+                activeClassName="activeLinkStyle"
+                onClick={() => this.closeMenu()}
+              >
+                scholarship
               </NavLink>
               <li>
                 <a href="/fairinfo">fair</a>
