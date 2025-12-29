@@ -1340,7 +1340,7 @@ const portfolioContent = {
               title: "App Website",
             },
           ],
-          tags: [ycS2017Tag],
+          tags: [acquisitionTag, ycS2017Tag],
         },
         {
           name: "Nom Nom",
