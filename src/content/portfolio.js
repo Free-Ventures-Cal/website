@@ -134,6 +134,11 @@ const ycS2017Tag = {
   backgroundColor: "#EC8641",
 };
 
+const ycS2015Tag = {
+  content: "YC S2015",
+  backgroundColor: "#EC8641",
+}
+
 const kickstarterTag = {
   content: "Kickstarter",
   backgroundColor: "#04ce78",
@@ -1391,7 +1396,7 @@ const portfolioContent = {
               title: "Acquisition",
             },
           ],
-          tags: [acquisitionTag],
+          tags: [acquisitionTag, ycS2015Tag],
           photos: [
             {
               src: blitz1,
