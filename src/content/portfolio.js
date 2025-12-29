@@ -1086,7 +1086,7 @@ const portfolioContent = {
               title: "Crunchbase",
             },
           ],
-          tags: [ycW2018Tag],
+          tags: [acquisitionTag, ycW2018Tag],
           logo: onederful,
         },
         {
