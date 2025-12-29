@@ -1090,6 +1090,10 @@ const portfolioContent = {
               address: "https://www.crunchbase.com/organization/onederful",
               title: "Crunchbase",
             },
+            {
+              address: "https://www.prnewswire.com/news-releases/vyne-dental-acquires-dental-plan-eligibility-software-maker-onederful-301443979.html",
+              title: "Acquisition",
+            }
           ],
           tags: [acquisitionTag, ycW2018Tag],
           logo: onederful,
