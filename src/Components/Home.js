@@ -16,7 +16,7 @@ import perplexity from "./../assets/partners/perplexity.png";
 import harmonic from "./../assets/partners/harmonic.png";
 import svb from "./../assets/sponsors/svb.png";
 import zip from "./../assets/partners/zip.webp";
-import citadel from "./../assets/partners/citadel.png";
+// import citadel from "./../assets/partners/citadel.png";
 // Press
 import forbes from "./../assets/press/grayscale/forbes.png";
 import huffpost from "./../assets/press/grayscale/huffpost.png";
@@ -341,7 +341,6 @@ function Home() {
               <img src={perplexity} className="sponsorLogo" />
               <img src={harmonic} className="sponsorLogo" />
               <img src={zip} className="sponsorLogo" />
-              <img src={citadel} className="sponsorLogo" />
               
             </div>
             {/* <a href="https://airtable.com/shr2JwPjM7cEaEI42" className="apply">
