@@ -67,6 +67,7 @@ import amelia from "./../assets/team/amelia.jpeg";
 import shivansh from "./../assets/team/shivansh.jpeg";
 import shreyash from "./../assets/team/shreyash.jpeg";
 import aryan from "./../assets/team/aryan.jpeg";
+import aryan2 from "./../assets/team/aryan2.jpeg";
 import carlos from "./../assets/team/carlos.jpeg";
 import divij from "./../assets/team/divij.jpeg";
 import juhi from "./../assets/team/juhi.jpeg";
@@ -187,7 +188,7 @@ function Team() {
       linkedinUrl: "https://www.linkedin.com/in/aryan-nangia/",
       calendlyUrl: " ",
       mailTo: "mailto:aryan@freeventures.org",
-      image: aryan,
+      image: aryan2,
     },
     {
       name: "Carlos Ramirez",
