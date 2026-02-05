@@ -23,7 +23,7 @@
 }
 
 .person > img[src*="aryan2"] {
-  object-position: center bottom;
+  object-position: center top;
 }
 
 .person h2 {
