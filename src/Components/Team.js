@@ -74,6 +74,7 @@ import juhi from "./../assets/team/juhi.jpeg";
 import leo from "./../assets/team/leo.jpeg";
 import nathan from "./../assets/team/nathan.jpeg";
 import swara2 from "./../assets/team/swara2.jpeg";
+import shivansh2 from "./../assets/team/shivansh2.jpeg";
 
 import GenericPage from "./GenericPage";
 import GenericTop from "./GenericTop";
@@ -181,7 +182,7 @@ function Team() {
       linkedinUrl: "https://www.linkedin.com/in/shivanshsonii/",
       calendlyUrl: "https://calendly.com/shivanshmsoni/free-ventures-coffee-chats",
       mailTo: "mailto:shivansh@freeventures.org",
-      image: shivansh,
+      image: shivansh2,
     },
     {
       name: "Aryan Nangia",
