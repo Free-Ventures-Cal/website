@@ -26,12 +26,12 @@ function Fellowship() {
     //   image: application,
     // },
     {
-      date: "September 11 @ Blum Hall, 8-10pm",
+      date: "February 12 @ Dwinelle 79, 8-10pm",
       description: "Free Ventures Mixer",
       image: application,
     },
     {
-      date: "September 14, 11:59pm",
+      date: "February 17, 11:59pm",
       description: "Application Deadline",
       image: interview,
     },
@@ -191,19 +191,19 @@ function Fellowship() {
             short response!
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSccATjqG-7sO15UJVobsDTh6dV37BMaFRoQU2gCmn-202Sxow/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdCcvJnxvnH0PYkcEwnVdZG-FMKb7i2OCFYbOOYApgIN-DWyA/viewform"
             className="genericButton"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply for Fall 2025 Fellowship
+            Apply for Spring 2026 Fellowship
           </a>
-          <h3>Fall 2025 Timeline</h3>
+          <h3>Spring 2026 Timeline</h3>
           <div className="timeline">{timelineWithArrows}</div>
           <p>
             Please direct questions to our form below, or email{" "}
-            <a href="mailto:wesley@freeventures.org">wesley@freeventures.org</a> {" or "}
-            <a href="mailto:om@freeventures.org">om@freeventures.org</a>
+            <a href="mailto:om@freeventures.org">om@freeventures.org</a> {" or "}
+            <a href="mailto:carlos@freeventures.org">carlos@freeventures.org</a>
             .
           </p>
         </span>
