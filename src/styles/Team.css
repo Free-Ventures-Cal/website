@@ -22,6 +22,10 @@
   margin: 0 auto;
 }
 
+.person > img[src*="aryan2"] {
+  object-position: center bottom;
+}
+
 .person h2 {
   font-size: 23px;
   margin: 10px 0;
