@@ -30,7 +30,7 @@ function App() {
           <Route exact path="/contact" component={ContactFormPage} />
           {/* <Route exact path="/apply" component={Apply} /> */}
           <Route path='/apply' component={() => {
-            window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSeZsHAkNTVGD9B-Ue6kPwLuRNeZVcsm_uUhnyCNAF3f5_UPOA/viewform');
+            window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLScXBMuK29ujW9nyOj3GpdVGCc3XWn60GuGgfT9ufj9y0yPqaw/viewform');
             }}
           />
           <Route exact path="/fellowship" component={Fellowship} />
