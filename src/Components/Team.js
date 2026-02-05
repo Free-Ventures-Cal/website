@@ -91,16 +91,16 @@ function Team() {
   var header = "Coffee Chats Now Open!";
   var internalRecruitment = false;
   var description =
-    "Interested in joining the Free Ventures internal team? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Fill out the form below to apply.";
+    "Interested in joining the Free Ventures batch or fellowship? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Fill out the form below to apply.";
 
   let button;
 
   if (internalRecruitment) {
     description +=
-      " We're currently recruiting for internal team! Click below to learn more.";
+      " We're currently recruiting for our batch and fellowship! Click below to learn more.";
     button = (
       <Link to="/apply" className="genericButton">
-        Apply to internal team
+        Apply to batch
       </Link>
     );
   } else {
@@ -108,12 +108,12 @@ function Team() {
     //   " Click below to fill out our interest form! We'll email you once we begin recruitment in October.";
     button = (
       <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeZsHAkNTVGD9B-Ue6kPwLuRNeZVcsm_uUhnyCNAF3f5_UPOA/viewform"
+        href="https://docs.google.com/forms/d/e/1FAIpQLScXBMuK29ujW9nyOj3GpdVGCc3XWn60GuGgfT9ufj9y0yPqaw/viewform"
         target="_blank"
         rel="noopener noreferrer"
         className="genericButton"
       >
-        Internal Application
+        Batch Application
       </a>
     );
   }
