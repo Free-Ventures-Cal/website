@@ -73,6 +73,7 @@ import divij from "./../assets/team/divij.jpeg";
 import juhi from "./../assets/team/juhi.jpeg";
 import leo from "./../assets/team/leo.jpeg";
 import nathan from "./../assets/team/nathan.jpeg";
+import swara2 from "./../assets/team/swara2.jpeg";
 
 import GenericPage from "./GenericPage";
 import GenericTop from "./GenericTop";
@@ -156,7 +157,7 @@ function Team() {
       linkedinUrl: "https://www.linkedin.com/in/swara-agarwal/",
       calendlyUrl: "https://calendly.com/swara-agarwal-sca/freev-20-min-coffee-chat",
       mailTo: "mailto:swara@freeventures.org",
-      image: swara,
+      image: swara2,
     },
     {
       name: "Alex Han",
