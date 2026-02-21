@@ -16,7 +16,7 @@ import perplexity from "./../assets/partners/perplexity.png";
 import harmonic from "./../assets/partners/harmonic.png";
 import svb from "./../assets/sponsors/svb.png";
 import zip from "./../assets/partners/zip.webp";
-// import citadel from "./../assets/partners/citadel.png";
+// import citadel from "./../assets/partners/citadel.pn
 // Press
 import forbes from "./../assets/press/grayscale/forbes.png";
 import huffpost from "./../assets/press/grayscale/huffpost.png";
