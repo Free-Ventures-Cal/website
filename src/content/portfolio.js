@@ -63,6 +63,7 @@ import hexara from "./../assets/portfolio/batches/fall_25/hexara.png";
 import glauconovalabs from "./../assets/portfolio/batches/fall_25/glauconovalabs.png";
 import solace from "./../assets/portfolio/batches/fall_25/solace.jpg";
 import centralcoms from "./../assets/portfolio/batches/spring_26/centralcoms.png";
+import deployedai from "./../assets/portfolio/batches/spring_26/deployedai.png";
 import humanbased from "./../assets/portfolio/batches/spring_26/humanbased.png";
 import regal from "./../assets/portfolio/batches/spring_26/regal.png";
 
@@ -115,6 +116,11 @@ import alchemy from "./../assets/press/alchemy.jpeg";
 const acquisitionTag = {
   content: "Acquired",
   backgroundColor: "#424242",
+};
+
+const ycS2026Tag = {
+  content: "YC S2026",
+  backgroundColor: "#EC8641",
 };
 
 const ycW2020Tag = {
@@ -174,6 +180,8 @@ const portfolioContent = {
           name: "Deployed.ai",
           description: "A forward deployed AI agent for debugging in a customer's specific environment.",
           track: "accelerator",
+          logo: deployedai,
+          tags: [ycS2026Tag]
         },
         {
           name: "Humanbased",
