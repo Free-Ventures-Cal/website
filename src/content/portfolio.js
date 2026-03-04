@@ -62,6 +62,9 @@ import entropica from "./../assets/portfolio/batches/fall_25/entropica.png";
 import hexara from "./../assets/portfolio/batches/fall_25/hexara.png";
 import glauconovalabs from "./../assets/portfolio/batches/fall_25/glauconovalabs.png";
 import solace from "./../assets/portfolio/batches/fall_25/solace.jpg";
+import centralcoms from "./../assets/portfolio/batches/spring_26/centralcoms.png";
+import humanbased from "./../assets/portfolio/batches/spring_26/humanbased.png";
+import regal from "./../assets/portfolio/batches/spring_26/regal.png";
 
 // photos
 import demilune1 from "./../assets/portfolio/demilune1.jpeg";
@@ -151,6 +154,47 @@ const portfolioContent = {
     kickstarter: [kickstarterTag],
   },
   batchList: [
+    {
+      batchName: "Spring 2026",
+      batchNumber: 26,
+      companies: [
+        {
+          name: "CentralComs",
+          description: "We help property management companies fill vacancies faster while spending less on leasing operations by automating the process from lead to signed tenant.",
+          track: "accelerator",
+          logo: centralcoms,
+          links: [
+            {
+              address: "https://centralcoms.com/waitlist",
+              title: "Website",
+            },
+          ]
+        },
+        {
+          name: "Deployed.ai",
+          description: "A forward deployed AI agent for debugging in a customer's specific environment.",
+          track: "accelerator",
+        },
+        {
+          name: "Humanbased",
+          description: "Humanbased is building the world's first portable navigation device for the visually impaired. Using CV and LiDAR, we provide hands-free, haptic guidance for precise indoor wayfinding and environmental awareness. We’re replacing canes with vision-parity physical AI.",
+          track: "accelerator",
+          logo: humanbased,
+          links: [
+            {
+              address: "https://humanbased.notion.site/acimo",
+              title: "Website",
+            },
+          ],
+        },
+        {
+          name: "Regal",
+          description: "Regal is building the operating system for legal record creation. Starting with depositions, we replace manual stenography with AI-native infrastructure that captures, structures, and indexes proceedings in real time.",
+          track: "accelerator",
+          logo: regal,
+        }
+      ],
+    },
     {
       batchName: "Fall 2025",
       batchNumber: 25,
