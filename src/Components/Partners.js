@@ -12,6 +12,7 @@ import perplexity from './../assets/partners/perplexity.png';
 import harmonic from './../assets/partners/harmonic.png';
 import zip from './../assets/partners/zip.webp';
 import citadel2 from './../assets/partners/citadel2.png';
+import rho from './../assets/sponsors/rho.png';
 
 import value1 from './../assets/partners/value1.jpeg';
 import value2 from './../assets/partners/value2.jpeg';
@@ -61,6 +62,12 @@ function Partners() {
             logo: citadel2,
             name: 'Citadel',
             website: 'https://www.citadel.com/'
+        },
+        {
+
+            logo: rho,
+            name: 'Rho',
+            website: 'https://www.rho.co/'
         }
     ];
 
