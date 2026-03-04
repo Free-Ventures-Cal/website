@@ -156,7 +156,7 @@ const kickstarterTag = {
 const portfolioContent = {
   tags: {
     acquisitions: [acquisitionTag],
-    yc: [ycW2020Tag, ycW2018Tag, ycS2018Tag, ycS2017Tag, ycS2015Tag],
+    yc: [ycS2026Tag, ycW2020Tag, ycW2018Tag, ycS2018Tag, ycS2017Tag, ycS2015Tag],
     kickstarter: [kickstarterTag],
   },
   batchList: [
