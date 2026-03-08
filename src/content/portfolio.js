@@ -64,8 +64,8 @@ import glauconovalabs from "./../assets/portfolio/batches/fall_25/glauconovalabs
 import solace from "./../assets/portfolio/batches/fall_25/solace.jpg";
 import centralcoms from "./../assets/portfolio/batches/spring_26/centralcoms.png";
 import deployedai from "./../assets/portfolio/batches/spring_26/deployedai.png";
-import humanbased from "./../assets/portfolio/batches/spring_26/humanbased.png";
 import regal from "./../assets/portfolio/batches/spring_26/regal.png";
+import humanbased2 from "./../assets/portfolio/batches/spring_26/humanbased2.png";
 
 // photos
 import demilune1 from "./../assets/portfolio/demilune1.jpeg";
@@ -118,8 +118,8 @@ const acquisitionTag = {
   backgroundColor: "#424242",
 };
 
-const ycS2026Tag = {
-  content: "YC S2026",
+const ycX2026Tag = {
+  content: "YC X2026",
   backgroundColor: "#EC8641",
 };
 
@@ -156,7 +156,7 @@ const kickstarterTag = {
 const portfolioContent = {
   tags: {
     acquisitions: [acquisitionTag],
-    yc: [ycS2026Tag, ycW2020Tag, ycW2018Tag, ycS2018Tag, ycS2017Tag, ycS2015Tag],
+    yc: [ycX2026Tag, ycW2020Tag, ycW2018Tag, ycS2018Tag, ycS2017Tag, ycS2015Tag],
     kickstarter: [kickstarterTag],
   },
   batchList: [
@@ -177,17 +177,17 @@ const portfolioContent = {
           ]
         },
         {
-          name: "Deployed.ai",
+          name: "prbe.ai", //renamed from deployed.ai
           description: "A forward deployed AI agent for debugging in a customer's specific environment.",
           track: "accelerator",
           logo: deployedai,
-          tags: [ycS2026Tag]
+          tags: [ycX2026Tag]
         },
         {
           name: "Humanbased",
           description: "Humanbased is building the world's first portable navigation device for the visually impaired. Using CV and LiDAR, we provide hands-free, haptic guidance for precise indoor wayfinding and environmental awareness. We’re replacing canes with vision-parity physical AI.",
           track: "accelerator",
-          logo: humanbased,
+          logo: humanbased2,
           links: [
             {
               address: "https://humanbased.notion.site/acimo",
