@@ -189,7 +189,7 @@ const portfolioContent = {
           ],
         },
         { 
-          name: "prbe.ai", //renamed from deployed.ai
+        name: "prbe.ai", //renamed from deployed.ai
         description: "A forward deployed AI agent for debugging in a customer's specific environment.",
         track: "accelerator",
         logo: deployedai,
