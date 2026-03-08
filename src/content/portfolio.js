@@ -177,13 +177,6 @@ const portfolioContent = {
           ]
         },
         {
-          name: "prbe.ai", //renamed from deployed.ai
-          description: "A forward deployed AI agent for debugging in a customer's specific environment.",
-          track: "accelerator",
-          logo: deployedai,
-          tags: [ycX2026Tag]
-        },
-        {
           name: "Humanbased",
           description: "Humanbased is building the world's first portable navigation device for the visually impaired. Using CV and LiDAR, we provide hands-free, haptic guidance for precise indoor wayfinding and environmental awareness. We’re replacing canes with vision-parity physical AI.",
           track: "accelerator",
@@ -194,6 +187,13 @@ const portfolioContent = {
               title: "Website",
             },
           ],
+        },
+        { 
+          name: "prbe.ai", //renamed from deployed.ai
+        description: "A forward deployed AI agent for debugging in a customer's specific environment.",
+        track: "accelerator",
+        logo: deployedai,
+        tags: [ycX2026Tag]
         },
         {
           name: "Regal",
