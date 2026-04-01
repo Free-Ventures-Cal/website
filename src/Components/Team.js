@@ -153,14 +153,6 @@ function Team() {
       image: shreyash,
     },
     {
-      name: "Swara Agarwal",
-      position: "Senior Associate",
-      linkedinUrl: "https://www.linkedin.com/in/swara-agarwal/",
-      calendlyUrl: "https://calendly.com/swara-agarwal-sca/freev-20-min-coffee-chat",
-      mailTo: "mailto:swara@freeventures.org",
-      image: swara2,
-    },
-    {
       name: "Alex Han",
       position: "Senior Associate",
       linkedinUrl: "https://www.linkedin.com/in/alexqhan/",
@@ -297,6 +289,14 @@ function Team() {
       calendlyUrl: "https://calendly.com/wesley-perronne-berkeley/free-ventures-1",
       mailTo: "mailto:wesley@freeventures.org",
       image: wesley,
+    },
+    {
+      name: "Swara Agarwal",
+      position: "Senior Advisor",
+      linkedinUrl: "https://www.linkedin.com/in/swara-agarwal/",
+      calendlyUrl: "https://calendly.com/swara-agarwal-sca/freev-20-min-coffee-chat",
+      mailTo: "mailto:swara@freeventures.org",
+      image: swara2,
     },
     {
       name: "Hiya Shah",

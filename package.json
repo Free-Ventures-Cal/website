@@ -9,19 +9,18 @@
     "hapi": "^18.1.0",
     "joi": "^17.4.2",
     "levenary": "^1.1.1",
-    "react": "^16.8.6",
+    "react": "^17.0.2",
     "react-burger-menu": "^2.6.11",
-    "react-dom": "^16.8.6",
+    "react-dom": "^17.0.2",
     "react-ga": "^2.6.0",
     "react-google-docs-viewer": "^1.0.1",
     "react-images": "^1.0.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
-    "webpack": "4.29.6"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
