@@ -18,7 +18,8 @@ import arrow from "./../assets/arrow.png";
 function Apply(props) {
   // Content
 
-  let airtableLink = "https://airtable.com/shr686qq2DFardCNZ";
+  let airtableLink =
+    "https://docs.google.com/forms/d/e/1FAIpQLSfFpNtmT6vard9oq5XaBCI-gWpCaa8XaaUH0uyDGl1SbMbGAQ/viewform";
 
   let batchFAQContent = [
     {
