@@ -92,13 +92,13 @@ function Team() {
   var header = "Coffee Chats Now Open!";
   var internalRecruitment = false;
   var description =
-    "Interested in joining the Free Ventures batch or fellowship? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Fill out the form below to apply.";
+    "Interested in joining the Free Ventures internal team? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Fill out the form below to apply.";
 
   let button;
 
   if (internalRecruitment) {
     description +=
-      " We're currently recruiting for our batch and fellowship! Click below to learn more.";
+      " We're currently recruiting for our internal team! Click below to learn more.";
     button = (
       <Link to="/apply" className="genericButton">
         Apply to batch
@@ -109,12 +109,12 @@ function Team() {
     //   " Click below to fill out our interest form! We'll email you once we begin recruitment in October.";
     button = (
       <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLScXBMuK29ujW9nyOj3GpdVGCc3XWn60GuGgfT9ufj9y0yPqaw/viewform"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfFpNtmT6vard9oq5XaBCI-gWpCaa8XaaUH0uyDGl1SbMbGAQ/viewform"
         target="_blank"
         rel="noopener noreferrer"
         className="genericButton"
       >
-        Batch Application
+        Internal Application
       </a>
     );
   }
@@ -151,6 +151,14 @@ function Team() {
       calendlyUrl: "https://calendly.com/shreyash_goli-berkeley/free-ventures-coffee-chats?month=2025-09",
       mailTo: "mailto:shreyash@freeventures.org",
       image: shreyash,
+    },
+    {
+      name: "Swara Agarwal",
+      position: "Senior Associate",
+      linkedinUrl: "https://www.linkedin.com/in/swara-agarwal/",
+      calendlyUrl: "https://calendly.com/swara-agarwal-sca/freev-20-min-coffee-chat",
+      mailTo: "mailto:swara@freeventures.org",
+      image: swara2,
     },
     {
       name: "Alex Han",
@@ -289,14 +297,6 @@ function Team() {
       calendlyUrl: "https://calendly.com/wesley-perronne-berkeley/free-ventures-1",
       mailTo: "mailto:wesley@freeventures.org",
       image: wesley,
-    },
-    {
-      name: "Swara Agarwal",
-      position: "Senior Advisor",
-      linkedinUrl: "https://www.linkedin.com/in/swara-agarwal/",
-      calendlyUrl: "https://calendly.com/swara-agarwal-sca/freev-20-min-coffee-chat",
-      mailTo: "mailto:swara@freeventures.org",
-      image: swara2,
     },
     {
       name: "Hiya Shah",
