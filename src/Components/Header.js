@@ -76,9 +76,13 @@ class Header extends React.Component {
                 <a href="/fairinfo">fair</a>
               </li> */}
               <li>
-                <NavLink to="/apply" activeClassName="activeLinkStyle">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfFpNtmT6vard9oq5XaBCI-gWpCaa8XaaUH0uyDGl1SbMbGAQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   apply
-                </NavLink>
+                </a>
               </li>
             </ul>
           </div>
@@ -142,13 +146,14 @@ class Header extends React.Component {
               <li>
                 <a href="/fairinfo">fair</a>
               </li>
-              <NavLink
-                to="/apply"
-                activeClassName="activeLinkStyle"
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfFpNtmT6vard9oq5XaBCI-gWpCaa8XaaUH0uyDGl1SbMbGAQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => this.closeMenu()}
               >
                 apply
-              </NavLink>
+              </a>
             </Menu>
           </span>
         </div>

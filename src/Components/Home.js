@@ -18,6 +18,8 @@ import svb from "./../assets/sponsors/svb.png";
 import zip from "./../assets/partners/zip.webp";
 import citadel2 from "./../assets/partners/citadel2.png";
 import rho from "./../assets/sponsors/rho.png";
+import kalpalabs from "./../assets/sponsors/kalpalabs.png";
+import unsiloedai from "./../assets/sponsors/unsiloedai.jpeg";
 // Press
 import forbes from "./../assets/press/grayscale/forbes.png";
 import huffpost from "./../assets/press/grayscale/huffpost.png";
@@ -344,6 +346,8 @@ function Home() {
               <img src={zip} className="sponsorLogo" />
               <img src={citadel2} className="sponsorLogo" />
               <img src={rho} className="sponsorLogo" />
+              <img src={kalpalabs} className="sponsorLogo" />
+              <img src={unsiloedai} className="sponsorLogo" />
             </div>
             {/* <a href="https://airtable.com/shr2JwPjM7cEaEI42" className="apply">
               Spring 2023 Interest Form
