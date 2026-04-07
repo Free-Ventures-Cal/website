@@ -56,8 +56,6 @@ class Portfolio extends React.Component {
       );
     });
 
-    let clickInstructionText = <p>Click on a company to learn more</p>;
-
     // simpleSelect only visible in the mobile view
     let simpleSelect = (
       <SimpleSelect
@@ -67,10 +65,6 @@ class Portfolio extends React.Component {
         handleSideBarClick={this.handleSideBarClick}
       />
     );
-
-    if (this.state.sideBarTabName === "Press") {
-      clickInstructionText = "";
-    }
 
     return (
       <section>
@@ -85,12 +79,12 @@ class Portfolio extends React.Component {
             <div className="portfolioNav">
               <div className="portfolioNavPrimary">
                 <button
-                  className={`navPrimaryBtn${this.state.sideBarTabName === "All startups" ? " navPrimaryBtn--active" : ""}`}
+                  className={`navPrimaryBtn${this.state.sideBarTabName === "All Startups" ? " navPrimaryBtn--active" : ""}`}
                   onClick={() => {
-                    this.handleSideBarClick("All startups");
+                    this.handleSideBarClick("All Startups");
                   }}
                 >
-                  All startups
+                  All Startups
                 </button>
                 <button
                   className={`navPrimaryBtn${this.state.sideBarTabName === "Press" ? " navPrimaryBtn--active" : ""}`}
