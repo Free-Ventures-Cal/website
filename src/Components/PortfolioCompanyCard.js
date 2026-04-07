@@ -24,10 +24,14 @@ function PortfolioCompanyCard(props) {
 
         return (
             <div className="companyPortfolio" onClick={props.onClick}>
+                <div className="companyPortfolio__header">
                     {logo}
                     <h1>{props.companyName}</h1>
                     <p>{props.description}</p>
+                </div>
+                <div className="companyPortfolio__tags">
                     {tags}
+                </div>
             </div>
         );
 

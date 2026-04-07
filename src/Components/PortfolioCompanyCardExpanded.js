@@ -14,13 +14,18 @@ import './../styles/App.css';
 const styles = theme => ({
   root: {
     margin: 0,
-    padding: theme.spacing(2),
+    padding: theme.spacing(3),
+    paddingRight: theme.spacing(6),
   },
   closeButton: {
     position: 'absolute',
     right: theme.spacing(1),
     top: theme.spacing(1),
     color: theme.palette.grey[500],
+    backgroundColor: 'rgba(0, 0, 0, 0.04)',
+    '&:hover': {
+      backgroundColor: 'rgba(0, 0, 0, 0.08)',
+    },
   },
 });
 
@@ -40,7 +45,7 @@ const DialogTitle = withStyles(styles)(props => {
 
 const DialogContent = withStyles(theme => ({
   root: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(3),
   },
 }))(MuiDialogContent);
 
@@ -73,8 +78,10 @@ function CustomizedDialogs(props) {
         linkSection = (
             <DialogActions>
                 <span className="linkSection">
-                    <p>Links</p>
-                    {links}
+                    <p className="linkSectionLabel">Links</p>
+                    <div className="linkSectionLinks">
+                        {links}
+                    </div>
                 </span>
             </DialogActions>
         );
@@ -82,7 +89,7 @@ function CustomizedDialogs(props) {
 
     let logo;
     if(props.company.logo) {
-        logo = <img src={props.company.logo} />;
+        logo = <img src={props.company.logo} alt={props.company.name} />;
     }
 
     let tags;
@@ -109,17 +116,23 @@ function CustomizedDialogs(props) {
 
   return (
     <div>
-      <Dialog className="dialog" onClose={handleClose} aria-labelledby="customized-dialog-title" open={props.open}>
+      <Dialog className="dialog" onClose={handleClose} aria-labelledby="customized-dialog-title" open={props.open} maxWidth="sm" fullWidth>
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-        {logo}
-          <h1>{props.company.name}</h1>
+          <div className="dialogHeader">
+            {logo}
+            <h1>{props.company.name}</h1>
+          </div>
         </DialogTitle>
         <DialogContent dividers>
-          <Typography gutterBottom>
+          <Typography gutterBottom className="dialogDescription">
             {props.company.description}
           </Typography>
-          {tags}
-          {photos}
+          <div className="dialogTags">
+            {tags}
+          </div>
+          <div className="dialogPhotos">
+            {photos}
+          </div>
         </DialogContent>
         {linkSection}
       </Dialog>
