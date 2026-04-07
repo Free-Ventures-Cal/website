@@ -128,7 +128,10 @@ a {
   max-width: 150px;
   max-height: 30px;
   width: auto;
-  display: inline-block;
+  height: auto;
+  object-fit: contain;
+  object-position: left;
+  display: block;
 }
 
 .companyPortfolio__header {
@@ -155,8 +158,6 @@ a {
   line-height: 1.5;
   margin: 8px 0 0 0;
   color: #666;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
 }
 
 .companyPortfolio__tags {
@@ -232,6 +233,8 @@ a {
   max-width: 200px;
   width: auto;
   height: auto;
+  object-fit: contain;
+  object-position: left;
 }
 
 .dialog h1 {

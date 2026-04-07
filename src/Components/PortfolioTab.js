@@ -35,12 +35,11 @@ function PortfolioTab(props) {
     }
 
     let renderCompanies = (companiesToRender || []).map((company) => {
-        let descSnippet = clipDescription(company.description);
         return (<PortfolioCompanyCard
             logo={company.logo}
             companyName={company.name}
             key={company.name}
-            description={descSnippet}
+            description={company.description}
             link={company.link}
             tags={company.tags}
             onClick={() => {
