@@ -24,6 +24,13 @@ function PortfolioCompanyCard(props) {
         const descRef = useRef(null);
         const [displayText, setDisplayText] = useState(props.description);
 
+        const cleanCutoff = (text) => {
+            // Snap to last word boundary, strip trailing punctuation
+            const lastSpace = text.lastIndexOf(' ');
+            const snapped = lastSpace > 0 ? text.slice(0, lastSpace) : text;
+            return snapped.replace(/[,.\-!?;:\s]+$/, '');
+        };
+
         const fitText = useCallback(() => {
             const el = descRef.current;
             if (!el) return;
@@ -42,7 +49,8 @@ function PortfolioCompanyCard(props) {
 
             while (low < high) {
                 const mid = Math.floor((low + high) / 2);
-                el.textContent = props.description.slice(0, mid) + '...';
+                const candidate = cleanCutoff(props.description.slice(0, mid)) + '...';
+                el.textContent = candidate;
                 if (el.scrollHeight > el.clientHeight) {
                     high = mid;
                 } else {
@@ -52,7 +60,9 @@ function PortfolioCompanyCard(props) {
 
             // Back off by one to ensure we fit
             const cutoff = Math.max(0, low - 1);
-            setDisplayText(props.description.slice(0, cutoff) + '...');
+            const finalText = cleanCutoff(props.description.slice(0, cutoff)) + '...';
+            el.textContent = finalText;
+            setDisplayText(finalText);
         }, [props.description]);
 
         useEffect(() => {
