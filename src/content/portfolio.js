@@ -169,6 +169,7 @@ const portfolioContent = {
           description: "We help property management companies fill vacancies faster while spending less on leasing operations by automating the process from lead to signed tenant.",
           track: "accelerator",
           logo: centralcoms,
+          tags: [ycX2026Tag],
           links: [
             {
               address: "https://centralcoms.com/waitlist",
