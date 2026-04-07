@@ -134,14 +134,6 @@ a {
   display: block;
 }
 
-.companyPortfolio__header {
-  flex: 1 1 auto;
-  min-height: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
 .companyPortfolio h1 {
   margin: 10px 0 0 0;
   font-size: 18px;
@@ -149,19 +141,23 @@ a {
   word-wrap: break-word;
 }
 
-.companyPortfolio p {
+.companyPortfolio__desc {
   font-family: "Lato", sans-serif;
-  flex: 1 1 auto;
-  min-height: 0;
-  overflow: hidden;
   font-size: 14px;
   line-height: 1.5;
   margin: 8px 0 0 0;
   color: #666;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+.companyPortfolio__desc--withTags {
+  -webkit-line-clamp: 4;
 }
 
 .companyPortfolio__tags {
-  flex: 0 0 auto;
   margin-top: auto;
   padding-top: 8px;
 }

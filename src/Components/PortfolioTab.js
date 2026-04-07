@@ -32,10 +32,6 @@ function PortfolioTab(props) {
       <p>Click on a company to learn more</p>
     ) : null;
 
-  const clipDescription = (desc) => {
-    return desc.slice(0, desc.slice(100).indexOf(" ") + 100) + "...";
-  };
-
   let renderCompanies = (companiesToRender || []).map((company) => {
     return (
       <PortfolioCompanyCard

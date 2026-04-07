@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback } from 'react';
+import React from 'react';
 
 import './../styles/Portfolio.css';
 
@@ -21,63 +21,15 @@ function PortfolioCompanyCard(props) {
             logo = <img src={props.logo} alt="logo" />;
         }
 
-        const descRef = useRef(null);
-        const [displayText, setDisplayText] = useState(props.description);
-
-        const cleanCutoff = (text) => {
-            // Snap to last word boundary, strip trailing punctuation
-            const lastSpace = text.lastIndexOf(' ');
-            const snapped = lastSpace > 0 ? text.slice(0, lastSpace) : text;
-            return snapped.replace(/[,.\-!?;:\s]+$/, '');
-        };
-
-        const fitText = useCallback(() => {
-            const el = descRef.current;
-            if (!el) return;
-
-            // Reset to full text to measure
-            el.textContent = props.description;
-
-            if (el.scrollHeight <= el.clientHeight) {
-                setDisplayText(props.description);
-                return;
-            }
-
-            // Binary search for the right cutoff length
-            let low = 0;
-            let high = props.description.length;
-
-            while (low < high) {
-                const mid = Math.floor((low + high) / 2);
-                const candidate = cleanCutoff(props.description.slice(0, mid)) + '...';
-                el.textContent = candidate;
-                if (el.scrollHeight > el.clientHeight) {
-                    high = mid;
-                } else {
-                    low = mid + 1;
-                }
-            }
-
-            // Back off by one to ensure we fit
-            const cutoff = Math.max(0, low - 1);
-            const finalText = cleanCutoff(props.description.slice(0, cutoff)) + '...';
-            el.textContent = finalText;
-            setDisplayText(finalText);
-        }, [props.description]);
-
-        useEffect(() => {
-            fitText();
-            window.addEventListener('resize', fitText);
-            return () => window.removeEventListener('resize', fitText);
-        }, [fitText]);
+        const descClass = props.tags && props.tags.length > 0
+            ? 'companyPortfolio__desc companyPortfolio__desc--withTags'
+            : 'companyPortfolio__desc';
 
         return (
             <div className="companyPortfolio" onClick={props.onClick}>
-                <div className="companyPortfolio__header">
-                    {logo}
-                    <h1>{props.companyName}</h1>
-                    <p ref={descRef}>{displayText}</p>
-                </div>
+                {logo}
+                <h1>{props.companyName}</h1>
+                <p className={descClass}>{props.description}</p>
                 <div className="companyPortfolio__tags">
                     {tags}
                 </div>
