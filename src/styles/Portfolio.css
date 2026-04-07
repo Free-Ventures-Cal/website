@@ -104,6 +104,7 @@ a {
 .companyPortfolio {
   display: flex;
   flex-direction: column;
+  height: 200px;
   border-radius: 8px;
   background-color: #fff;
   color: #333333;
@@ -131,7 +132,11 @@ a {
 }
 
 .companyPortfolio__header {
-  flex: 0 0 auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .companyPortfolio h1 {
@@ -143,16 +148,19 @@ a {
 
 .companyPortfolio p {
   font-family: "Lato", sans-serif;
-  display: block;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
   font-size: 14px;
   line-height: 1.5;
-  margin: 8px 0;
+  margin: 8px 0 0 0;
   color: #666;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
 
 .companyPortfolio__tags {
+  flex: 0 0 auto;
   margin-top: auto;
   padding-top: 8px;
 }
