@@ -140,7 +140,9 @@ function PortfolioTab(props) {
       {clickInstructionText}
       {renderAllStartups}
       {renderPress}
-      <div className="content-grid">{renderCompanies}</div>
+      {props.sideBarTabName !== "All Startups" && (
+        <div className="content-grid">{renderCompanies}</div>
+      )}
       {expandedPanel}
     </div>
   );
