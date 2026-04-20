@@ -138,7 +138,7 @@ function Team() {
     },
     {
       name: "Om Gole",
-      position: "Director of Community and DEI",
+      position: "Director of Community",
       linkedinUrl: "https://www.linkedin.com/in/omgole/",
       calendlyUrl: "https://calendly.com/omgole-berkeley/ubg-coffee-chats",
       mailTo: "mailto:om@freeventures.org",
