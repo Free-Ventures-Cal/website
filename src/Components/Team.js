@@ -587,6 +587,18 @@ function Team() {
       image: amy
     },
     {
+      name: "Nandu Narayanan",
+      position: "Deployed Engineer",
+      company: "Cognition",
+      image: nandu
+    },
+    {
+      name: "Hy Nguyen",
+      position: "Founder",
+      company: "Tacit Awareness",
+      image: hy
+    },
+    {
       name: "Hiya Shah",
       position: "Graduate Robotics Researcher",
       company: "BAIR",
@@ -603,20 +615,7 @@ function Team() {
       position: "Researcher",
       company: "Epoch AI",
       image: kelly
-    },
-    {
-      name: "Nandu Narayanan",
-      position: "Deployed Engineer",
-      company: "Cognition",
-      image: nandu
-    },
-    {
-      name: "Hy Nguyen",
-      position: "Founder",
-      company: "Tacit Awareness",
-      image: hy
     }
-    
   ];
 
   let peopleComponents = peopleContent.map((person) => {

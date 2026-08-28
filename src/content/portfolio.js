@@ -118,6 +118,11 @@ const acquisitionTag = {
   backgroundColor: "#424242",
 };
 
+const ycS2026Tag = {
+  content: "YC S2026",
+  backgroundColor: "#EC8641",
+};
+
 const ycX2026Tag = {
   content: "YC X2026",
   backgroundColor: "#EC8641",
@@ -156,7 +161,7 @@ const kickstarterTag = {
 const portfolioContent = {
   tags: {
     acquisitions: [acquisitionTag],
-    yc: [ycX2026Tag, ycW2020Tag, ycW2018Tag, ycS2018Tag, ycS2017Tag, ycS2015Tag],
+    yc: [ycS2026Tag, ycX2026Tag, ycW2020Tag, ycW2018Tag, ycS2018Tag, ycS2017Tag, ycS2015Tag],
     kickstarter: [kickstarterTag],
   },
   batchList: [
@@ -214,6 +219,7 @@ const portfolioContent = {
             "Carbon capture is too expensive. Our ML platform, trained from various company datasets, optimizes heat, the biggest cost bottleneck in carbon capture, in pre-existing pipelines while accepting different sizes of data. Expect measurable % gains, which save millions.",
           track: "accelerator",
           logo: entropica,
+          tags: [ycS2026Tag],
           links: [
             {
               address: "https://drive.google.com/file/d/1Bp8TqanQYrxQoW31AZ34eUwr_yBJ32gT/view?usp=sharing",
