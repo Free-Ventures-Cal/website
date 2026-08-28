@@ -61,12 +61,9 @@ import ashni from "./../assets/team/ashni.jpeg";
 import gatik from "./../assets/team/gatik.png";
 import nidhi from "./../assets/team/nidhi.jpeg";
 import om from "./../assets/team/om.jpeg";
-import swara from "./../assets/team/swara.jpeg";
 import alexhan from "./../assets/team/alex_han.jpeg";
 import amelia from "./../assets/team/amelia.jpeg";
-import shivansh from "./../assets/team/shivansh.jpeg";
 import shreyash from "./../assets/team/shreyash.jpeg";
-import aryan from "./../assets/team/aryan.jpeg";
 import aryan2 from "./../assets/team/aryan2.jpeg";
 import carlos from "./../assets/team/carlos.jpeg";
 import divij from "./../assets/team/divij.jpeg";
@@ -75,6 +72,12 @@ import leo from "./../assets/team/leo.jpeg";
 import nathan from "./../assets/team/nathan.jpeg";
 import swara2 from "./../assets/team/swara2.jpeg";
 import shivansh2 from "./../assets/team/shivansh2.jpeg";
+import aaron from "./../assets/team/aaron.png";
+import eleyn from "./../assets/team/eleyn.jpeg";
+import daniel from "./../assets/team/daniel.jpeg";
+import rohit from "./../assets/team/rohit.jpeg";
+import sunskriti from "./../assets/team/sunskriti.png";
+import taj from "./../assets/team/taj.png";
 
 import GenericPage from "./GenericPage";
 import GenericTop from "./GenericTop";
@@ -121,48 +124,16 @@ function Team() {
 
   const peopleContent = [
     {
-      name: "Aathma Muruganathan",
-      position: "Managing Director",
-      linkedinUrl: "https://www.linkedin.com/in/aathma/",
-      calendlyUrl: "https://calendly.com/aathma-freeventures/free-venture-coffee-chats?month=2025-02",
-      mailTo: "mailto:aathma@freeventures.org",
-      image: aathma,
-    },  
-    {
-      name: "Nidhi Gaonkar",
-      position: "Director of Sponsorship",
-      linkedinUrl: "https://www.linkedin.com/in/nidhi-gaonkar/",
-      calendlyUrl: "https://calendly.com/nidhi-freeventures",
-      mailTo: "mailto:nidhi@freeventures.org",
-      image: nidhi,
-    },
-    {
       name: "Om Gole",
-      position: "Director of Community",
+      position: "Managing Director",
       linkedinUrl: "https://www.linkedin.com/in/omgole/",
       calendlyUrl: "https://calendly.com/omgole-berkeley/ubg-coffee-chats",
       mailTo: "mailto:om@freeventures.org",
       image: om,
     },
     {
-      name: "Shreyash Goli",
-      position: "Director of Batch",
-      linkedinUrl: "https://www.linkedin.com/in/shreyash-goli/",
-      calendlyUrl: "https://calendly.com/shreyash_goli-berkeley/free-ventures-coffee-chats?month=2025-09",
-      mailTo: "mailto:shreyash@freeventures.org",
-      image: shreyash,
-    },
-    {
-      name: "Alex Han",
-      position: "Senior Associate",
-      linkedinUrl: "https://www.linkedin.com/in/alexqhan/",
-      calendlyUrl: "https://calendly.com/alexhan-berkeley/new-meeting",
-      mailTo: "mailto:alex@freeventures.org",
-      image: alexhan,
-    },
-    {
       name: "Amelia Khor",
-      position: "Senior Associate",
+      position: "Director of Sponsorship",
       linkedinUrl: "https://www.linkedin.com/in/ameliakhor/",
       calendlyUrl: "https://calendly.com/amelia-freeventures/15min?month=2025-09&date=2025-09-06",
       mailTo: "mailto:amelia@freeventures.org",
@@ -170,19 +141,75 @@ function Team() {
     },
     {
       name: "Shivansh Soni",
-      position: "Senior Associate",
+      position: "Director of Community",
       linkedinUrl: "https://www.linkedin.com/in/shivanshsonii/",
       calendlyUrl: "https://calendly.com/shivanshmsoni/free-ventures-coffee-chats",
       mailTo: "mailto:shivansh@freeventures.org",
       image: shivansh2,
     },
     {
+      name: "Alex Han",
+      position: "Director of Batch",
+      linkedinUrl: "https://www.linkedin.com/in/alexqhan/",
+      calendlyUrl: "https://calendly.com/alexhan-berkeley/new-meeting",
+      mailTo: "mailto:alex@freeventures.org",
+      image: alexhan,
+    },
+    {
+      name: "Aathma Muruganathan",
+      position: "Senior Associate, Ex-Managing Director",
+      linkedinUrl: "https://www.linkedin.com/in/aathma/",
+      calendlyUrl: "https://calendly.com/aathma-freeventures/free-venture-coffee-chats?month=2025-02",
+      mailTo: "mailto:aathma@freeventures.org",
+      image: aathma,
+    },  
+    {
+      name: "Nidhi Gaonkar",
+      position: "Senior Associate, Ex-Director of Sponsorship",
+      linkedinUrl: "https://www.linkedin.com/in/nidhi-gaonkar/",
+      calendlyUrl: "https://calendly.com/nidhi-freeventures",
+      mailTo: "mailto:nidhi@freeventures.org",
+      image: nidhi,
+    },
+    {
+      name: "Shreyash Goli",
+      position: "Senior Associate, Ex-Director of Batch",
+      linkedinUrl: "https://www.linkedin.com/in/shreyash-goli/",
+      calendlyUrl: "https://calendly.com/shreyash_goli-berkeley/free-ventures-coffee-chats?month=2025-09",
+      mailTo: "mailto:shreyash@freeventures.org",
+      image: shreyash,
+    },
+    {
       name: "Aryan Nangia",
-      position: "Associate",
+      position: "Senior Associate",
       linkedinUrl: "https://www.linkedin.com/in/aryan-nangia/",
       calendlyUrl: "https://calendly.com/aryan-nangia-berkeley/30min",
       mailTo: "mailto:aryan@freeventures.org",
       image: aryan2,
+    },
+    {
+      name: "Juhi Mathur",
+      position: "Senior Associate",
+      linkedinUrl: "https://www.linkedin.com/in/juhi-mathur1/",
+      calendlyUrl: "https://calendly.com/juhi-freeventures/30min",
+      mailTo: "mailto:juhi@freeventures.org",
+      image: juhi,
+    },
+    {
+      name: "Nathan Guan",
+      position: "Senior Associate",
+      linkedinUrl: "https://www.linkedin.com/in/nathanrguan/",
+      calendlyUrl: "https://calendly.com/nathanguan-berkeley/30min",
+      mailTo: "mailto:nathan@freeventures.org",
+      image: nathan,
+    },
+    {
+      name: "Aaron Bao",
+      position: "Associate",
+      linkedinUrl: "https://www.linkedin.com/in/aaronsbao/",
+      calendlyUrl: " ",
+      mailTo: "mailto:aaron@freeventures.org",
+      image: aaron,
     },
     {
       name: "Carlos Ramirez",
@@ -193,6 +220,14 @@ function Team() {
       image: carlos,
     },
     {
+      name: "Daniel Bao",
+      position: "Associate",
+      linkedinUrl: "https://www.linkedin.com/in/danielbao1/",
+      calendlyUrl: " ",
+      mailTo: "mailto:daniel@freeventures.org",
+      image: daniel,
+    },
+    {
       name: "Divij Motwani",
       position: "Associate",
       linkedinUrl: "https://www.linkedin.com/in/divijmotwani/",
@@ -201,12 +236,12 @@ function Team() {
       image: divij,
     },
     {
-      name: "Juhi Mathur",
+      name: "Eleyn Xiong",
       position: "Associate",
-      linkedinUrl: "https://www.linkedin.com/in/juhi-mathur1/",
-      calendlyUrl: "https://calendly.com/juhi-freeventures/30min",
-      mailTo: "mailto:juhi@freeventures.org",
-      image: juhi,
+      linkedinUrl: "https://www.linkedin.com/in/eleyn-xiong/",
+      calendlyUrl: " ",
+      mailTo: "mailto:eleyn@freeventures.org",
+      image: eleyn,
     },
     {
       name: "Leo Xu",
@@ -217,12 +252,28 @@ function Team() {
       image: leo,
     },
     {
-      name: "Nathan Guan",
+      name: "Rohit Sandadi",
       position: "Associate",
-      linkedinUrl: "https://www.linkedin.com/in/nathanrguan/",
-      calendlyUrl: "https://calendly.com/nathanguan-berkeley/30min",
-      mailTo: "mailto:nathan@freeventures.org",
-      image: nathan,
+      linkedinUrl: "https://www.linkedin.com/in/rohitsandadi/",
+      calendlyUrl: " ",
+      mailTo: "mailto:rohit@freeventures.org",
+      image: rohit,
+    },
+    {
+      name: "Sunskriti Jain",
+      position: "Associate",
+      linkedinUrl: "https://www.linkedin.com/in/sunskriti-jain/",
+      calendlyUrl: " ",
+      mailTo: "mailto:sunskriti@freeventures.org",
+      image: sunskriti,
+    },
+    {
+      name: "Taj Singh",
+      position: "Associate",
+      linkedinUrl: "https://www.linkedin.com/in/tajsinghcal/",
+      calendlyUrl: " ",
+      mailTo: "mailto:taj@freeventures.org",
+      image: taj,
     },
     {
       name: "Arissa Zheng",
@@ -248,16 +299,6 @@ function Team() {
       mailTo: "mailto:aadith@freeventures.org",
       image: aadith,
     },
-    /*
-    {
-      name: "Hy Nguyen",
-      position: "Senior Advisor, Ex-Director",
-      linkedinUrl: "https://www.linkedin.com/in/mrpronoun/",
-      calendlyUrl: "https://calendly.com/hy-freeventures/free-venture-coffee-chats?month=2025-02",
-      mailTo: "mailto:hy@freeventures.org",
-      image: hy,
-    },
-    */
     {
       name: "Gatik Trivedi",
       position: "Senior Advisor, Ex-Director",
@@ -265,22 +306,6 @@ function Team() {
       calendlyUrl: "https://calendly.com/gatiktrivedi-berkeley/freev",
       mailTo: "mailto:gatik@freeventures.org",
       image: gatik,
-    },
-    {
-      name: "Kelly Hong",
-      position: "Senior Advisor, Ex-Director",
-      linkedinUrl: "https://www.linkedin.com/in/kellyshong/",
-      calendlyUrl: "https://calendly.com/kellyhongsn/free-ventures-coffee-chats",
-      mailTo: "mailto:kelly@freeventures.org",
-      image: kelly,
-    },
-    {
-      name: "Shrinandan Narayanan",
-      position: "Senior Advisor, Ex-Director",
-      linkedinUrl: "https://www.linkedin.com/in/shrinandan-narayanan/",
-      calendlyUrl: "https://calendar.app.google/roDFGAEXrqiLs1187",
-      mailTo: "mailto:nandu@freeventures.org",
-      image: nandu,
     },
     {
       name: "Wesley Perronne",
@@ -297,22 +322,6 @@ function Team() {
       calendlyUrl: "https://calendly.com/swara-agarwal-sca/freev-20-min-coffee-chat",
       mailTo: "mailto:swara@freeventures.org",
       image: swara2,
-    },
-    {
-      name: "Hiya Shah",
-      position: "Senior Advisor",
-      linkedinUrl: "https://www.linkedin.com/in/hiyashah/",
-      calendlyUrl: "https://calendly.com/hiya-shah/free-ventures-director-coffee-chat",
-      mailTo: "mailto:hiya@freeventures.org",
-      image: hiya,
-    },
-    {
-      name: "Ashni Sheth",
-      position: "Senior Advisor",
-      linkedinUrl: "https://www.linkedin.com/in/ashnisheth/",
-      calendlyUrl: "https://calendly.com/ashni_sheth/nib-coffee-chats",
-      mailTo: "mailto:ashni@freeventures.org",
-      image: ashni,
     }
   ];
 
@@ -499,8 +508,8 @@ function Team() {
     },
     {
       name: "Safwan Masood",
-      position: "Analyst",
-      company: "Blackstone",
+      position: "GTM",
+      company: "Cognition",
       image: safwan,
     },
     {
@@ -531,13 +540,13 @@ function Team() {
     },
     {
       name: "Radha Singh",
-      position: "Private Equity Analyst",
-      company: "GI Partners",
+      position: "Product Deployment Strategist",
+      company: "Persona",
       image: radha
     },
     {
       name: "Mahika Valluri",
-      position: "Chief of Staff - Engineering",
+      position: "Product Manager",
       company: "Mercor",
       image: mahika
     },
@@ -576,8 +585,38 @@ function Team() {
       position: "Private Equity",
       company: "Ardian",
       image: amy
+    },
+    {
+      name: "Hiya Shah",
+      position: "Graduate Robotics Researcher",
+      company: "BAIR",
+      image: hiya
+    },
+    {
+      name: "Ashni Sheth",
+      position: "Research and Product",
+      company: "Turing",
+      image: ashni
+    },
+    {
+      name: "Kelly Hong",
+      position: "Researcher",
+      company: "Epoch AI",
+      image: kelly
+    },
+    {
+      name: "Nandu Narayanan",
+      position: "Deployed Engineer",
+      company: "Cognition",
+      image: nandu
+    },
+    {
+      name: "Hy Nguyen",
+      position: "Founder",
+      company: "Tacit Awareness",
+      image: hy
     }
-
+    
   ];
 
   let peopleComponents = peopleContent.map((person) => {
