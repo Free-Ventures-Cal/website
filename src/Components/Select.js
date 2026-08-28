@@ -1,19 +1,18 @@
-import React, { useEffect } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-import './../styles/Portfolio.css';
+import React, { useEffect } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
+import "./../styles/Portfolio.css";
 
-
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexWrap: 'wrap',
+    display: "flex",
+    flexWrap: "wrap",
   },
   formControl: {
-    margin: '0 auto',
+    margin: "0 auto",
     minWidth: 240,
   },
   selectEmpty: {
@@ -24,24 +23,23 @@ const useStyles = makeStyles(theme => ({
 function SimpleSelect(props) {
   const classes = useStyles();
   const [values, setValues] = React.useState({
-    batch: 'All startups', // this will be the default tab on load. SPELL CORRECTLY
+    batch: "All Startups", // this will be the default tab on load. SPELL CORRECTLY
   });
 
   function handleChange(event) {
-    setValues(oldValues => ({
+    setValues((oldValues) => ({
       ...oldValues,
       [event.target.name]: event.target.value,
     }));
-
   }
 
   useEffect(() => {
-    console.log("this has been run")
+    console.log("this has been run");
     props.handleSideBarClick(values.batch);
-  }, [values])
+  }, [values]);
 
   let menuItems = props.options.map((option) => {
-    return (<MenuItem value={option}>{option}</MenuItem>);
+    return <MenuItem value={option}>{option}</MenuItem>;
   });
 
   console.log("values", values);
@@ -55,7 +53,7 @@ function SimpleSelect(props) {
             value={values.batch}
             onChange={handleChange}
             inputProps={{
-              name: 'batch',
+              name: "batch",
             }}
           >
             {menuItems}

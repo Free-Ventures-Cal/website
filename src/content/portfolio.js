@@ -161,7 +161,7 @@ const portfolioContent = {
   },
   batchList: [
     {
-      batchName: "Spring 2026",
+      batchName: "S2026",
       batchNumber: 26,
       companies: [
         {
@@ -205,7 +205,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Fall 2025",
+      batchName: "F2025",
       batchNumber: 25,
       companies: [
         {
@@ -260,7 +260,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Spring 2025",
+      batchName: "S2025",
       batchNumber: 24,
       companies: [
         {
@@ -327,7 +327,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Fall 2024",
+      batchName: "F2024",
       batchNumber: 23,
       companies: [
         {
@@ -373,7 +373,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Spring 2024",
+      batchName: "S2024",
       batchNumber: 22,
       companies: [
         {
@@ -419,7 +419,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Fall 2023",
+      batchName: "F2023",
       batchNumber: 21,
       companies: [
         {
@@ -473,7 +473,7 @@ const portfolioContent = {
       ]
     },
     {
-      batchName: "Spring 2023",
+      batchName: "S2023",
       batchNumber: 20,
       companies: [
         {
@@ -539,7 +539,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Fall 2022",
+      batchName: "F2022",
       batchNumber: 19,
       companies: [
         {
@@ -593,7 +593,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Spring 2022",
+      batchName: "S2022",
       batchNumber: 18,
       companies: [
         {
@@ -646,7 +646,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Fall 2021",
+      batchName: "F2021",
       batchNumber: 17,
       companies: [
         {
@@ -688,7 +688,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Spring 2021",
+      batchName: "S2021",
       batchNumber: 16,
       companies: [
         {
@@ -770,7 +770,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Fall 2020",
+      batchName: "F2020",
       batchNumber: 15,
       companies: [
         {
@@ -812,7 +812,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Spring 2020",
+      batchName: "S2020",
       batchNumber: 14,
       companies: [
         {
@@ -871,7 +871,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Fall 2019",
+      batchName: "F2019",
       batchNumber: 13,
       companies: [
         {
@@ -925,7 +925,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Spring 2019",
+      batchName: "S2019",
       batchNumber: 12,
       companies: [
         {
@@ -993,7 +993,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Fall 2018",
+      batchName: "F2018",
       batchNumber: 12,
       companies: [
         {
@@ -1063,7 +1063,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Spring 2018",
+      batchName: "S2018",
       batchNumber: 12,
       companies: [
         {
@@ -1127,7 +1127,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Fall 2017",
+      batchName: "F2017",
       batchNumber: 12,
       companies: [
         {
@@ -1192,7 +1192,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Spring 2017",
+      batchName: "S2017",
       batchNumber: 13,
       companies: [
         {
@@ -1243,7 +1243,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Fall 2016",
+      batchName: "F2016",
       batchNumber: 13,
       companies: [
         {
@@ -1311,7 +1311,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Spring 2016",
+      batchName: "S2016",
       companies: [
         {
           name: "Distributed Systems",
@@ -1364,7 +1364,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Fall 2015",
+      batchName: "F2015",
       batchNumber: 12,
       companies: [
         {
@@ -1413,7 +1413,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Spring 2015",
+      batchName: "S2015",
       batchNumber: 12,
       companies: [
         {
@@ -1504,7 +1504,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Fall 2014",
+      batchName: "F2014",
       companies: [
         {
           name: "Nimble",
@@ -1585,7 +1585,7 @@ const portfolioContent = {
       ],
     },
     {
-      batchName: "Spring 2014",
+      batchName: "S2014",
       companies: [
         {
           name: "Demilune",

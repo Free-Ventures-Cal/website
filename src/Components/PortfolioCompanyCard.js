@@ -10,7 +10,7 @@ function PortfolioCompanyCard(props) {
                     backgroundColor: tag.backgroundColor
                 };
 
-                return (<span className="companyTag" style={tagStyle}>
+                return (<span className="companyTag" style={tagStyle} key={tag.content}>
                             {tag.content}
                         </span>);
             });
@@ -21,13 +21,18 @@ function PortfolioCompanyCard(props) {
             logo = <img src={props.logo} alt="logo" />;
         }
 
+        const descClass = props.tags && props.tags.length > 0
+            ? 'companyPortfolio__desc companyPortfolio__desc--withTags'
+            : 'companyPortfolio__desc';
 
         return (
             <div className="companyPortfolio" onClick={props.onClick}>
-                    {logo}
-                    <h1>{props.companyName}</h1>
-                    <p>{props.description}</p>
+                {logo}
+                <h1>{props.companyName}</h1>
+                <p className={descClass}>{props.description}</p>
+                <div className="companyPortfolio__tags">
                     {tags}
+                </div>
             </div>
         );
 

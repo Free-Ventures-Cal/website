@@ -12,8 +12,6 @@ import SimpleSelect from "./Select.js";
 class Portfolio extends React.Component {
   state = {
     sideBarTabName: "",
-    allStartupsStyle: null,
-    pressStyle: null,
   };
 
   componentDidMount() {
@@ -58,10 +56,6 @@ class Portfolio extends React.Component {
       );
     });
 
-    // there's definitely a better way to do this
-    let allStartupsStyle, pressStyle;
-    let clickInstructionText = <p>Click on a company to learn more</p>;
-
     // simpleSelect only visible in the mobile view
     let simpleSelect = (
       <SimpleSelect
@@ -71,21 +65,6 @@ class Portfolio extends React.Component {
         handleSideBarClick={this.handleSideBarClick}
       />
     );
-
-    if (this.state.sideBarTabName === "All startups") {
-      allStartupsStyle = {
-        backgroundColor: "#F1F1F1",
-        color: "#67379A",
-      };
-    }
-
-    if (this.state.sideBarTabName === "Press") {
-      pressStyle = {
-        backgroundColor: "#F1F1F1",
-        color: "#67379A",
-      };
-      clickInstructionText = "";
-    }
 
     return (
       <section>
@@ -98,26 +77,29 @@ class Portfolio extends React.Component {
         <GenericPage>
           <div className="container portfolio">
             <div className="portfolioNav">
-              <ul className="generalSideBar">
-                <li
+              <div className="portfolioNavPrimary">
+                <button
+                  className={`navPrimaryBtn${this.state.sideBarTabName === "All Startups" ? " navPrimaryBtn--active" : ""}`}
                   onClick={() => {
-                    this.handleSideBarClick("All startups");
+                    this.handleSideBarClick("All Startups");
                   }}
-                  style={allStartupsStyle}
                 >
-                  All startups
-                </li>
-                <li
+                  All Startups
+                </button>
+                <button
+                  className={`navPrimaryBtn${this.state.sideBarTabName === "Press" ? " navPrimaryBtn--active" : ""}`}
                   onClick={() => {
                     this.handleSideBarClick("Press");
                   }}
-                  style={pressStyle}
                 >
                   Press
-                </li>
-              </ul>
+                </button>
+              </div>
               {simpleSelect}
-              <ul className="batchSideBar">{sideBarTabs}</ul>
+              <div className="portfolioNavBatches">
+                <p className="batchLabel">Filter by Batch</p>
+                <ul className="batchSideBar">{sideBarTabs}</ul>
+              </div>
             </div>
             {/* The actual tabs are different components. */}
             <PortfolioTab sideBarTabName={this.state.sideBarTabName} />
