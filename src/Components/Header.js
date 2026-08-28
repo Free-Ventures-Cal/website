@@ -67,11 +67,11 @@ class Header extends React.Component {
                   fellowship
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/scholarship" activeClassName="activeLinkStyle">
                   scholarship
                 </NavLink>
-              </li>
+              </li> */}
               {/* <li>
                 <a href="/fairinfo">fair</a>
               </li> */}
@@ -136,13 +136,13 @@ class Header extends React.Component {
               >
                 fellowship
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/scholarship"
                 activeClassName="activeLinkStyle"
                 onClick={() => this.closeMenu()}
               >
                 scholarship
-              </NavLink>
+              </NavLink> */}
               <li>
                 <a href="/fairinfo">fair</a>
               </li>
