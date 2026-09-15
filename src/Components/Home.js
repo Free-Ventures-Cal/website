@@ -327,7 +327,7 @@ function Home() {
               The best part: we take <span style={{ textDecoration: "underline" }}>no equity</span>.
             </h2>
             <a
-              href="https://forms.gle/WEBeT6FnQoNVSNYr8"
+              href="https://forms.gle/Z4MtgBDPSNSmUBADA"
               className="apply"
               target="_blank"
               rel="noopener noreferrer"

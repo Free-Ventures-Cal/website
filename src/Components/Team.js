@@ -111,7 +111,7 @@ function Team() {
     //   " Click below to fill out our interest form! We'll email you once we begin recruitment in October.";
     button = (
       <a
-        href="https://forms.gle/WEBeT6FnQoNVSNYr8"
+        href="https://forms.gle/Z4MtgBDPSNSmUBADA"
         target="_blank"
         rel="noopener noreferrer"
         className="genericButton"
@@ -206,7 +206,7 @@ function Team() {
       name: "Aaron Bao",
       position: "Associate",
       linkedinUrl: "https://www.linkedin.com/in/aaronsbao/",
-      calendlyUrl: " ",
+      calendlyUrl: "https://calendar.app.google/UKa7dUeFqkthazdJ9",
       mailTo: "mailto:aaron@freeventures.org",
       image: aaron,
     },
@@ -230,7 +230,7 @@ function Team() {
       name: "Eleyn Xiong",
       position: "Associate",
       linkedinUrl: "https://www.linkedin.com/in/eleyn-xiong/",
-      calendlyUrl: " ",
+      calendlyUrl: "https://calendar.app.google/M1KDQaY2LbPktugv8",
       mailTo: "mailto:eleyn@freeventures.org",
       image: eleyn,
     },
@@ -246,7 +246,7 @@ function Team() {
       name: "Rohit Sandadi",
       position: "Associate",
       linkedinUrl: "https://www.linkedin.com/in/rohitsandadi/",
-      calendlyUrl: " ",
+      calendlyUrl: "https://calendly.com/rohitsand/chat",
       mailTo: "mailto:rohit@freeventures.org",
       image: rohit,
     },
@@ -531,8 +531,8 @@ function Team() {
     },
     {
       name: "Alson Chan",
-      position: "Investment Banker",
-      company: "Bank of America",
+      position: "Product Manager",
+      company: "Datadog",
       image: alson
     },
     {

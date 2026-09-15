@@ -77,7 +77,7 @@ class Header extends React.Component {
               </li> */}
               <li>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfFpNtmT6vard9oq5XaBCI-gWpCaa8XaaUH0uyDGl1SbMbGAQ/viewform"
+                  href="https://forms.gle/Z4MtgBDPSNSmUBADA"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -147,7 +147,7 @@ class Header extends React.Component {
                 <a href="/fairinfo">fair</a>
               </li>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfFpNtmT6vard9oq5XaBCI-gWpCaa8XaaUH0uyDGl1SbMbGAQ/viewform"
+                href="https://forms.gle/Z4MtgBDPSNSmUBADA"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => this.closeMenu()}
