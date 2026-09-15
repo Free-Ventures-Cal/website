@@ -327,12 +327,12 @@ function Home() {
               The best part: we take <span style={{ textDecoration: "underline" }}>no equity</span>.
             </h2>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfFpNtmT6vard9oq5XaBCI-gWpCaa8XaaUH0uyDGl1SbMbGAQ/viewform"
+              href="https://forms.gle/WEBeT6FnQoNVSNYr8"
               className="apply"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Internal Application
+              Batch Application
             </a>
             <div className="sponsors">
               <img src={aws} className="sponsorLogo" />

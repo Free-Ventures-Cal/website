@@ -65,7 +65,6 @@ import alexhan from "./../assets/team/alex_han.jpeg";
 import amelia from "./../assets/team/amelia.jpeg";
 import shreyash from "./../assets/team/shreyash.jpeg";
 import aryan2 from "./../assets/team/aryan2.jpeg";
-import carlos from "./../assets/team/carlos.jpeg";
 import divij from "./../assets/team/divij.jpeg";
 import juhi from "./../assets/team/juhi.jpeg";
 import leo from "./../assets/team/leo.jpeg";
@@ -95,13 +94,13 @@ function Team() {
   var header = "Coffee Chats Now Open!";
   var internalRecruitment = false;
   var description =
-    "Interested in joining the Free Ventures internal team? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Fill out the form below to apply.";
+    "Interested in joining the Free Ventures batch? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Fill out the form below to apply.";
 
   let button;
 
   if (internalRecruitment) {
     description +=
-      " We're currently recruiting for our internal team! Click below to learn more.";
+      " We're currently recruiting for our batch! Click below to learn more.";
     button = (
       <Link to="/apply" className="genericButton">
         Apply to batch
@@ -112,12 +111,12 @@ function Team() {
     //   " Click below to fill out our interest form! We'll email you once we begin recruitment in October.";
     button = (
       <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfFpNtmT6vard9oq5XaBCI-gWpCaa8XaaUH0uyDGl1SbMbGAQ/viewform"
+        href="https://forms.gle/WEBeT6FnQoNVSNYr8"
         target="_blank"
         rel="noopener noreferrer"
         className="genericButton"
       >
-        Internal Application
+        Batch Application
       </a>
     );
   }
@@ -212,18 +211,10 @@ function Team() {
       image: aaron,
     },
     {
-      name: "Carlos Ramirez",
-      position: "Associate",
-      linkedinUrl: "https://www.linkedin.com/in/carlos-ramirez-ucbmet/",
-      calendlyUrl: "https://calendly.com/carlos-freeventures/30min",
-      mailTo: "mailto:carlos@freeventures.org",
-      image: carlos,
-    },
-    {
       name: "Daniel Bao",
       position: "Associate",
       linkedinUrl: "https://www.linkedin.com/in/danielbao1/",
-      calendlyUrl: " ",
+      calendlyUrl: "https://calendly.com/daniel-bao-berkeley/30min",
       mailTo: "mailto:daniel@freeventures.org",
       image: daniel,
     },
@@ -263,7 +254,7 @@ function Team() {
       name: "Sunskriti Jain",
       position: "Associate",
       linkedinUrl: "https://www.linkedin.com/in/sunskriti-jain/",
-      calendlyUrl: " ",
+      calendlyUrl: "https://calendly.com/sunskritijain-berkeley/new-meeting",
       mailTo: "mailto:sunskriti@freeventures.org",
       image: sunskriti,
     },
@@ -539,16 +530,16 @@ function Team() {
       image: shlok
     },
     {
-      name: "Radha Singh",
-      position: "Product Deployment Strategist",
-      company: "Persona",
-      image: radha
+      name: "Alson Chan",
+      position: "Investment Banker",
+      company: "Bank of America",
+      image: alson
     },
     {
-      name: "Mahika Valluri",
-      position: "Product Manager",
-      company: "Mercor",
-      image: mahika
+      name: "Amy Zhuang",
+      position: "Investor",
+      company: "Plug and Play",
+      image: amy
     },
     {
       name: "Hriday Sheth",
@@ -563,16 +554,22 @@ function Team() {
       image: ishaan
     },
     {
+      name: "Mahika Valluri",
+      position: "Product Manager",
+      company: "Mercor",
+      image: mahika
+    },
+    {
       name: "Pavit Singh",
       position: "Strategic Projects",
       company: "Scale AI",
       image: pavit
     },
     {
-      name: "Alson Chan",
-      position: "Investment Banker",
-      company: "Bank of America",
-      image: alson
+      name: "Radha Singh",
+      position: "Product Deployment Strategist",
+      company: "Persona",
+      image: radha
     },
     {
       name: "Rohan Taneja",
@@ -581,22 +578,10 @@ function Team() {
       image: rohan
     },
     {
-      name: "Amy Zhuang",
-      position: "Private Equity",
-      company: "Ardian",
-      image: amy
-    },
-    {
-      name: "Nandu Narayanan",
-      position: "Deployed Engineer",
-      company: "Cognition",
-      image: nandu
-    },
-    {
-      name: "Hy Nguyen",
-      position: "Founder",
-      company: "Tacit Awareness",
-      image: hy
+      name: "Ashni Sheth",
+      position: "Research and Product",
+      company: "Turing",
+      image: ashni
     },
     {
       name: "Hiya Shah",
@@ -605,16 +590,22 @@ function Team() {
       image: hiya
     },
     {
-      name: "Ashni Sheth",
-      position: "Research and Product",
-      company: "Turing",
-      image: ashni
+      name: "Hy Nguyen",
+      position: "Founder",
+      company: "Tacit Awareness",
+      image: hy
     },
     {
       name: "Kelly Hong",
       position: "Researcher",
       company: "Epoch AI",
       image: kelly
+    },
+    {
+      name: "Nandu Narayanan",
+      position: "Deployed Engineer",
+      company: "Cognition",
+      image: nandu
     }
   ];
 

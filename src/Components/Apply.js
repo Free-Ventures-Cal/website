@@ -18,8 +18,7 @@ import arrow from "./../assets/arrow.png";
 function Apply(props) {
   // Content
 
-  let airtableLink =
-    "https://docs.google.com/forms/d/e/1FAIpQLSfFpNtmT6vard9oq5XaBCI-gWpCaa8XaaUH0uyDGl1SbMbGAQ/viewform";
+  let airtableLink = "https://forms.gle/WEBeT6FnQoNVSNYr8";
 
   let batchFAQContent = [
     {
@@ -151,7 +150,7 @@ function Apply(props) {
       <GenericTop
         header={"Join the FreeV Family"}
         description={
-          "Applications have been released for the Spring 2023 FreeV Batch! We'll be recruiting for the internal team later in the semester."
+          "Applications have been released for the Fall 2026 FreeV Batch! We'll be recruiting for the internal team later in the semester."
         }
       >
         <a
@@ -160,7 +159,7 @@ function Apply(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Apply for Spring 2023 Batch
+          Apply for Fall 2026 Batch
         </a>
         &nbsp; &nbsp;
         <a
