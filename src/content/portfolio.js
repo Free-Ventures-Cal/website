@@ -1763,7 +1763,7 @@ const portfolioContent = {
     },
   ],
   // large fundraising doesn't have a tag so we define that group here.
-  largeFundraisingNames: ["Gainful", "Glints", "Foresight Mental Health"],
+  largeFundraisingNames: ["Gainful", "Glints", "Foresight Mental Health", "Watney Robotics"],
 };
 
 export default portfolioContent;

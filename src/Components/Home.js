@@ -393,7 +393,7 @@ function Home() {
               <span className="bigNumber">100+</span> alumni companies
             </h3>
             <h3>
-              <span className="bigNumber">$200M+</span> of follow-on capital
+              <span className="bigNumber">$300M+</span> of follow-on capital
             </h3>
             <h3>
               <span className="bigNumber">26</span> batches hosted
