@@ -26,7 +26,7 @@ function Fellowship() {
     //   image: application,
     // },
     {
-      date: "September 18 @ Grimes Engineering Center, Rm 304",
+      date: "September 18 @ Grimes Engineering Center Rm 304, 6-8pm",
       description: "Info Session",
       image: application,
     },
