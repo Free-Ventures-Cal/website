@@ -191,12 +191,12 @@ function Fellowship() {
             short response!
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdCcvJnxvnH0PYkcEwnVdZG-FMKb7i2OCFYbOOYApgIN-DWyA/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfSIqEO4eQ0BeiL-I3-aCXjo9ol80fYhmbl4wiYA7RTmPPTyg/viewform?usp=publish-editor"
             className="genericButton"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply for Spring 2026 Fellowship
+            Apply for Fall 2026 Fellowship
           </a>
           <h3>Spring 2026 Timeline</h3>
           <div className="timeline">{timelineWithArrows}</div>
