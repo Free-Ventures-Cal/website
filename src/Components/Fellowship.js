@@ -26,12 +26,12 @@ function Fellowship() {
     //   image: application,
     // },
     {
-      date: "February 12 @ Dwinelle 79, 8-10pm",
-      description: "Free Ventures Mixer",
+      date: "September 18 @ Grimes Engineering Center, Rm 304",
+      description: "Info Session",
       image: application,
     },
     {
-      date: "February 17, 11:59pm",
+      date: "September 28, 11:59pm",
       description: "Application Deadline",
       image: interview,
     },
@@ -198,12 +198,12 @@ function Fellowship() {
           >
             Apply for Fall 2026 Fellowship
           </a>
-          <h3>Spring 2026 Timeline</h3>
+          <h3>Fall 2026 Timeline</h3>
           <div className="timeline">{timelineWithArrows}</div>
           <p>
             Please direct questions to our form below, or email{" "}
-            <a href="mailto:om@freeventures.org">om@freeventures.org</a> {" or "}
-            <a href="mailto:carlos@freeventures.org">carlos@freeventures.org</a>
+            <a href="mailto:omgole@berkeley.edu">omgole@berkeley.edu</a> {" or "}
+            <a href="mailto:shivanshsoni@berkeley.edu">shivanshsoni@berkeley.edu</a>
             .
           </p>
         </span>
