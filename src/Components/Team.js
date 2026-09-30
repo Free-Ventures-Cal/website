@@ -7,9 +7,9 @@ import "./../styles/Team.css";
 
 import aamir from "./../assets/team/aamir.png";
 import aadith from './../assets/team/aadith.jpeg';
-import arissa from './../assets/team/arissa.jpg';
+import arissa from './../assets/team/arissa2.jpg';
 import hy from './../assets/team/hy.jpeg';
-import wesley from './../assets/team/wesley.jpeg';
+import wesley from './../assets/team/wesley2.jpg';
 import alex from "./../assets/team/alex.png";
 import alson from "./../assets/team/alson_chan.jpg";
 import aashi from "./../assets/team/alumni/aashi_jawar.png";
@@ -30,6 +30,7 @@ import jeremy from "./../assets/team/alumni/jeremy_fiance.jpeg";
 import kathy from "./../assets/team/alumni/kathy_kong.png";
 import keyan from "./../assets/team/alumni/keyan_sarrafzadeh.jpeg";
 import kirtan from "./../assets/team/alumni/kirtan_upadhyaya.jpeg";
+import joelene from "./../assets/team/joelene.png"
 import lulu from "./../assets/team/alumni/lulu_holland.png";
 import maanav from "./../assets/team/alumni/maanav_khaitan.jpeg";
 import nikita from "./../assets/team/alumni/nikita_ashok.png";
@@ -59,24 +60,24 @@ import varun from "./../assets/team/varun.png";
 import aathma from "./../assets/team/aathma.jpeg";
 import ashni from "./../assets/team/ashni.jpeg";
 import gatik from "./../assets/team/gatik.png";
-import nidhi from "./../assets/team/nidhi.jpeg";
+import nidhi from "./../assets/team/nidhi2.jpg";
 import om from "./../assets/team/om.jpeg";
-import alexhan from "./../assets/team/alex_han.jpeg";
-import amelia from "./../assets/team/amelia.jpeg";
-import shreyash from "./../assets/team/shreyash.jpeg";
-import aryan2 from "./../assets/team/aryan2.jpeg";
+import alexhan from "./../assets/team/alex2.jpg";
+import amelia from "./../assets/team/amelia2.jpg";
+import shreyash from "./../assets/team/shreyash2.jpg";
+import aryan3 from "./../assets/team/aryan3.jpg";
 import divij from "./../assets/team/divij.jpeg";
 import juhi from "./../assets/team/juhi.jpeg";
 import leo from "./../assets/team/leo.jpeg";
 import nathan from "./../assets/team/nathan.jpeg";
-import swara2 from "./../assets/team/swara2.jpeg";
+import swara3 from "./../assets/team/swara3.jpg";
 import shivansh2 from "./../assets/team/shivansh2.jpeg";
-import aaron from "./../assets/team/aaron.png";
-import eleyn from "./../assets/team/eleyn.jpeg";
-import daniel from "./../assets/team/daniel.jpeg";
-import rohit from "./../assets/team/rohit.jpeg";
-import sunskriti from "./../assets/team/sunskriti.png";
-import taj from "./../assets/team/taj.png";
+import aaron from "./../assets/team/aaron2.jpg";
+import eleyn from "./../assets/team/eleyn2.jpg";
+import daniel from "./../assets/team/daniel2.jpg";
+import rohit from "./../assets/team/rohit2.jpg";
+import sunskriti from "./../assets/team/sunskriti2.jpg";
+import taj from "./../assets/team/taj2.jpg";
 
 import GenericPage from "./GenericPage";
 import GenericTop from "./GenericTop";
@@ -184,7 +185,7 @@ function Team() {
       linkedinUrl: "https://www.linkedin.com/in/aryan-nangia/",
       calendlyUrl: "https://calendly.com/aryan-nangia-berkeley/30min",
       mailTo: "mailto:aryan@freeventures.org",
-      image: aryan2,
+      image: aryan3,
     },
     {
       name: "Juhi Mathur",
@@ -312,7 +313,7 @@ function Team() {
       linkedinUrl: "https://www.linkedin.com/in/swara-agarwal/",
       calendlyUrl: "https://calendly.com/swara-agarwal-sca/freev-20-min-coffee-chat",
       mailTo: "mailto:swara@freeventures.org",
-      image: swara2,
+      image: swara3,
     }
   ];
 
@@ -445,8 +446,8 @@ function Team() {
     },
     {
       name: "Jasmine Stoy",
-      position: "Staff Product Manager",
-      company: "Figma",
+      position: "Member of Product Staff",
+      company: "Simile",
       image: jasmine,
     },
     {
@@ -474,9 +475,15 @@ function Team() {
       image: saneel,
     },
     {
+    name: "Joelene Latief",
+    position: "Software Engineer",
+    company: "Evvy",
+    image: joelene,
+    },
+    {
       name: "LuLu Holland",
-      position: "Head of Community & Marketing",
-      company: "The House Fund",
+      position: "CEO",
+      company: "Veritas",
       image: lulu,
     },
     {

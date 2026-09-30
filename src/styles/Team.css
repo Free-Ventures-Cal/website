@@ -22,8 +22,17 @@
   margin: 0 auto;
 }
 
-.person > img[src*="aryan2"] {
-  object-position: center top;
+.person > img[src*="amelia2"],
+.person > img[src*="alex2"],
+.person > img[src*="aryan3"],
+.person > img[src*="aaron2"],
+.person > img[src*="daniel2"],
+.person > img[src*="rohit2"],
+.person > img[src*="sunskriti2"],
+.person > img[src*="taj2"],
+.person > img[src*="arissa2"],
+.person > img[src*="wesley2"] {
+  object-position: center 20%;
 }
 
 .person h2 {
