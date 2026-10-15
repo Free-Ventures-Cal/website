@@ -3,11 +3,11 @@ import GenericPage from "./GenericPage";
 import GenericTop from "./GenericTop";
 
 // Existing FreeV images. Replace these when official EIR photos are ready.
-import fellowship1 from "./../assets/fellowship/fellowship-1.jpg";
-import fellowship2 from "./../assets/fellowship/fellowship-2.jpg";
-import fellowship3 from "./../assets/fellowship/fellowship-3.jpg";
-import fellowship4 from "./../assets/fellowship/fellowship-4.jpg";
-import fellowship5 from "./../assets/fellowship/fellowship-5.jpg";
+import eir1 from "./../assets/eir/eir-1.jpg";
+import eir2 from "./../assets/eir/eir-2.jpg";
+import eir3 from "./../assets/eir/eir-3.jpg";
+import eir4 from "./../assets/eir/eir-4.jpg";
+import eir5 from "./../assets/eir/eir-5.jpg";
 
 // Reuse the Fellowship layout and apply EIR-specific styling on top.
 import "./../styles/Fellowship.css";
@@ -16,7 +16,7 @@ import "./../styles/EIR.css";
 const applicationUrl =
   "https://docs.google.com/forms/d/e/1FAIpQLSd_af-bqXt_eW_t6nV-iJXP8cdaPEXQwibrpB95UMLvwewryA/viewform?usp=send_form";
 
-const photos = [fellowship1, fellowship2, fellowship3, fellowship4, fellowship5];
+const photos = [eir1, eir2, eir3, eir4, eir5];
 
 function EIR() {
   return (
