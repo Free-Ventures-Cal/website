@@ -1,6 +1,7 @@
 import React from "react";
 import ContactFormPage from "./Components/ContactFormPage.js";
 import Fellowship from "./Components/Fellowship";
+import EIR from "./Components/EIR";
 // import Scholarship from "./Components/Scholarship";
 import Footer from "./Components/Footer.js";
 import GA from "./Components/GoogleAnalytics";
@@ -34,6 +35,7 @@ function App() {
             }}
           />
           <Route exact path="/fellowship" component={Fellowship} />
+          <Route exact path="/eir" component={EIR} />
           {/* <Route exact path="/scholarship" component={Scholarship} /> */}
           <Route exact path="/fairinfo" component={FairInfo} />
           <Route
