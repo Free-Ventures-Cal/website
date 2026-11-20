@@ -67,11 +67,11 @@ class Header extends React.Component {
                   fellowship
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/eir" activeClassName="activeLinkStyle">
                   eir
                 </NavLink>
-              </li>
+              </li> */}
               {/* <li>
                 <NavLink to="/scholarship" activeClassName="activeLinkStyle">
                   scholarship
@@ -82,7 +82,7 @@ class Header extends React.Component {
               </li> */}
               <li>
                 <a
-                  href="https://forms.gle/Z4MtgBDPSNSmUBADA"
+                  href="https://ats.tacitawareness.com/jobs/4ec876cdcd0942838a7387f495cd0d98"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -141,13 +141,13 @@ class Header extends React.Component {
               >
                 fellowship
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/eir"
                 activeClassName="activeLinkStyle"
                 onClick={() => this.closeMenu()}
               >
                 eir
-              </NavLink>
+              </NavLink> */}
               {/* <NavLink
                 to="/scholarship"
                 activeClassName="activeLinkStyle"
@@ -159,7 +159,7 @@ class Header extends React.Component {
                 <a href="/fairinfo">fair</a>
               </li>
               <a
-                href="https://forms.gle/Z4MtgBDPSNSmUBADA"
+                href="https://ats.tacitawareness.com/jobs/4ec876cdcd0942838a7387f495cd0d98"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => this.closeMenu()}

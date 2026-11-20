@@ -31,7 +31,7 @@ function App() {
           <Route exact path="/contact" component={ContactFormPage} />
           {/* <Route exact path="/apply" component={Apply} /> */}
           <Route path='/apply' component={() => {
-            window.location.replace('https://forms.gle/Z4MtgBDPSNSmUBADA');
+            window.location.replace('https://ats.tacitawareness.com/jobs/4ec876cdcd0942838a7387f495cd0d98');
             }}
           />
           <Route exact path="/fellowship" component={Fellowship} />

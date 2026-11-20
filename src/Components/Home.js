@@ -20,6 +20,8 @@ import citadel2 from "./../assets/partners/citadel2.png";
 import rho from "./../assets/sponsors/rho.png";
 import kalpalabs from "./../assets/sponsors/kalpalabs.png";
 import unsiloedai from "./../assets/sponsors/unsiloedai.jpeg";
+import alumniventures from "./../assets/sponsors/AlumniVentures_logo.png";
+import cognition from "./../assets/sponsors/cognition_logo.png";
 // Press
 import forbes from "./../assets/press/grayscale/forbes.png";
 import huffpost from "./../assets/press/grayscale/huffpost.png";
@@ -327,12 +329,12 @@ function Home() {
               The best part: we take <span style={{ textDecoration: "underline" }}>no equity</span>.
             </h2>
             <a
-              href="https://forms.gle/Z4MtgBDPSNSmUBADA"
+              href="https://ats.tacitawareness.com/jobs/4ec876cdcd0942838a7387f495cd0d98"
               className="apply"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Batch Application
+              Internal Team Application
             </a>
             <div className="sponsors">
               <img src={aws} className="sponsorLogo" />
@@ -348,6 +350,8 @@ function Home() {
               <img src={rho} className="sponsorLogo" />
               <img src={kalpalabs} className="sponsorLogo" />
               <img src={unsiloedai} className="sponsorLogo" />
+              <img src={alumniventures} className="sponsorLogo" alt="Alumni Ventures" />
+              <img src={cognition} className="sponsorLogo" alt="Cognition" />
             </div>
             {/* <a href="https://airtable.com/shr2JwPjM7cEaEI42" className="apply">
               Spring 2023 Interest Form

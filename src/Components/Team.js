@@ -92,10 +92,10 @@ import AlumniCardsMarquee from "./AlumniCardsMarquee";
 
 function Team() {
   // var header = "Meet the Team";
-  var header = "Coffee Chats Now Open!";
+  var header = "Coffee Chats Open for Internal Team";
   var internalRecruitment = false;
   var description =
-    "Interested in joining the Free Ventures batch? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Fill out the form below to apply.";
+    "Interested in joining the Free Ventures internal team? Use the calendar icon to schedule a coffee chat with other Free Ventures members! Click below to submit your internal application.";
 
   let button;
 
@@ -112,12 +112,12 @@ function Team() {
     //   " Click below to fill out our interest form! We'll email you once we begin recruitment in October.";
     button = (
       <a
-        href="https://forms.gle/Z4MtgBDPSNSmUBADA"
+        href="https://ats.tacitawareness.com/jobs/4ec876cdcd0942838a7387f495cd0d98"
         target="_blank"
         rel="noopener noreferrer"
         className="genericButton"
       >
-        Batch Application
+        Internal Team Application
       </a>
     );
   }
